@@ -468,7 +468,8 @@ nav {
 
 // Section -- Volledige afbeelding
 .full--img {
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   height: $FullImgHeight;
   background-size: cover;
   background-position: center center;
