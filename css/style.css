@@ -586,7 +586,7 @@ nav {
   background: #fdbb2c;
   padding-top: calc(140px + 150px);
   padding-bottom: 70px;
-  width: 100vw;
+  max-width: 100vw;
   overflow: hidden; }
   .vacatures--hp .marq h2 {
     color: #ffffff; }
