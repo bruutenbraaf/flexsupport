@@ -1,0 +1,968 @@
+@font-face {
+  font-family: "SilkaRegular";
+  src: url("../fonts/silka/silka-regular-webfont.eot");
+  src: url("../fonts/silka/silka-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/silka/silka-regular-webfont.woff") format("woff"),
+    url("../fonts/silka/silka-regular-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SilkaMedium";
+  src: url("../fonts/silka/silka-medium-webfont.eot");
+  src: url("../fonts/silka/silka-medium-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/silka/silka-medium-webfont.woff") format("woff"),
+    url("../fonts/silka/silka-medium-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SilkaBold";
+  src: url("../fonts/silka/silka-bold-webfont.eot");
+  src: url("../fonts/silka/silka-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/silka/silka-bold-webfont.woff") format("woff"),
+    url("../fonts/silka/silka-bold-webfont.ttf") format("truetype");
+}
+
+// Fonts
+
+$SilkaRegular: "SilkaRegular", Arial, sans-serif;
+$SilkaMedium: "SilkaMedium", Arial, sans-serif;
+$SilkaBold: "SilkaBold", Arial, sans-serif;
+
+// Colors
+
+$rose: #fc1264;
+$turquoise: #35ffb6;
+$midnight: #001f3f;
+$yellow: #fdbb2c;
+
+// Nav height
+
+$NavHeight: 136px;
+
+// Variables
+$OverlayImg: 150px;
+$FullImgHeight: 80vh;
+
+* {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $SilkaRegular;
+  font-size: 16px;
+  color: $midnight;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+h2 {
+  font-family: $SilkaBold;
+  font-size: 79px;
+  line-height: 88px;
+  color: $midnight;
+}
+
+.clearfix {
+  clear: both;
+}
+
+// Color system
+
+.standard {
+}
+
+.rose {
+  nav {
+    background: $rose;
+    .branding {
+      img {
+        max-width: 210px;
+      }
+    }
+  }
+  .header--hp {
+    background: $rose;
+  }
+  .btn--header {
+    background: $turquoise;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: $midnight;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  .secondair {
+    background: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:after {
+      background: $midnight;
+    }
+    &:before {
+      background: $midnight;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      background: none;
+      text-decoration: none;
+    }
+  }
+  .main-nav {
+    ul {
+      ul.sub-menu {
+        position: absolute;
+        margin-left: -15px;
+        margin-right: -15px;
+        top: 32px;
+        z-index: 44;
+        white-space: nowrap;
+        border-radius: 5px;
+        background: #fff;
+        opacity: 0;
+        z-index: 1;
+        pointer-events: none;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1 ease-in-out;
+        padding: 10px 0px;
+        &:before {
+          content: "";
+          width: 100%;
+          height: 20px;
+          position: absolute;
+          top: -20px;
+        }
+        li {
+          width: 100%;
+          position: relative;
+          margin: 8px 15px;
+          a {
+            color: $midnight;
+            opacity: 1;
+            z-index: 2;
+            text-decoration: none;
+            &:after {
+              content: "";
+              background: $turquoise;
+              width: 100%;
+              height: 0%;
+              bottom: -2px;
+              left: 0px;
+              position: absolute;
+              z-index: -1;
+              -webkit-transition: all 0.2s ease-in-out;
+              -moz-transition: all 0.2s ease-in-out;
+              -o-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+            }
+            &:hover:after {
+              height: 50%;
+            }
+          }
+        }
+        .current_page_item > a {
+          z-index: 2;
+          text-decoration: none;
+          &:before {
+            content: "";
+            background: $midnight;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0px;
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+          &:after {
+            content: "";
+            background: $turquoise;
+            width: 100%;
+            height: 0%;
+            bottom: -2px;
+            left: 0px;
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+          &:hover:after {
+            height: 50%;
+          }
+        }
+        ul.sub-menu {
+          left: calc(100% - 20px);
+          top: 0;
+        }
+      }
+      li {
+        position: relative;
+        a {
+          color: #ffffff;
+          opacity: 0.5;
+          position: relative;
+          z-index: 2;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2 ease-in-out;
+          &:hover {
+            opacity: 1;
+            text-decoration: none;
+          }
+        }
+      }
+      .menu-item-has-children {
+        &:after {
+          content: "";
+          position: relative;
+          background-image: url(../img/down.svg);
+          width: 10px;
+          height: 10px;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center center;
+          opacity: 0.5;
+          margin-left: 8px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2 ease-in-out;
+        }
+        &:hover {
+          &:after {
+            transform: rotate(180deg);
+            opacity: 1;
+          }
+        }
+      }
+      .menu-item-has-children:hover a {
+        opacity: 1;
+      }
+      .menu-item-has-children:hover > ul.sub-menu {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .current_page_ancestor {
+        a {
+          opacity: 1;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.green {
+}
+
+.yellow {
+}
+
+// buttons
+
+.btn {
+  border-radius: none;
+  font-family: $SilkaBold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $midnight;
+  padding: 0px 8px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  margin-top: 32px;
+  z-index: 2;
+  &:hover {
+    color: $midnight;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 12px;
+    bottom: 0px;
+    right: 0px;
+    background: $turquoise;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0px;
+    height: 12px;
+    bottom: 0px;
+    left: 0px;
+    background: $turquoise;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover:after {
+    right: 0px;
+    width: 0;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+.btn--header {
+  font-family: $SilkaBold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $midnight;
+  padding: 14px 48px;
+  border-radius: 0px;
+  border: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.secondair {
+  overflow: hidden;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding: 2px 8px;
+  margin: 0px 36px;
+  font-size: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 12px;
+    bottom: 0px;
+    right: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0px;
+    height: 12px;
+    bottom: 0px;
+    left: 0px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover:after {
+    right: 0px;
+    width: 0;
+  }
+  &:hover:before {
+    width: 100%;
+  }
+}
+
+// Nav
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .row {
+    height: $NavHeight;
+  }
+  .main-nav {
+    ul {
+      float: right;
+      margin: 0px;
+      padding: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+      li {
+        float: left;
+        list-style: none;
+        margin: 0px 15px;
+        a {
+          font-family: $SilkaBold;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+// Header
+
+.header--hp {
+  .container {
+    padding-top: calc(80px + #{$NavHeight});
+    padding-bottom: 80px;
+    h1 {
+      font-family: $SilkaBold;
+      font-size: 138px;
+      line-height: 144px;
+      color: #ffffff;
+      padding-bottom: 120px;
+      strong {
+        font-family: $SilkaBold;
+        font-size: 138px;
+        line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #fff;
+        -webkit-text-stroke-color: #fff;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px;
+      }
+    }
+    .dwn {
+      margin-left: 40px;
+    }
+  }
+  .int {
+    margin-left: 60px;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      line-height: 32px;
+      color: #ffffff;
+    }
+  }
+}
+
+// Section -- Volledige afbeelding
+.full--img {
+  width: 100%;
+  height: $FullImgHeight;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  position: relative;
+  &:after {
+    content: "";
+    width: 100vw;
+    left: 0;
+    position: absolute;
+    height: $FullImgHeight;
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Section -- about
+
+.about {
+  padding: 160px 0px;
+  h2 {
+    font-family: $SilkaBold;
+    font-size: 79px;
+    line-height: 88px;
+    color: $midnight;
+    padding-bottom: 48px;
+  }
+  .sub {
+    font-family: $SilkaBold;
+    margin: 26px 0;
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 32px;
+    opacity: 0.5;
+  }
+}
+
+// Stappen
+$padding-bottom: 70px;
+.werkwijze {
+  overflow: hidden;
+  padding-bottom: $padding-bottom;
+  position: relative;
+  &:after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    height: calc(100% / 2 + #{$padding-bottom});
+    bottom: 0;
+    left: 0;
+    background: $turquoise;
+  }
+  .stappen {
+    width: 100vw;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    z-index: 2;
+    .stap {
+      margin: 0px 15px;
+      .stap-img-outer {
+        min-height: 374px;
+        width: 100%;
+        overflow: hidden;
+        .stap--img {
+          height: 374px;
+          background-size: cover;
+          background-position: center center;
+          -webkit-transition: all 6s ease-in-out;
+          -moz-transition: all 6s ease-in-out;
+          -o-transition: all 6s ease-in-out;
+          transition: all 6s ease-in-out;
+        }
+      }
+      .stap--total {
+        font-family: $SilkaBold;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 42px;
+        display: block;
+        padding: 12px 0px 5px 0px;
+      }
+    }
+    .slick-active {
+      cursor: pointer;
+      &:hover {
+        .stap--img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .slick-current {
+      cursor: inherit;
+      &:hover {
+        .stap--img {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.ro {
+  background: $rose;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    color: #ffffff;
+    opacity: 1;
+  }
+  .btn {
+    &:after,
+    &:before {
+      background: #ffffff;
+    }
+  }
+}
+
+// Werkwijze -- Samen van start
+
+.start {
+  background: $turquoise;
+  padding-top: calc(140px + #{$OverlayImg});
+  padding-bottom: 70px;
+  width: 100vw;
+  overflow: hidden;
+  .btn {
+    &:after {
+      background: $yellow;
+    }
+    &:before {
+      background: $yellow;
+    }
+  }
+}
+
+.marq {
+  width: 100vw;
+  display: inline-block;
+  float: none;
+  margin-bottom: 80px;
+  div {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+      font-family: $SilkaBold;
+      font-size: 138px;
+      line-height: 88px;
+      color: $midnight;
+      float: left;
+      white-space: nowrap;
+      strong {
+        font-family: $SilkaBold;
+        font-size: 138px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: $midnight;
+        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-width: 2.5px;
+        -webkit-text-stroke-width: 2.5px;
+      }
+    }
+  }
+}
+
+// Counters
+
+.counters {
+  background: $turquoise;
+  padding: 70px 0px 140px 0px;
+  .counter-value {
+    font-family: $SilkaBold;
+    font-size: 138px;
+    line-height: 88px;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -moz-text-stroke-color: $midnight;
+    -webkit-text-stroke-color: $midnight;
+    -moz-text-stroke-width: 2.5px;
+    -webkit-text-stroke-width: 2.5px;
+    padding-bottom: 40px;
+  }
+  .plus {
+    &:after {
+      content: "+";
+    }
+  }
+  .plus {
+    &:after {
+      content: "+";
+    }
+  }
+  .procent {
+    &:after {
+      content: "%";
+    }
+  }
+}
+
+// Qoute
+
+.qoute {
+  padding: 112px 0px 150px 0px;
+  p {
+    font-family: $SilkaBold;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+// Uitgelichte diensten
+
+.services {
+  position: relative;
+  padding: 30px 0px 150px 0px;
+  h2 {
+    margin-bottom: 48px;
+  }
+  .img {
+    width: 40vw;
+    height: calc(100% + #{$OverlayImg});
+    position: absolute;
+    top: 0px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .service {
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      opacity: 0.5;
+    }
+    h3 {
+      font-family: $SilkaBold;
+      font-size: 24px;
+      line-height: 32px;
+      color: $midnight;
+    }
+    a {
+      width: 100%;
+      display: block;
+    }
+    .icon {
+      min-width: 32px;
+      height: 60px;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+      margin-right: 15px;
+    }
+  }
+  .btn {
+    margin-top: 0px;
+  }
+}
+
+// Section -- Tools
+
+.tools {
+  position: relative;
+  padding: 30px 0px 150px 0px;
+  h2 {
+    margin-bottom: 48px;
+  }
+  .img {
+    width: 40vw;
+    height: calc(100% + #{$OverlayImg});
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .tool {
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      opacity: 0.5;
+    }
+    h3 {
+      font-family: $SilkaBold;
+      font-size: 24px;
+      line-height: 32px;
+      color: $midnight;
+    }
+    a {
+      width: 100%;
+      display: block;
+    }
+    .icon {
+      min-width: 32px;
+      height: 60px;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+      margin-right: 15px;
+    }
+  }
+  .btn {
+    margin-top: 0px;
+  }
+}
+
+// Section laatste vacatures
+
+.vacatures--hp {
+  background: $yellow;
+  padding-top: calc(140px + #{$OverlayImg});
+  padding-bottom: 70px;
+  width: 100vw;
+  overflow: hidden;
+  .marq {
+    h2 {
+      color: #ffffff;
+      strong {
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
+        -moz-text-stroke-width: 2.5px;
+        -webkit-text-stroke-width: 2.5px;
+      }
+    }
+  }
+  .arch--vac-item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ffffff30;
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      font-family: $SilkaBold;
+      font-size: 34px;
+      line-height: 42px;
+      color: #ffffff;
+      margin-bottom: 10px;
+      padding: 0px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $midnight;
+      }
+    }
+    .arch--location {
+      font-size: 20px;
+      line-height: 32px;
+      color: #ffffff;
+      width: 100%;
+      display: block;
+      padding-bottom: 10px;
+    }
+    .arch--btn {
+      font-family: $SilkaBold;
+      font-size: 16px;
+      line-height: 42px;
+      color: #ffffff;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      svg {
+        margin-left: 12px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        color: $midnight;
+        text-decoration: none;
+        svg {
+          margin-left: 18px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 42px;
+      color: #ffffff;
+    }
+  }
+}
+
+// Footer
+
+footer {
+  padding-top: 100px;
+  .branding {
+    img {
+      max-width: 204px;
+    }
+  }
+  .menu-footer-container {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          font-family: $SilkaBold;
+          font-size: 18px;
+          color: $midnight;
+          position: relative;
+          z-index: 2;
+          text-decoration: none;
+          &:after {
+            content: "";
+            background: $turquoise;
+            width: 100%;
+            height: 0%;
+            bottom: -2px;
+            left: 0px;
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+          &:hover:after {
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+  h4 {
+    font-family: $SilkaBold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .socket {
+    height: 100px;
+    span {
+      font-family: $SilkaBold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    ul {
+      margin: 0px;
+      margin-left: -42px;
+      margin-right: -42px;
+      padding: 0px;
+      li {
+        float: left;
+        margin: 0px 42px;
+        list-style: none;
+        a {
+          font-family: $SilkaBold;
+          font-size: 18px;
+          color: $midnight;
+          position: relative;
+          z-index: 2;
+          text-decoration: none;
+          &:after {
+            content: "";
+            background: $turquoise;
+            width: 100%;
+            height: 0%;
+            bottom: -2px;
+            left: 0px;
+            position: absolute;
+            z-index: -1;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+          }
+          &:hover:after {
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+}
