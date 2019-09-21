@@ -491,6 +491,8 @@ nav {
     -moz-text-stroke-width: 2.5px;
     -webkit-text-stroke-width: 2.5px;
     padding-bottom: 40px; }
+  .counters .counter--title {
+    font-size: 18px; }
   .counters .plus:after {
     content: "+"; }
   .counters .plus:after {

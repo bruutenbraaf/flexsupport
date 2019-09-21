@@ -663,6 +663,9 @@ $padding-bottom: 70px;
     -webkit-text-stroke-width: 2.5px;
     padding-bottom: 40px;
   }
+  .counter--title {
+    font-size: 18px;
+  }
   .plus {
     &:after {
       content: "+";
