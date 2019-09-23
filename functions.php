@@ -159,7 +159,7 @@ add_action('acf/init', 'my_acf_init');
 function option_page_posttypes()
 {
 	$args  = array('public'   => true, '_builtin' => false);
-	$excluded_post_types = array('participation', 'partners');
+	$excluded_post_types = array('');
 	$custom_post_types = get_post_types($args);
 	foreach ($custom_post_types as $custom_post_type) {
 		if (in_array($custom_post_type, $excluded_post_types)) { } else {
@@ -185,13 +185,13 @@ function option_page_posttypes()
 							'key' => '' . $custom_post_type . '_archive_title',
 							'label' => 'Archief titel',
 							'name' => '' . $custom_post_type . '_archive_title',
-							'type' => 'text',
+							'type' => 'wysiwyg',
 							'prefix' => '',
 							'instructions' => 'Voor de programmeur, dit veld is te plaatsen met the_field("' . $custom_post_type . '_archive_title", "option")',
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
@@ -213,10 +213,60 @@ function option_page_posttypes()
 							'required' => 0,
 							'conditional_logic' => 0,
 							'wrapper' => array(
-								'width' => '',
+								'width' => '50',
 								'class' => '',
 								'id' => '',
 							),
+							'default_value' => '',
+							'placeholder' => '',
+							'prepend' => '',
+							'append' => '',
+							'maxlength' => '',
+							'readonly' => 0,
+							'disabled' => 0,
+						),
+						array(
+							'key' => '' . $custom_post_type . '_archive_btn',
+							'label' => 'Call to action header',
+							'name' => '' . $custom_post_type . '_archive_btn',
+							'type' => 'link',
+							'prefix' => '',
+							'instructions' => 'Voor de programmeur, dit veld is te plaatsen met the_field("' . $custom_post_type . '_archive_intro", "option")',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '50',
+								'class' => '',
+								'id' => '',
+							),
+							'default_value' => '',
+							'placeholder' => '',
+							'prepend' => '',
+							'append' => '',
+							'maxlength' => '',
+							'readonly' => 0,
+							'disabled' => 0,
+						),
+						array(
+							'key' => '' . $custom_post_type . '_archive_kleur',
+							'label' => 'Pagina kleur',
+							'name' => '' . $custom_post_type . '_archive_kleur',
+							'type' => 'select',
+							'prefix' => '',
+							'instructions' => 'Voor de programmeur, dit veld is te plaatsen met the_field("' . $custom_post_type . '_archive_kleur", "option")',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '50',
+								'class' => '',
+								'id' => '',
+							),
+							'choices' => array(
+								'rose'	=> 'Roze',
+								'green'	=> 'Groen',
+								'yellow'	=> 'Geel',
+							),
+							'allow_null' => 1,
 							'default_value' => '',
 							'placeholder' => '',
 							'prepend' => '',
@@ -248,26 +298,6 @@ function option_page_posttypes()
 }
 add_action('init', 'option_page_posttypes');
 
-
-// adds shortcode for social media
-add_shortcode('mailchimp', 'mailchimp');
-function mailchimp()
-{
-	ob_start();
-	get_template_part('template-parts/mailchimp');
-	$output = ob_get_clean();
-	return $output;
-}
-
-
-add_shortcode('contactpersoon', 'contactpersoon');
-function contactpersoon()
-{
-	ob_start();
-	get_template_part('templates/contactpersoon');
-	$output = ob_get_clean();
-	return $output;
-}
 
 
 
