@@ -195,6 +195,9 @@ nav {
       max-width: 210px;
     }
   }
+  .normal-branding {
+    opacity: 0;
+  }
 }
 .btn--header {
   -webkit-transition: all 0.2s ease-in-out;
@@ -2105,12 +2108,10 @@ ul.uzp__pagination {
 
 @keyframes fadeIn {
   0% {
-    margin-top: -30px;
   }
   100% {
     color: $midnight;
     opacity: 1;
-    margin-bottom: 0px;
   }
 }
 

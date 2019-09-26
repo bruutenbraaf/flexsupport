@@ -3,6 +3,19 @@
 		forceHeight: false
   });
 
+
+jQuery(window).scroll(function() {    
+  var scroll = jQuery(window).scrollTop();
+  if (scroll >= 160) {
+      jQuery(".main-nav ul li a").addClass("colr--changed");
+      jQuery(".main-nav").addClass("colr--changed");
+  } else {
+    jQuery(".main-nav").removeClass("colr--changed");
+      jQuery(".main-nav ul li a").removeClass("colr--changed");
+  }
+});
+
+
 // Scroll to top button
   jQuery('.btp').on('click', function(e) {
     e.preventDefault();
@@ -64,18 +77,5 @@ jQuery('a[href*=\\#]').on('click', function (event) {
   } else if (target.slice(0, 1) === '#') {
       event.preventDefault();
       jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top }, 1000);
-  }
-});
-
-
-
-jQuery(window).scroll(function() {    
-  var scroll = jQuery(window).scrollTop();
-  if (scroll >= 160) {
-      jQuery(".main-nav ul li a").addClass("colr--changed");
-      jQuery(".main-nav").addClass("colr--changed");
-  } else {
-    jQuery(".main-nav").removeClass("colr--changed");
-      jQuery(".main-nav ul li a").removeClass("colr--changed");
   }
 });

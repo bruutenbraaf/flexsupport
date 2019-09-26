@@ -18,7 +18,7 @@
 
 <body id="skrollr-body" <?php $color = get_field('color_page');
                         body_class(array($color, $archiveColor,)); ?>>
-    <nav data-20="background:rgba(255,255,255,0);" data-300="background:rgba(255,255,255,1);">
+    <nav data-20="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-300="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 branding">

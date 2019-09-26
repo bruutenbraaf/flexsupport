@@ -134,6 +134,8 @@ a:hover {
 
 nav .branding img {
   max-width: 210px; }
+nav .normal-branding {
+  opacity: 0; }
 
 .btn--header {
   -webkit-transition: all 0.2s ease-in-out;
@@ -1625,12 +1627,9 @@ ul.uzp__pagination {
   background-image: url(../img/down_dark.svg) !important; }
 
 @keyframes fadeIn {
-  0% {
-    margin-top: -30px; }
   100% {
     color: #001f3f;
-    opacity: 1;
-    margin-bottom: 0px; } }
+    opacity: 1; } }
 .normal-branding {
   position: absolute;
   left: 15px; }
