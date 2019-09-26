@@ -1,20 +1,31 @@
+<?php
+get_header(); ?>
 <?php if (have_rows('header_single')) : ?>
     <?php while (have_rows('header_single')) : the_row(); ?>
         <section class="header--sngl">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4393 26.0607L0.878678 13.5L13.4393 0.939346L15.5607 3.06067L6.62132 12L79 12L79 15L6.62132 15L15.5607 23.9393L13.4393 26.0607Z" fill="#001F3F" />
-                        </svg>
+                    <div class="col-md-1">
+                        <a href="<?php echo site_url(); ?>/vacatures" class="back">
+                            <svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4393 26.0607L0.878678 13.5L13.4393 0.939346L15.5607 3.06067L6.62132 12L79 12L79 15L6.62132 15L15.5607 23.9393L13.4393 26.0607Z" fill="#001F3F" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-md-8">
+                        <a href="<?php echo site_url(); ?>/opleidingen" class="back">
+                            <?php _e('Terug', 'flexsupport'); ?>
+                        </a>
+                    </div>
+                    <div class="col-md-8 offset-md-1">
                         <?php the_sub_field('titel'); ?>
                         <?php the_sub_field('intro_text'); ?>
                         <?php $knop = get_sub_field('knop'); ?>
                         <?php if ($knop) { ?>
                             <a href="<?php echo $knop['url']; ?>" class="btn" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
                         <?php } ?>
+                    </div>
+                    <div class="offset-md-1 col-md-6">
                         <?php //opleiding single fields 
                                 ?>
                         <?php if (have_rows('opleiding_informatie')) : ?>
@@ -27,6 +38,15 @@
                         <?php endif; ?>
                         <?php //end - opleiding single fields 
                                 ?>
+                    </div>
+                    <div class="col-md-5 justify-content-end align-items-end d-flex">
+                        <div>
+                            <a class="small" href="#aanmelden"><?php _e('Direct aanmelden', 'flexsupport'); ?>
+                                <svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M65.5607 0.93932L78.1213 13.5L65.5607 26.0606L63.4393 23.9393L72.3787 15L2.45844e-06 15L1.93391e-06 12L72.3787 12L63.4393 3.06064L65.5607 0.93932Z" fill="#35FFB6" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,3 +128,65 @@
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
+
+<?php if (get_field('aanmeldformulier')) {  ?>
+    <section class="aanmelden-sec" id="aanmelden">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <h2><?php _e('Aanmelden', 'flexsupport'); ?>
+                        <?php $form = get_field('aanmeldformulier');
+                            echo do_shortcode($form); ?>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
+
+
+<?php
+$next_post = get_next_post();
+if (!empty($next_post)) { ?>
+    <section class="nextpost yl">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-6">
+                    <span class="n"><?php _e('Volgende opleiding', 'flexsupport'); ?></span>
+                    <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+                        <h2><?php echo esc_attr($next_post->post_title); ?></h2>
+                    </a>
+                </div>
+                <div class="col-md-2 align-items-center justify-content-end d-flex">
+                    <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
+                        <svg class="arr" width="67" height="27" viewBox="0 0 67 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.5607 26.0605L66.1213 13.4999L53.5607 0.939225L51.4393 3.06054L60.3787 11.9999L0.499999 11.9999L0.499999 14.9999L60.3787 14.9999L51.4393 23.9392L53.5607 26.0605Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } else { ?>
+    <?php $back =  get_post_type_archive_link('opleidingen'); ?>
+    <section class="nextpost yl">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-6">
+                    <span class="n"><?php _e('Einde bereikt', 'flexsupport'); ?></span>
+                    <a href="<?php echo $back; ?>">
+                        <h2><?php _e('Terug naar overzicht?', 'flexsupport'); ?></h2>
+                    </a>
+                </div>
+                <div class="col-md-2 align-items-center justify-content-end d-flex">
+                    <a href="<?php echo $back; ?>">
+                        <svg class="arr" width="67" height="27" viewBox="0 0 67 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.5607 26.0605L66.1213 13.4999L53.5607 0.939225L51.4393 3.06054L60.3787 11.9999L0.499999 11.9999L0.499999 14.9999L60.3787 14.9999L51.4393 23.9392L53.5607 26.0605Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
+
+<?php get_footer(); ?>

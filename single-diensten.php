@@ -2,10 +2,6 @@
 get_header(); ?>
 <?php get_template_part('template-parts/content', 'single'); ?>
 
-
-
-
-
 <?php
 $next_post = get_next_post();
 if (!empty($next_post)) { ?>

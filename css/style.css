@@ -814,6 +814,15 @@ footer {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
 
+.header--sngl ul {
+  margin: 0;
+  padding: 0;
+  margin-left: -24px;
+  margin-right: -24px; }
+  .header--sngl ul li {
+    float: left;
+    list-style: none;
+    margin: 0px 24px; }
 .header--sngl .back {
   color: #001f3f;
   margin-bottom: 32px;
@@ -1375,10 +1384,102 @@ ul.uzp__pagination {
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
-.overv-op .arch-items {
-  border-bottom: 1px solid #EEEEEE;
+.aanmelden-sec {
+  padding: 112px 0px; }
+  .aanmelden-sec input {
+    border: 1px solid #001f3f;
+    width: 100% !important;
+    padding: 26px 16px;
+    height: 80px; }
+  .aanmelden-sec textarea {
+    width: 100%;
+    max-height: 300px;
+    padding: 15px;
+    line-height: 24px;
+    margin-bottom: -30px;
+    border: 1px solid #001f3f; }
+  .aanmelden-sec textarea,
+  .aanmelden-sec input {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .aanmelden-sec textarea::placeholder,
+    .aanmelden-sec input::placeholder {
+      color: #001f3f;
+      opacity: 0.5; }
+    .aanmelden-sec textarea:focus,
+    .aanmelden-sec input:focus {
+      border-color: #35ffb6;
+      outline: none !important; }
+  .aanmelden-sec label {
+    display: block !important;
+    margin: 16px 0px 0px 0px !important;
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #001f3f; }
+  .aanmelden-sec .hidden_label > label {
+    display: none !important; }
+  .aanmelden-sec ul {
+    margin: 0;
+    padding: 0; }
+    .aanmelden-sec ul li {
+      list-style: none; }
+  .aanmelden-sec .gfield_checkbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px; }
+    .aanmelden-sec .gfield_checkbox li {
+      width: 100%;
+      line-height: 19px;
+      height: auto;
+      height: 20p;
+      align-items: center;
+      display: flex; }
+    .aanmelden-sec .gfield_checkbox input {
+      cursor: pointer;
+      border: 1px solid #001f3f;
+      width: 20px !important;
+      -webkit-appearance: none;
+      max-height: 20px;
+      padding: 0px;
+      display: flex;
+      align-items: cene;
+      border-radius: 99px;
+      position: relative;
+      top: 8px;
+      margin-right: 15px; }
+      .aanmelden-sec .gfield_checkbox input:checked {
+        background: #001f3f;
+        background-image: url("../img/check.svg");
+        background-size: 14px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 0px 10px rgba(0, 31, 63, 0.4); }
+      .aanmelden-sec .gfield_checkbox input label {
+        cursor: pointer;
+        width: calc(100% - 20px) !important; }
+  .aanmelden-sec input[type="submit"] {
+    width: auto !important;
+    display: block;
+    height: auto;
+    padding: 15px 30px;
+    line-height: 18px;
+    background: #35ffb6;
+    color: #001f3f;
+    font-family: "SilkaBold", Arial, sans-serif;
+    border: none; }
+    .aanmelden-sec input[type="submit"]:hover {
+      cursor: pointer;
+      background: #001f3f;
+      color: #ffffff; }
+
+.overv-op .arch-items .arch--inner {
+  margin-bottom: 30px;
   padding-bottom: 30px;
-  margin: 30px 0px; }
+  border-bottom: 1px solid #eeeeee; }
   .overv-op .arch-items .arch--inner h3 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 34px;
@@ -1449,5 +1550,42 @@ ul.uzp__pagination {
 
 .yl {
   background: #fdbb2c; }
+
+.yls {
+  background: #fdbb2c; }
+  .yls h1,
+  .yls h2,
+  .yls h3,
+  .yls h4,
+  .yls h5,
+  .yls h6,
+  .yls span,
+  .yls p {
+    color: #ffffff;
+    opacity: 1; }
+
+.gr {
+  background: #35ffb6; }
+  .gr h1,
+  .gr h2,
+  .gr h3,
+  .gr h4,
+  .gr h5,
+  .gr h6,
+  .gr span,
+  .gr p {
+    color: #001f3f; }
+
+.rss {
+  background: #fc1264; }
+  .rss h1,
+  .rss h2,
+  .rss h3,
+  .rss h4,
+  .rss h5,
+  .rss h6,
+  .rss span,
+  .rss p {
+    color: #001f3f; }
 
 /*# sourceMappingURL=style.css.map */
