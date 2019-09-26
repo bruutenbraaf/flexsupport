@@ -11,7 +11,7 @@ get_header(); ?>
                         </svg>
                     </div>
                     <div class="col-md-8 offset-md-2">
-                        <h1><?php the_sub_field('titel'); ?></h1>
+                        <h1><?php the_title();?></h1>
                     </div>
                 </div>
             </div>
@@ -23,7 +23,6 @@ get_header(); ?>
     <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
     </div>
 <?php } ?>
-
 
 
 <section class="about <?php the_sub_field('selecteer_kleur'); ?>">
