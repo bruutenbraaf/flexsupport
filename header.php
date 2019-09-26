@@ -18,7 +18,7 @@
 
 <body id="skrollr-body" <?php $color = get_field('color_page');
                         body_class(array($color, $archiveColor,)); ?>>
-    <nav>
+    <nav data-20="background:rgba(255,255,255,0);" data-300="background:rgba(255,255,255,1);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 branding">
@@ -28,18 +28,22 @@
                                 <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow') { ?>
                                     <?php $light = get_sub_field('light'); ?>
                                     <?php if ($light) { ?>
-                                        <img src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
+                                        <img data-0="opacity: 1;margin-top:-0px;" data-300="opacity:0;margin-top:30px;" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
                                     <?php } ?>
                                 <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
                                     <?php $dark = get_sub_field('dark'); ?>
                                     <?php if ($dark) { ?>
-                                        <img src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
+                                        <img data-0="opacity: 1;margin-top:-0px;" data-300="opacity:0;margin-top:30px;" src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
                                     <?php } ?>
                                 <?php } else { ?>
                                     <?php $normaal = get_sub_field('normaal'); ?>
                                     <?php if ($normaal) { ?>
-                                        <img src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                        <img data-0="opacity: 1;margin-top:-0px;" data-300="opacity:0;margin-top:30px;" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                     <?php } ?>
+                                <?php } ?>
+                                <?php $normaal = get_sub_field('normaal'); ?>
+                                <?php if ($normaal) { ?>
+                                    <img data-0="opacity: 0;margin-top:-30px;" data-300="opacity:1;margin-top:15px;"class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                 <?php } ?>
                             </a>
                         <?php endwhile; ?>

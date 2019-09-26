@@ -1625,7 +1625,6 @@ $pMargin: 135px;
     background: $rose;
   }
   nav {
-    background: $rose;
     ul {
       li {
         a {
@@ -2079,5 +2078,60 @@ ul.uzp__pagination {
   span,
   p {
     color: $midnight;
+  }
+}
+
+@for $i from 1 through 10 {
+  .main-nav {
+    ul {
+      li:nth-child(#{$i}n) a {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+}
+
+.colr--changed {
+  animation: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.colr--changed .menu-item-has-children {
+  &:after {
+    background-image: url(../img/down_dark.svg) !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    margin-top: -30px;
+  }
+  100% {
+    color: $midnight;
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
+
+.normal-branding {
+  position: absolute;
+  left: 15px;
+}
+
+.colr--shown {
+  animation: fadeInBranding;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInBranding {
+  0% {
+    margin-top: -30px;
+  }
+  100% {
+    color: $midnight;
+    opacity: 1;
+    margin-bottom: 0px;
   }
 }
