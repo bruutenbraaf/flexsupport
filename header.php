@@ -15,30 +15,33 @@
     <?php $currentArchive  = get_post_type(get_the_ID()); ?>
     <?php $archiveColor = get_field('' . $currentArchive . '_archive_kleur', 'option'); ?>
 <?php } ?>
+
 <body id="skrollr-body" <?php $color = get_field('color_page');
-        body_class(array($color, $archiveColor,)); ?>>
+                        body_class(array($color, $archiveColor,)); ?>>
     <nav>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-3 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
-                            <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow') { ?>
-                                <?php $light = get_sub_field('light'); ?>
-                                <?php if ($light) { ?>
-                                    <img src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
+                            <a href="<?php echo get_home_url(); ?>">
+                                <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow') { ?>
+                                    <?php $light = get_sub_field('light'); ?>
+                                    <?php if ($light) { ?>
+                                        <img src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
+                                    <?php } ?>
+                                <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
+                                    <?php $dark = get_sub_field('dark'); ?>
+                                    <?php if ($dark) { ?>
+                                        <img src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
+                                    <?php } ?>
+                                <?php } else { ?>
+                                    <?php $normaal = get_sub_field('normaal'); ?>
+                                    <?php if ($normaal) { ?>
+                                        <img src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                    <?php } ?>
                                 <?php } ?>
-                            <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
-                                <?php $dark = get_sub_field('dark'); ?>
-                                <?php if ($dark) { ?>
-                                    <img src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
-                                <?php } ?>
-                            <?php } else { ?>
-                                <?php $normaal = get_sub_field('normaal'); ?>
-                                <?php if ($normaal) { ?>
-                                    <img src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
-                                <?php } ?>
-                            <?php } ?>
+                            </a>
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
