@@ -377,7 +377,6 @@ nav {
 .werkwijze {
   padding-top: 80px;
   overflow: hidden;
-  padding-bottom: 70px;
   position: relative; }
   .werkwijze:after {
     content: "";
