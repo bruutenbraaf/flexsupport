@@ -4,7 +4,7 @@ get_header(); ?>
 <?php
 // Define taxonomy prefix
 // Replace NULL with the name of the taxonomy eg 'category'
-$taxonomy_prefix = 'branches';
+$taxonomy_prefix = 'nieuws_categorie';
 
 // Define term ID
 // Replace NULL with ID of term to be queried eg '123' 
