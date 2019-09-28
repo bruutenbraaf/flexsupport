@@ -116,58 +116,324 @@ get_header(); ?>
         <?php elseif (get_row_layout() == 'volledige_afbeelding') : ?>
             <?php $afbeelding = get_sub_field('afbeelding'); ?>
             <?php if ($afbeelding) { ?>
-                <img src=" <?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
+                <div class="full--img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                </div>
             <?php } ?>
+        <?php elseif (get_row_layout() == 'klanten') : ?>
+            <section class="customers <?php the_sub_field('selecteer_kleur'); ?>">
+                <div class="marq">
+                    <div data-bottom="left:-20vw;" data-top="left:0vw;"><?php the_sub_field('titel'); ?></div>
+                    <div data-bottom="right:-20vw;" data-top="right:0vw;" style="float:right;"><?php the_sub_field('titel'); ?></div>
+                </div>
+                <?php $selecteer_klanten_om_te_tonen = get_sub_field('selecteer_klanten_om_te_tonen'); ?>
+                <?php if ($selecteer_klanten_om_te_tonen) : ?>
+                    <div class="customers-over">
+                        <div class="row">
+                            <?php foreach ($selecteer_klanten_om_te_tonen as $post) :  ?>
+                                <?php setup_postdata($post); ?>
+                                <div class="col-md-3 customer text-center">
+                                    <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url($post, 'large'); ?>"></a>
+                                </div>
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </section>
+        <?php elseif (get_row_layout() == 'diensten_static') : ?>
+            <section class="overv services">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <?php if (get_sub_field('zelf_diensten_selecteren') == 1) { ?>
+                                <?php $selecteer_diensten_om_te_tonen = get_sub_field('selecteer_diensten_om_te_tonen'); ?>
+                                <?php if ($selecteer_diensten_om_te_tonen) : ?>
+                                    <div class="arch-items">
+                                        <?php foreach ($selecteer_diensten_om_te_tonen as $post) :  ?>
+                                            <div class="arch--item">
+                                                <div class="arch--inner">
+                                                    <div class="align-items-center row">
+                                                        <div class="col-md-6">
+                                                            <a href="<?php the_permalink() ?>">
+                                                                <?php setup_postdata($post); ?>
+                                                                <h3><?php the_title(); ?></h3>
+                                                                <?php if (have_rows('homepagina_gegevens', $post->ID)) : ?>
+                                                                    <?php while (have_rows('homepagina_gegevens', $post->ID)) : the_row(); ?>
+                                                                        <p><?php the_sub_field('intro_tekst'); ?></p>
+                                                                    <?php endwhile; ?>
+                                                                <?php endif; ?>
+                                                            </a>
+                                                            <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <a href="<?php the_permalink() ?>">
+                                                                <div class="thumb-crop">
+                                                                    <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                        <?php wp_reset_postdata(); ?>
+                                    </div>
+                                <?php endif; ?>
+                            <?php } else { ?>
+                                <?php $loop = new WP_Query(array(
+                                                    'post_type' => 'diensten',
+                                                    'posts_per_page' => 3,
+                                                    'order' => 'DESC'
+                                                )); ?>
+                                <?php if ($loop->have_posts()) : ?>
+                                    <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                                        <div class="arch--item">
+                                            <div class="arch--inner">
+                                                <div class="align-items-center row">
+                                                    <div class="col-md-6">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <?php setup_postdata($post); ?>
+                                                            <h3><?php the_title(); ?></h3>
+                                                            <?php if (have_rows('homepagina_gegevens', $post->ID)) : ?>
+                                                                <?php while (have_rows('homepagina_gegevens', $post->ID)) : the_row(); ?>
+                                                                    <p><?php the_sub_field('intro_tekst'); ?></p>
+                                                                <?php endwhile; ?>
+                                                            <?php endif; ?>
+                                                        </a>
+                                                        <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <a href="<?php the_permalink() ?>">
+                                                            <div class="thumb-crop">
+                                                                <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php endif; ?>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php elseif (get_row_layout() == 'qoute') : ?>
+            <section class="qoute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-1">
+                            <p><?php the_sub_field('uw_qoute'); ?></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php elseif (get_row_layout() == 'diensten__tools') : ?>
+            <?php if (get_sub_field('toon_afbeelding_links_of_rechts') == 1) { ?>
+                <section class="services ts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-md-5 col-md-6">
+                                <h2><?php the_sub_field('titel'); ?></h2>
+                                <?php $selecteer_diensten_of_tools = get_sub_field('selecteer_diensten_of_tools'); ?>
+                                <?php if ($selecteer_diensten_of_tools) : ?>
+                                    <div class="row">
+                                        <?php foreach ($selecteer_diensten_of_tools as $post) :  ?>
+                                            <?php setup_postdata($post); ?>
+                                            <div class="col-md-6 service">
+                                                <?php if (have_rows('homepagina_gegevens')) : ?>
+                                                    <?php while (have_rows('homepagina_gegevens')) : the_row(); ?>
+                                                        <div class="d-flex">
+                                                            <?php $icon = get_sub_field('icon'); ?>
+                                                            <?php if ($icon) { ?>
+                                                                <div class="icon" style="background-image:url(<?php echo $icon['sizes']['thumbnail']; ?>);">
+                                                                </div>
+                                                            <?php } ?>
+                                                            <div class="inf">
+                                                                <a href="<?php the_permalink(); ?>">
+                                                                    <h3><?php the_title(); ?></h3>
+                                                                </a>
+                                                                <p><?php the_sub_field('intro_tekst'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                    <?php endwhile; ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php endforeach; ?>
+                                        <?php wp_reset_postdata(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php $alle_diensten_knop = get_sub_field('alle_diensten_knop'); ?>
+                                <?php if ($alle_diensten_knop) { ?>
+                                    <a class="btn" href="<?php echo $alle_diensten_knop['url']; ?>" target="<?php echo $alle_diensten_knop['target']; ?>"><?php echo $alle_diensten_knop['title']; ?></a>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php $afbeelding = get_sub_field('afbeelding'); ?>
+                    <?php if ($afbeelding) { ?>
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                        </div>
+                    <?php } ?>
+                </section>
+            <?php } else { ?>
+                <section class="tools">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 offset-md-1">
+                                <h2><?php the_sub_field('titel'); ?></h2>
+                                <?php $selecteer_diensten_of_tools = get_sub_field('selecteer_diensten_of_tools'); ?>
+                                <?php if ($selecteer_diensten_of_tools) : ?>
+                                    <div class="row">
+                                        <?php foreach ($selecteer_diensten_of_tools as $post) :  ?>
+                                            <?php setup_postdata($post); ?>
+                                            <div class="col-md-6 tool">
+                                                <?php if (have_rows('homepagina_gegevens')) : ?>
+                                                    <?php while (have_rows('homepagina_gegevens')) : the_row(); ?>
+                                                        <div class="d-flex">
+                                                            <?php $icon = get_sub_field('icon'); ?>
+                                                            <?php if ($icon) { ?>
+                                                                <div class="icon" style="background-image:url(<?php echo $icon['sizes']['thumbnail']; ?>);">
+                                                                </div>
+                                                            <?php } ?>
+                                                            <div class="inf">
+                                                                <a href="<?php the_permalink(); ?>">
+                                                                    <h3><?php the_title(); ?></h3>
+                                                                </a>
+                                                                <p><?php the_sub_field('intro_tekst'); ?></p>
+                                                            </div>
+                                                        </div>
+                                                    <?php endwhile; ?>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php endforeach; ?>
+                                        <?php wp_reset_postdata(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php $alle_tools_knop = get_sub_field('alle_tools_knop'); ?>
+                                <?php if ($alle_tools_knop) { ?>
+                                    <a class="btn" href="<?php echo $alle_tools_knop['url']; ?>" target="<?php echo $alle_tools_knop['target']; ?>"><?php echo $alle_tools_knop['title']; ?></a>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                    <?php $afbeelding = get_sub_field('afbeelding'); ?>
+                    <?php if ($afbeelding) { ?>
+                        <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                        </div>
+                    <?php } ?>
+                </section>
+            <?php } ?>
+        <?php elseif (get_row_layout() == 'werkwijze') : ?>
+            <section class="werkwijze">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <?php the_sub_field('titel'); ?>
+                            <?php if (have_rows('stappen')) : ?>
+                                <?php $total = 0; ?>
+                                <?php while (have_rows('stappen')) : the_row(); ?>
+                                    <?php $total++; ?>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                            <?php if (have_rows('stappen')) : ?>
+                                <?php $count = 0; ?>
+                                <div class="stappen">
+                                    <?php while (have_rows('stappen')) : the_row(); ?>
+                                        <?php $count++; ?>
+                                        <div class="stap">
+                                            <?php $afbeelding = get_sub_field('afbeelding'); ?>
+                                            <?php if ($afbeelding) { ?>
+                                                <div class="stap-img-outer">
+                                                    <div class="stap--img" style="background-image:url(<?php echo $afbeelding['sizes']['medium']; ?>);">
+                                                    </div>
+                                                </div>
+                                            <?php } ?>
+                                            <span class="stap--total"><?php echo $count; ?> / <?php echo $total; ?></span>
+                                            <span class="titel"><?php the_sub_field('titel'); ?></span>
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
+                                <script>
+                                    jQuery(document).ready(function() {
+                                        jQuery('.stappen').slick({
+                                            infinite: true,
+                                            slidesToShow: 2,
+                                            slidesToScroll: 1,
+                                            arrows: false,
+                                            focusOnSelect: true,
+                                            centerMode: false,
+                                            dots: false,
+                                            lazyLoaded: true,
+                                        });
+                                    });
+                                </script>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php elseif (get_row_layout() == 'team') : ?>
+            <section class="team <?php the_sub_field('selecteer_kleur'); ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 offset-md-1">
+                            <span class="sub">
+                                <?php the_sub_field('subtitel'); ?>
+                            </span>
+                        </div>
+                        <div class="col-md-8">
+                            <?php the_sub_field('titel'); ?>
+                        </div>
+                        <div class="col-md-10 offset-md-1">
+                            <div class="row">
+                                <?php $selecteer_werknemers_om_te_tonen = get_sub_field('selecteer_werknemers_om_te_tonen'); ?>
+                                <?php if ($selecteer_werknemers_om_te_tonen) : ?>
+                                    <?php foreach ($selecteer_werknemers_om_te_tonen as $post) :  ?>
+                                        <?php setup_postdata($post); ?>
+                                        <div class="col-md-6 member">
+                                            <div class="img-holder">
+                                                <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);?>">
+                                                </div>
+                                            </div>
+                                            <span class="name"><?php the_title(); ?></span>
+                                            <?php if (have_rows('informatie_werknemer')) : ?>
+                                                <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
+                                                    <a class="email" href="maitlo:<?php the_sub_field('e-mailadres'); ?>"><?php the_sub_field('e-mailadres'); ?></a>
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                    <?php endforeach; ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php elseif (get_row_layout() == 'logos') : ?>
+            <section class="lgs">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <?php if (have_rows('upload_logos')) : ?>
+                            <?php while (have_rows('upload_logos')) : the_row(); ?>
+                                <?php $logo = get_sub_field('logo'); ?>
+                                <?php if ($logo) { ?>
+                                    <div class="p-2">
+                                        <img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+                                    </div>
+                                <?php } ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </section>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
-
-<?php
-$next_post = get_next_post();
-if (!empty($next_post)) { ?>
-    <section class="nextpost">
-        <div class="container">
-            <div class="row">
-                <div class="offset-md-2 col-md-6">
-                    <span class="n"><?php _e('Volgende dienst', 'flexsupport'); ?></span>
-                    <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
-                        <h2><?php echo esc_attr($next_post->post_title); ?></h2>
-                    </a>
-                </div>
-                <div class="col-md-2 align-items-center justify-content-end d-flex">
-                    <a href="<?php echo esc_url(get_permalink($next_post->ID)); ?>">
-                        <svg class="arr" width="67" height="27" viewBox="0 0 67 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.5607 26.0605L66.1213 13.4999L53.5607 0.939225L51.4393 3.06054L60.3787 11.9999L0.499999 11.9999L0.499999 14.9999L60.3787 14.9999L51.4393 23.9392L53.5607 26.0605Z" fill="white" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php } else { ?>
-    <?php $back =  get_post_type_archive_link('diensten'); ?>
-    <section class="nextpost">
-        <div class="container">
-            <div class="row">
-                <div class="offset-md-2 col-md-6">
-                    <span class="n"><?php _e('Einde bereikt', 'flexsupport'); ?></span>
-                    <a href="<?php echo $back; ?>">
-                        <h2><?php _e('Terug naar overzicht?', 'flexsupport'); ?></h2>
-                    </a>
-                </div>
-                <div class="col-md-2 align-items-center justify-content-end d-flex">
-                    <a href="<?php echo $back; ?>">
-                        <svg class="arr" width="67" height="27" viewBox="0 0 67 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.5607 26.0605L66.1213 13.4999L53.5607 0.939225L51.4393 3.06054L60.3787 11.9999L0.499999 11.9999L0.499999 14.9999L60.3787 14.9999L51.4393 23.9392L53.5607 26.0605Z" fill="white" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php } ?>
-
-<?php get_footer(); ?>
-
 
 <?php get_footer(); ?>
