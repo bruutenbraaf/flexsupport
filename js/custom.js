@@ -79,3 +79,9 @@ jQuery('a[href*=\\#]').on('click', function (event) {
       jQuery('html,body').animate({ scrollTop: jQuery(this.hash).offset().top }, 1000);
   }
 });
+
+
+jQuery(".dwn").click(function() {
+  var cls = jQuery(this).closest("section").next().offset().top + -100;
+  jQuery("html, body").animate({scrollTop: cls}, "slow");
+});

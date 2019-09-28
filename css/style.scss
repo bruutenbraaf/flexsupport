@@ -142,6 +142,10 @@ a {
   text-decoration: none;
 }
 
+.dwn {
+  cursor: pointer;
+}
+
 .secondair {
   overflow: hidden;
   color: #ffffff;
@@ -438,6 +442,13 @@ nav {
     }
     .dwn {
       margin-left: 40px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        margin-top: 10px;
+      }
     }
   }
   .int {
@@ -981,6 +992,13 @@ footer {
     }
     .dwn {
       margin-left: 40px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        margin-top: 10px;
+      }
     }
   }
   .int {
@@ -1151,6 +1169,13 @@ footer {
     }
     .dwn {
       margin-left: 40px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        margin-top: 10px;
+      }
     }
   }
   .int {
@@ -1858,7 +1883,14 @@ $pMargin: 135px;
       transition: all 0.4s ease-in-out;
     }
   }
-  .dwn  {
+  .dwn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      margin-top: 10px;
+    }
     svg {
       path {
         fill: $midnight;
@@ -2333,6 +2365,13 @@ ul.uzp__pagination {
       }
     }
     .dwn {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        margin-top: 10px;
+      }
       svg {
         path {
           fill: $midnight;

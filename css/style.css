@@ -92,6 +92,9 @@ a:hover {
   white-space: nowrap;
   text-decoration: none; }
 
+.dwn {
+  cursor: pointer; }
+
 .secondair {
   overflow: hidden;
   color: #ffffff;
@@ -328,7 +331,13 @@ nav {
       -moz-text-stroke-width: 4px;
       -webkit-text-stroke-width: 4px; }
   .header--hp .container .dwn {
-    margin-left: 40px; }
+    margin-left: 40px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .header--hp .container .dwn:hover {
+      margin-top: 10px; }
 .header--hp .int {
   margin-left: 60px; }
   .header--hp .int p {
@@ -738,7 +747,13 @@ footer {
       font-size: 138px;
       line-height: 144px; }
   .header--arch .container .dwn {
-    margin-left: 40px; }
+    margin-left: 40px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .header--arch .container .dwn:hover {
+      margin-top: 10px; }
 .header--arch .int p {
   margin: 0;
   padding: 0;
@@ -866,7 +881,13 @@ footer {
     font-size: 20px;
     line-height: 32px; }
   .header--sngl .container .dwn {
-    margin-left: 40px; }
+    margin-left: 40px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .header--sngl .container .dwn:hover {
+      margin-top: 10px; }
 .header--sngl .int {
   margin-left: 60px; }
   .header--sngl .int p {
@@ -1400,8 +1421,15 @@ footer {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
-.green .dwn svg path {
-  fill: #001f3f; }
+.green .dwn {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .green .dwn:hover {
+    margin-top: 10px; }
+  .green .dwn svg path {
+    fill: #001f3f; }
 
 .yellow .header--hp {
   background: #fdbb2c; }
@@ -1760,8 +1788,15 @@ ul.uzp__pagination {
       -webkit-text-stroke-width: 4px; }
   .green .header--arch .int p {
     color: #001f3f; }
-  .green .header--arch .dwn svg path {
-    fill: #001f3f; }
+  .green .header--arch .dwn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .green .header--arch .dwn:hover {
+      margin-top: 10px; }
+    .green .header--arch .dwn svg path {
+      fill: #001f3f; }
 .green .btn--header {
   margin: 0px 15px; }
   .green .btn--header:after {
