@@ -61,6 +61,20 @@
                     </div>
                 </div>
             </section>
+        <?php elseif (get_row_layout() == 'volle_breedte_text_geen_subtitel') : ?>
+            <section class="about <?php the_sub_field('selecteer_kleur'); ?>">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <?php the_sub_field('content'); ?>
+                            <?php $knop = get_sub_field('knop'); ?>
+                            <?php if ($knop) { ?>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <?php elseif (get_row_layout() == 'carrousel') : ?>
             <div class="carrousel">
                 <?php if (have_rows('afbeeldingen')) : ?>
