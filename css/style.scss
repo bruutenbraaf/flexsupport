@@ -3207,6 +3207,7 @@ $hamburgerwidth: 26px;
   left: 0;
   top: 0;
   z-index: 88;
+  pointer-events: none;
   h2 {
     position: fixed;
     top: 10px;
@@ -3337,6 +3338,7 @@ $hamburgerwidth: 26px;
 }
 
 .is_visible {
+  pointer-events: all;
   h2 {
     top: 36px;
     opacity: 1;

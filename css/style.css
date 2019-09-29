@@ -2456,7 +2456,8 @@ ul.uzp__pagination {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 88; }
+  z-index: 88;
+  pointer-events: none; }
   .mobile-nav-fs h2 {
     position: fixed;
     top: 10px;
@@ -2572,25 +2573,27 @@ ul.uzp__pagination {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
 
-.is_visible h2 {
-  top: 36px;
-  opacity: 1;
-  transition-delay: 0.2s; }
-.is_visible:after {
-  width: 100vw; }
-.is_visible:before {
-  width: 100vw; }
-.is_visible .bg {
-  width: 100vw; }
-.is_visible .inner ul li {
-  border-bottom: 1px solid #eeeeee; }
-  .is_visible .inner ul li a {
-    opacity: 1 !important;
-    padding-left: 0px; }
-.is_visible .inner ul .menu-item-has-children:after {
-  top: 26px;
-  opacity: 1;
-  transition-delay: 0.2s; }
+.is_visible {
+  pointer-events: all; }
+  .is_visible h2 {
+    top: 36px;
+    opacity: 1;
+    transition-delay: 0.2s; }
+  .is_visible:after {
+    width: 100vw; }
+  .is_visible:before {
+    width: 100vw; }
+  .is_visible .bg {
+    width: 100vw; }
+  .is_visible .inner ul li {
+    border-bottom: 1px solid #eeeeee; }
+    .is_visible .inner ul li a {
+      opacity: 1 !important;
+      padding-left: 0px; }
+  .is_visible .inner ul .menu-item-has-children:after {
+    top: 26px;
+    opacity: 1;
+    transition-delay: 0.2s; }
 
 .mobile_is_visible {
   box-shadow: rgba(183, 183, 183, 0) 0px 0px 23px !important;
