@@ -20,9 +20,6 @@
   font-size: 16px;
   color: #001f3f; }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80vw; } }
 h2 {
   font-family: "SilkaBold", Arial, sans-serif;
   font-size: 79px;
@@ -2058,6 +2055,9 @@ ul.uzp__pagination {
     color: #001f3f;
     opacity: 1;
     margin-bottom: 0px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90vw; } }
 @media (min-width: 1550px) {
   .header--sngl .container h1 {
     font-size: 94px;
@@ -2082,5 +2082,179 @@ ul.uzp__pagination {
     .header--sngl .container h1 strong {
       font-size: 94px;
       line-height: 112px; } }
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none; }
+
+  .mobile-nav {
+    display: none !important; } }
+@media (max-width: 1024px) {
+  .footer-con .row {
+    width: 100%; }
+
+  .qoute {
+    padding: 80px 0px 40px; }
+
+  .force {
+    max-width: 100%;
+    flex: 100%;
+    margin-left: 15px; }
+
+  .container {
+    max-width: 98vw; }
+
+  nav .main-nav {
+    display: none !important; }
+  nav .mobile-nav {
+    display: block !important; }
+    nav .mobile-nav .hamburger {
+      width: 30px;
+      height: 30px;
+      margin-left: auto; }
+      nav .mobile-nav .hamburger div {
+        width: 100%;
+        height: 2px;
+        background: #ffffff;
+        margin: 5px 0px; }
+
+  .header--hp .container {
+    padding-top: 136px; }
+    .header--hp .container h1 {
+      font-size: 94px;
+      padding-bottom: 0px; }
+      .header--hp .container h1 strong {
+        font-size: 94px; }
+  .header--hp .int {
+    order: 1;
+    margin-right: 30px;
+    padding-bottom: 30px; }
+  .header--hp .dwn {
+    order: 3;
+    margin-left: auto !important;
+    margin-right: 30px; }
+  .header--hp .hp--btns {
+    order: 2; }
+  .header--hp .m-flex {
+    flex-wrap: wrap; }
+
+  .full--img {
+    height: 50vh; }
+
+  .about .sub {
+    font-size: 18px; }
+  .about h2 {
+    font-size: 48px;
+    line-height: 65px;
+    padding-bottom: 30px; }
+
+  h2 {
+    font-size: 48px;
+    line-height: 65px;
+    padding-bottom: 30px; }
+
+  .marq div h2 {
+    font-size: 74px; }
+    .marq div h2 strong {
+      font-size: 74px;
+      -moz-text-stroke-width: 3px;
+      -webkit-text-stroke-width: 3px; }
+
+  .marq {
+    margin-bottom: 30px; }
+    .marq div {
+      margin-top: 0;
+      padding-bottom: 0px; }
+
+  .start {
+    padding-top: 60px; }
+
+  .vacatures--hp {
+    padding-top: 60px; }
+
+  .services h2 {
+    margin-bottom: 0px; }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap; }
+    .services .container {
+      order: 2;
+      width: 100vw;
+      clear: both;
+      min-width: 100vw; }
+    .services .img {
+      width: 100vw;
+      min-height: 50vh;
+      order: 1;
+      position: inherit;
+      margin-bottom: 30px; }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap; }
+    .tools .container {
+      order: 2;
+      width: 100vw;
+      clear: both;
+      min-width: 100vw; }
+    .tools .img {
+      width: 100vw;
+      min-height: 50vh;
+      order: 1;
+      position: inherit;
+      margin-bottom: 30px; }
+
+  .counters .counter-value {
+    font-size: 80px;
+    padding-bottom: 10px; }
+
+  footer .footer-con {
+    display: flex;
+    flex-wrap: wrap; }
+  footer .branding {
+    margin-bottom: 30px;
+    width: 100%; } }
+@media (max-width: 414px) {
+  .header--hp .container h1 {
+    font-size: 70px;
+    padding-bottom: 0;
+    line-height: 38px; }
+    .header--hp .container h1 strong {
+      font-size: 70px;
+      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      -moz-text-stroke-color: #fff;
+      -webkit-text-stroke-color: #fff;
+      -moz-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 2px; }
+
+  .int {
+    margin-left: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+  .about {
+    padding: 40px 0px; }
+    .about h2 {
+      font-size: 32px;
+      line-height: 44px;
+      padding-bottom: 30px; } }
+@media (max-width: 414px) {
+  .btn--header {
+    padding: 14px 24px; }
+
+  .dwn {
+    display: none; }
+
+  .counters {
+    padding: 0px 0 60px 0; }
+    .counters #counter {
+      flex-wrap: wrap; }
+      .counters #counter .p-2 {
+        width: 100%;
+        padding: 15px 0px !important; }
+
+  footer .widget {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,7 +21,7 @@
     <nav data-20="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-300="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
             <div class="row align-items-center" data-0="height: 136px;" data-300="height: 100;">
-                <div class="col-md-3 branding">
+                <div class="col-md-3 col-6 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
                             <a href="<?php echo get_home_url(); ?>">
@@ -53,8 +53,15 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-md-9 d-flex justify-content-end main-nav">
+                <div class="main-nav col-md-9 d-flex justify-content-end">
                     <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
+                </div>
+                <div class="col-6 d-flex justify-content-end mobile-nav">
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </div>

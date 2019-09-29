@@ -10,8 +10,8 @@ get_header(); ?>
                             <?php the_sub_field('titel'); ?>
                         </div>
                     </div>
-                    <div class="d-flex">
-                        <div class="d-flex flex-nowrap align-items-center offset-md-1">
+                    <div class="d-flex m-flex">
+                        <div class="d-flex flex-nowrap align-items-center offset-md-1 hp--btns">
                             <?php if (have_rows('knoppen')) : ?>
                                 <?php while (have_rows('knoppen')) : the_row(); ?>
                                     <?php $knop = get_sub_field('knop'); ?>
@@ -46,12 +46,12 @@ get_header(); ?>
                 <section class="about <?php the_sub_field( 'selecteer_kleur' ); ?>">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2 offset-md-1">
+                            <div class="col-lg-2 offset-lg-1 col-md-offset-0 col-md-3">
                                 <span class="sub">
                                     <?php the_sub_field('subtitel'); ?>
                                 </span>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8 col-md-9">
                                 <?php the_sub_field('content'); ?>
                                 <?php $knop = get_sub_field('knop'); ?>
                                 <?php if ($knop) { ?>
@@ -65,14 +65,14 @@ get_header(); ?>
                 <section class="services">
                     <div class="container">
                         <div class="row">
-                            <div class="offset-md-5 col-md-6">
+                            <div class="offset-md-5 col-md-6 col-sm-12 force">
                                 <h2><?php the_sub_field('titel'); ?></h2>
                                 <?php $selecteer_diensten_om_te_tonen = get_sub_field('selecteer_diensten_om_te_tonen'); ?>
                                 <?php if ($selecteer_diensten_om_te_tonen) : ?>
                                     <div class="row">
                                         <?php foreach ($selecteer_diensten_om_te_tonen as $post) :  ?>
                                             <?php setup_postdata($post); ?>
-                                            <div class="col-md-6 service">
+                                            <div class="col-md-6 col-sm-6 col-12 service">
                                                 <?php if (have_rows('homepagina_gegevens')) : ?>
                                                     <?php while (have_rows('homepagina_gegevens')) : the_row(); ?>
                                                         <div class="d-flex">
@@ -112,14 +112,14 @@ get_header(); ?>
                 <section class="tools">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 offset-md-1">
+                            <div class="col-md-5 offset-md-1 col-sm-12 force">
                                 <h2><?php the_sub_field('titel'); ?></h2>
                                 <?php $selecteer_tools_om_te_tonen = get_sub_field('selecteer_tools_om_te_tonen'); ?>
                                 <?php if ($selecteer_tools_om_te_tonen) : ?>
                                     <div class="row">
                                         <?php foreach ($selecteer_tools_om_te_tonen as $post) :  ?>
                                             <?php setup_postdata($post); ?>
-                                            <div class="col-md-6 tool">
+                                            <div class="col-md-6 col-sm-6 col-12 tool">
                                                 <?php if (have_rows('homepagina_gegevens')) : ?>
                                                     <?php while (have_rows('homepagina_gegevens')) : the_row(); ?>
                                                         <div class="d-flex">
@@ -163,7 +163,7 @@ get_header(); ?>
                     </div>
                     <div class="container clearfix">
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
                                 <?php the_sub_field('content'); ?>
                                 <?php $knop = get_sub_field('knop'); ?>
                                 <?php if ($knop) { ?>
@@ -196,7 +196,7 @@ get_header(); ?>
                 <section class="qoute">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 offset-md-1">
+                            <div class="col-lg-8 offset-lg-1 col-md-11 col-sm-12">
                                 <p><?php the_sub_field('uw_qoute'); ?></p>
                             </div>
                         </div>
@@ -210,7 +210,7 @@ get_header(); ?>
                     </div>
                     <div class="container clearfix">
                         <div class="row">
-                            <div class="offset-md-3 col-md-6">
+                            <div class="offset-lg-3 col-lg-6 offset-md-1 col-md-10">
                                 <?php echo do_shortcode('[uitzendplaats_latest_vacancies]'); ?>
                             </div>
                         </div>
