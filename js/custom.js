@@ -1,5 +1,6 @@
 // init Skollr
 skrollr.init({
+  forceHeight: false,
   smoothScrolling: true
 });
 
