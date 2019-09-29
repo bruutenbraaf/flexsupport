@@ -18,9 +18,9 @@
 
 <body <?php $color = get_field('color_page');
         body_class(array($color, $archiveColor)); ?>>
-    <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-300="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
+    <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-150="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
-            <div class="row align-items-center" data-0="height: 136px;" data-300="height: 100;">
+            <div class="row align-items-center" data-0="height: 136px;" data-150="height: 100;">
                 <div class="col-6 col-md-6 col-lg-3 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
@@ -28,19 +28,19 @@
                                 <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow') { ?>
                                     <?php $light = get_sub_field('light'); ?>
                                     <?php if ($light) { ?>
-                                        <img data-start="opacity:1;margin-top:-0px;" data-300="opacity:0;margin-top:30px;" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
+                                        <img data-start="opacity:1;margin-top:-0px;" data-150="opacity:0;margin-top:30px;" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
                                         <?php $normaal = get_sub_field('normaal'); ?>
                                         <?php if ($normaal) { ?>
-                                            <img data-start="opacity:0;margin-top:-30px;" data-300="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                            <img data-start="opacity:0;margin-top:-30px;" data-150="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                         <?php } ?>
                                     <?php } ?>
                                 <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
                                     <?php $dark = get_sub_field('dark'); ?>
                                     <?php if ($dark) { ?>
-                                        <img data-start="opacity:1;margin-top:-0px;" data-300="opacity:0;margin-top:30px;" src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
+                                        <img data-start="opacity:1;margin-top:-0px;" data-150="opacity:0;margin-top:30px;" src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
                                         <?php $normaal = get_sub_field('normaal'); ?>
                                         <?php if ($normaal) { ?>
-                                            <img data-start="opacity:0;margin-top:-30px;" data-300="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                            <img data-start="opacity:0;margin-top:-30px;" data-150="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                         <?php } ?>
                                     <?php } ?>
                                 <?php } else { ?>
