@@ -69,7 +69,7 @@
 
 
     <div class="mobile-nav-fs">
-        <h2><?php _e('Navigatie','flexsupport');?></h2>
+        <h2><?php _e('Navigatie', 'flexsupport'); ?></h2>
         <div class="inner">
             <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
         </div>
@@ -77,3 +77,5 @@
         <div class="bg"></div>
         <div class="bg"></div>
     </div>
+
+    <div id="skrollr-body">

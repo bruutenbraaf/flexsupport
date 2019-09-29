@@ -1,12 +1,6 @@
 // init Skollr
 skrollr.init({
-  forceHeight: false
-});
-
-jQuery(window).load(function ($) {
-  skrollr.init({
-    forceHeight: false
-  });
+  smoothScrolling: false
 });
 
 jQuery(window).scroll(function () {
