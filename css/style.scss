@@ -54,6 +54,11 @@ $FullImgHeight: 80vh;
   color: $midnight;
 }
 
+body {
+  height: 100vh;
+  overflow: scroll !important;
+}
+
 h2 {
   font-family: $SilkaBold;
   font-size: 79px;
@@ -2972,10 +2977,4 @@ ul.uzp__pagination {
       margin-bottom: 30px;
     }
   }
-}
-
-#skrollr-body {
-  float: left;
-  width: 100%;
-  height: 100%;
 }
