@@ -195,11 +195,12 @@ a {
 nav {
   .branding {
     img {
-      max-width: 210px;
+      width: 200px;
     }
   }
   .normal-branding {
     opacity: 0;
+    top: 0;
   }
 }
 .btn--header {

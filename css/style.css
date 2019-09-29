@@ -137,9 +137,10 @@ a:hover {
     width: 100%; }
 
 nav .branding img {
-  max-width: 210px; }
+  width: 200px; }
 nav .normal-branding {
-  opacity: 0; }
+  opacity: 0;
+  top: 0; }
 
 .btn--header {
   -webkit-transition: all 0.2s ease-in-out;
