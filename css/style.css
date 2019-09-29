@@ -2223,6 +2223,9 @@ ul.uzp__pagination {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 414px) {
+  nav .branding img {
+    width: 180px; }
+
   .header--hp .container h1 {
     font-size: 54px;
     padding-bottom: 0;
