@@ -2257,5 +2257,9 @@ ul.uzp__pagination {
 
   footer .widget {
     margin-bottom: 30px; } }
+#skrollr-body {
+  float: left;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
