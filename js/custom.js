@@ -1,6 +1,6 @@
 // init Skollr
 skrollr.init({
-  smoothScrolling: false
+  smoothScrolling: true
 });
 
 jQuery(window).scroll(function () {
@@ -35,6 +35,7 @@ jQuery("body").on('click', '.mobile-nav-fs .menu-item-has-children', function ()
 
 
 // Counter
+
 var a = 0;
 jQuery(window).scroll(function () {
 
@@ -65,7 +66,6 @@ jQuery(window).scroll(function () {
     });
     a = 1;
   }
-
 });
 
 
