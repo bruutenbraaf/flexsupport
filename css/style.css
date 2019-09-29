@@ -2101,7 +2101,7 @@ ul.uzp__pagination {
     left: -50px;
     bottom: -50px;
     border-radius: 100%;
-    background: #1cffad;
+    background: #02ffa4;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -2547,13 +2547,17 @@ ul.uzp__pagination {
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
   .mobile-nav-fs .inner {
-    width: 100vw;
+    width: 0vw;
     height: 100vh;
     position: relative;
     z-index: 99;
     display: flex;
     justify-content: left;
-    overflow: scroll; }
+    overflow: scroll;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
     .mobile-nav-fs .inner .menu-hoofdmenu-container {
       width: calc(100vw - 30px);
       margin: 0px 15px;
@@ -2626,6 +2630,8 @@ ul.uzp__pagination {
 
 .is_visible {
   pointer-events: all; }
+  .is_visible .inner {
+    width: 100vw; }
   .is_visible h2 {
     top: 36px;
     opacity: 1;

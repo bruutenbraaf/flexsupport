@@ -16,18 +16,18 @@ jQuery(window).scroll(function () {
 
 
 // Scroll to top button
-jQuery(window).scroll(function() {    
+jQuery(window).scroll(function () {
   var scroll = jQuery(window).scrollTop();
   if (scroll >= 600) {
-      jQuery(".btp").addClass("is--visible");
+    jQuery(".btp").addClass("is--visible");
   } else {
-      jQuery(".btp").removeClass("is--visible");
+    jQuery(".btp").removeClass("is--visible");
   }
 });
 
-jQuery('.btp').on('click', function(e) {
+jQuery('.btp').on('click', function (e) {
   e.preventDefault();
-  jQuery('html, body').animate({scrollTop:0}, '300');
+  jQuery('html, body').animate({ scrollTop: 0 }, '300');
 });
 
 // Hamburger menu
@@ -45,37 +45,37 @@ jQuery("body").on('click', '.mobile-nav-fs .menu-item-has-children', function ()
 
 // Counter
 
-var a = 0;
-jQuery(window).scroll(function () {
+  var a = 0;
+  jQuery(window).scroll(function () {
 
-  var oTop = jQuery('#counter').offset().top - window.innerHeight;
-  if (a == 0 && jQuery(window).scrollTop() > oTop) {
-    jQuery('.counter-value').each(function () {
-      var $this = jQuery(this),
-        countTo = $this.attr('data-count');
-      jQuery({
-        countNum: $this.text()
-      }).animate({
-        countNum: countTo
-      },
+    var oTop = jQuery('#counter').offset().top - window.innerHeight;
+    if (a == 0 && jQuery(window).scrollTop() > oTop) {
+      jQuery('.counter-value').each(function () {
+        var $this = jQuery(this),
+          countTo = $this.attr('data-count');
+        jQuery({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        },
 
-        {
+          {
 
-          duration: 2000,
-          easing: 'swing',
-          step: function () {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
+            duration: 2000,
+            easing: 'swing',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
 
-        });
-    });
-    a = 1;
-  }
-});
+          });
+      });
+      a = 1;
+    }
+  });
 
 
 // Smooth scroll to anchor 

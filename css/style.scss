@@ -2747,7 +2747,7 @@ ul.uzp__pagination {
     left: -50px;
     bottom: -50px;
     border-radius: 100%;
-    background: darken($turquoise, 5%);
+    background: darken($turquoise, 10%);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -3309,13 +3309,17 @@ $hamburgerwidth: 26px;
     transition: all 0.4s ease-in-out;
   }
   .inner {
-    width: 100vw;
+    width: 0vw;
     height: 100vh;
     position: relative;
     z-index: 99;
     display: flex;
     justify-content: left;
     overflow: scroll;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     .menu-hoofdmenu-container {
       width: calc(100vw - 30px);
       margin: 0px 15px;
@@ -3400,6 +3404,9 @@ $hamburgerwidth: 26px;
 
 .is_visible {
   pointer-events: all;
+  .inner {
+    width: 100vw;
+  }
   h2 {
     top: 36px;
     opacity: 1;
