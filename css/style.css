@@ -339,7 +339,7 @@ nav {
       -moz-text-stroke-width: 4px;
       -webkit-text-stroke-width: 4px; }
   .header--hp .container .dwn {
-    margin-left: 40px;
+    margin-left: auto;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -756,7 +756,7 @@ footer {
       font-size: 138px;
       line-height: 144px; }
   .header--arch .container .dwn {
-    margin-left: 40px;
+    margin-left: auto;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -890,7 +890,7 @@ footer {
     font-size: 20px;
     line-height: 32px; }
   .header--sngl .container .dwn {
-    margin-left: 40px;
+    margin-left: auto;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
