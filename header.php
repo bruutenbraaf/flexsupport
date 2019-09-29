@@ -58,9 +58,9 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
                     <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose'){ ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose'){ ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose'){ ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
                     </div>
                 </div>
             </div>

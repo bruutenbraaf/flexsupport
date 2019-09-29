@@ -2788,14 +2788,18 @@ ul.uzp__pagination {
     .mobile-nav {
       display: block !important;
       .hamburger {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 20px;
         margin-left: auto;
         div {
           width: 100%;
           height: 2px;
           background: #ffffff;
           margin: 5px 0px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
@@ -2958,6 +2962,12 @@ ul.uzp__pagination {
 @media (max-width: 414px) {
   .btn--header {
     padding: 14px 24px;
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+  .hp--btns {
+    flex-wrap: wrap !important;
   }
   .dwn {
     display: none;
@@ -2977,4 +2987,8 @@ ul.uzp__pagination {
       margin-bottom: 30px;
     }
   }
+}
+
+.bg--changed {
+  background: $midnight;
 }
