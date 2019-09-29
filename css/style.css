@@ -2202,7 +2202,13 @@ ul.uzp__pagination {
     nav .mobile-nav .hamburger {
       width: 26px;
       height: 24px;
-      margin-left: auto; }
+      margin-left: auto;
+      position: relative;
+      top: 0px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
       nav .mobile-nav .hamburger div {
         width: 100%;
         height: 2px;
@@ -2659,17 +2665,19 @@ ul.uzp__pagination {
     margin-top: -30px;
     opacity: 0; }
 
-.is__open div {
-  background: #001f3f !important; }
-.is__open div:nth-child(1) {
-  transform: rotate(45deg);
-  transform-origin: left; }
-.is__open div:nth-child(2) {
-  width: 0px !important;
-  margin-left: calc(26px / 2) !important; }
-.is__open div:nth-child(3) {
-  transform: rotate(-45deg);
-  transform-origin: left; }
+.is__open {
+  top: 15px !important; }
+  .is__open div {
+    background: #001f3f !important; }
+  .is__open div:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: left; }
+  .is__open div:nth-child(2) {
+    width: 0px !important;
+    margin-left: calc(26px / 2) !important; }
+  .is__open div:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: left; }
 
 .mobile-nav-fs ul li:nth-child(1n) a {
   transition-delay: 0.05s; }

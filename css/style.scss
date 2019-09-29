@@ -2890,6 +2890,12 @@ $hamburgerwidth: 26px;
         width: $hamburgerwidth;
         height: 24px;
         margin-left: auto;
+        position: relative;
+        top: 0px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         div {
           width: 100%;
           height: 2px;
@@ -3451,6 +3457,7 @@ $hamburgerwidth: 26px;
 }
 
 .is__open {
+    top: 15px !important;
   div {
     background: $midnight !important;
   }
