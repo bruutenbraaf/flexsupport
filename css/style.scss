@@ -1777,6 +1777,9 @@ $pMargin: 135px;
 // Color system
 
 .rose {
+  .contactp {
+    background: $rose;
+  }
   .header--hp {
     background: $rose;
   }
@@ -1821,6 +1824,29 @@ $pMargin: 135px;
 }
 
 .green {
+  .contactp {
+    background: $turquoise;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span {
+      color: $midnight;
+    }
+    h1 {
+      strong,
+      b {
+        -moz-text-stroke-color: $midnight;
+        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px;
+      }
+    }
+  }
   .header--hp {
     background: $turquoise;
     h1,
@@ -1900,6 +1926,29 @@ $pMargin: 135px;
 }
 
 .yellow {
+  .contactp {
+    background: $yellow;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span {
+      color: #ffffff;
+    }
+    h1 {
+      strong,
+      b {
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px;
+      }
+    }
+  }
   .header--hp {
     background: $yellow;
   }
@@ -2338,6 +2387,98 @@ ul.uzp__pagination {
       color: $midnight;
     }
   }
+}
+
+// Contactpagina
+
+.contactp {
+  padding-top: calc(80px + #{$NavHeight});
+  padding-bottom: 80px;
+  h1 {
+    font-family: $SilkaBold;
+    font-size: 138px;
+    line-height: 144px;
+    color: #ffffff;
+    padding-bottom: 120px;
+    strong {
+      font-family: $SilkaBold;
+      font-size: 138px;
+      line-height: 144px;
+      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      -moz-text-stroke-color: #fff;
+      -webkit-text-stroke-color: #fff;
+      -moz-text-stroke-width: 4px;
+      -webkit-text-stroke-width: 4px;
+    }
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  b,
+  p,
+  a {
+    color: #ffffff;
+  }
+  form {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        label {
+          color: #ffffff;
+          font-family: $SilkaRegular;
+          font-size: 20px;
+          line-height: 32px;
+        }
+        input[type="text"],
+        textarea {
+          font-family: $SilkaRegular !important;
+          width: 100% !important;
+          padding: 25px 10px !important;
+          color: $midnight !important;
+          background: #ffffff;
+          border: none;
+          margin-bottom: 16px;
+          &:focus {
+            border: 1px solid $turquoise !important;
+          }
+        }
+      }
+    }
+    input[type="submit"] {
+      width: auto !important;
+      display: block;
+      height: auto;
+      padding: 15px 30px;
+      line-height: 18px;
+      background: $turquoise;
+      color: $midnight;
+      font-family: $SilkaBold;
+      margin-top: 16px;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background: $midnight;
+        color: #ffffff;
+      }
+    }
+  }
+  .cinf h2 {
+    font-family: $SilkaBold;
+    font-size: 62px;
+    line-height: 72px;
+  }
+}
+
+.acf-map {
+  width: 100vw;
+  min-height: 50vh;
+  background: red;
 }
 
 // Color system
