@@ -2067,6 +2067,59 @@ ul.uzp__pagination {
     color: #001f3f;
     opacity: 1;
     margin-bottom: 0px; } }
+.btp {
+  width: 52px;
+  height: 130px;
+  background-color: #35ffb6;
+  border-radius: 99px 99px 0px 0px;
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+  right: 4vw;
+  bottom: -130px;
+  z-index: 999;
+  transform-origin: top;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .btp:before {
+    content: "";
+    position: absolute;
+    background: #35ffb6;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    left: 0;
+    top: 0; }
+  .btp:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    min-height: 50px;
+    z-index: -2;
+    left: -50px;
+    bottom: -50px;
+    border-radius: 100%;
+    background: #1cffad;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .btp:hover {
+    color: #fff; }
+  .btp:hover:after {
+    transform: scale(18); }
+  .btp svg {
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+
+.is--visible {
+  border-radius: 10px;
+  bottom: 30px;
+  height: 52px; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
