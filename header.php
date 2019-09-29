@@ -78,4 +78,4 @@
         <div class="bg"></div>
     </div>
 
-    <div id="skrollr-body">
+    <main id="skrollr-body">
