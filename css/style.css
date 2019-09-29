@@ -2216,11 +2216,12 @@ ul.uzp__pagination {
     width: 100%; } }
 @media (max-width: 414px) {
   .header--hp .container h1 {
-    font-size: 70px;
+    font-size: 54px;
     padding-bottom: 0;
-    line-height: 38px; }
+    line-height: 54px; }
     .header--hp .container h1 strong {
-      font-size: 70px;
+      line-height: 54px;
+      font-size: 54px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
       -moz-text-stroke-color: #fff;

@@ -372,7 +372,6 @@ nav {
     }
   }
 }
-
 nav {
   position: fixed;
   width: 100%;
@@ -2920,11 +2919,12 @@ ul.uzp__pagination {
   .header--hp {
     .container {
       h1 {
-        font-size: 70px;
+        font-size: 54px;
         padding-bottom: 0;
-        line-height: 38px;
+        line-height: 54px;
         strong {
-          font-size: 70px;
+          line-height: 54px;
+          font-size: 54px;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
           -moz-text-stroke-color: #fff;

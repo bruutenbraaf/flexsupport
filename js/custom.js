@@ -3,6 +3,11 @@
 		forceHeight: false
   });
 
+  jQuery(window).load(function($) {
+    skrollr.init({
+      forceHeight: false
+    });
+  });
 
 jQuery(window).scroll(function() {    
   var scroll = jQuery(window).scrollTop();
