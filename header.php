@@ -17,11 +17,11 @@
 <?php } ?>
 
 <body <?php $color = get_field('color_page');
-        body_class(array($color, $archiveColor,)); ?>>
+        body_class(array($color, $archiveColor)); ?>>
     <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-300="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
             <div class="row align-items-center" data-0="height: 136px;" data-300="height: 100;">
-                <div class="col-md-3 col-6 branding">
+                <div class="col-6 col-md-6 col-lg-3 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
                             <a href="<?php echo get_home_url(); ?>">
@@ -58,11 +58,22 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
                     <div class="hamburger">
-                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor = 'rose' or $color = 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+
+    <div class="mobile-nav-fs">
+        <h2><?php _e('Navigatie','flexsupport');?></h2>
+        <div class="inner">
+            <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
+        </div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+        <div class="bg"></div>
+    </div>

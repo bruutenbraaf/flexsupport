@@ -2,7 +2,7 @@
 get_header(); ?>
 <?php if (have_rows('header_single')) : ?>
     <?php while (have_rows('header_single')) : the_row(); ?>
-        <section class="header--hp">
+        <section class="header--hp hm">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-1">
@@ -10,7 +10,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="d-flex flex-nowrap align-items-center offset-md-1">
+                    <div class="d-flex flex-nowrap align-items-center offset-md-1 btns">
                         <?php $knop = get_sub_field('knop'); ?>
                         <?php if ($knop) { ?>
                             <a class="btn--header" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
@@ -131,7 +131,7 @@ get_header(); ?>
                         <div class="row">
                             <?php foreach ($selecteer_klanten_om_te_tonen as $post) :  ?>
                                 <?php setup_postdata($post); ?>
-                                <div class="col-md-3 customer text-center">
+                                <div class="col-md-3 customer col-6 text-center">
                                     <a href="<?php the_permalink(); ?>"><img src="<?php echo get_the_post_thumbnail_url($post, 'large'); ?>"></a>
                                 </div>
                             <?php endforeach; ?>

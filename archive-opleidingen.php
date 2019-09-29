@@ -38,7 +38,7 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                     </ul>
                 </div>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 dwn">
                 <svg width="26" height="79" viewBox="0 0 26 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5605 65.5607L12.9999 78.1213L0.439227 65.5607L2.56055 63.4393L11.4999 72.3787L11.4999 -6.14611e-07L14.4999 -4.83477e-07L14.4999 72.3787L23.4392 63.4393L25.5605 65.5607Z" fill="#001F3F" />
                 </svg>
