@@ -182,8 +182,13 @@ get_header(); ?>
                                 <div id="counter" class="d-flex justify-content-between">
                                     <?php while (have_rows('counter_items')) : the_row(); ?>
                                         <div class="p-2 text-center">
-                                            <div class="counter-value <?php the_sub_field('counter_toevoeging'); ?>" data-count="<?php the_sub_field('counter_aantal'); ?>">0</div>
-                                            <span class="counter--title"><?php the_sub_field('counter_titel'); ?></span>
+                                            <?php if (wp_is_mobile()) { ?>
+                                                <div class="counter-value <?php the_sub_field('counter_toevoeging'); ?>"><?php the_sub_field('counter_aantal'); ?></div>
+                                                <span class="counter--title"><?php the_sub_field('counter_titel'); ?></span>
+                                            <?php } else { ?>
+                                                <div class="counter-value <?php the_sub_field('counter_toevoeging'); ?>" data-count="<?php the_sub_field('counter_aantal'); ?>">0</div>
+                                                <span class="counter--title"><?php the_sub_field('counter_titel'); ?></span>
+                                            <?php } ?>
                                         </div>
                                     <?php endwhile; ?>
                                 </div>
