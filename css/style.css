@@ -2459,7 +2459,7 @@ ul.uzp__pagination {
     position: fixed;
     top: 10px;
     left: 15px;
-    z-index: 99;
+    z-index: 100;
     opacity: 0;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -2513,7 +2513,6 @@ ul.uzp__pagination {
       .mobile-nav-fs .inner ul li {
         list-style: none;
         width: 100%;
-        border-bottom: 1px solid #eee;
         padding: 15px 5px;
         border-bottom: 1px solid #eeeeee00;
         -webkit-transition: all 0.2s ease-in-out;
@@ -2536,6 +2535,8 @@ ul.uzp__pagination {
           margin: 0px 15px;
           padding: 0px;
           display: none; }
+          .mobile-nav-fs .inner ul li ul.sub-menu li:last-child {
+            border-bottom: 0px; }
       .mobile-nav-fs .inner ul .menu-item-has-children {
         position: relative; }
         .mobile-nav-fs .inner ul .menu-item-has-children:after {

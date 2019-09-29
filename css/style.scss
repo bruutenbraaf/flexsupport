@@ -885,7 +885,7 @@ $padding-bottom: 70px;
 
 footer {
   padding-top: 100px;
-  overflow:hidden;
+  overflow: hidden;
   .branding {
     img {
       max-width: 204px;
@@ -3208,7 +3208,7 @@ $hamburgerwidth: 26px;
     position: fixed;
     top: 10px;
     left: 15px;
-    z-index: 99;
+    z-index: 100;
     opacity: 0;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -3266,7 +3266,6 @@ $hamburgerwidth: 26px;
       li {
         list-style: none;
         width: 100%;
-        border-bottom: 1px solid #eee;
         padding: 15px 5px;
         border-bottom: 1px solid#eeeeee00;
         -webkit-transition: all 0.2s ease-in-out;
@@ -3290,6 +3289,9 @@ $hamburgerwidth: 26px;
           margin: 0px 15px;
           padding: 0px;
           display: none;
+          li:last-child {
+            border-bottom: 0px;
+          }
         }
       }
       .menu-item-has-children {
