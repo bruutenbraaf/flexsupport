@@ -674,7 +674,8 @@ nav {
       color: #ffffff; }
 
 footer {
-  padding-top: 100px; }
+  padding-top: 100px;
+  overflow: hidden; }
   footer .branding img {
     max-width: 204px; }
   footer .menu-footer-container ul {
