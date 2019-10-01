@@ -33,7 +33,6 @@ get_header(); ?>
                                                     </clipPath>
                                                 </defs>
                                             </svg>
-                                            Ÿ
                                         <?php } ?>
                                         <?php echo $knop['title']; ?></a>
                                 <?php } ?>
