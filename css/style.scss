@@ -1839,6 +1839,11 @@ $pMargin: 135px;
       background: $midnight;
       color: #ffffff;
       text-decoration: none;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
     }
   }
   .secondair {
@@ -1926,6 +1931,11 @@ $pMargin: 135px;
       background: #ffffff;
       color: $midnight !important;
       text-decoration: none;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
     }
   }
   .secondair {
@@ -2009,6 +2019,11 @@ $pMargin: 135px;
       background: $rose;
       color: #ffffff;
       text-decoration: none;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
     }
   }
   .secondair {
