@@ -397,7 +397,14 @@ get_header(); ?>
                                         <?php setup_postdata($post); ?>
                                         <div class="col-md-6 member">
                                             <div class="img-holder">
-                                                <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);?>">
+                                                <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                    <?php if (have_rows('informatie_werknemer')) : ?>
+                                                        <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
+                                                            <div class="informatie">
+                                                                <?php the_sub_field('beschrijving'); ?>
+                                                            </div>
+                                                        <?php endwhile; ?>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                             <span class="name"><?php the_title(); ?></span>

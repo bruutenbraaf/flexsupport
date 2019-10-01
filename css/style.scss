@@ -1720,11 +1720,35 @@ $pMargin: 135px;
       width: 100%;
       height: 310px;
       background-size: cover;
+      position: relative;
       background-position: top center;
       -webkit-transition: all 10s ease-in-out;
       -moz-transition: all 10s ease-in-out;
       -o-transition: all 10s ease-in-out;
       transition: all 10s ease-in-out;
+      .informatie {
+        position: absolute;
+        background: rgba($midnight, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        p {
+          color: #ffffff;
+          opacity: 1;
+        }
+      }
+      &:hover {
+        .informatie {
+          opacity: 1;
+        }
+      }
     }
     &:hover {
       .the--img {
@@ -1802,6 +1826,15 @@ $pMargin: 135px;
   }
   .btn--header {
     background: $turquoise;
+    svg {
+      width: 21px;
+      height: 21px;
+      margin-right: 10px;
+      margin-left: 0;
+      path {
+        fill: $midnight;
+      }
+    }
     &:hover {
       background: $midnight;
       color: #ffffff;
@@ -2259,6 +2292,24 @@ ul.uzp__pagination {
       margin-bottom: 30px;
       padding-bottom: 30px;
       border-bottom: 1px solid #eeeeee;
+      .thumb-crop {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+        .thumb {
+          width: 100%;
+          min-height: 320px;
+          background-size: cover;
+          background-position: center center;
+          -webkit-transition: all 10s ease-in-out;
+          -moz-transition: all 10s ease-in-out;
+          -o-transition: all 10s ease-in-out;
+          transition: all 10s ease-in-out;
+        }
+      }
+      &:hover .thumb {
+        transform: scale(1.2);
+      }
       h3 {
         font-family: $SilkaBold;
         font-size: 34px;
@@ -2709,8 +2760,7 @@ ul.uzp__pagination {
   }
 }
 
-// Back to top 
-
+// Back to top
 
 .btp {
   width: 52px;

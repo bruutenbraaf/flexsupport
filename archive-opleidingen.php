@@ -57,21 +57,35 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                     <div class="arch-items">
                         <?php while (have_posts()) : the_post(); ?>
                             <div class="arch--inner">
-                                <a href="<?php the_permalink() ?>">
-                                    <?php setup_postdata($post); ?>
-                                    <h3><?php the_title(); ?></h3>
-                                    <?php if (have_rows('opleiding_informatie')) : ?>
-                                        <?php while (have_rows('opleiding_informatie')) : the_row(); ?>
-                                            <span class="locat"><?php the_sub_field('locatie'); ?></span>
-                                            <p><?php the_sub_field('korte_omschrijving'); ?></p>
-                                        <?php endwhile; ?>
-                                    <?php endif; ?>
-                                </a>
-                                <a class="moreinfo" href="<?php the_permalink(); ?>"><?php _e('Lees meer', 'flexsupport'); ?>
-                                    <svg width="55" height="27" viewBox="0 0 55 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.0607 0.939331L54.6213 13.5L42.0607 26.0606L39.9393 23.9393L48.8787 15L0 15L0 12L48.8787 12L39.9393 3.06065L42.0607 0.939331Z" />
-                                    </svg>
-                                </a>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <a href="<?php the_permalink() ?>">
+                                            <?php setup_postdata($post); ?>
+                                            <h3><?php the_title(); ?></h3>
+                                            <?php if (have_rows('opleiding_informatie')) : ?>
+                                                <?php while (have_rows('opleiding_informatie')) : the_row(); ?>
+                                                    <span class="locat"><?php the_sub_field('locatie'); ?></span>
+                                                    <p><?php the_sub_field('korte_omschrijving'); ?></p>
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
+                                        </a>
+                                        <a class="moreinfo" href="<?php the_permalink(); ?>"><?php _e('Lees meer', 'flexsupport'); ?>
+                                            <svg width="55" height="27" viewBox="0 0 55 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.0607 0.939331L54.6213 13.5L42.0607 26.0606L39.9393 23.9393L48.8787 15L0 15L0 12L48.8787 12L39.9393 3.06065L42.0607 0.939331Z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="<?php the_permalink() ?>">
+                                            <div class="thumb-crop">
+                                                <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
+                                                <?php $fallback = get_field( 'fallback', 'option' ); ?>
+                                                <div class="thumb" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php }else {?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         <?php endwhile; ?>
                     </div>

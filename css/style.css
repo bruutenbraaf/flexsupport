@@ -1326,11 +1326,30 @@ footer {
       width: 100%;
       height: 310px;
       background-size: cover;
+      position: relative;
       background-position: top center;
       -webkit-transition: all 10s ease-in-out;
       -moz-transition: all 10s ease-in-out;
       -o-transition: all 10s ease-in-out;
       transition: all 10s ease-in-out; }
+      .team .member .the--img .informatie {
+        position: absolute;
+        background: rgba(0, 31, 63, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .team .member .the--img .informatie p {
+          color: #ffffff;
+          opacity: 1; }
+      .team .member .the--img:hover .informatie {
+        opacity: 1; }
     .team .member:hover .the--img {
       transform: scale(1.2); }
   .team h2 {
@@ -1374,6 +1393,13 @@ footer {
   background-image: url(../img/down.svg); }
 .rose .btn--header {
   background: #35ffb6; }
+  .rose .btn--header svg {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    margin-left: 0; }
+    .rose .btn--header svg path {
+      fill: #001f3f; }
   .rose .btn--header:hover {
     background: #001f3f;
     color: #ffffff;
@@ -1724,6 +1750,21 @@ ul.uzp__pagination {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eeeeee; }
+  .overv-op .arch-items .arch--inner .thumb-crop {
+    width: 100%;
+    height: 320px;
+    overflow: hidden; }
+    .overv-op .arch-items .arch--inner .thumb-crop .thumb {
+      width: 100%;
+      min-height: 320px;
+      background-size: cover;
+      background-position: center center;
+      -webkit-transition: all 10s ease-in-out;
+      -moz-transition: all 10s ease-in-out;
+      -o-transition: all 10s ease-in-out;
+      transition: all 10s ease-in-out; }
+  .overv-op .arch-items .arch--inner:hover .thumb {
+    transform: scale(1.2); }
   .overv-op .arch-items .arch--inner h3 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 34px;
