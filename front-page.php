@@ -195,7 +195,7 @@ get_header(); ?>
             <section class="counters">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 offset-md-1">
+                        <div class="col-md-12">
                             <?php if (have_rows('counter_items')) : ?>
                                 <div id="counter" class="d-flex justify-content-between">
                                     <?php while (have_rows('counter_items')) : the_row(); ?>
