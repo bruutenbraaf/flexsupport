@@ -84,7 +84,7 @@ get_header(); ?>
                 <div class="container">
                     <div class="row">
                         <div class="offset-md-5 col-md-6 col-sm-12 force">
-                            <h2><?php the_sub_field('titel'); ?></h2>
+                            <?php the_sub_field('titel'); ?>
                             <?php $selecteer_diensten_om_te_tonen = get_sub_field('selecteer_diensten_om_te_tonen'); ?>
                             <?php if ($selecteer_diensten_om_te_tonen) : ?>
                                 <div class="row">
@@ -131,7 +131,7 @@ get_header(); ?>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5 offset-md-1 col-sm-12 force">
-                            <h2><?php the_sub_field('titel'); ?></h2>
+                            <?php the_sub_field('titel'); ?>
                             <?php $selecteer_tools_om_te_tonen = get_sub_field('selecteer_tools_om_te_tonen'); ?>
                             <?php if ($selecteer_tools_om_te_tonen) : ?>
                                 <div class="row">
