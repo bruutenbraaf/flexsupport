@@ -29,6 +29,7 @@
 						<svg width="55" height="27" viewBox="0 0 55 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M42.0607 0.939453L54.6213 13.5001L42.0607 26.0608L39.9393 23.9395L48.8787 15.0001H0V12.0001H48.8787L39.9393 3.06077L42.0607 0.939453Z" fill="#001F3F" />
 						</svg>
+					</a>
 				</div>
 			</div>
 			<?php $c++; ?>
