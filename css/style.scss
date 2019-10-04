@@ -1535,131 +1535,391 @@ $pMargin: 135px;
   }
 }
 
-// Vacancy details
+// Vacancy details - BACK UP OUD
 
-.vac-inf {
-  span {
-    margin-right: 30px;
-  }
-}
-.about-vacancy {
-  background: $rose;
-  padding-bottom: calc(160px - #{$pMargin});
-  p {
-    margin-bottom: $pMargin;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  span,
-  a,
-  p,
-  b,
-  strong {
-    color: #ffffff;
-    opacity: 1;
-  }
-  b,
-  strong {
-    font-family: $SilkaBold;
-  }
-}
+// .vac-inf {
+//   span {
+//     margin-right: 30px;
+//   }
+// }
+// .about-vacancy {
+//   background: $rose;
+//   padding-bottom: calc(160px - #{$pMargin});
+//   p {
+//     margin-bottom: $pMargin;
+//   }
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6,
+//   span,
+//   a,
+//   p,
+//   b,
+//   strong {
+//     color: #ffffff;
+//     opacity: 1;
+//   }
+//   b,
+//   strong {
+//     font-family: $SilkaBold;
+//   }
+// }
 
-.request-vac {
-  padding: 160px 0px 80px 0px;
-}
+// .request-vac {
+//   padding: 160px 0px 80px 0px;
+// }
 
-.recruiter {
-  padding: 0px 0px 90px 0px;
-  .cpimg {
-    width: 100%;
-    min-height: 310px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: $rose;
-    background-position: center center;
+// .recruiter {
+//   padding: 0px 0px 90px 0px;
+//   .cpimg {
+//     width: 100%;
+//     min-height: 310px;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-color: $rose;
+//     background-position: center center;
+//   }
+//   .cpname {
+//     font-family: $SilkaBold;
+//     font-size: 34px;
+//     line-height: 42px;
+//     color: $midnight;
+//     display: block;
+//     padding-bottom: 20px;
+//     padding-top: 15px;
+//   }
+//   .tel {
+//     font-family: $SilkaBold;
+//     font-size: 18px;
+//     line-height: 24px;
+//     color: $midnight;
+//     position: relative;
+//     overflow: hidden;
+//     padding: 0px 8px;
+//     &:after {
+//       content: "";
+//       position: absolute;
+//       z-index: -1;
+//       width: 100%;
+//       height: 12px;
+//       bottom: 0px;
+//       right: 0px;
+//       background: $turquoise;
+//       -webkit-transition: all 0.2s ease-in-out;
+//       -moz-transition: all 0.2s ease-in-out;
+//       -o-transition: all 0.2s ease-in-out;
+//       transition: all 0.2s ease-in-out;
+//     }
+//     &:before {
+//       content: "";
+//       position: absolute;
+//       z-index: -1;
+//       width: 0px;
+//       height: 12px;
+//       bottom: 0px;
+//       left: 0px;
+//       background: $turquoise;
+//       -webkit-transition: all 0.4s ease-in-out;
+//       -moz-transition: all 0.4s ease-in-out;
+//       -o-transition: all 0.4s ease-in-out;
+//       transition: all 0.4s ease-in-out;
+//     }
+//     &:hover:after {
+//       right: 0px;
+//       width: 0;
+//     }
+//     &:hover:before {
+//       width: 100%;
+//     }
+//   }
+//   .question {
+//     font-family: $SilkaBold;
+//     color: $midnight;
+//     font-size: 18px;
+//     svg {
+//       margin-left: 10px;
+//       -webkit-transition: all 0.4s ease-in-out;
+//       -moz-transition: all 0.4s ease-in-out;
+//       -o-transition: all 0.4s ease-in-out;
+//       transition: all 0.4s ease-in-out;
+//     }
+//     &:hover {
+//       svg {
+//         margin-left: 15px;
+//       }
+//     }
+//   }
+// }
+
+// // Tools services
+// .ts {
+//   padding: 0px;
+//   margin: 80px 0px 80px 0px;
+//   .img {
+//     height: 100%;
+//   }
+// }
+
+.vac-header {
+  padding-top: calc(#{$NavHeight} + 60px);
+  padding-bottom: 60px;
+  .refnr {
+    color: rgba($midnight, 0.5);
   }
-  .cpname {
-    font-family: $SilkaBold;
-    font-size: 34px;
-    line-height: 42px;
-    color: $midnight;
-    display: block;
-    padding-bottom: 20px;
-    padding-top: 15px;
-  }
-  .tel {
-    font-family: $SilkaBold;
-    font-size: 18px;
-    line-height: 24px;
-    color: $midnight;
-    position: relative;
-    overflow: hidden;
-    padding: 0px 8px;
-    &:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 12px;
-      bottom: 0px;
-      right: 0px;
-      background: $turquoise;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 0px;
-      height: 12px;
-      bottom: 0px;
-      left: 0px;
-      background: $turquoise;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
-    }
-    &:hover:after {
-      right: 0px;
-      width: 0;
-    }
-    &:hover:before {
-      width: 100%;
-    }
-  }
-  .question {
-    font-family: $SilkaBold;
-    color: $midnight;
-    font-size: 18px;
+  .posted {
     svg {
-      margin-left: 10px;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out;
+      margin-right: 10px;
+      path {
+        fill: $midnight;
+      }
     }
-    &:hover {
+  }
+  h1 {
+    font-family: $SilkaBold;
+    font-size: 74px;
+    line-height: 144px;
+    display: flex;
+    align-items: flex-end;
+    color: #001f3f;
+  }
+  .uzp__meta {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    span {
+      margin-right: 30px;
       svg {
-        margin-left: 15px;
+        margin-right: 10px;
+        path {
+          fill: $midnight;
+        }
       }
     }
   }
 }
+.vac--inf {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  tr {
+    padding-bottom: 15px;
+    th {
+      text-align: inherit;
+      padding-right: 20px;
+    }
+  }
+}
+.uzp__checkbox input[type="checkbox"] {
+  position: absolute;
+  margin-left: -28px;
+  top: 8px !important;
+  height: 16px !important;
+}
+.app-form {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .uzp__checkbox {
+    label,
+    a {
+      font-family: $SilkaMedium;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: $midnight;
+      position: relative;
+    }
+  }
+}
+.app-form h2 {
+  font-size: 42px;
+  strong,
+  b {
+    font-size: 42px;
+    color: #ffffff;
+    -moz-text-stroke-color: $midnight;
+    -webkit-text-stroke-color: $midnight;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+.uzp {
+  [class*="uzp-col-"] {
+    width: 100%;
+    max-width: 100%;
+  }
+  .uzp__checkbox {
+    padding-left: 25px;
+  }
+  .uzp-row {
+    overflow: visible;
+  }
+  form {
+    margin: 0px 15px;
+    label {
+      width: 100%;
+      display: block;
+      font-family: $SilkaRegular;
+      font-size: 20px;
+      line-height: 32px;
+      padding-left: 0px;
+    }
+    input {
+      border: 1px solid $midnight !important;
+      width: 100% !important;
+      padding: 26px 16px !important;
+      height: 80px !important;
+    }
+    textarea {
+      width: 100%;
+      max-height: 300px;
+      padding: 15px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      border: 1px solid $midnight;
+    }
+    textarea,
+    input {
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      &::placeholder {
+        color: $midnight;
+        opacity: 0.5;
+      }
+      &:focus {
+        border-color: $turquoise;
+        outline: none !important;
+      }
+    }
+    label {
+      display: block !important;
+      margin: 16px 0px 0px 0px !important;
+      font-family: $SilkaRegular;
+      font-size: 20px;
+      line-height: 32px;
+      color: $midnight;
+    }
+    .hidden_label > label {
+      display: none !important;
+    }
+  }
+}
+.recruiter {
+  border: 1px solid #eeeeee;
+  border-radius: 1px;
+  overflow: hidden;
+  .contact-person {
+    border-radius: 1px 1px 0px 0px;
+    overflow: hidden;
+    .heading {
+      background: $midnight;
+      padding: 15px;
+      h2 {
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+      }
+      .cpname {
+        color: #ffffff;
+      }
+      .cpimg {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1px;
+      }
+    }
+  }
+  .recruiterinfo {
+    padding: 15px;
+    h3 {
+      font-family: $SilkaBold;
+      font-size: 18px;
+    }
+    span {
+      display: block;
+      width: 100%;
+      svg {
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        top: 3px;
+      }
+      a {
+        margin-bottom: 10px;
+        color: $midnight;
+        position: relative;
+        &:after {
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 0%;
+          bottom: -2px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover:after {
+          height: 50%;
+        }
+      }
+    }
+  }
+  .vac-act {
+    margin-top: 1px;
+    border-top: 1px solid #eeeeee;
+    padding: 15px;
+    .btn {
+      margin-top: 15px;
+    }
+  }
+}
 
-// Tools services
-.ts {
-  padding: 0px;
-  margin: 80px 0px 80px 0px;
-  .img {
-    height: 100%;
+.btn-apply {
+  font-family: $SilkaBold !important;
+  background: #35ffb6 !important;
+  border: 0px !important;
+  border-radius: 1px !important;
+  color: $midnight !important;
+  width: 100%;
+  height: initial !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 10px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: $midnight !important;
+    color: #ffffff !important;
+  }
+}
+
+.bread {
+  span {
+    font-size: 18px;
+    color: rgba(0, 31, 63, 0.5);
+  }
+  a {
+    font-family: $SilkaRegular;
+    font-size: 18px;
+    color: rgba(0, 31, 63, 0.5);
+  }
+  span.breadcrumb_last {
+    font-size: 18px;
+    color: $midnight;
   }
 }
 
@@ -2837,6 +3097,62 @@ ul.uzp__pagination {
   height: 52px;
 }
 
+.other-pst {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: $rose;
+    position: absolute;
+  }
+  h3 {
+    font-family: $SilkaBold;
+    font-size: 38px;
+  }
+  .other-items {
+    width: 100vw;
+    margin-left: -15px;
+    margin-top: 30px;
+    .thumb-crop {
+      width: 100%;
+      min-height: 330px;
+      position: relative;
+      margin: 0px 30px;
+      .thumb {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        min-height: 330px;
+        width: 100%;
+      }
+      .inf {
+        position: relative;
+        z-index: 2;
+        padding: 30px;
+        h3 {
+          font-family: $SilkaBold;
+          color: #ffffff;
+        }
+        .btn {
+          margin-top: 0px;
+        }
+      }
+    }
+    .arch--item {
+      margin-right: 15px;
+    }
+  }
+}
 // Responsive
 
 @media (min-width: 1200px) {

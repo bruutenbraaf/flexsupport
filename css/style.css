@@ -1174,108 +1174,214 @@ footer {
 .vacancie-overview .uzp__index-item .moreinfo svg path {
   fill: #fc1264; }
 
-.vac-inf span {
-  margin-right: 30px; }
+.vac-header {
+  padding-top: calc(136px + 60px);
+  padding-bottom: 60px; }
+  .vac-header .refnr {
+    color: rgba(0, 31, 63, 0.5); }
+  .vac-header .posted svg {
+    margin-right: 10px; }
+    .vac-header .posted svg path {
+      fill: #001f3f; }
+  .vac-header h1 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 74px;
+    line-height: 144px;
+    display: flex;
+    align-items: flex-end;
+    color: #001f3f; }
+  .vac-header .uzp__meta {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .vac-header .uzp__meta span {
+      margin-right: 30px; }
+      .vac-header .uzp__meta span svg {
+        margin-right: 10px; }
+        .vac-header .uzp__meta span svg path {
+          fill: #001f3f; }
 
-.about-vacancy {
-  background: #fc1264;
-  padding-bottom: calc(160px - 135px); }
-  .about-vacancy p {
-    margin-bottom: 135px; }
-  .about-vacancy h1,
-  .about-vacancy h2,
-  .about-vacancy h3,
-  .about-vacancy h4,
-  .about-vacancy h5,
-  .about-vacancy h6,
-  .about-vacancy span,
-  .about-vacancy a,
-  .about-vacancy p,
-  .about-vacancy b,
-  .about-vacancy strong {
+.vac--inf h2 {
+  font-size: 32px;
+  margin-bottom: 0px;
+  padding: 0; }
+.vac--inf tr {
+  padding-bottom: 15px; }
+  .vac--inf tr th {
+    text-align: inherit;
+    padding-right: 20px; }
+
+.uzp__checkbox input[type="checkbox"] {
+  position: absolute;
+  margin-left: -28px;
+  top: 8px !important;
+  height: 16px !important; }
+
+.app-form {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .app-form .uzp__checkbox label,
+  .app-form .uzp__checkbox a {
+    font-family: "SilkaMedium", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #001f3f;
+    position: relative; }
+
+.app-form h2 {
+  font-size: 42px; }
+  .app-form h2 strong,
+  .app-form h2 b {
+    font-size: 42px;
     color: #ffffff;
-    opacity: 1; }
-  .about-vacancy b,
-  .about-vacancy strong {
-    font-family: "SilkaBold", Arial, sans-serif; }
+    -moz-text-stroke-color: #001f3f;
+    -webkit-text-stroke-color: #001f3f;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; }
 
-.request-vac {
-  padding: 160px 0px 80px 0px; }
+.uzp [class*="uzp-col-"] {
+  width: 100%;
+  max-width: 100%; }
+.uzp .uzp__checkbox {
+  padding-left: 25px; }
+.uzp .uzp-row {
+  overflow: visible; }
+.uzp form {
+  margin: 0px 15px; }
+  .uzp form label {
+    width: 100%;
+    display: block;
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    padding-left: 0px; }
+  .uzp form input {
+    border: 1px solid #001f3f !important;
+    width: 100% !important;
+    padding: 26px 16px !important;
+    height: 80px !important; }
+  .uzp form textarea {
+    width: 100%;
+    max-height: 300px;
+    padding: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    border: 1px solid #001f3f; }
+  .uzp form textarea,
+  .uzp form input {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .uzp form textarea::placeholder,
+    .uzp form input::placeholder {
+      color: #001f3f;
+      opacity: 0.5; }
+    .uzp form textarea:focus,
+    .uzp form input:focus {
+      border-color: #35ffb6;
+      outline: none !important; }
+  .uzp form label {
+    display: block !important;
+    margin: 16px 0px 0px 0px !important;
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #001f3f; }
+  .uzp form .hidden_label > label {
+    display: none !important; }
 
 .recruiter {
-  padding: 0px 0px 90px 0px; }
-  .recruiter .cpimg {
-    width: 100%;
-    min-height: 310px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #fc1264;
-    background-position: center center; }
-  .recruiter .cpname {
-    font-family: "SilkaBold", Arial, sans-serif;
-    font-size: 34px;
-    line-height: 42px;
-    color: #001f3f;
-    display: block;
-    padding-bottom: 20px;
-    padding-top: 15px; }
-  .recruiter .tel {
-    font-family: "SilkaBold", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: #001f3f;
-    position: relative;
-    overflow: hidden;
-    padding: 0px 8px; }
-    .recruiter .tel:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 12px;
-      bottom: 0px;
-      right: 0px;
-      background: #35ffb6;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out; }
-    .recruiter .tel:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 0px;
-      height: 12px;
-      bottom: 0px;
-      left: 0px;
-      background: #35ffb6;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
-    .recruiter .tel:hover:after {
-      right: 0px;
-      width: 0; }
-    .recruiter .tel:hover:before {
+  border: 1px solid #eeeeee;
+  border-radius: 1px;
+  overflow: hidden; }
+  .recruiter .contact-person {
+    border-radius: 1px 1px 0px 0px;
+    overflow: hidden; }
+    .recruiter .contact-person .heading {
+      background: #001f3f;
+      padding: 15px; }
+      .recruiter .contact-person .heading h2 {
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        line-height: normal; }
+      .recruiter .contact-person .heading .cpname {
+        color: #ffffff; }
+      .recruiter .contact-person .heading .cpimg {
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1px; }
+  .recruiter .recruiterinfo {
+    padding: 15px; }
+    .recruiter .recruiterinfo h3 {
+      font-family: "SilkaBold", Arial, sans-serif;
+      font-size: 18px; }
+    .recruiter .recruiterinfo span {
+      display: block;
       width: 100%; }
-  .recruiter .question {
-    font-family: "SilkaBold", Arial, sans-serif;
-    color: #001f3f;
-    font-size: 18px; }
-    .recruiter .question svg {
-      margin-left: 10px;
-      -webkit-transition: all 0.4s ease-in-out;
-      -moz-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
-    .recruiter .question:hover svg {
-      margin-left: 15px; }
+      .recruiter .recruiterinfo span svg {
+        margin-right: 10px;
+        float: left;
+        position: relative;
+        top: 3px; }
+      .recruiter .recruiterinfo span a {
+        margin-bottom: 10px;
+        color: #001f3f;
+        position: relative; }
+        .recruiter .recruiterinfo span a:after {
+          content: "";
+          background: #35ffb6;
+          width: 100%;
+          height: 0%;
+          bottom: -2px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+        .recruiter .recruiterinfo span a:hover:after {
+          height: 50%; }
+  .recruiter .vac-act {
+    margin-top: 1px;
+    border-top: 1px solid #eeeeee;
+    padding: 15px; }
+    .recruiter .vac-act .btn {
+      margin-top: 15px; }
 
-.ts {
-  padding: 0px;
-  margin: 80px 0px 80px 0px; }
-  .ts .img {
-    height: 100%; }
+.btn-apply {
+  font-family: "SilkaBold", Arial, sans-serif !important;
+  background: #35ffb6 !important;
+  border: 0px !important;
+  border-radius: 1px !important;
+  color: #001f3f !important;
+  width: 100%;
+  height: initial !important;
+  display: block !important;
+  text-align: center !important;
+  padding: 10px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .btn-apply:hover {
+    background: #001f3f !important;
+    color: #ffffff !important; }
+
+.bread span {
+  font-size: 18px;
+  color: rgba(0, 31, 63, 0.5); }
+.bread a {
+  font-family: "SilkaRegular", Arial, sans-serif;
+  font-size: 18px;
+  color: rgba(0, 31, 63, 0.5); }
+.bread span.breadcrumb_last {
+  font-size: 18px;
+  color: #001f3f; }
 
 .team {
   position: relative; }
@@ -2166,6 +2272,52 @@ ul.uzp__pagination {
   border-radius: 10px;
   bottom: 30px;
   height: 52px; }
+
+.other-pst {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px; }
+  .other-pst .container {
+    position: relative;
+    z-index: 2; }
+  .other-pst:after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background: #fc1264;
+    position: absolute; }
+  .other-pst h3 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 38px; }
+  .other-pst .other-items {
+    width: 100vw;
+    margin-left: -15px;
+    margin-top: 30px; }
+    .other-pst .other-items .thumb-crop {
+      width: 100%;
+      min-height: 330px;
+      position: relative;
+      margin: 0px 30px; }
+      .other-pst .other-items .thumb-crop .thumb {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+        min-height: 330px;
+        width: 100%; }
+      .other-pst .other-items .thumb-crop .inf {
+        position: relative;
+        z-index: 2;
+        padding: 30px; }
+        .other-pst .other-items .thumb-crop .inf h3 {
+          font-family: "SilkaBold", Arial, sans-serif;
+          color: #ffffff; }
+        .other-pst .other-items .thumb-crop .inf .btn {
+          margin-top: 0px; }
+    .other-pst .other-items .arch--item {
+      margin-right: 15px; }
 
 @media (min-width: 1200px) {
   .container {
