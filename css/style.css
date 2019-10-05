@@ -3301,7 +3301,7 @@ ul.uzp__pagination {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
-    .mobile-nav-fs .inner .menu-hoofdmenu-container {
+    .mobile-nav-fs .inner .menu-mobiel-container {
       width: calc(100vw - 30px);
       margin: 0px 15px;
       padding-top: calc(136px + 60px);
