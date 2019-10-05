@@ -215,6 +215,36 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
+            <script>
+                var a = 0;
+                jQuery(window).scroll(function() {
+
+                    var oTop = jQuery('#counter').offset().top - window.innerHeight;
+                    if (a == 0 && jQuery(window).scrollTop() > oTop) {
+                        jQuery('.counter-value').each(function() {
+                            var $this = jQuery(this),
+                                countTo = $this.attr('data-count');
+                            jQuery({
+                                countNum: $this.text()
+                            }).animate({
+                                    countNum: countTo
+                                },
+
+                                {
+                                    duration: 2000,
+                                    easing: 'swing',
+                                    step: function() {
+                                        $this.text(Math.floor(this.countNum));
+                                    },
+                                    complete: function() {
+                                        $this.text(this.countNum);
+                                    }
+                                });
+                        });
+                        a = 1;
+                    }
+                });
+            </script>
         <?php elseif (get_row_layout() == 'qoute') : ?>
             <section class="qoute">
                 <div class="container">
