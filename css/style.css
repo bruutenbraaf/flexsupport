@@ -2799,6 +2799,9 @@ ul.uzp__pagination {
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
 
+h2.signup_title span {
+  color: red; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
