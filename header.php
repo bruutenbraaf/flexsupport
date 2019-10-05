@@ -18,6 +18,8 @@
 
 <body <?php $color = get_field('color_page');
         body_class(array($color, $archiveColor)); ?>>
+
+    <div class="reading-progress"></div>
     <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-150="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
             <div class="row align-items-center" data-0="height: 136px;" data-150="height: 100;">

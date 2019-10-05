@@ -31,6 +31,17 @@ jQuery('.btp').on('click', function (e) {
   jQuery('html, body').animate({ scrollTop: 0 }, '300');
 });
 
+// Progress bar
+jQuery(window).scroll(function(event) {
+  var scrollTop = jQuery(window).scrollTop();
+  docHeight = jQuery(document).height(),
+  winHeight = jQuery(window).height(),
+  scrollPercent = (scrollTop) / (docHeight - winHeight),
+  scrollPercentageString = (scrollPercent * 100) + "%",
+  readingIndicator = jQuery(".reading-progress");
+  readingIndicator.width(scrollPercentageString);
+});
+
 // Hamburger menu
 jQuery("body").on('click', '.hamburger', function () {
   jQuery('.mobile-nav-fs').toggleClass('is_visible');

@@ -187,6 +187,15 @@ a {
 
 // Nav
 
+.reading-progress {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba($midnight, 0.1);
+  height: 4px;
+  z-index: 9999;
+}
+
 nav {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3598,6 +3607,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 414px) {
+  .socket .justify-content-end {
+    justify-content: start !important;
+  }
   nav .branding img {
     width: 180px;
   }
