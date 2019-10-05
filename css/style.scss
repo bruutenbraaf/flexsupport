@@ -3676,7 +3676,19 @@ ul.uzp__pagination {
     }
   }
 }
+
+
+// Formulieren 
+
+.signup_title {
+  span {
+    color: red;
+  }
+}
+
+
 // Responsive
+
 
 @media (min-width: 1200px) {
   .container {
