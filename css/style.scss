@@ -909,25 +909,26 @@ $padding-bottom: 70px;
       .arch--vac-item {
         background: $turquoise;
         h3 {
-          color: #ffffff !important;
+          color: $midnight !important;
         }
         .arch--inf {
           div {
-            color: #ffffff;
+            color: $midnight;
             svg {
-              fill: #ffffff;
+              fill: $midnight;
             }
             span {
-              color: #ffffff;
+              color: $midnight;
             }
           }
         }
         .arch--arr {
           right: 15px;
           svg {
-            stroke: #ffffff;
+            stroke: $midnight;
           }
           span {
+            color: $midnight;
             opacity: 1;
             margin-right: 5px;
           }

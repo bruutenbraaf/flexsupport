@@ -697,18 +697,19 @@ nav {
     .ovw-vac a:hover .arch--vac-item {
       background: #35ffb6; }
       .ovw-vac a:hover .arch--vac-item h3 {
-        color: #ffffff !important; }
+        color: #001f3f !important; }
       .ovw-vac a:hover .arch--vac-item .arch--inf div {
-        color: #ffffff; }
+        color: #001f3f; }
         .ovw-vac a:hover .arch--vac-item .arch--inf div svg {
-          fill: #ffffff; }
+          fill: #001f3f; }
         .ovw-vac a:hover .arch--vac-item .arch--inf div span {
-          color: #ffffff; }
+          color: #001f3f; }
       .ovw-vac a:hover .arch--vac-item .arch--arr {
         right: 15px; }
         .ovw-vac a:hover .arch--vac-item .arch--arr svg {
-          stroke: #ffffff; }
+          stroke: #001f3f; }
         .ovw-vac a:hover .arch--vac-item .arch--arr span {
+          color: #001f3f;
           opacity: 1;
           margin-right: 5px; }
 
