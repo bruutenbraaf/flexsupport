@@ -603,6 +603,107 @@ nav {
   .tools .btn {
     margin-top: 0px; }
 
+.ovw-vac {
+  margin-top: 30px; }
+  .ovw-vac .arch--vac-item {
+    position: relative;
+    padding: 48px 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(0, 31, 63, 0.02);
+    border-radius: 2px;
+    margin-bottom: 20px; }
+    .ovw-vac .arch--vac-item .arch--vac-item-inner {
+      position: relative;
+      z-index: 2; }
+      .ovw-vac .arch--vac-item .arch--vac-item-inner h3 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: #001f3f; }
+      .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf {
+        display: inline-block; }
+        .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div {
+          float: left;
+          margin-right: 30px;
+          color: #001f3f; }
+          .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div:last-child {
+            margin-right: 15px; }
+          .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div svg {
+            fill: #35ffb6;
+            margin-right: 6px;
+            position: relative;
+            top: -1px; }
+      .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--arr {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transition: all 0.3 ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--arr svg {
+          stroke: #001f3f; }
+        .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--arr span {
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 32px;
+          opacity: 0;
+          margin-right: 15px;
+          -webkit-transition: all 0.4 ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
+    .ovw-vac .arch--vac-item:after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      width: 200px;
+      height: 100%;
+      background: rgba(53, 255, 182, 0.04);
+      z-index: 0;
+      top: 0;
+      border-radius: 999px;
+      -webkit-transition: all 0.4 ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    .ovw-vac .arch--vac-item:hover:after {
+      background: #21ffaf;
+      width: calc(100% + 160px);
+      border-radius: 0px;
+      height: 100vh;
+      transform: translateY(-50%); }
+  .ovw-vac .arch-inf svg {
+    -webkit-transition: all 0.4 ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .ovw-vac a:hover {
+    text-decoration: none !important; }
+    .ovw-vac a:hover .arch--vac-item {
+      background: #35ffb6; }
+      .ovw-vac a:hover .arch--vac-item h3 {
+        color: #ffffff !important; }
+      .ovw-vac a:hover .arch--vac-item .arch--inf div {
+        color: #ffffff; }
+        .ovw-vac a:hover .arch--vac-item .arch--inf div svg {
+          fill: #ffffff; }
+        .ovw-vac a:hover .arch--vac-item .arch--inf div span {
+          color: #ffffff; }
+      .ovw-vac a:hover .arch--vac-item .arch--arr {
+        right: 15px; }
+        .ovw-vac a:hover .arch--vac-item .arch--arr svg {
+          stroke: #ffffff; }
+        .ovw-vac a:hover .arch--vac-item .arch--arr span {
+          opacity: 1;
+          margin-right: 5px; }
+
 .vacatures--hp {
   background: #fdbb2c;
   padding-top: calc(140px + 150px);
@@ -1293,13 +1394,13 @@ footer {
 
 .recruiter {
   border: 1px solid #eeeeee;
-  border-radius: 1px;
+  border-radius: 2px;
   overflow: hidden; }
   .recruiter .contact-person {
     border-radius: 1px 1px 0px 0px;
     overflow: hidden; }
     .recruiter .contact-person .heading {
-      background: #001f3f;
+      background: #fc1264;
       padding: 15px; }
       .recruiter .contact-person .heading h2 {
         color: #ffffff;

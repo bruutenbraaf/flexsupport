@@ -798,6 +798,136 @@ $padding-bottom: 70px;
   }
 }
 
+.ovw-vac {
+  margin-top: 30px;
+  .arch--vac-item {
+    position: relative;
+    padding: 48px 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba($midnight, 0.02);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    .arch--vac-item-inner {
+      position: relative;
+      z-index: 2;
+      h3 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        color: $midnight;
+      }
+      .arch--inf {
+        display: inline-block;
+        div {
+          float: left;
+          margin-right: 30px;
+          color: $midnight;
+          &:last-child {
+            margin-right: 15px;
+          }
+          svg {
+            fill: $turquoise;
+            margin-right: 6px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+      .arch--arr {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transition: all 0.3 ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        svg {
+          stroke: $midnight;
+        }
+        span {
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 32px;
+          opacity: 0;
+          margin-right: 15px;
+          -webkit-transition: all 0.4 ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      width: 200px;
+      height: 100%;
+      background: rgba($turquoise, 0.04);
+      z-index: 0;
+      top: 0;
+      border-radius: 999px;
+      -webkit-transition: all 0.4 ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover:after {
+      background: darken($turquoise, 4%);
+      width: calc(100% + 160px);
+      border-radius: 0px;
+      height: 100vh;
+      transform: translateY(-50%);
+    }
+  }
+  .arch-inf {
+    svg {
+      -webkit-transition: all 0.4 ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: none !important;
+      .arch--vac-item {
+        background: $turquoise;
+        h3 {
+          color: #ffffff !important;
+        }
+        .arch--inf {
+          div {
+            color: #ffffff;
+            svg {
+              fill: #ffffff;
+            }
+            span {
+              color: #ffffff;
+            }
+          }
+        }
+        .arch--arr {
+          right: 15px;
+          svg {
+            stroke: #ffffff;
+          }
+          span {
+            opacity: 1;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Section laatste vacatures
 
 .vacatures--hp {
@@ -1811,13 +1941,13 @@ $pMargin: 135px;
 }
 .recruiter {
   border: 1px solid #eeeeee;
-  border-radius: 1px;
+  border-radius: 2px;
   overflow: hidden;
   .contact-person {
     border-radius: 1px 1px 0px 0px;
     overflow: hidden;
     .heading {
-      background: $midnight;
+      background: $rose;
       padding: 15px;
       h2 {
         color: #ffffff;
