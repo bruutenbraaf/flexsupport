@@ -786,7 +786,9 @@ footer {
         color: #001f3f;
         position: relative;
         z-index: 2;
-        text-decoration: none; }
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 15px; }
         footer .menu-footer-container ul li a:after {
           content: "";
           background: #35ffb6;

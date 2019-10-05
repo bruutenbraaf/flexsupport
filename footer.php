@@ -31,10 +31,10 @@
     <div class="socket align-items-center d-flex">
         <div class="container">
             <div class="row">
-                <div class="offset-md-1 col-md-4">
+                <div class="col-md-4">
                     <span>&copy; Flexsupport <?php echo date("Y"); ?></span>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 d-flex justify-content-end">
                     <?php wp_nav_menu(array('theme_location' => 'socket_menu')); ?>
                 </div>
             </div>

@@ -1034,6 +1034,8 @@ footer {
           position: relative;
           z-index: 2;
           text-decoration: none;
+          display: inline-block;
+          margin-bottom: 15px;
           &:after {
             content: "";
             background: $turquoise;
@@ -1848,7 +1850,7 @@ $pMargin: 135px;
   margin-left: -28px;
   top: 8px !important;
   height: 16px !important;
-  padding:0px !important;
+  padding: 0px !important;
   width: 16px !important;
 }
 .app-form {

@@ -21,7 +21,7 @@
     <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-150="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
         <div class="container">
             <div class="row align-items-center" data-0="height: 136px;" data-150="height: 100;">
-                <div class="col-6 col-md-6 col-lg-3 branding">
+                <div class="col-6 col-md-6 col-xl-3 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
                             <a href="<?php echo get_home_url(); ?>">
