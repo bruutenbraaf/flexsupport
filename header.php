@@ -80,7 +80,7 @@
     <div class="mobile-nav-fs">
         <h2><?php _e('Navigatie', 'flexsupport'); ?></h2>
         <div class="inner">
-            <?php wp_nav_menu(array('theme_location' => 'mega_menu')); ?>
+            <?php wp_nav_menu(array('theme_location' => 'mobile_menu')); ?>
         </div>
         <div class="bg"></div>
         <div class="bg"></div>
