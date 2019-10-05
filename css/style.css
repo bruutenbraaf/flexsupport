@@ -1445,6 +1445,12 @@ footer {
   font-size: 138px;
   line-height: 144px; }
 
+.gform_confirmation_message {
+  background: #35ffb6;
+  padding: 15px;
+  color: #001f3f;
+  border-radius: 2px; }
+
 .requestform h2 {
   font-family: "SilkaBold", Arial, sans-serif !important;
   font-size: 79px !important;

@@ -1797,6 +1797,13 @@ $pMargin: 135px;
   }
 }
 
+.gform_confirmation_message {
+  background: $turquoise;
+  padding: 15px;
+  color: $midnight;
+  border-radius: 2px;
+}
+
 .requestform {
   h2 {
     font-family: $SilkaBold !important;
