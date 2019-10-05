@@ -191,7 +191,7 @@ a {
   top: 0;
   left: 0;
   position: fixed;
-  background:#eeeeee;
+  background: #eeeeee;
   height: 4px;
   z-index: 9999;
 }
@@ -409,7 +409,7 @@ a {
 
 .mgm .is--v {
   opacity: 1;
-  right:0px;
+  right: 0px;
 }
 
 @keyframes navIn {
@@ -1774,6 +1774,85 @@ footer {
   }
 }
 
+// Vacature plaatsen
+.uzp .select2-container--default .select2-selection--multiple {
+  height: 80px !important;
+  border: 1px solid $midnight !important;
+  input {
+    height: 80px;
+  }
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  margin-right: 5px !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: $midnight !important;
+  color: #ffffff !important;
+  border-color: $midnight !important;
+  font-family: $SilkaMedium !important;
+}
+.accept__terms {
+  label,
+  a {
+    font-size: 16px !important;
+    color: $midnight !important;
+  }
+  a {
+    font-family: $SilkaBold !important;
+  }
+}
+form.uzp__registration-form {
+  .uzp__panel {
+    border: 0px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    margin-bottom: 30px !important;
+    background: rgba($midnight, 0.05);
+    border-radius: 2px !important;
+    padding: 20px 15px !important;
+  }
+  .p-left {
+    padding-left: 15px;
+  }
+  .select2-search {
+    input {
+      border: none !important;
+    }
+  }
+  .uzp__fieldset legend {
+    font-size: 34px !important;
+    font-family: $SilkaBold !important;
+  }
+  label {
+    display: none !important;
+  }
+  .sub-label {
+    padding: 0px 15px !important;
+    color: $midnight !important;
+    font-size: 24px !important;
+    font-family: $SilkaBold !important;
+  }
+  .uzp__radio-inline {
+    width: 50%;
+    float: left;
+    input {
+      height: inherit !important;
+      width: initial !important;
+      float: left;
+      position: relative;
+      top: 8px;
+      margin-right: 15px;
+    }
+  }
+}
+.uzp__select {
+  height: 80px !important;
+  border: 1px solid $midnight !important;
+}
+.uzp select {
+  height: 80px !important;
+}
+
 // Kandidaat detail
 $pMargin: 135px;
 .about-candidate {
@@ -1818,8 +1897,33 @@ $pMargin: 135px;
   font-family: $SilkaBold !important;
 }
 
-.gfield_error input{
+.gfield_error input {
   border: 1px solid $midnight !important;
+}
+
+.green-btn {
+  background-color: $turquoise !important;
+  font-family: $SilkaMedium !important;
+  color: $midnight !important;
+  padding: 15px !important;
+  height: auto !important;
+  border: none !important;
+  &:hover {
+    background-color: $rose !important;
+    color: #ffffff !important;
+  }
+}
+
+.blue-btn {
+  background-color: $midnight !important;
+  font-family: $SilkaMedium !important;
+  color: #ffffff !important;
+  padding: 15px !important;
+  height: auto !important;
+  border: none !important;
+  &:hover {
+    background-color: $rose !important;
+  }
 }
 
 .requestform {

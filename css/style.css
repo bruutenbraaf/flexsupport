@@ -1432,6 +1432,68 @@ footer {
   .uzp__index-item .moreinfo:hover svg {
     margin-left: 14px; }
 
+.uzp .select2-container--default .select2-selection--multiple {
+  height: 80px !important;
+  border: 1px solid #001f3f !important; }
+  .uzp .select2-container--default .select2-selection--multiple input {
+    height: 80px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  margin-right: 5px !important; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #001f3f !important;
+  color: #ffffff !important;
+  border-color: #001f3f !important;
+  font-family: "SilkaMedium", Arial, sans-serif !important; }
+
+.accept__terms label,
+.accept__terms a {
+  font-size: 16px !important;
+  color: #001f3f !important; }
+.accept__terms a {
+  font-family: "SilkaBold", Arial, sans-serif !important; }
+
+form.uzp__registration-form .uzp__panel {
+  border: 0px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  margin-bottom: 30px !important;
+  background: rgba(0, 31, 63, 0.05);
+  border-radius: 2px !important;
+  padding: 20px 15px !important; }
+form.uzp__registration-form .p-left {
+  padding-left: 15px; }
+form.uzp__registration-form .select2-search input {
+  border: none !important; }
+form.uzp__registration-form .uzp__fieldset legend {
+  font-size: 34px !important;
+  font-family: "SilkaBold", Arial, sans-serif !important; }
+form.uzp__registration-form label {
+  display: none !important; }
+form.uzp__registration-form .sub-label {
+  padding: 0px 15px !important;
+  color: #001f3f !important;
+  font-size: 24px !important;
+  font-family: "SilkaBold", Arial, sans-serif !important; }
+form.uzp__registration-form .uzp__radio-inline {
+  width: 50%;
+  float: left; }
+  form.uzp__registration-form .uzp__radio-inline input {
+    height: inherit !important;
+    width: initial !important;
+    float: left;
+    position: relative;
+    top: 8px;
+    margin-right: 15px; }
+
+.uzp__select {
+  height: 80px !important;
+  border: 1px solid #001f3f !important; }
+
+.uzp select {
+  height: 80px !important; }
+
 .about-candidate {
   background: #35ffb6;
   padding-bottom: calc(160px - 135px); }
@@ -1465,6 +1527,27 @@ footer {
 
 .gfield_error input {
   border: 1px solid #001f3f !important; }
+
+.green-btn {
+  background-color: #35ffb6 !important;
+  font-family: "SilkaMedium", Arial, sans-serif !important;
+  color: #001f3f !important;
+  padding: 15px !important;
+  height: auto !important;
+  border: none !important; }
+  .green-btn:hover {
+    background-color: #fc1264 !important;
+    color: #ffffff !important; }
+
+.blue-btn {
+  background-color: #001f3f !important;
+  font-family: "SilkaMedium", Arial, sans-serif !important;
+  color: #ffffff !important;
+  padding: 15px !important;
+  height: auto !important;
+  border: none !important; }
+  .blue-btn:hover {
+    background-color: #fc1264 !important; }
 
 .requestform h2 {
   font-family: "SilkaBold", Arial, sans-serif !important;
