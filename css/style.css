@@ -2800,7 +2800,7 @@ ul.uzp__pagination {
       margin-right: 15px; }
 
 .gform_wrapper {
-  display: none; }
+  display: none !important; }
 
 @media (min-width: 1200px) {
   .container {
