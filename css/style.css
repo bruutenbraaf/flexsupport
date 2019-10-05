@@ -1449,7 +1449,22 @@ footer {
   background: #35ffb6;
   padding: 15px;
   color: #001f3f;
-  border-radius: 2px; }
+  border-radius: 2px;
+  font-family: "SilkaBold", Arial, sans-serif; }
+
+.gform_wrapper div.validation_error {
+  color: #ffffff;
+  background: #001f3f;
+  border: none;
+  padding: 15px;
+  font-family: "SilkaBold", Arial, sans-serif; }
+
+.validation_message {
+  color: #001f3f;
+  font-family: "SilkaBold", Arial, sans-serif !important; }
+
+.gfield_error input {
+  border: 1px solid #001f3f !important; }
 
 .requestform h2 {
   font-family: "SilkaBold", Arial, sans-serif !important;

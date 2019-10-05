@@ -1802,6 +1802,24 @@ $pMargin: 135px;
   padding: 15px;
   color: $midnight;
   border-radius: 2px;
+  font-family: $SilkaBold;
+}
+
+.gform_wrapper div.validation_error {
+  color: #ffffff;
+  background: $midnight;
+  border: none;
+  padding: 15px;
+  font-family: $SilkaBold;
+}
+
+.validation_message {
+  color: $midnight;
+  font-family: $SilkaBold !important;
+}
+
+.gfield_error input{
+  border: 1px solid $midnight !important;
 }
 
 .requestform {
