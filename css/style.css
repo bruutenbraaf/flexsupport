@@ -1315,7 +1315,9 @@ footer {
   position: absolute;
   margin-left: -28px;
   top: 8px !important;
-  height: 16px !important; }
+  height: 16px !important;
+  padding: 0px !important;
+  width: 16px !important; }
 
 .app-form {
   margin-top: 60px;
@@ -2454,6 +2456,58 @@ ul.uzp__pagination {
   .mobile-nav {
     display: none !important; } }
 @media (max-width: 1024px) {
+  .other-pst .other-items {
+    width: 180vw; }
+
+  .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; }
+    .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div:last-child {
+      margin-bottom: 0px; }
+
+  .vac--inf .recruiter {
+    margin-top: 60px; }
+
+  .vac-header h1 {
+    font-size: 44px;
+    line-height: inherit;
+    margin-top: 20px; }
+
+  .hdbtn {
+    margin-top: 15px;
+    justify-content: start !important; }
+
+  .vac-header .uzp__meta {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .vac-header .information-vacansie span {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block; }
+
+  .inf--vac .justify-content-end {
+    justify-content: start !important; }
+
+  .vac-header .btn {
+    margin-top: 0px;
+    margin-bottom: 30px; }
+
+  .frm {
+    margin-bottom: 30px; }
+
+  .uzp .justify-content-end {
+    justify-content: start !important; }
+
+  .ovw-vac .arch--vac-item .arch--vac-item-inner .arch--inf div {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px; }
+
+  .ovw-vac .arch--vac-item {
+    padding: 20px 15px; }
+
   .contactp {
     padding-top: 136px; }
     .contactp form {
