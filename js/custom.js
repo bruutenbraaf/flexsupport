@@ -32,14 +32,28 @@ jQuery('.btp').on('click', function (e) {
 });
 
 // Progress bar
-jQuery(window).scroll(function(event) {
+jQuery(window).scroll(function (event) {
   var scrollTop = jQuery(window).scrollTop();
   docHeight = jQuery(document).height(),
-  winHeight = jQuery(window).height(),
-  scrollPercent = (scrollTop) / (docHeight - winHeight),
-  scrollPercentageString = (scrollPercent * 100) + "%",
-  readingIndicator = jQuery(".reading-progress");
+    winHeight = jQuery(window).height(),
+    scrollPercent = (scrollTop) / (docHeight - winHeight),
+    scrollPercentageString = (scrollPercent * 100) + "%",
+    readingIndicator = jQuery(".reading-progress");
   readingIndicator.width(scrollPercentageString);
+});
+
+
+// Mega
+jQuery("body").on('click', '.mtgo', function () {
+  jQuery(this).toggleClass('h--open');
+  jQuery('.mgm').toggleClass('clickable');
+  jQuery('.l').animate({ 'height': 'toggle' }, 400);
+  jQuery('.r').animate({ 'width': 'toggle' }, 400);
+  jQuery('.mgm .le').toggleClass('op');
+  jQuery('.mgm .ri').toggleClass('op-r');
+  jQuery('.news-nav').toggleClass('is--v');
+  jQuery('.mgm--nav li').toggleClass('is--shown');
+  jQuery('nav').toggleClass('mgm--open');
 });
 
 // Hamburger menu
@@ -57,37 +71,37 @@ jQuery("body").on('click', '.mobile-nav-fs .menu-item-has-children', function ()
 
 // Counter
 
-  var a = 0;
-  jQuery(window).scroll(function () {
+var a = 0;
+jQuery(window).scroll(function () {
 
-    var oTop = jQuery('#counter').offset().top - window.innerHeight;
-    if (a == 0 && jQuery(window).scrollTop() > oTop) {
-      jQuery('.counter-value').each(function () {
-        var $this = jQuery(this),
-          countTo = $this.attr('data-count');
-        jQuery({
-          countNum: $this.text()
-        }).animate({
-          countNum: countTo
-        },
+  var oTop = jQuery('#counter').offset().top - window.innerHeight;
+  if (a == 0 && jQuery(window).scrollTop() > oTop) {
+    jQuery('.counter-value').each(function () {
+      var $this = jQuery(this),
+        countTo = $this.attr('data-count');
+      jQuery({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      },
 
-          {
+        {
 
-            duration: 2000,
-            easing: 'swing',
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-              //alert('finished');
-            }
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
 
-          });
-      });
-      a = 1;
-    }
-  });
+        });
+    });
+    a = 1;
+  }
+});
 
 
 // Smooth scroll to anchor 

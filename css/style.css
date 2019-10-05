@@ -140,6 +140,263 @@ a:hover {
   height: 4px;
   z-index: 9999; }
 
+.mtgo {
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+  cursor: pointer; }
+  .mtgo div {
+    width: 100%;
+    min-height: 2px;
+    margin: 5px 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+
+.h--open div:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: left; }
+.h--open div:nth-child(2) {
+  margin-left: 10px;
+  width: 0px; }
+.h--open div:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: left; }
+
+.mgm {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  top: 0;
+  left: 0;
+  z-index: 88;
+  pointer-events: none; }
+  .mgm .container {
+    position: relative;
+    z-index: 90; }
+    .mgm .container .f-row {
+      height: 100vh;
+      padding: 180px 15px 100px 15px; }
+  .mgm .l {
+    width: 50vw;
+    background: #fc1264;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: -1; }
+  .mgm .r {
+    width: 50vw;
+    background: #ffffff;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
+    z-index: -1; }
+  .mgm h2 {
+    color: #001f3f;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    margin-left: 15px;
+    padding-top: 0;
+    font-size: 44px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .mgm .news-nav {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    opacity: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: calc(100% - 45px);
+    position: relative;
+    right: 60px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .mgm .news-nav .dt {
+      color: rgba(0, 31, 63, 0.5); }
+    .mgm .news-nav .btn {
+      margin-top: 15px; }
+    .mgm .news-nav .nws--ct {
+      font-size: 16px;
+      color: #35ffb6;
+      margin-bottom: 5px;
+      display: inline-block; }
+    .mgm .news-nav h3 {
+      font-family: "SilkaBold", Arial, sans-serif;
+      font-size: 22px;
+      line-height: 120%;
+      color: #001f3f; }
+  .mgm .mgm--nav a {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 20px;
+    color: #001f3f;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px; }
+    .mgm .mgm--nav a:after {
+      content: "";
+      background: #35ffb6;
+      width: 100%;
+      height: 0%;
+      bottom: 0px;
+      left: 0px;
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .mgm .mgm--nav a:hover:after {
+      height: 50%; }
+  .mgm .mgm--nav ul {
+    margin: inherit;
+    margin-left: 30px;
+    padding: 0px; }
+    .mgm .mgm--nav ul li {
+      list-style: none;
+      opacity: 0;
+      margin-left: 60px; }
+
+.mgm--open {
+  background: rgba(255, 255, 255, 0) !important;
+  box-shadow: none !important; }
+  .mgm--open .branding {
+    margin-top: -80px;
+    opacity: 0;
+    pointer-events: none; }
+  .mgm--open .the--nav {
+    margin-top: -80px;
+    opacity: 0;
+    pointer-events: none; }
+  .mgm--open .mtgo div {
+    background: #001f3f !important; }
+
+.news-nav:nth-child(1n) {
+  animation-delay: 0.1s;
+  transition-delay: 0.1s; }
+
+.news-nav:nth-child(2n) {
+  animation-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+.news-nav:nth-child(3n) {
+  animation-delay: 0.3s;
+  transition-delay: 0.3s; }
+
+.news-nav:nth-child(4n) {
+  animation-delay: 0.4s;
+  transition-delay: 0.4s; }
+
+.news-nav:nth-child(5n) {
+  animation-delay: 0.5s;
+  transition-delay: 0.5s; }
+
+.news-nav:nth-child(6n) {
+  animation-delay: 0.6s;
+  transition-delay: 0.6s; }
+
+.news-nav:nth-child(7n) {
+  animation-delay: 0.7s;
+  transition-delay: 0.7s; }
+
+.news-nav:nth-child(8n) {
+  animation-delay: 0.8s;
+  transition-delay: 0.8s; }
+
+.news-nav:nth-child(9n) {
+  animation-delay: 0.9s;
+  transition-delay: 0.9s; }
+
+.news-nav:nth-child(10n) {
+  animation-delay: 1s;
+  transition-delay: 1s; }
+
+.mgm--nav li:nth-child(1n) {
+  animation-delay: 0.1s; }
+
+.mgm--nav li:nth-child(2n) {
+  animation-delay: 0.2s; }
+
+.mgm--nav li:nth-child(3n) {
+  animation-delay: 0.3s; }
+
+.mgm--nav li:nth-child(4n) {
+  animation-delay: 0.4s; }
+
+.mgm--nav li:nth-child(5n) {
+  animation-delay: 0.5s; }
+
+.mgm--nav li:nth-child(6n) {
+  animation-delay: 0.6s; }
+
+.mgm--nav li:nth-child(7n) {
+  animation-delay: 0.7s; }
+
+.mgm--nav li:nth-child(8n) {
+  animation-delay: 0.8s; }
+
+.mgm--nav li:nth-child(9n) {
+  animation-delay: 0.9s; }
+
+.mgm--nav li:nth-child(10n) {
+  animation-delay: 1s; }
+
+.is--shown {
+  animation: navIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+.op {
+  margin-top: 30px;
+  opacity: 1 !important;
+  transition-delay: 0.2s !important; }
+
+.op-r {
+  margin-top: 30px;
+  opacity: 1 !important;
+  transition-delay: 0.3s !important; }
+
+.w {
+  color: #ffffff !important; }
+
+.mgm .is--v {
+  opacity: 1;
+  right: 0px; }
+
+@keyframes navIn {
+  0% {
+    opacity: 0;
+    margin-left: 60px; }
+  100% {
+    opacity: 1;
+    margin-left: 0px; } }
+.clickable {
+  pointer-events: all; }
+
+.scrolled {
+  width: 80% !important; }
+
+.is--scrolled {
+  width: 20% !important; }
+
+.cta-show {
+  width: 100% !important;
+  opacity: 1 !important; }
+
 nav {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -152,6 +409,11 @@ nav {
     transition: all 0.3s ease-in-out; }
     nav .branding img {
       width: 200px; }
+  nav .the--nav {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
   nav .normal-branding {
     opacity: 0;
     top: 0; }
