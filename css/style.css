@@ -29,6 +29,10 @@ h2 {
 a:hover {
   text-decoration: none; }
 
+p a {
+  color: #001f3f;
+  text-decoration: underline; }
+
 .clearfix {
   clear: both; }
 
@@ -1288,6 +1292,11 @@ footer {
   .header--sngl .container p {
     font-size: 20px;
     line-height: 32px; }
+    .header--sngl .container p a {
+      font-size: 20px;
+      line-height: 32px;
+      color: #001f3f;
+      text-decoration: underline; }
   .header--sngl .container .dwn {
     margin-left: auto;
     -webkit-transition: all 0.4s ease-in-out;
