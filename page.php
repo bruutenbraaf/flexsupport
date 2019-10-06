@@ -396,23 +396,18 @@ get_header(); ?>
                                     <?php foreach ($selecteer_werknemers_om_te_tonen as $post) :  ?>
                                         <?php setup_postdata($post); ?>
                                         <div class="col-md-6 member">
-                                            <div class="img-holder">
-                                                <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
-                                                    <?php if (have_rows('informatie_werknemer')) : ?>
-                                                        <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
-                                                            <div class="informatie">
-                                                                <?php the_sub_field('beschrijving'); ?>
-                                                            </div>
-                                                        <?php endwhile; ?>
-                                                    <?php endif; ?>
+                                            <a href="<?php the_permalink(); ?>">
+                                                <div class="img-holder">
+                                                    <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <span class="name"><?php the_title(); ?></span>
-                                            <?php if (have_rows('informatie_werknemer')) : ?>
-                                                <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
-                                                    <a class="email" href="maitlo:<?php the_sub_field('e-mailadres'); ?>"><?php the_sub_field('e-mailadres'); ?></a>
-                                                <?php endwhile; ?>
-                                            <?php endif; ?>
+                                                <span class="name"><?php the_title(); ?></span>
+                                                <?php if (have_rows('informatie_werknemer')) : ?>
+                                                    <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
+                                                        <a class="email" href="maitlo:<?php the_sub_field('e-mailadres'); ?>"><?php the_sub_field('e-mailadres'); ?></a>
+                                                    <?php endwhile; ?>
+                                                <?php endif; ?>
+                                            </a>
                                         </div>
                                     <?php endforeach; ?>
                                     <?php wp_reset_postdata(); ?>

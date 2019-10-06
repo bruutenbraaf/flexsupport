@@ -2496,12 +2496,12 @@ $pMargin: 135px;
     }
     .img-holder {
       width: 100%;
-      height: 310px;
+      height: 400px;
       overflow: hidden;
     }
     .the--img {
       width: 100%;
-      height: 310px;
+      height: 400px;
       background-size: cover;
       position: relative;
       background-position: top center;
@@ -3211,6 +3211,87 @@ ul.uzp__pagination {
   }
 }
 
+// Archief personeel
+
+.cus-arch {
+  position: relative;
+  z-index: 2;
+  &:after {
+    content: "";
+    width: 100vw;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $turquoise;
+    z-index: -2;
+  }
+  .thumb-crop {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    .thumb {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center center;
+      -webkit-transition: all 10s ease-in-out;
+      -moz-transition: all 10s ease-in-out;
+      -o-transition: all 10s ease-in-out;
+      transition: all 10s ease-in-out;
+    }
+  }
+  h3 {
+    font-family: $SilkaBold;
+    font-size: 34px;
+    display: block;
+    color: $midnight;
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+  .email {
+    font-family: $SilkaRegular;
+    font-size: 16px;
+    color: $midnight;
+    position: relative;
+    &:after {
+      content: "";
+      background: $turquoise;
+      width: 100%;
+      height: 0%;
+      bottom: -2px;
+      left: 0px;
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover:after {
+      height: 50%;
+    }
+  }
+  p,
+  span {
+    font-family: $SilkaRegular;
+    font-size: 20px;
+    line-height: 32px;
+    color: $midnight;
+  }
+  .btn {
+    margin-top: calc(-1rem - -18px);
+  }
+  .arch-item {
+    margin-bottom: 34px;
+    &:hover {
+      .thumb {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
 // Statische pagina
 
 .customers {
@@ -3678,7 +3759,6 @@ ul.uzp__pagination {
 }
 
 // Responsive
-
 
 @media (min-width: 1200px) {
   .container {

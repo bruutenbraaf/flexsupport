@@ -4,7 +4,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-1 col-3">
-                        <a href="<?php echo site_url(); ?>/vacatures" class="back">
+                        <?php $post_type = get_post_type( get_the_ID() );?>
+                        <a href="<?php echo get_post_type_archive_link($post_type); ?>" class="back">
                             <svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4393 26.0607L0.878678 13.5L13.4393 0.939346L15.5607 3.06067L6.62132 12L79 12L79 15L6.62132 15L15.5607 23.9393L13.4393 26.0607Z" fill="#001F3F" />
                             </svg>
@@ -22,18 +23,6 @@
                         <?php if ($knop) { ?>
                             <a href="<?php echo $knop['url']; ?>" class="btn" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
                         <?php } ?>
-                        <?php //opleiding single fields 
-                                ?>
-                        <?php if (have_rows('opleiding_informatie')) : ?>
-                            <ul class="inf">
-                                <?php while (have_rows('opleiding_informatie')) : the_row(); ?>
-                                    <li><?php the_sub_field('niveau'); ?></li>
-                                    <li><?php the_sub_field('locatie'); ?></li>
-                                <?php endwhile; ?>
-                            </ul>
-                        <?php endif; ?>
-                        <?php //end - opleiding single fields 
-                                ?>
                     </div>
                 </div>
             </div>

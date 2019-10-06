@@ -1906,11 +1906,11 @@ form.uzp__registration-form .uzp__radio-inline {
         height: 50%; }
     .team .member .img-holder {
       width: 100%;
-      height: 310px;
+      height: 400px;
       overflow: hidden; }
     .team .member .the--img {
       width: 100%;
-      height: 310px;
+      height: 400px;
       background-size: cover;
       position: relative;
       background-position: top center;
@@ -2434,6 +2434,71 @@ ul.uzp__pagination {
   .news-arch .arch-item {
     margin-bottom: 34px; }
     .news-arch .arch-item:hover .thumb {
+      transform: scale(1.2); }
+
+.cus-arch {
+  position: relative;
+  z-index: 2; }
+  .cus-arch:after {
+    content: "";
+    width: 100vw;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #35ffb6;
+    z-index: -2; }
+  .cus-arch .thumb-crop {
+    width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    .cus-arch .thumb-crop .thumb {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center center;
+      -webkit-transition: all 10s ease-in-out;
+      -moz-transition: all 10s ease-in-out;
+      -o-transition: all 10s ease-in-out;
+      transition: all 10s ease-in-out; }
+  .cus-arch h3 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 34px;
+    display: block;
+    color: #001f3f;
+    margin-top: 12px;
+    margin-bottom: 0px; }
+  .cus-arch .email {
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 16px;
+    color: #001f3f;
+    position: relative; }
+    .cus-arch .email:after {
+      content: "";
+      background: #35ffb6;
+      width: 100%;
+      height: 0%;
+      bottom: -2px;
+      left: 0px;
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .cus-arch .email:hover:after {
+      height: 50%; }
+  .cus-arch p,
+  .cus-arch span {
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #001f3f; }
+  .cus-arch .btn {
+    margin-top: calc(-1rem - -18px); }
+  .cus-arch .arch-item {
+    margin-bottom: 34px; }
+    .cus-arch .arch-item:hover .thumb {
       transform: scale(1.2); }
 
 .customers {
