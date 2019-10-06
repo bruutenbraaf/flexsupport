@@ -60,9 +60,9 @@
                         <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
                     </div>
                     <div class="mtgo">
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
+                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
