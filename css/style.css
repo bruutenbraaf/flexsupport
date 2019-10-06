@@ -1074,7 +1074,7 @@ footer {
           background: #35ffb6;
           width: 100%;
           height: 0%;
-          bottom: -2px;
+          bottom: 0px;
           left: 0px;
           position: absolute;
           z-index: -1;
