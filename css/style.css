@@ -632,6 +632,9 @@ nav {
   background-size: cover;
   background-position: center center; }
 
+.bg-full {
+  background-position: 0% 12%; }
+
 .overlay {
   position: relative; }
   .overlay:after {
@@ -3062,9 +3065,6 @@ ul.uzp__pagination {
 
   .full--img {
     height: 50vh; }
-
-  .bg-full {
-    background-position: 0% 12%; }
 
   .about .sub {
     font-size: 18px; }

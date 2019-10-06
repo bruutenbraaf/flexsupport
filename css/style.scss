@@ -733,6 +733,10 @@ nav {
   background-position: center center;
 }
 
+.bg-full {
+  background-position: 0% 12%;
+}
+
 .overlay {
   position: relative;
   &:after {
@@ -4008,9 +4012,6 @@ $hamburgerwidth: 26px;
   }
   .full--img {
     height: 50vh;
-  }
-  .bg-full {
-    background-position: 0% 12%;
   }
   .about {
     .sub {
