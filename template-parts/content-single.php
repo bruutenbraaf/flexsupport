@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-1 col-3">
-                        <?php $post_type = get_post_type( get_the_ID() );?>
+                        <?php $post_type = get_post_type(get_the_ID()); ?>
                         <a href="<?php echo get_post_type_archive_link($post_type); ?>" class="back">
                             <svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4393 26.0607L0.878678 13.5L13.4393 0.939346L15.5607 3.06067L6.62132 12L79 12L79 15L6.62132 15L15.5607 23.9393L13.4393 26.0607Z" fill="#001F3F" />
@@ -23,6 +23,23 @@
                         <?php if ($knop) { ?>
                             <a href="<?php echo $knop['url']; ?>" class="btn" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
                         <?php } ?>
+                        <?php if (have_rows('informatie_werknemer')) : ?>
+                            <?php while (have_rows('informatie_werknemer')) : the_row(); ?>
+                                <ul class="cnct">
+                                    <li><a href="tel:<?php the_sub_field('telefoonnummer'); ?>"><?php the_sub_field('telefoonnummer'); ?></a></li>
+                                    <li><a href="mailto:<?php the_sub_field('e-mailadres'); ?>"><?php the_sub_field('e-mailadres'); ?></a></li>
+                                    <?php if (have_rows('socials')) : ?>
+                                        <?php while (have_rows('socials')) : the_row(); ?>
+                                            <?php $social = get_sub_field('social'); ?>
+                                            <?php if ($social) { ?>
+                                                <li><a href="<?php echo $social['url']; ?>" target="<?php echo $social['target']; ?>"><?php echo $social['title']; ?></a></li>
+                                            <?php } ?>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                </ul>
+                                <?php the_sub_field('beschrijving'); ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -31,7 +48,7 @@
 <?php endif; ?>
 
 <?php if (get_the_post_thumbnail_url($post, 'large')) { ?>
-    <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+    <div class="full--img<?php if (is_singular('personeel')) { ?> bg-full<?php } ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
     </div>
 <?php } ?>
 

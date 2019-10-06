@@ -10,7 +10,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <h3><?php _e('Anderen bekeken ook', 'flexsupport'); ?></h3>
+                    <?php if (is_singular('personeel')) { ?>
+                        <h3><?php _e('Ontmoet ook', 'flexsupport'); ?></h3>
+                    <?php } else { ?>
+                        <h3><?php _e('Anderen bekeken ook', 'flexsupport'); ?></h3>
+                    <?php } ?>
                 </div>
                 <div class="offset-md-1 col-md-10">
                     <div class="other-items">
@@ -19,7 +23,7 @@
                                 <div class="arch--inner">
                                     <div class="align-items-center row">
                                         <a href="<?php the_permalink() ?>">
-                                            <div class="thumb-crop align-items-end d-flex">
+                                            <div class="thumb-crop align-items-end d-flex <?php if (is_singular('personeel')) { ?>big<?php } ?>">
                                                 <div class="inf">
                                                     <a href="<?php the_permalink() ?>">
                                                         <?php setup_postdata($post); ?>

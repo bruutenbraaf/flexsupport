@@ -1515,6 +1515,28 @@ footer {
       float: left;
       list-style: none;
       margin: 0px 24px;
+      a {
+        margin-bottom: 10px;
+        color: $midnight;
+        position: relative;
+        &:after {
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 0%;
+          bottom: -2px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover:after {
+          height: 50%;
+        }
+      }
     }
   }
   .back {
@@ -2562,6 +2584,13 @@ $pMargin: 135px;
 .r {
   &:after {
     background-color: $rose;
+  }
+}
+
+.big {
+  height: 400px;
+  .thumb {
+    height: 400px;
   }
 }
 
@@ -3978,6 +4007,9 @@ $hamburgerwidth: 26px;
   }
   .full--img {
     height: 50vh;
+  }
+  .bg--full {
+    background-position: 0% 12%;
   }
   .about {
     .sub {
