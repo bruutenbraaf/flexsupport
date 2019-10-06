@@ -542,7 +542,7 @@ nav {
           }
         }
       }
-      .current_page_item, .current-menu-item > a {
+      .current_page_item > a {
         z-index: 2;
         text-decoration: none;
         &:before {

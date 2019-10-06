@@ -486,10 +486,10 @@ nav {
         transition: all 0.2s ease-in-out; }
       .main-nav ul ul.sub-menu li a:hover:after {
         height: 50%; }
-  .main-nav ul ul.sub-menu .current_page_item, .main-nav ul ul.sub-menu .current-menu-item > a {
+  .main-nav ul ul.sub-menu .current_page_item > a {
     z-index: 2;
     text-decoration: none; }
-    .main-nav ul ul.sub-menu .current_page_item:before, .main-nav ul ul.sub-menu .current-menu-item > a:before {
+    .main-nav ul ul.sub-menu .current_page_item > a:before {
       content: "";
       background: #001f3f;
       width: 100%;
@@ -502,7 +502,7 @@ nav {
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-    .main-nav ul ul.sub-menu .current_page_item:after, .main-nav ul ul.sub-menu .current-menu-item > a:after {
+    .main-nav ul ul.sub-menu .current_page_item > a:after {
       content: "";
       background: #35ffb6;
       width: 100%;
@@ -515,7 +515,7 @@ nav {
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
-    .main-nav ul ul.sub-menu .current_page_item:hover:after, .main-nav ul ul.sub-menu .current-menu-item > a:hover:after {
+    .main-nav ul ul.sub-menu .current_page_item > a:hover:after {
       height: 50%; }
   .main-nav ul ul.sub-menu ul.sub-menu {
     left: calc(100% - 20px);
