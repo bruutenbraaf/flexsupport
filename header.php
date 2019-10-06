@@ -76,7 +76,6 @@
         </div>
     </nav>
 
-
     <div class="mobile-nav-fs">
         <h2><?php _e('Navigatie', 'flexsupport'); ?></h2>
         <div class="inner">
@@ -91,10 +90,10 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6">
-                    <h2 class="w le"><?php _e('Laatste nieuws','flexsupport');?></h2>
+                    <h2 class="w le"><?php _e('Laatste nieuws', 'flexsupport'); ?></h2>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="ri"><?php _e('Navigatie','flexsupport');?></h2>
+                    <h2 class="ri"><?php _e('Navigatie', 'flexsupport'); ?></h2>
                 </div>
             </div>
             <div class="row f-row d-flex align-items-center">
