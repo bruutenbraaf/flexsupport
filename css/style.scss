@@ -2638,7 +2638,8 @@ $pMargin: 135px;
 
 // Color system
 
-.rose {
+.rose,
+.error404 {
   .contactp {
     background: $rose;
   }
@@ -3809,6 +3810,66 @@ ul.uzp__pagination {
     }
     .arch--item {
       margin-right: 15px;
+    }
+  }
+}
+
+// 404
+.header--404 {
+  background: $rose;
+  svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+  .container {
+    padding-top: calc(15px + #{$NavHeight});
+    padding-bottom: 80px;
+    h1 {
+      font-family: $SilkaBold;
+      font-size: 138px;
+      line-height: 144px;
+      color: $midnight;
+      padding-bottom: 60px;
+      margin: 0px;
+      color: #ffffff;
+      margin-top: 30px;
+      strong {
+        font-family: $SilkaBold;
+        font-size: 138px;
+        line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px;
+      }
+    }
+    .bread {
+      a {
+        color: rgba(#ffffff, 0.5);
+      }
+      span {
+        color: #ffffff;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 32px;
+      color: #ffffff;
+      a {
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        text-decoration: underline;
+        &:hover {
+          color: $turquoise;
+        }
+      }
+    }
+    .secondair {
+      margin-left: 0px;
     }
   }
 }

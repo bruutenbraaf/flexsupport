@@ -2010,36 +2010,49 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
-.rose .contactp {
+.rose .contactp,
+.error404 .contactp {
   background: #fc1264; }
-.rose .header--hp {
+.rose .header--hp,
+.error404 .header--hp {
   background: #fc1264; }
-.rose nav ul li a {
+.rose nav ul li a,
+.error404 nav ul li a {
   color: #ffffff; }
-.rose nav ul .menu-item-has-children:after {
+.rose nav ul .menu-item-has-children:after,
+.error404 nav ul .menu-item-has-children:after {
   background-image: url(../img/down.svg); }
-.rose .btn--header {
+.rose .btn--header,
+.error404 .btn--header {
   background: #35ffb6; }
-  .rose .btn--header svg {
+  .rose .btn--header svg,
+  .error404 .btn--header svg {
     width: 21px;
     height: 21px;
     margin-right: 10px;
     margin-left: 0; }
-    .rose .btn--header svg path {
+    .rose .btn--header svg path,
+    .error404 .btn--header svg path {
       fill: #001f3f; }
-  .rose .btn--header:hover {
+  .rose .btn--header:hover,
+  .error404 .btn--header:hover {
     background: #001f3f;
     color: #ffffff;
     text-decoration: none; }
-    .rose .btn--header:hover svg path {
+    .rose .btn--header:hover svg path,
+    .error404 .btn--header:hover svg path {
       fill: #ffffff; }
-.rose .secondair {
+.rose .secondair,
+.error404 .secondair {
   background: none; }
-  .rose .secondair:hover {
+  .rose .secondair:hover,
+  .error404 .secondair:hover {
     background: none; }
-  .rose .secondair:after {
+  .rose .secondair:after,
+  .error404 .secondair:after {
     background: #001f3f; }
-  .rose .secondair:before {
+  .rose .secondair:before,
+  .error404 .secondair:before {
     background: #001f3f;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -2906,6 +2919,50 @@ ul.uzp__pagination {
           margin-top: 0px; }
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
+
+.header--404 {
+  background: #fc1264; }
+  .header--404 svg path {
+    fill: #ffffff; }
+  .header--404 .container {
+    padding-top: calc(15px + 136px);
+    padding-bottom: 80px; }
+    .header--404 .container h1 {
+      font-family: "SilkaBold", Arial, sans-serif;
+      font-size: 138px;
+      line-height: 144px;
+      color: #001f3f;
+      padding-bottom: 60px;
+      margin: 0px;
+      color: #ffffff;
+      margin-top: 30px; }
+      .header--404 .container h1 strong {
+        font-family: "SilkaBold", Arial, sans-serif;
+        font-size: 138px;
+        line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px; }
+    .header--404 .container .bread a {
+      color: rgba(255, 255, 255, 0.5); }
+    .header--404 .container .bread span {
+      color: #ffffff; }
+    .header--404 .container p {
+      font-size: 20px;
+      line-height: 32px;
+      color: #ffffff; }
+      .header--404 .container p a {
+        font-size: 20px;
+        line-height: 32px;
+        color: #ffffff;
+        text-decoration: underline; }
+        .header--404 .container p a:hover {
+          color: #35ffb6; }
+    .header--404 .container .secondair {
+      margin-left: 0px; }
 
 @media (min-width: 1200px) {
   .container {

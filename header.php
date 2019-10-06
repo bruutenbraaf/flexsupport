@@ -27,7 +27,7 @@
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
                             <a href="<?php echo get_home_url(); ?>">
-                                <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow') { ?>
+                                <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>
                                     <?php $light = get_sub_field('light'); ?>
                                     <?php if ($light) { ?>
                                         <img data-start="opacity:1;margin-top:-0px;" data-150="opacity:0;margin-top:30px;" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
