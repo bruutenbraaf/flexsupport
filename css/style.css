@@ -2963,6 +2963,8 @@ ul.uzp__pagination {
           color: #35ffb6; }
     .header--404 .container .secondair {
       margin-left: 0px; }
+      .header--404 .container .secondair:hover {
+        color: #ffffff !important; }
 
 @media (min-width: 1200px) {
   .container {
