@@ -2882,6 +2882,8 @@ ul.uzp__pagination {
         background-size: cover;
         min-height: 330px;
         width: 100%; }
+      .other-pst .other-items .thumb-crop .cus-thumb {
+        background-position: 20%; }
       .other-pst .other-items .thumb-crop .inf {
         position: relative;
         z-index: 2;
