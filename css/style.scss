@@ -1511,6 +1511,7 @@ footer {
     padding: 0;
     margin-left: -24px;
     margin-right: -24px;
+    display: inline-block;
     li {
       float: left;
       list-style: none;
@@ -4008,7 +4009,7 @@ $hamburgerwidth: 26px;
   .full--img {
     height: 50vh;
   }
-  .bg--full {
+  .bg-full {
     background-position: 0% 12%;
   }
   .about {

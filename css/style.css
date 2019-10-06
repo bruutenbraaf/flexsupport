@@ -1222,7 +1222,8 @@ footer {
   margin: 0;
   padding: 0;
   margin-left: -24px;
-  margin-right: -24px; }
+  margin-right: -24px;
+  display: inline-block; }
   .header--sngl ul li {
     float: left;
     list-style: none;
@@ -3062,7 +3063,7 @@ ul.uzp__pagination {
   .full--img {
     height: 50vh; }
 
-  .bg--full {
+  .bg-full {
     background-position: 0% 12%; }
 
   .about .sub {
