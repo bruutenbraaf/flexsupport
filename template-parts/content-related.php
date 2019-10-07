@@ -25,11 +25,11 @@
                                         <a href="<?php the_permalink() ?>">
                                             <div class="thumb-crop align-items-end d-flex <?php if (is_singular('personeel')) { ?>big<?php } ?>">
                                                 <div class="inf">
-                                                    <a href="<?php the_permalink() ?>">
+                                                   
                                                         <?php setup_postdata($post); ?>
                                                         <h3><?php the_title(); ?></h3>
-                                                    </a>
-                                                    <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
+                                                    
+                                                    <div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
                                                 </div>
                                                 <?php $fallback = get_field('fallback', 'option'); ?>
                                                 <div class="thumb <?php if (is_singular('personeel')) { ?>cus-thumb<?php } ?>" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?> <?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
