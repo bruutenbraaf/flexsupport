@@ -2895,7 +2895,7 @@ ul.uzp__pagination {
     margin-left: -15px;
     margin-top: 30px; }
     .other-pst .other-items .thumb-crop {
-      width: 100%;
+      max-width: 100%;
       min-height: 330px;
       position: relative;
       margin: 0px 30px; }
