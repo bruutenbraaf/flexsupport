@@ -19,6 +19,13 @@ function leerbouwen_scripts()
 add_action('wp_enqueue_scripts', 'leerbouwen_scripts');
 
 
+add_filter('script_loader_tag', 'clean_script_tag');
+  function clean_script_tag($input) {
+  $input = str_replace("type='text/javascript' ", '', $input);
+  return str_replace("'", '"', $input);
+}
+
+
 add_filter('sensei_start_course_form','MyCustomfilter',$priority = 10, $args = 1);
 
 // Add option page
