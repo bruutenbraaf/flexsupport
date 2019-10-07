@@ -73,7 +73,7 @@ get_header(); ?>
                             <?php the_sub_field('content'); ?>
                             <?php $knop = get_sub_field('knop'); ?>
                             <?php if ($knop) { ?>
-                                <a class="btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                            <a class="btn" href="<?php echo $knop['url']; ?>" <?php if $knop['target']; ?>target="<?php echo $knop['target']; ?>"<?php } ?>><?php echo $knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     </div>
