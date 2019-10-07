@@ -25,10 +25,8 @@
                                         <a href="<?php the_permalink() ?>">
                                             <div class="thumb-crop align-items-end d-flex <?php if (is_singular('personeel')) { ?>big<?php } ?>">
                                                 <div class="inf">
-                                                   
                                                         <?php setup_postdata($post); ?>
                                                         <h3><?php the_title(); ?></h3>
-                                                    
                                                     <div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
                                                 </div>
                                                 <?php $fallback = get_field('fallback', 'option'); ?>
