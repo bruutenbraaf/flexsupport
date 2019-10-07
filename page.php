@@ -13,11 +13,11 @@ get_header(); ?>
                     <div class="d-flex flex-nowrap align-items-center offset-md-1 btns">
                         <?php $knop = get_sub_field('knop'); ?>
                         <?php if ($knop) { ?>
-                            <a class="btn--header" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                            <a class="btn--header" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                         <?php } ?>
                         <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
                         <?php if ($secondaire_knop) { ?>
-                            <a class="btn--header secondair" href="<?php echo $secondaire_knop['url']; ?>" target="<?php echo $secondaire_knop['target']; ?>"><?php echo $secondaire_knop['title']; ?></a>
+                            <a class="btn--header secondair" href="<?php echo $secondaire_knop['url']; ?>" <?php if ($secondaire_knop['target']) { ?>target="<?php echo $secondaire_knop['target']; ?>" <?php } ?>><?php echo $secondaire_knop['title']; ?></a>
                         <?php } ?>
                     </div>
                     <div class="int">
@@ -54,7 +54,7 @@ get_header(); ?>
                             <?php the_sub_field('content'); ?>
                             <?php $knop = get_sub_field('knop'); ?>
                             <?php if ($knop) { ?>
-                                <a class="btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?> ?target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ get_header(); ?>
                             <?php the_sub_field('content'); ?>
                             <?php $knop = get_sub_field('knop'); ?>
                             <?php if ($knop) { ?>
-                                <a class="btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?> ?target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     </div>
@@ -269,7 +269,7 @@ get_header(); ?>
                                 <?php endif; ?>
                                 <?php $alle_diensten_knop = get_sub_field('alle_diensten_knop'); ?>
                                 <?php if ($alle_diensten_knop) { ?>
-                                    <a class="btn" href="<?php echo $alle_diensten_knop['url']; ?>" target="<?php echo $alle_diensten_knop['target']; ?>"><?php echo $alle_diensten_knop['title']; ?></a>
+                                    <a class="btn" href="<?php echo $alle_diensten_knop['url']; ?>" <?php if ($alle_diensten_knop['target']) { ?>target="<?php echo $alle_diensten_knop['target']; ?>" <?php } ?>><?php echo $alle_diensten_knop['title']; ?></a>
                                 <?php } ?>
                             </div>
                         </div>
@@ -316,7 +316,7 @@ get_header(); ?>
                                 <?php endif; ?>
                                 <?php $alle_tools_knop = get_sub_field('alle_tools_knop'); ?>
                                 <?php if ($alle_tools_knop) { ?>
-                                    <a class="btn" href="<?php echo $alle_tools_knop['url']; ?>" target="<?php echo $alle_tools_knop['target']; ?>"><?php echo $alle_tools_knop['title']; ?></a>
+                                    <a class="btn" href="<?php echo $alle_tools_knop['url']; ?>" <?php if ($alle_tools_knop['target']) { ?>target="<?php echo $alle_tools_knop['target']; ?>" <?php } ?>><?php echo $alle_tools_knop['title']; ?></a>
                                 <?php } ?>
                             </div>
                         </div>
