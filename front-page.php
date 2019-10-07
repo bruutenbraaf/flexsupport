@@ -73,7 +73,7 @@ get_header(); ?>
                             <?php the_sub_field('content'); ?>
                             <?php $knop = get_sub_field('knop'); ?>
                             <?php if ($knop) { ?>
-                            <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']){ ?>target="<?php echo $knop['target']; ?>"<?php } ?>><?php echo $knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ get_header(); ?>
                             <?php endif; ?>
                             <?php $alle_tools_knop = get_sub_field('alle_tools_knop'); ?>
                             <?php if ($alle_tools_knop) { ?>
-                                <a class="btn" href="<?php echo $alle_tools_knop['url']; ?>" target="<?php echo $alle_tools_knop['target']; ?>"><?php echo $alle_tools_knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $alle_tools_knop['url']; ?>" <?php if ($alle_tools_knop['target']) { ?>target="<?php echo $alle_tools_knop['target']; ?>" <?php } ?>><?php echo $alle_tools_knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     </div>
