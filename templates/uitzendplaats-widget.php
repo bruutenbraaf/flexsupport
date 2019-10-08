@@ -58,7 +58,7 @@
 									<div class="arch--item">
 										<div class="arch--inner">
 											<div class="align-items-center row">
-												<a href="<?php the_permalink() ?>">
+												<a href="<?php echo get_site_url(null, get_option('uitzendplaats-options')['uzp-vacancy-index-page'] . '/' . sanitize_title($item->title) . '/' . $item->id . '/') ?>">
 													<div class="thumb-crop align-items-end d-flex">
 														<div class="inf">
 															<?php setup_postdata($post); ?>
