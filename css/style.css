@@ -3068,6 +3068,32 @@ ul.uzp__pagination {
     .downloads .dwnload:hover:before {
       width: 100%; }
 
+form ul {
+  margin: 0;
+  padding: 0; }
+  form ul li {
+    list-style: none; }
+form .gfield_visibility_hidden {
+  display: none; }
+form .gf_page_steps {
+  display: flex; }
+  form .gf_page_steps .gf_step_number {
+    display: none; }
+  form .gf_page_steps .gf_step {
+    padding: 5px 10px; }
+    form .gf_page_steps .gf_step span {
+      color: rgba(0, 31, 63, 0.5); }
+  form .gf_page_steps .gf_step_active {
+    border: 1px solid #001f3f;
+    border-radius: 2px; }
+    form .gf_page_steps .gf_step_active span {
+      color: #001f3f; }
+form h2 span {
+  font-family: "SilkaBold", Arial, sans-serif;
+  font-size: 62px;
+  line-height: 88px;
+  color: #001f3f; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }

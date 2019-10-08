@@ -4000,6 +4000,47 @@ ul.uzp__pagination {
   }
 }
 
+// Formulieren
+form {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+  .gfield_visibility_hidden {
+    display: none;
+  }
+  .gf_page_steps {
+    display: flex;
+    .gf_step_number {
+      display: none;
+    }
+    .gf_step {
+      padding: 5px 10px;
+      span {
+        color: rgba($midnight, 0.5);
+      }
+    }
+    .gf_step_active {
+      border: 1px solid $midnight;
+      border-radius: 2px;
+      span {
+        color: $midnight;
+      }
+    }
+  }
+  h2 {
+    span {
+      font-family: $SilkaBold;
+      font-size: 62px;
+      line-height: 88px;
+      color: $midnight;
+    }
+  }
+}
+
 // Responsive
 
 @media (min-width: 1200px) {
