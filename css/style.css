@@ -642,7 +642,8 @@ nav {
 .bg-full {
   background-position: 0 34%;
   background-size: cover;
-  height: 94vh; }
+  height: 70vh;
+  width: 100%; }
 
 .overlay {
   position: relative; }

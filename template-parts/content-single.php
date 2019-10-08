@@ -47,10 +47,21 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
-<?php $fallback = get_field('fallback', 'option'); ?>
-<div class="full--img<?php if (is_singular('personeel')) { ?> bg-full<?php } ?>" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['large']; ?><?php } ?>);">
-</div>
 
+<?php $fallback = get_field('fallback', 'option'); ?>
+<?php if (is_singular('personeel')) { ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bg-full" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['large']; ?><?php } ?>);">
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } else { ?>
+    <div class="full--img" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['large']; ?><?php } ?>);">
+    </div>
+<?php } ?>
 
 <?php if (have_rows('sections')) : ?>
     <?php while (have_rows('sections')) : the_row(); ?>
