@@ -324,7 +324,7 @@
 								<div class="uzp__checkbox">
 									<label>
 										<input name="accept_terms" value="1" id="inputAcceptTerms" type="checkbox"><strong><?php _e('I agree with the privacy stateement', 'uitzendplaats'); ?></strong><br>
-										<?php _e('The personal data you have entered in this form will only be used for purposes that the legislator allows. When you send this form you give permission process the data you provide. For more information see our <a href=/privacy/ target=_blank>privacy statement</a>.', 'uitzendplaats'); ?>
+										<?php _e('Wij gaan zorgvuldig om met uw persoonsgegevens. Ik ga akkoord met de <a href="/privacybeleid/">privacyverklaring.</a>', 'flexsupport'); ?>
 									</label>
 									<p class="uzp__help-block" data-validate-for="accept_terms"></p>
 								</div>
