@@ -3137,16 +3137,13 @@ ul.uzp__pagination {
   }
 }
 
-.gfield_checkbox {
-  label {
-    width: 100%;
-    display: initial;
-    white-space: normal;
-    font-size: 16px;
-    a {
-      font-size: 16px;
-    }
-  }
+.gform_wrapper .gfield_checkbox li label {
+  width: 100%;
+  display: initial !important;
+  font-size: 16px;
+  position: relative;
+  top: 6px;
+  left: 5px;
 }
 
 .overv-op {
