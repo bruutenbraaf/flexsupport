@@ -726,7 +726,7 @@ nav {
       padding: 0;
       font-size: 20px;
       line-height: 32px;
-      color: #ffffff;
+      color: $midnight;
     }
   }
 }
@@ -1643,6 +1643,10 @@ footer {
       margin-left: 25px;
     }
   }
+}
+
+.inth {
+  margin-left: inherit;
 }
 
 // Single carrousel
@@ -2655,6 +2659,9 @@ $pMargin: 135px;
           -webkit-text-stroke-color: #ffffff;
         }
       }
+      p {
+        color: #ffffff;
+      }
     }
   }
   nav {
@@ -2853,6 +2860,9 @@ $pMargin: 135px;
           -moz-text-stroke-color: #ffffff;
           -webkit-text-stroke-color: #ffffff;
         }
+      }
+      p {
+        color: #ffffff;
       }
     }
   }
@@ -3925,7 +3935,7 @@ ul.uzp__pagination {
     margin-bottom: 50px;
   }
   .container {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
   .dwnload {
     font-family: $SilkaBold !important;
