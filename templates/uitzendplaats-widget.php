@@ -61,11 +61,9 @@
 												<a href="<?php the_permalink() ?>">
 													<div class="thumb-crop align-items-end d-flex">
 														<div class="inf">
-															<a href="<?php the_permalink() ?>">
-																<?php setup_postdata($post); ?>
-																<h3><?php echo $item->title ?></h3>
-															</a>
-															<a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
+															<?php setup_postdata($post); ?>
+															<h3><?php echo $item->title ?></h3>
+															<div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></div>
 														</div>
 														<?php $fallback = get_field('fallback', 'option'); ?>
 														<div class="thumb" style="background-image:url(<?php echo $item->image_url_original; ?>);">
