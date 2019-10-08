@@ -36,6 +36,9 @@ p a {
 .clearfix {
   clear: both; }
 
+h4 {
+  font-family: "SilkaBold", Arial, sans-serif; }
+
 .btn {
   border-radius: none;
   font-family: "SilkaBold", Arial, sans-serif;
