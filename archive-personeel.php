@@ -42,7 +42,8 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                                 <div class="col-md-6 arch-item">
                                     <a href="<?php the_permalink() ?>">
                                         <div class="thumb-crop">
-                                            <div class="thumb" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+                                            <?php $fallback = get_field('fallback', 'option'); ?>
+                                            <div class="thumb" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
                                             </div>
                                         </div>
                                     </a>
