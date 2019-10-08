@@ -2919,6 +2919,8 @@ ul.uzp__pagination {
           margin-top: 0px; }
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
+      .other-pst .other-items .arch--item a {
+        width: 100%; }
 
 .header--404 {
   background: #fc1264; }
