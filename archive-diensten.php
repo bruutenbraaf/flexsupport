@@ -37,7 +37,7 @@ get_header(); ?>
                             <div class="arch--item">
                                 <div class="arch--inner">
                                     <div class="align-items-center row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 m-second">
                                             <a href="<?php the_permalink() ?>">
                                                 <?php setup_postdata($post); ?>
                                                 <h3><?php the_title(); ?></h3>
@@ -49,7 +49,7 @@ get_header(); ?>
                                             </a>
                                             <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 m-first">
                                             <a href="<?php the_permalink() ?>">
                                                 <div class="thumb-crop">
                                                     <?php $fallback = get_field('fallback', 'option'); ?>

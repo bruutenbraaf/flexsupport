@@ -39,7 +39,7 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                     <div class="arch-items">
                         <div class="row">
                             <?php while (have_posts()) : the_post(); ?>
-                                <div class="col-md-6 arch-item">
+                                <div class="col-md-3 arch-item">
                                     <a href="<?php the_permalink() ?>">
                                         <div class="thumb-crop">
                                             <?php $fallback = get_field('fallback', 'option'); ?>

@@ -4058,7 +4058,7 @@ ul.uzp__pagination {
   }
 }
 $hamburgerwidth: 26px;
-@media (max-width: 1024px) {
+@media (max-width: 1196px) {
   .other-pst .other-items {
     width: 180vw;
   }
@@ -4308,44 +4308,17 @@ $hamburgerwidth: 26px;
   }
 }
 
-@media (max-width: 414px) {
-  .socket .justify-content-end {
-    justify-content: start !important;
+@media (max-width: 768px) {
+  .m-first {
+    order: 1;
+    margin-bottom: 20px;
   }
-  nav .branding img {
-    width: 180px;
+  .m-second {
+    order: 2;
+    margin-bottom: 60px;
   }
-  .header--hp {
-    .container {
-      h1 {
-        font-size: 54px;
-        padding-bottom: 0;
-        line-height: 54px;
-        strong {
-          line-height: 54px;
-          font-size: 54px;
-          -moz-text-fill-color: transparent;
-          -webkit-text-fill-color: transparent;
-          -moz-text-stroke-color: #fff;
-          -webkit-text-stroke-color: #fff;
-          -moz-text-stroke-width: 2px;
-          -webkit-text-stroke-width: 2px;
-        }
-      }
-    }
-  }
-  .int {
-    margin-left: 0px !important;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .about {
-    padding: 40px 0px;
-    h2 {
-      font-size: 32px;
-      line-height: 44px;
-      padding-bottom: 30px;
-    }
+  .header--hp .int {
+    margin-left: 0px;
   }
 }
 
@@ -4541,6 +4514,47 @@ $hamburgerwidth: 26px;
         width: 100%;
         order: 1;
       }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .socket .justify-content-end {
+    justify-content: start !important;
+  }
+  nav .branding img {
+    width: 180px;
+  }
+  .header--hp {
+    .container {
+      h1 {
+        font-size: 54px;
+        padding-bottom: 0;
+        line-height: 54px;
+        strong {
+          line-height: 54px;
+          font-size: 54px;
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          -moz-text-stroke-color: #fff;
+          -webkit-text-stroke-color: #fff;
+          -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px;
+        }
+      }
+    }
+  }
+  .int {
+    margin-left: 0px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .about {
+    padding: 40px 0px;
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+      padding-bottom: 30px;
     }
   }
 }
