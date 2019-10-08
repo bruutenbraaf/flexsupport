@@ -600,7 +600,7 @@ nav {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 138px;
     line-height: 144px;
-    color: #ffffff;
+    color: #001f3f;
     padding-bottom: 120px; }
     .header--hp .container h1 strong {
       font-family: "SilkaBold", Arial, sans-serif;
@@ -608,8 +608,8 @@ nav {
       line-height: 144px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-color: #fff;
-      -webkit-text-stroke-color: #fff;
+      -moz-text-stroke-color: #001f3f;
+      -webkit-text-stroke-color: #001f3f;
       -moz-text-stroke-width: 4px;
       -webkit-text-stroke-width: 4px; }
   .header--hp .container .dwn {
@@ -2016,6 +2016,17 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .header--hp,
 .error404 .header--hp {
   background: #fc1264; }
+  .rose .header--hp .container,
+  .error404 .header--hp .container {
+    padding-top: calc(80px + 136px);
+    padding-bottom: 80px; }
+    .rose .header--hp .container h1,
+    .error404 .header--hp .container h1 {
+      color: #ffffff; }
+      .rose .header--hp .container h1 strong,
+      .error404 .header--hp .container h1 strong {
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff; }
 .rose nav ul li a,
 .error404 nav ul li a {
   color: #ffffff; }
@@ -2150,6 +2161,14 @@ form.uzp__registration-form .uzp__radio-inline {
     -webkit-text-stroke-width: 4px; }
 .yellow .header--hp {
   background: #fdbb2c; }
+  .yellow .header--hp .container {
+    padding-top: calc(80px + 136px);
+    padding-bottom: 80px; }
+    .yellow .header--hp .container h1 {
+      color: #ffffff; }
+      .yellow .header--hp .container h1 strong {
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff; }
 .yellow nav ul li a {
   color: #ffffff; }
 .yellow nav ul .menu-item-has-children:after {
@@ -2404,7 +2423,8 @@ ul.uzp__pagination {
     .gform_wrapper .gfield_checkbox li label a:hover {
       text-decoration: underline !important; }
 
-.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+.gform_wrapper ul.gfield_checkbox li,
+.gform_wrapper ul.gfield_radio li {
   overflow: visible !important; }
 
 .overv-op .arch-items .arch--inner {
@@ -2982,6 +3002,55 @@ ul.uzp__pagination {
       margin-left: 0px; }
       .header--404 .container .secondair:hover {
         color: #ffffff !important; }
+
+.downloads h2 {
+  margin-bottom: 50px; }
+.downloads .container {
+  margin-bottom: 60px; }
+.downloads .dwnload {
+  font-family: "SilkaBold", Arial, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 24px;
+  color: #001f3f;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 36px; }
+  .downloads .dwnload svg {
+    float: right; }
+  .downloads .dwnload:hover {
+    color: #001f3f; }
+  .downloads .dwnload:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 4px;
+    bottom: -14px;
+    right: 0px;
+    background: #35ffb6;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .downloads .dwnload:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0px;
+    height: 4px;
+    bottom: -14px;
+    left: 0px;
+    background: #35ffb6;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .downloads .dwnload:hover:after {
+    right: 0px;
+    width: 0; }
+  .downloads .dwnload:hover:before {
+    width: 100%; }
 
 @media (min-width: 1200px) {
   .container {

@@ -434,6 +434,37 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
+        <?php elseif (get_row_layout() == 'formulieren_downloaden') : ?>
+            <section class="downloads">
+                <?php if (have_rows('formulier_section')) : ?>
+                    <?php while (have_rows('formulier_section')) : the_row(); ?>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1">
+                                    <h2><?php the_sub_field('titel'); ?></h2>
+                                </div>
+                                <?php if (have_rows('formulieren__bestanden')) : ?>
+                                    <div class="col-md-10 offset-md-1">
+                                        <div class="row">
+                                            <?php while (have_rows('formulieren__bestanden')) : the_row(); ?>
+                                                <?php $bestand = get_sub_field('bestand'); ?>
+                                                <?php if ($bestand) { ?>
+                                                    <div class="col-md-6">
+                                                        <a class="dwnload" href="<?php echo $bestand['url']; ?>"><?php echo $bestand['filename']; ?> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M19 13V17C19 17.5304 18.7893 18.0391 18.4142 18.4142C18.0391 18.7893 17.5304 19 17 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V13M5 8L10 13M10 13L15 8M10 13V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                <?php } ?>
+                                            <?php endwhile; ?>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </section>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
