@@ -22,7 +22,7 @@ get_header(); ?>
                             <?php } ?>
                         </div>
                     <?php } ?>
-                    <div class="<?php if ($knop || !$secondaire_knop) { ?> offset-md-1 col-md-8<?php } else { ?>int<?php } ?>">
+                    <div class="<?php if ($knop || !$secondaire_knop) { ?> offset-md-1 col-md-8 inth<?php } else { ?>int<?php } ?>">
                         <?php the_sub_field('intro_text'); ?>
                     </div>
                     <div class="dwn align-items-center justify-content-end">

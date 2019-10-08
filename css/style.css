@@ -1328,11 +1328,9 @@ footer {
   .header--sngl .small:hover svg {
     margin-left: 25px; }
 
-.inth {
-  margin-left: inherit; }
-  .inth p {
-    font-size: 20px;
-    line-height: 32px; }
+.inth p {
+  font-size: 20px;
+  line-height: 32px; }
 
 .carrousel {
   max-width: 100vw;
