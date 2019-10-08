@@ -47,10 +47,9 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
-<?php if (get_the_post_thumbnail_url($post, 'large')) { ?>
-    <div class="full--img<?php if (is_singular('personeel')) { ?> bg-full<?php } ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
-    </div>
-<?php } ?>
+<?php $fallback = get_field('fallback', 'option'); ?>
+<div class="full--img<?php if (is_singular('personeel')) { ?> bg-full<?php } ?>" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
+</div>
 
 
 <?php if (have_rows('sections')) : ?>
