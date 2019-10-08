@@ -10,16 +10,18 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="d-flex flex-nowrap align-items-center offset-md-1 btns">
-                        <?php $knop = get_sub_field('knop'); ?>
-                        <?php if ($knop) { ?>
-                            <a class="btn--header" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
-                        <?php } ?>
-                        <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
-                        <?php if ($secondaire_knop) { ?>
-                            <a class="btn--header secondair" href="<?php echo $secondaire_knop['url']; ?>" <?php if ($secondaire_knop['target']) { ?>target="<?php echo $secondaire_knop['target']; ?>" <?php } ?>><?php echo $secondaire_knop['title']; ?></a>
-                        <?php } ?>
-                    </div>
+                    <?php if ($knop || $secondaire_knop) { ?>
+                        <div class="d-flex flex-nowrap align-items-center offset-md-1 btns">
+                            <?php $knop = get_sub_field('knop'); ?>
+                            <?php if ($knop) { ?>
+                                <a class="btn--header" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
+                            <?php } ?>
+                            <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
+                            <?php if ($secondaire_knop) { ?>
+                                <a class="btn--header secondair" href="<?php echo $secondaire_knop['url']; ?>" <?php if ($secondaire_knop['target']) { ?>target="<?php echo $secondaire_knop['target']; ?>" <?php } ?>><?php echo $secondaire_knop['title']; ?></a>
+                            <?php } ?>
+                        </div>
+                    <?php } ?>
                     <div class="int">
                         <?php the_sub_field('intro_text'); ?>
                     </div>
