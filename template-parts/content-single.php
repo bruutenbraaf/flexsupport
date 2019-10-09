@@ -53,13 +53,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="bg-full" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'full_img')) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?><?php } else { ?><?php echo $fallback['sizes']['large']; ?><?php } ?>);">
+                <div class="bg-full" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'full_img')) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?><?php } else { ?><?php echo $fallback['sizes']['full_img']; ?><?php } ?>);">
                 </div>
             </div>
         </div>
     </div>
 <?php } else { ?>
-    <div class="full--img" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'full_img')) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?><?php } else { ?><?php echo $fallback['sizes']['large']; ?><?php } ?>);">
+    <div class="full--img" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'full_img')) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?><?php } else { ?><?php echo $fallback['sizes']['full_img']; ?><?php } ?>);">
     </div>
 <?php } ?>
 
