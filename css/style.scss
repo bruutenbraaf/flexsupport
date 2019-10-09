@@ -94,7 +94,7 @@ p {
       height: 50%;
     }
     &:hover {
-      text-decoration: none;
+      text-decoration: none !important;
       color: $midnight;
     }
   }
