@@ -351,7 +351,7 @@ get_header(); ?>
                                             <?php $afbeelding = get_sub_field('afbeelding'); ?>
                                             <?php if ($afbeelding) { ?>
                                                 <div class="stap-img-outer">
-                                                    <div class="stap--img" style="background-image:url(<?php echo $afbeelding['sizes']['medium']; ?>);">
+                                                    <div class="stap--img" style="background-image:url(<?php echo $afbeelding['sizes']['xl']; ?>);">
                                                     </div>
                                                 </div>
                                             <?php } ?>

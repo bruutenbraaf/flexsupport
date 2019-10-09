@@ -3,6 +3,7 @@
 add_image_size('home', 1920, 600, true);
 add_image_size('full_img', 1440, 600, true);
 add_image_size('full_portrait', 600, 1500, true);
+add_image_size('xl', 700, 400, true);
 
 add_theme_support('post-thumbnails');
 
