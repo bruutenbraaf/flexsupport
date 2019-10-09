@@ -52,6 +52,9 @@ p a {
     transition: all 0.2s ease-in-out; }
   p a:hover:after {
     height: 50%; }
+  p a:hover {
+    text-decoration: none;
+    color: #001f3f; }
 
 .clearfix {
   clear: both; }

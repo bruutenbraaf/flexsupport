@@ -93,6 +93,10 @@ p {
     &:hover:after {
       height: 50%;
     }
+    &:hover {
+      text-decoration: none;
+      color: $midnight;
+    }
   }
 }
 
