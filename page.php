@@ -37,7 +37,7 @@ get_header(); ?>
 <?php endif; ?>
 
 <?php if (get_the_post_thumbnail_url($post, 'large')) { ?>
-    <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
+    <div class="full--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'full_img'); ?>);">
     </div>
 <?php } ?>
 
@@ -118,7 +118,7 @@ get_header(); ?>
         <?php elseif (get_row_layout() == 'volledige_afbeelding') : ?>
             <?php $afbeelding = get_sub_field('afbeelding'); ?>
             <?php if ($afbeelding) { ?>
-                <div class="full--img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                <div class="full--img" style="background-image:url(<?php echo $afbeelding['sizes']['full_img']; ?>);">
                 </div>
             <?php } ?>
         <?php elseif (get_row_layout() == 'klanten') : ?>

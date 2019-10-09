@@ -56,7 +56,7 @@ get_header(); ?>
 
 <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
 <?php $fallback = get_field('fallback', 'option'); ?>
-<div class="full--img" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
+<div class="full--img" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?> <?php } else { ?> <?php echo $fallback['sizes']['full_img']; ?><?php } ?>);">
 </div>
 
 
