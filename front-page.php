@@ -57,7 +57,7 @@ get_header(); ?>
         <?php if (get_row_layout() == 'volledige_afbeelding') : ?>
             <?php $upload_afbeelding = get_sub_field('upload_afbeelding'); ?>
             <?php if ($upload_afbeelding) { ?>
-                <section class="full--img<?php if (get_sub_field('toon_overlay') == 1) { ?> overlay<?php } ?>" style="background-image:url(<?php echo $upload_afbeelding['sizes']['large']; ?>)">
+                <section class="full--img<?php if (get_sub_field('toon_overlay') == 1) { ?> overlay<?php } ?>" style="background-image:url(<?php echo $upload_afbeelding['sizes']['full_img']; ?>)">
                 </section>
             <?php } ?>
         <?php elseif (get_row_layout() == 'informatie_blok') : ?>
@@ -122,7 +122,7 @@ get_header(); ?>
                 </div>
                 <?php $afbeelding = get_sub_field('afbeelding'); ?>
                 <?php if ($afbeelding) { ?>
-                    <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                    <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['full_portrait']; ?>);">
                     </div>
                 <?php } ?>
             </section>
@@ -169,7 +169,7 @@ get_header(); ?>
                 </div>
                 <?php $afbeelding = get_sub_field('afbeelding'); ?>
                 <?php if ($afbeelding) { ?>
-                    <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['large']; ?>);">
+                    <div class="img" style="background-image:url(<?php echo $afbeelding['sizes']['full_portrait']; ?>);">
                     </div>
                 <?php } ?>
             </section>
