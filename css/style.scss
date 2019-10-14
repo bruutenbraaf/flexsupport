@@ -634,43 +634,64 @@ nav {
           opacity: 1;
           text-decoration: none;
         }
+        &:after {
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 0%;
+          bottom: -2px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover:after {
+          height: 50%;
+        }
       }
     }
-    .current_page_item a {
-      position: relative;
-      &:before {
-        content: "";
-        background: $midnight;
-        width: 100%;
-        height: 2px;
-        bottom: -2px;
-        right: 0px;
-        position: absolute;
-        z-index: -1;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-      }
-      &:after {
-        content: "";
-        background: $midnight;
-        width: 0%;
-        height: 2px;
-        bottom: -2px;
-        left: 0px;
-        position: absolute;
-        z-index: -1;
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-        transition: all 0.4s ease-in-out;
-      }
-      &:hover:before {
-        width: 0%;
-      }
-      &:hover:after {
-        width: 100%;
+    .current_page_item, .current-menu-item {
+      a {
+        &:before {
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 50%;
+          bottom: -2px;
+          right: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:after {
+          transition-delay: 0.3s !important;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2rs ease-in-out;
+          transition: all 0.2s ease-in-out;
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 0%;
+          bottom: -2px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+        }
+        &:hover:before {
+          width: 0%;
+          height: 50%;
+        }
+        &:hover:after {
+          transition-delay: 0.3s;
+          height: 50%;
+        }
       }
     }
     .menu-item-has-children {

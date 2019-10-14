@@ -564,38 +564,54 @@ nav {
     .main-nav ul li a:hover {
       opacity: 1;
       text-decoration: none; }
-.main-nav ul .current_page_item a {
-  position: relative; }
-  .main-nav ul .current_page_item a:before {
-    content: "";
-    background: #001f3f;
-    width: 100%;
-    height: 2px;
-    bottom: -2px;
-    right: 0px;
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-  .main-nav ul .current_page_item a:after {
-    content: "";
-    background: #001f3f;
-    width: 0%;
-    height: 2px;
-    bottom: -2px;
-    left: 0px;
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
-  .main-nav ul .current_page_item a:hover:before {
-    width: 0%; }
-  .main-nav ul .current_page_item a:hover:after {
-    width: 100%; }
+    .main-nav ul li a:after {
+      content: "";
+      background: #35ffb6;
+      width: 100%;
+      height: 0%;
+      bottom: -2px;
+      left: 0px;
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .main-nav ul li a:hover:after {
+      height: 50%; }
+.main-nav ul .current_page_item a:before, .main-nav ul .current-menu-item a:before {
+  content: "";
+  background: #35ffb6;
+  width: 100%;
+  height: 50%;
+  bottom: -2px;
+  right: 0px;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+.main-nav ul .current_page_item a:after, .main-nav ul .current-menu-item a:after {
+  transition-delay: 0.3s !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2rs ease-in-out;
+  transition: all 0.2s ease-in-out;
+  content: "";
+  background: #35ffb6;
+  width: 100%;
+  height: 0%;
+  bottom: -2px;
+  left: 0px;
+  position: absolute;
+  z-index: -1; }
+.main-nav ul .current_page_item a:hover:before, .main-nav ul .current-menu-item a:hover:before {
+  width: 0%;
+  height: 50%; }
+.main-nav ul .current_page_item a:hover:after, .main-nav ul .current-menu-item a:hover:after {
+  transition-delay: 0.3s;
+  height: 50%; }
 .main-nav ul .menu-item-has-children:after {
   content: "";
   position: relative;
