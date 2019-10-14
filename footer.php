@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span>&copy; Flexsupport <?php echo date("Y"); ?></span>
+                    <span>&copy; Flexsupport 2007 - <?php echo date("Y"); ?></span>
                 </div>
                 <div class="col-md-8 d-flex justify-content-end">
                     <?php wp_nav_menu(array('theme_location' => 'socket_menu')); ?>
