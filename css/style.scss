@@ -1378,6 +1378,11 @@ $padding-bottom: 70px;
 footer {
   padding-top: 100px;
   overflow: hidden;
+  .widget-block {
+    a {
+      margin-bottom: 0px !important;
+    }
+  }
   .branding {
     img {
       max-width: 204px;

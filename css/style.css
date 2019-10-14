@@ -1136,6 +1136,8 @@ nav {
 footer {
   padding-top: 100px;
   overflow: hidden; }
+  footer .widget-block a {
+    margin-bottom: 0px !important; }
   footer .branding img {
     max-width: 204px; }
   footer .menu-footer-container ul {
