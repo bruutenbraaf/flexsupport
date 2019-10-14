@@ -654,7 +654,8 @@ nav {
       }
     }
     .current_page_item > a,
-    .current-menu-item > a {
+    .current-menu-item > a,
+    .current-menu-ancestor > a {
       &:before {
         content: "";
         background: $turquoise;

@@ -580,7 +580,8 @@ nav {
     .main-nav ul li a:hover:after {
       height: 50%; }
 .main-nav ul .current_page_item > a:before,
-.main-nav ul .current-menu-item > a:before {
+.main-nav ul .current-menu-item > a:before,
+.main-nav ul .current-menu-ancestor > a:before {
   content: "";
   background: #35ffb6;
   width: 100%;
@@ -594,7 +595,8 @@ nav {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 .main-nav ul .current_page_item > a:after,
-.main-nav ul .current-menu-item > a:after {
+.main-nav ul .current-menu-item > a:after,
+.main-nav ul .current-menu-ancestor > a:after {
   transition-delay: 0.3s !important;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -609,11 +611,13 @@ nav {
   position: absolute;
   z-index: -1; }
 .main-nav ul .current_page_item > a:hover:before,
-.main-nav ul .current-menu-item > a:hover:before {
+.main-nav ul .current-menu-item > a:hover:before,
+.main-nav ul .current-menu-ancestor > a:hover:before {
   width: 0%;
   height: 50%; }
 .main-nav ul .current_page_item > a:hover:after,
-.main-nav ul .current-menu-item > a:hover:after {
+.main-nav ul .current-menu-item > a:hover:after,
+.main-nav ul .current-menu-ancestor > a:hover:after {
   transition-delay: 0.3s;
   height: 50%; }
 .main-nav ul .menu-item-has-children:after {
