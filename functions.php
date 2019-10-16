@@ -23,13 +23,14 @@ add_action('wp_enqueue_scripts', 'leerbouwen_scripts');
 
 
 add_filter('script_loader_tag', 'clean_script_tag');
-  function clean_script_tag($input) {
-  $input = str_replace("type='text/javascript' ", '', $input);
-  return str_replace("'", '"', $input);
+function clean_script_tag($input)
+{
+	$input = str_replace("type='text/javascript' ", '', $input);
+	return str_replace("'", '"', $input);
 }
 
 
-add_filter('sensei_start_course_form','MyCustomfilter',$priority = 10, $args = 1);
+add_filter('sensei_start_course_form', 'MyCustomfilter', $priority = 10, $args = 1);
 
 // Add option page
 
@@ -352,89 +353,91 @@ endif;
 
 
 
-function sitemap() {
-    $sitemap = '';
-    $sitemap .= '<h4>Articles </h4>';
-    $sitemap .= '<ul class="sitemapul">';
-    $posts_array = get_posts();
-    foreach ($posts_array as $spost):
-        $sitemap .='<div class="blockArticle">
+function sitemap()
+{
+	$sitemap = '';
+	$sitemap .= '<h4>Articles </h4>';
+	$sitemap .= '<ul class="sitemapul">';
+	$posts_array = get_posts();
+	foreach ($posts_array as $spost) :
+		$sitemap .= '<div class="blockArticle">
             <h3><a href="' . $spost->guid . '" rel="bookmark" class="linktag">' . $spost->post_title . '</a> </h3>
         </div>';
-    endforeach;
-    $sitemap .= '</ul>';
-    $sitemap .= '<h4>Category</h4>';
-    $sitemap .= '<ul class="sitemapul">';
-    $args = array(
-        'offset' => 0,
-        'category' => '',
-        'category_name' => '',
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'include' => '',
-        'exclude' => '',
-        'meta_key' => '',
-        'meta_value' => '',
-        'post_type' => 'post',
-        'post_mime_type' => '',
-        'post_parent' => '',
-        'author' => '',
-        'post_status' => 'publish',
-        'suppress_filters' => true
-    );
-    $cats = get_categories($args);
-    foreach ($cats as $cat) :
-        $sitemap .= '<li class="pages-list"><a href="' . get_category_link($cat->term_id) . '">' . $cat->cat_name . '</a></li>';
-    endforeach;
-    $sitemap .= '</ul>';
-    $pages_args = array(
-        'exclude' => '', /* ID of pages to be excluded, separated by comma */
-        'post_type' => 'page',
-        'post_status' => 'publish'
-    );
-    $sitemap .= '<h3>Pages</h3>';
-    $sitemap .= '<ul>';
-    $pages = get_pages($pages_args);
-    foreach ($pages as $page) :
-        $sitemap .= '<li class="pages-list"><a href="' . get_page_link($page->ID) . '" rel="bookmark">' . $page->post_title . '</a></li>';
-    endforeach;
-    $sitemap .= '</ul>';
-    $sitemap .= '<h4>Tags</h4>';
-    $sitemap .= '<ul class="sitemapul">';
-    $tags = get_tags();
-    foreach ($tags as $tag) {
-        $tag_link = get_tag_link($tag->term_id);
-        $sitemap .= "<li class='pages-list'><a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
-        $sitemap .= $tag->name . '</a></li>';
-    }
-    return$sitemap;
+	endforeach;
+	$sitemap .= '</ul>';
+	$sitemap .= '<h4>Category</h4>';
+	$sitemap .= '<ul class="sitemapul">';
+	$args = array(
+		'offset' => 0,
+		'category' => '',
+		'category_name' => '',
+		'orderby' => 'date',
+		'order' => 'DESC',
+		'include' => '',
+		'exclude' => '',
+		'meta_key' => '',
+		'meta_value' => '',
+		'post_type' => 'post',
+		'post_mime_type' => '',
+		'post_parent' => '',
+		'author' => '',
+		'post_status' => 'publish',
+		'suppress_filters' => true
+	);
+	$cats = get_categories($args);
+	foreach ($cats as $cat) :
+		$sitemap .= '<li class="pages-list"><a href="' . get_category_link($cat->term_id) . '">' . $cat->cat_name . '</a></li>';
+	endforeach;
+	$sitemap .= '</ul>';
+	$pages_args = array(
+		'exclude' => '', /* ID of pages to be excluded, separated by comma */
+		'post_type' => 'page',
+		'post_status' => 'publish'
+	);
+	$sitemap .= '<h3>Pages</h3>';
+	$sitemap .= '<ul>';
+	$pages = get_pages($pages_args);
+	foreach ($pages as $page) :
+		$sitemap .= '<li class="pages-list"><a href="' . get_page_link($page->ID) . '" rel="bookmark">' . $page->post_title . '</a></li>';
+	endforeach;
+	$sitemap .= '</ul>';
+	$sitemap .= '<h4>Tags</h4>';
+	$sitemap .= '<ul class="sitemapul">';
+	$tags = get_tags();
+	foreach ($tags as $tag) {
+		$tag_link = get_tag_link($tag->term_id);
+		$sitemap .= "<li class='pages-list'><a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+		$sitemap .= $tag->name . '</a></li>';
+	}
+	return $sitemap;
 }
 add_shortcode('sitemap', 'sitemap');
 /****************************************************
-* XML Sitemap in WordPress
-*****************************************************/
-function xml_sitemap() {
-  $postsForSitemap = get_posts(array(
-    'numberposts' => -1,
-    'orderby' => 'modified',
-    'post_type'  => array('post','page'),
-    'order'    => 'DESC'
-  ));
-  $sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
-  $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-  foreach($postsForSitemap as $post) {
-    setup_postdata($post);
-    $postdate = explode(" ", $post->post_modified);
-    $sitemap .= '<url>'.
-      '<loc>'. get_permalink($post->ID) .'</loc>'.
-      '<lastmod>'. $postdate[0] .'</lastmod>'.
-      '<changefreq>monthly</changefreq>'.
-    '</url>';
-  }
-  $sitemap .= '</urlset>';
-  $fp = fopen(ABSPATH . "sitemap.xml", 'w');
-  fwrite($fp, $sitemap);
-  fclose($fp);
+ * XML Sitemap in WordPress
+ *****************************************************/
+function xml_sitemap()
+{
+	$postsForSitemap = get_posts(array(
+		'numberposts' => -1,
+		'orderby' => 'modified',
+		'post_type'  => array('post', 'page'),
+		'order'    => 'DESC'
+	));
+	$sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
+	$sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+	foreach ($postsForSitemap as $post) {
+		setup_postdata($post);
+		$postdate = explode(" ", $post->post_modified);
+		$sitemap .= '<url>' .
+			'<loc>' . get_permalink($post->ID) . '</loc>' .
+			'<lastmod>' . $postdate[0] . '</lastmod>' .
+			'<changefreq>monthly</changefreq>' .
+			'</url>';
+	}
+	$sitemap .= '</urlset>';
+	$fp = fopen(ABSPATH . "sitemap.xml", 'w');
+	fwrite($fp, $sitemap);
+	fclose($fp);
 }
 add_action("publish_post", "xml_sitemap");
 add_action("publish_page", "xml_sitemap");
@@ -444,101 +447,124 @@ add_action("publish_page", "xml_sitemap");
 /**
  * Disable the emoji's
  */
-function disable_emojis() {
-	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-	remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	remove_action( 'admin_print_styles', 'print_emoji_styles' ); 
-	remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' ); 
-	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-	add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
-	add_filter( 'wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2 );
-   }
-   add_action( 'init', 'disable_emojis' );
-   
-   /**
-	* Filter function used to remove the tinymce emoji plugin.
-	* 
-	* @param array $plugins 
-	* @return array Difference betwen the two arrays
-	*/
-   function disable_emojis_tinymce( $plugins ) {
-	if ( is_array( $plugins ) ) {
-	return array_diff( $plugins, array( 'wpemoji' ) );
+function disable_emojis()
+{
+	remove_action('wp_head', 'print_emoji_detection_script', 7);
+	remove_action('admin_print_scripts', 'print_emoji_detection_script');
+	remove_action('wp_print_styles', 'print_emoji_styles');
+	remove_action('admin_print_styles', 'print_emoji_styles');
+	remove_filter('the_content_feed', 'wp_staticize_emoji');
+	remove_filter('comment_text_rss', 'wp_staticize_emoji');
+	remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+	add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
+	add_filter('wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2);
+}
+add_action('init', 'disable_emojis');
+
+/**
+ * Filter function used to remove the tinymce emoji plugin.
+ * 
+ * @param array $plugins 
+ * @return array Difference betwen the two arrays
+ */
+function disable_emojis_tinymce($plugins)
+{
+	if (is_array($plugins)) {
+		return array_diff($plugins, array('wpemoji'));
 	} else {
-	return array();
+		return array();
 	}
-   }
-   
-   /**
-	* Remove emoji CDN hostname from DNS prefetching hints.
-	*
-	* @param array $urls URLs to print for resource hints.
-	* @param string $relation_type The relation type the URLs are printed for.
-	* @return array Difference betwen the two arrays.
-	*/
-   function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-	if ( 'dns-prefetch' == $relation_type ) {
-	/** This filter is documented in wp-includes/formatting.php */
-	$emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' );
-   
-   $urls = array_diff( $urls, array( $emoji_svg_url ) );
+}
+
+/**
+ * Remove emoji CDN hostname from DNS prefetching hints.
+ *
+ * @param array $urls URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed for.
+ * @return array Difference betwen the two arrays.
+ */
+function disable_emojis_remove_dns_prefetch($urls, $relation_type)
+{
+	if ('dns-prefetch' == $relation_type) {
+		/** This filter is documented in wp-includes/formatting.php */
+		$emoji_svg_url = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/');
+
+		$urls = array_diff($urls, array($emoji_svg_url));
 	}
-   
-   return $urls;
-   }
+
+	return $urls;
+}
 
 
 //  Remove slug post types
 
-function na_remove_slug_diensten( $post_link, $post, $leavename ) {
+add_filter(
+	'post_type_link',
+	'custom_post_type_link',
+	10,
+	3
+);
 
-    if ( 'diensten' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
-    }
+function custom_post_type_link($permalink, $post, $leavename)
+{
+	if (!gettype($post) == 'post') {
+		return $permalink;
+	}
+	switch ($post->post_type) {
+		case 'diensten':
+			$permalink = get_home_url() . '/' . $post->post_name . '/';
+			break;
+	}
 
-    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+	switch ($post->post_type) {
+		case 'tools':
+			$permalink = get_home_url() . '/' . $post->post_name . '/';
+			break;
+	}
 
-    return $post_link;
+	return $permalink;
 }
-add_filter( 'post_type_link', 'na_remove_slug_diensten', 10, 3 );
 
 
-function na_parse_request_diensten( $query ) {
+add_action(
+	'pre_get_posts',
+	'custom_pre_get_posts'
+);
 
-    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
-        return;
-    }
+function custom_pre_get_posts($query)
+{
+	global $wpdb;
 
-    if ( ! empty( $query->query['name'] ) ) {
-		$query->set( 'post_type', array( 'post', 'diensten', 'page' ) );
-    }
+	if (!$query->is_main_query()) {
+		return;
+	}
+
+	$post_name = $query->get('name');
+
+	$post_type = $wpdb->get_var(
+		$wpdb->prepare(
+			'SELECT post_type FROM ' . $wpdb->posts . ' WHERE post_name = %s LIMIT 1',
+			$post_name
+		)
+	);
+
+	switch ($post_type) {
+		case 'diensten':
+			$query->set('diensten', $post_name);
+			$query->set('post_type', $post_type);
+			$query->is_single = true;
+			$query->is_page = false;
+			break;
+	}
+
+	switch ($post_type) {
+		case 'tools':
+			$query->set('tools', $post_name);
+			$query->set('post_type', $post_type);
+			$query->is_single = true;
+			$query->is_page = false;
+			break;
+	}
+
+	return $query;
 }
-add_action( 'pre_get_posts', 'na_parse_request_diensten' );
-
-
-function na_remove_slug_tools( $post_link, $post, $leavename ) {
-
-    if ( 'tools' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
-    }
-
-    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
-
-    return $post_link;
-}
-add_filter( 'post_type_link', 'na_remove_slug_tools', 10, 3 );
-
-
-function na_parse_request_tools( $query ) {
-
-    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
-        return;
-    }
-
-    if ( ! empty( $query->query['name'] ) ) {
-		$query->set( 'post_type', array( 'post', 'tools', 'page' ) );
-    }
-}
-add_action( 'pre_get_posts', 'na_parse_request_tools' );
