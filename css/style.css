@@ -3350,7 +3350,7 @@ form h2 span {
     .header--hp .container h1,
     .header--hp .container .intp p {
       font-size: 94px !important;
-      padding-bottom: 0px; }
+      padding-bottom: 0px !important; }
       .header--hp .container h1 strong,
       .header--hp .container .intp p strong {
         font-size: 94px !important; }
@@ -3635,8 +3635,8 @@ form h2 span {
       -webkit-text-fill-color: transparent;
       -moz-text-stroke-color: #fff;
       -webkit-text-stroke-color: #fff;
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px; }
+      -moz-text-stroke-width: 2px !important;
+      -webkit-text-stroke-width: 2px !important; }
 
   .int {
     margin-left: 0px !important;

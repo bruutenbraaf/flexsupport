@@ -4346,7 +4346,7 @@ $hamburgerwidth: 26px;
       h1,
       .intp p {
         font-size: 94px !important;
-        padding-bottom: 0px;
+        padding-bottom: 0px !important;
         strong {
           font-size: 94px !important;;
         }
@@ -4692,8 +4692,8 @@ $hamburgerwidth: 26px;
           -webkit-text-fill-color: transparent;
           -moz-text-stroke-color: #fff;
           -webkit-text-stroke-color: #fff;
-          -moz-text-stroke-width: 2px;
-          -webkit-text-stroke-width: 2px;
+          -moz-text-stroke-width: 2px !important;
+          -webkit-text-stroke-width: 2px !important;
         }
       }
     }
