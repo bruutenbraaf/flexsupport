@@ -2114,6 +2114,26 @@ form.uzp__registration-form .uzp__radio-inline {
       .error404 .header--hp .container h1 strong {
         -moz-text-stroke-color: #ffffff;
         -webkit-text-stroke-color: #ffffff; }
+    .rose .header--hp .container .intp p,
+    .error404 .header--hp .container .intp p {
+      font-family: "SilkaBold", Arial, sans-serif;
+      font-size: 138px;
+      line-height: 144px;
+      color: #ffffff;
+      padding-bottom: 120px; }
+      .rose .header--hp .container .intp p b,
+      .rose .header--hp .container .intp p strong,
+      .error404 .header--hp .container .intp p b,
+      .error404 .header--hp .container .intp p strong {
+        font-family: "SilkaBold", Arial, sans-serif;
+        font-size: 138px;
+        line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px; }
     .rose .header--hp .container p,
     .error404 .header--hp .container p {
       color: #ffffff; }

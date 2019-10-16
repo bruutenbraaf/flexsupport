@@ -6,7 +6,7 @@ get_header(); ?>
         <section class="header--hp">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-1">
+                    <div class="col-md-8 offset-md-1 intp">
                         <?php the_sub_field('titel'); ?>
                     </div>
                 </div>

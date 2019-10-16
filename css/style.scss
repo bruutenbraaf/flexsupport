@@ -2753,6 +2753,27 @@ $pMargin: 135px;
           -webkit-text-stroke-color: #ffffff;
         }
       }
+      .intp {
+        p {
+          font-family: $SilkaBold;
+          font-size: 138px;
+          line-height: 144px;
+          color: #ffffff;
+          padding-bottom: 120px;
+          b,
+          strong {
+            font-family: $SilkaBold;
+            font-size: 138px;
+            line-height: 144px;
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-stroke-color: #ffffff;
+            -webkit-text-stroke-color: #ffffff;
+            -moz-text-stroke-width: 4px;
+            -webkit-text-stroke-width: 4px;
+          }
+        }
+      }
       p {
         color: #ffffff;
       }
