@@ -488,3 +488,57 @@ function disable_emojis() {
    
    return $urls;
    }
+
+
+//  Remove slug post types
+
+function na_remove_slug_diensten( $post_link, $post, $leavename ) {
+
+    if ( 'diensten' != $post->post_type || 'publish' != $post->post_status ) {
+        return $post_link;
+    }
+
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+
+    return $post_link;
+}
+add_filter( 'post_type_link', 'na_remove_slug_diensten', 10, 3 );
+
+
+function na_parse_request_diensten( $query ) {
+
+    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+        return;
+    }
+
+    if ( ! empty( $query->query['name'] ) ) {
+		$query->set( 'post_type', array( 'post', 'diensten', 'page' ) );
+    }
+}
+add_action( 'pre_get_posts', 'na_parse_request_diensten' );
+
+
+function na_remove_slug_tools( $post_link, $post, $leavename ) {
+
+    if ( 'tools' != $post->post_type || 'publish' != $post->post_status ) {
+        return $post_link;
+    }
+
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+
+    return $post_link;
+}
+add_filter( 'post_type_link', 'na_remove_slug_tools', 10, 3 );
+
+
+function na_parse_request_tools( $query ) {
+
+    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+        return;
+    }
+
+    if ( ! empty( $query->query['name'] ) ) {
+		$query->set( 'post_type', array( 'post', 'tools', 'page' ) );
+    }
+}
+add_action( 'pre_get_posts', 'na_parse_request_tools' );
