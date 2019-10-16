@@ -3347,10 +3347,12 @@ form h2 span {
 
   .header--hp .container {
     padding-top: 136px; }
-    .header--hp .container h1 {
+    .header--hp .container h1,
+    .header--hp .container .intp p {
       font-size: 94px;
       padding-bottom: 0px; }
-      .header--hp .container h1 strong {
+      .header--hp .container h1 strong,
+      .header--hp .container .intp p strong {
         font-size: 94px; }
   .header--hp .int {
     order: 1;
@@ -3620,11 +3622,13 @@ form h2 span {
   nav .branding img {
     width: 180px; }
 
-  .header--hp .container h1 {
+  .header--hp .container h1,
+  .header--hp .container .intp p {
     font-size: 54px;
     padding-bottom: 0;
     line-height: 54px; }
-    .header--hp .container h1 strong {
+    .header--hp .container h1 strong,
+    .header--hp .container .intp p strong {
       line-height: 54px;
       font-size: 54px;
       -moz-text-fill-color: transparent;

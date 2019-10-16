@@ -4342,7 +4342,8 @@ $hamburgerwidth: 26px;
   .header--hp {
     .container {
       padding-top: $NavHeight;
-      h1 {
+      h1,
+      .intp p {
         font-size: 94px;
         padding-bottom: 0px;
         strong {
@@ -4678,7 +4679,8 @@ $hamburgerwidth: 26px;
   }
   .header--hp {
     .container {
-      h1 {
+      h1,
+      .intp p {
         font-size: 54px;
         padding-bottom: 0;
         line-height: 54px;
