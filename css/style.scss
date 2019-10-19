@@ -4455,7 +4455,7 @@ form {
     text-align: left;
     clear: both;
   }
-  .gfield_description {
+  .gfield_description, .description {
     font-family: $SilkaMedium;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -4478,7 +4478,6 @@ form {
   }
   .gfield_radio {
     margin: 0px -15px;
-    padding-bottom: 30px;
     display: flex;
     li {
       float: left;
