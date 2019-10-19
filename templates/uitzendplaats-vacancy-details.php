@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2 align-items-center justify-content-end d-flex hdbtn">
+				<div class="col-md-2 align-items-end justify-content-end d-flex hdbtn">
 					<a href="#apply" class="btn"><?php _e('Direct solliciteren', 'talentplaats'); ?></a>
 				</div>
 			</div>
