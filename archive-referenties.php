@@ -10,8 +10,8 @@ get_header(); ?>
                 } ?>
             </div>
             <div class="col-md-8 offset-md-1">
-                <?php the_field("klanten_archive_title", "option"); ?>
-                <?php the_field("klanten_archive_intro", "option"); ?>
+                <?php the_field("referenties_archive_title", "option"); ?>
+                <?php the_field("referenties_archive_intro", "option"); ?>
             </div>
             <div class="col-md-1 dwn align-items-end d-flex">
                 <svg width="26" height="79" viewBox="0 0 26 79" fill="none" xmlns="http://www.w3.org/2000/svg">
