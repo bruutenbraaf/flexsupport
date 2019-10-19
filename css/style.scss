@@ -3777,30 +3777,30 @@ ul.uzp__pagination {
 }
 
 .validation_error {
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  display: flex;
-  text-align: left;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px !important;
+  display: flex !important;
+  text-align: left !important;
 }
 
 .gform_wrapper li.gfield.gfield_error,
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  border-top: 0px;
-  border-bottom: 0px;
-  background: none;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  background: none !important;
 }
 
 .gform_wrapper .gfield_error .gfield_label {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .gfield_required {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .gfield_description .validation_message {
-  color: $midnight;
+  color: $midnight !important;
 }
 
 .acf-map {
