@@ -800,7 +800,13 @@ nav {
         color: #001f3f; }
         .werkwijze .stappen .stap .titel a {
           color: #001f3f;
-          text-decoration: underline; }
+          text-decoration: underline;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+          .werkwijze .stappen .stap .titel a:hover {
+            font-weight: bold; }
     .werkwijze .stappen .slick-active {
       cursor: pointer; }
       .werkwijze .stappen .slick-active:hover .stap--img {
