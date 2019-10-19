@@ -1777,7 +1777,7 @@ form.uzp__registration-form .uzp__radio-inline {
   .vac-header h1 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 74px;
-    line-height: 144px;
+    line-height: 78px;
     display: flex;
     align-items: flex-end;
     color: #001f3f; }
@@ -3474,14 +3474,16 @@ form .gfield_html {
   margin: 0;
   text-align: left;
   clear: both; }
-form .gfield_description, form .description {
+form .gfield_description,
+form .description {
   font-family: "SilkaMedium", Arial, sans-serif;
   margin-bottom: 15px;
   margin-top: 0px;
   padding-left: 30px;
   position: relative;
   clear: both; }
-  form .gfield_description:before, form .description:before {
+  form .gfield_description:before,
+  form .description:before {
     content: "i";
     width: 22px;
     height: 22px;
@@ -3551,6 +3553,9 @@ form p.description {
   opacity: 1;
   font-size: 16px;
   line-height: 24px; }
+
+.header--hp {
+  margin-bottom: 0px; }
 
 @media (min-width: 1200px) {
   .container {

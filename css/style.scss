@@ -2332,10 +2332,10 @@ $pMargin: 135px;
   h1 {
     font-family: $SilkaBold;
     font-size: 74px;
-    line-height: 144px;
+    line-height: 78px;
     display: flex;
     align-items: flex-end;
-    color: #001f3f;
+    color: $midnight;
   }
   .uzp__meta {
     margin-top: 30px;
@@ -4455,7 +4455,8 @@ form {
     text-align: left;
     clear: both;
   }
-  .gfield_description, .description {
+  .gfield_description,
+  .description {
     font-family: $SilkaMedium;
     margin-bottom: 15px;
     margin-top: 0px;
@@ -4538,7 +4539,8 @@ form {
     position: relative;
     padding: 15px;
     border: 2px dashed $turquoise;
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       background: $turquoise;
     }
   }
@@ -4548,6 +4550,11 @@ form {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+
+.header--hp {
+  margin-bottom: 0px;
 }
 
 // Responsive
