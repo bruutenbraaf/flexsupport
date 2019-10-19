@@ -3476,7 +3476,7 @@ form .gfield_html {
   clear: both; }
 form .gfield_description, form .description {
   font-family: "SilkaMedium", Arial, sans-serif;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   margin-top: 0px;
   padding-left: 30px;
   position: relative;
@@ -3540,6 +3540,10 @@ form input[type="submit"] {
     color: #ffffff; }
 form .nice-select {
   margin-bottom: 30px; }
+form .gform_drop_area {
+  position: relative;
+  padding: 15px;
+  border: 2px dashed #35ffb6; }
 
 @media (min-width: 1200px) {
   .container {

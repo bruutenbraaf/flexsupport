@@ -4457,7 +4457,7 @@ form {
   }
   .gfield_description, .description {
     font-family: $SilkaMedium;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-top: 0px;
     padding-left: 30px;
     position: relative;
@@ -4533,6 +4533,11 @@ form {
   }
   .nice-select {
     margin-bottom: 30px;
+  }
+  .gform_drop_area {
+    position: relative;
+    padding: 15px;
+    border: 2px dashed $turquoise;
   }
 }
 
