@@ -2102,21 +2102,41 @@ form.uzp__registration-form .uzp__radio-inline {
 .error404 .contactp {
   background: #fc1264; }
 .rose .header--hp,
-.error404 .header--hp {
+.rose .header--arch,
+.rose .header--sngl,
+.error404 .header--hp,
+.error404 .header--arch,
+.error404 .header--sngl {
   background: #fc1264; }
   .rose .header--hp .container,
-  .error404 .header--hp .container {
+  .rose .header--arch .container,
+  .rose .header--sngl .container,
+  .error404 .header--hp .container,
+  .error404 .header--arch .container,
+  .error404 .header--sngl .container {
     padding-top: calc(80px + 136px);
     padding-bottom: 80px; }
     .rose .header--hp .container h1,
-    .error404 .header--hp .container h1 {
+    .rose .header--arch .container h1,
+    .rose .header--sngl .container h1,
+    .error404 .header--hp .container h1,
+    .error404 .header--arch .container h1,
+    .error404 .header--sngl .container h1 {
       color: #ffffff; }
       .rose .header--hp .container h1 strong,
-      .error404 .header--hp .container h1 strong {
+      .rose .header--arch .container h1 strong,
+      .rose .header--sngl .container h1 strong,
+      .error404 .header--hp .container h1 strong,
+      .error404 .header--arch .container h1 strong,
+      .error404 .header--sngl .container h1 strong {
         -moz-text-stroke-color: #ffffff;
         -webkit-text-stroke-color: #ffffff; }
     .rose .header--hp .container .intp p,
-    .error404 .header--hp .container .intp p {
+    .rose .header--arch .container .intp p,
+    .rose .header--sngl .container .intp p,
+    .error404 .header--hp .container .intp p,
+    .error404 .header--arch .container .intp p,
+    .error404 .header--sngl .container .intp p {
       font-family: "SilkaBold", Arial, sans-serif;
       font-size: 138px;
       line-height: 144px;
@@ -2124,8 +2144,16 @@ form.uzp__registration-form .uzp__radio-inline {
       padding-bottom: 120px; }
       .rose .header--hp .container .intp p b,
       .rose .header--hp .container .intp p strong,
+      .rose .header--arch .container .intp p b,
+      .rose .header--arch .container .intp p strong,
+      .rose .header--sngl .container .intp p b,
+      .rose .header--sngl .container .intp p strong,
       .error404 .header--hp .container .intp p b,
-      .error404 .header--hp .container .intp p strong {
+      .error404 .header--hp .container .intp p strong,
+      .error404 .header--arch .container .intp p b,
+      .error404 .header--arch .container .intp p strong,
+      .error404 .header--sngl .container .intp p b,
+      .error404 .header--sngl .container .intp p strong {
         font-family: "SilkaBold", Arial, sans-serif;
         font-size: 138px;
         line-height: 144px;
@@ -2136,7 +2164,11 @@ form.uzp__registration-form .uzp__radio-inline {
         -moz-text-stroke-width: 4px;
         -webkit-text-stroke-width: 4px; }
     .rose .header--hp .container p,
-    .error404 .header--hp .container p {
+    .rose .header--arch .container p,
+    .rose .header--sngl .container p,
+    .error404 .header--hp .container p,
+    .error404 .header--arch .container p,
+    .error404 .header--sngl .container p {
       color: #ffffff; }
 .rose nav ul li a,
 .error404 nav ul li a {
@@ -2199,19 +2231,30 @@ form.uzp__registration-form .uzp__radio-inline {
     -webkit-text-stroke-color: #001f3f;
     -moz-text-stroke-width: 4px;
     -webkit-text-stroke-width: 4px; }
-.green .header--hp {
+.green .header--hp .header--arch,
+.green .header--sngl {
   background: #35ffb6; }
-  .green .header--hp h1,
-  .green .header--hp h2,
-  .green .header--hp h3,
-  .green .header--hp h4,
-  .green .header--hp h5,
-  .green .header--hp h6,
-  .green .header--hp p,
-  .green .header--hp span {
+  .green .header--hp .header--arch h1,
+  .green .header--hp .header--arch h2,
+  .green .header--hp .header--arch h3,
+  .green .header--hp .header--arch h4,
+  .green .header--hp .header--arch h5,
+  .green .header--hp .header--arch h6,
+  .green .header--hp .header--arch p,
+  .green .header--hp .header--arch span,
+  .green .header--sngl h1,
+  .green .header--sngl h2,
+  .green .header--sngl h3,
+  .green .header--sngl h4,
+  .green .header--sngl h5,
+  .green .header--sngl h6,
+  .green .header--sngl p,
+  .green .header--sngl span {
     color: #001f3f; }
-  .green .header--hp h1 strong,
-  .green .header--hp h1 b {
+  .green .header--hp .header--arch h1 strong,
+  .green .header--hp .header--arch h1 b,
+  .green .header--sngl h1 strong,
+  .green .header--sngl h1 b {
     -moz-text-stroke-color: #001f3f;
     -webkit-text-stroke-color: #001f3f;
     -moz-text-stroke-width: 4px;
@@ -2270,17 +2313,27 @@ form.uzp__registration-form .uzp__radio-inline {
     -webkit-text-stroke-color: #ffffff;
     -moz-text-stroke-width: 4px;
     -webkit-text-stroke-width: 4px; }
-.yellow .header--hp {
+.yellow .header--hp,
+.yellow .header--arch,
+.yellow .header--sngl {
   background: #fdbb2c; }
-  .yellow .header--hp .container {
+  .yellow .header--hp .container,
+  .yellow .header--arch .container,
+  .yellow .header--sngl .container {
     padding-top: calc(80px + 136px);
     padding-bottom: 80px; }
-    .yellow .header--hp .container h1 {
+    .yellow .header--hp .container h1,
+    .yellow .header--arch .container h1,
+    .yellow .header--sngl .container h1 {
       color: #ffffff; }
-      .yellow .header--hp .container h1 strong {
+      .yellow .header--hp .container h1 strong,
+      .yellow .header--arch .container h1 strong,
+      .yellow .header--sngl .container h1 strong {
         -moz-text-stroke-color: #ffffff;
         -webkit-text-stroke-color: #ffffff; }
-    .yellow .header--hp .container p {
+    .yellow .header--hp .container p,
+    .yellow .header--arch .container p,
+    .yellow .header--sngl .container p {
       color: #ffffff; }
 .yellow nav ul li a {
   color: #ffffff; }

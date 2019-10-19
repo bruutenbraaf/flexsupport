@@ -2742,7 +2742,9 @@ $pMargin: 135px;
   .contactp {
     background: $rose;
   }
-  .header--hp {
+  .header--hp,
+  .header--arch,
+  .header--sngl {
     background: $rose;
     .container {
       padding-top: calc(80px + #{$NavHeight});
@@ -2858,7 +2860,8 @@ $pMargin: 135px;
       }
     }
   }
-  .header--hp {
+  .header--hp .header--arch,
+  .header--sngl {
     background: $turquoise;
     h1,
     h2,
@@ -2965,7 +2968,9 @@ $pMargin: 135px;
       }
     }
   }
-  .header--hp {
+  .header--hp,
+  .header--arch,
+  .header--sngl {
     background: $yellow;
     .container {
       padding-top: calc(80px + #{$NavHeight});
@@ -4350,7 +4355,7 @@ $hamburgerwidth: 26px;
         font-size: 94px !important;
         padding-bottom: 0px !important;
         strong {
-          font-size: 94px !important;;
+          font-size: 94px !important;
         }
       }
     }
