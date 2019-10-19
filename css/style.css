@@ -2656,8 +2656,7 @@ ul.uzp__pagination {
   .news-arch .thumb-crop {
     width: 100%;
     height: 300px;
-    overflow: hidden;
-    background-color: #fc1264; }
+    overflow: hidden; }
     .news-arch .thumb-crop .thumb {
       width: 100%;
       height: 300px;
