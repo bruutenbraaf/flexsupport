@@ -17,7 +17,7 @@
 							yoast_breadcrumb('');
 						} ?>
 				</div>
-				<div class="col-md-7 offset-md-1">
+				<div class="col-md-10 offset-md-1">
 					<div class="information-vacansie">
 						<h1><?php the_title(); ?></h1>
 						<div class="uzp__meta text-muted">
