@@ -3495,7 +3495,8 @@ form .gfield_description {
     left: 0px; }
 form .gfield_radio {
   margin: 0px -15px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  display: flex; }
   form .gfield_radio li {
     float: left;
     margin: 0px 15px; }
