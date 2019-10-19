@@ -850,7 +850,7 @@ nav {
 // Section -- about
 
 .about {
-  padding: 0px 0px 80px 0px;
+  padding: 0px 0px 80px;
   h1,
   h2 {
     font-family: $SilkaBold;
@@ -2751,6 +2751,48 @@ $pMargin: 135px;
 
 .rose,
 .error404 {
+  .main-nav {
+    ul {
+      li a {
+        &:after {
+          background: $midnight;
+        }
+      }
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $midnight;
+        }
+        &:after {
+          content: "";
+          background: $midnight;
+        }
+      }
+    }
+  }
+  .colr--changed {
+    ul {
+      li a {
+        &:after {
+          background: $turquoise;
+        }
+      }
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $turquoise;
+        }
+        &:after {
+          content: "";
+          background: $turquoise;
+        }
+      }
+    }
+  }
   .contactp {
     background: $rose;
   }
@@ -2850,6 +2892,48 @@ $pMargin: 135px;
 }
 
 .green {
+  .main-nav {
+    ul {
+      li a {
+        &:after {
+          background: $yellow;
+        }
+      }
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $yellow;
+        }
+        &:after {
+          content: "";
+          background: $yellow;
+        }
+      }
+    }
+  }
+  .colr--changed {
+    ul {
+      li a {
+        &:after {
+          background: $turquoise;
+        }
+      }
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $turquoise;
+        }
+        &:after {
+          content: "";
+          background: $turquoise;
+        }
+      }
+    }
+  }
   .contactp {
     background: $turquoise;
     h1,
@@ -2959,6 +3043,48 @@ $pMargin: 135px;
 }
 
 .yellow {
+  .main-nav {
+    ul {
+      li a {
+        &:after {
+          background: $midnight;
+        }
+      }
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $midnight;
+        }
+        &:after {
+          content: "";
+          background: $midnight;
+        }
+      }
+    }
+  }
+  .colr--changed {
+    li a {
+      &:after {
+        background: $turquoise;
+      }
+    }
+    ul {
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $turquoise;
+        }
+        &:after {
+          content: "";
+          background: $turquoise;
+        }
+      }
+    }
+  }
   .contactp {
     background: $yellow;
     h1,

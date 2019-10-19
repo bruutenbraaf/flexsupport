@@ -735,7 +735,7 @@ nav {
     background: rgba(0, 0, 0, 0.2); }
 
 .about {
-  padding: 0px 0px 80px 0px; }
+  padding: 0px 0px 80px; }
   .about h1,
   .about h2 {
     font-family: "SilkaBold", Arial, sans-serif;
@@ -2108,6 +2108,44 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
+.rose .main-nav ul li a:after,
+.error404 .main-nav ul li a:after {
+  background: #001f3f; }
+.rose .main-nav ul .current_page_item > a:before,
+.rose .main-nav ul .current-menu-item > a:before,
+.rose .main-nav ul .current-menu-ancestor > a:before,
+.error404 .main-nav ul .current_page_item > a:before,
+.error404 .main-nav ul .current-menu-item > a:before,
+.error404 .main-nav ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #001f3f; }
+.rose .main-nav ul .current_page_item > a:after,
+.rose .main-nav ul .current-menu-item > a:after,
+.rose .main-nav ul .current-menu-ancestor > a:after,
+.error404 .main-nav ul .current_page_item > a:after,
+.error404 .main-nav ul .current-menu-item > a:after,
+.error404 .main-nav ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #001f3f; }
+.rose .colr--changed ul li a:after,
+.error404 .colr--changed ul li a:after {
+  background: #35ffb6; }
+.rose .colr--changed ul .current_page_item > a:before,
+.rose .colr--changed ul .current-menu-item > a:before,
+.rose .colr--changed ul .current-menu-ancestor > a:before,
+.error404 .colr--changed ul .current_page_item > a:before,
+.error404 .colr--changed ul .current-menu-item > a:before,
+.error404 .colr--changed ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #35ffb6; }
+.rose .colr--changed ul .current_page_item > a:after,
+.rose .colr--changed ul .current-menu-item > a:after,
+.rose .colr--changed ul .current-menu-ancestor > a:after,
+.error404 .colr--changed ul .current_page_item > a:after,
+.error404 .colr--changed ul .current-menu-item > a:after,
+.error404 .colr--changed ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #35ffb6; }
 .rose .contactp,
 .error404 .contactp {
   background: #fc1264; }
@@ -2224,6 +2262,30 @@ form.uzp__registration-form .uzp__radio-inline {
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
 
+.green .main-nav ul li a:after {
+  background: #fdbb2c; }
+.green .main-nav ul .current_page_item > a:before,
+.green .main-nav ul .current-menu-item > a:before,
+.green .main-nav ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #fdbb2c; }
+.green .main-nav ul .current_page_item > a:after,
+.green .main-nav ul .current-menu-item > a:after,
+.green .main-nav ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #fdbb2c; }
+.green .colr--changed ul li a:after {
+  background: #35ffb6; }
+.green .colr--changed ul .current_page_item > a:before,
+.green .colr--changed ul .current-menu-item > a:before,
+.green .colr--changed ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #35ffb6; }
+.green .colr--changed ul .current_page_item > a:after,
+.green .colr--changed ul .current-menu-item > a:after,
+.green .colr--changed ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #35ffb6; }
 .green .contactp {
   background: #35ffb6; }
   .green .contactp h1,
@@ -2307,6 +2369,30 @@ form.uzp__registration-form .uzp__radio-inline {
   .green .dwn svg path {
     fill: #001f3f; }
 
+.yellow .main-nav ul li a:after {
+  background: #001f3f; }
+.yellow .main-nav ul .current_page_item > a:before,
+.yellow .main-nav ul .current-menu-item > a:before,
+.yellow .main-nav ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #001f3f; }
+.yellow .main-nav ul .current_page_item > a:after,
+.yellow .main-nav ul .current-menu-item > a:after,
+.yellow .main-nav ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #001f3f; }
+.yellow .colr--changed li a:after {
+  background: #35ffb6; }
+.yellow .colr--changed ul .current_page_item > a:before,
+.yellow .colr--changed ul .current-menu-item > a:before,
+.yellow .colr--changed ul .current-menu-ancestor > a:before {
+  content: "";
+  background: #35ffb6; }
+.yellow .colr--changed ul .current_page_item > a:after,
+.yellow .colr--changed ul .current-menu-item > a:after,
+.yellow .colr--changed ul .current-menu-ancestor > a:after {
+  content: "";
+  background: #35ffb6; }
 .yellow .contactp {
   background: #fdbb2c; }
   .yellow .contactp h1,
