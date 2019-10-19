@@ -3406,8 +3406,8 @@ form input[type="button"] {
   height: auto;
   padding: 15px 30px;
   line-height: 18px;
-  background: #35ffb6;
-  color: #001f3f;
+  background: #001f3f;
+  color: #ffffff;
   font-family: SilkaBold, Arial, sans-serif;
   margin-top: 16px;
   border: none;
@@ -3417,7 +3417,7 @@ form input[type="button"] {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   form input[type="button"]:hover {
-    background: #001f3f;
+    background: #003872;
     color: #ffffff; }
 form .yellow_alert {
   font-family: "SilkaMedium", Arial, sans-serif;
@@ -3517,6 +3517,26 @@ form .clear-multi {
   form .clear-multi .ginput_container_date {
     float: left;
     margin: 0px 15px; }
+form input[type="submit"] {
+  margin-top: 16px;
+  float: right;
+  width: auto !important;
+  display: block;
+  height: auto;
+  padding: 15px 30px;
+  line-height: 18px;
+  background: #35ffb6;
+  color: #001f3f;
+  font-family: "SilkaBold", Arial, sans-serif;
+  border: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #001f3f;
+    color: #ffffff; }
 
 @media (min-width: 1200px) {
   .container {

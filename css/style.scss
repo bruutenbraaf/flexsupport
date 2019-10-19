@@ -4372,8 +4372,8 @@ form {
     height: auto;
     padding: 15px 30px;
     line-height: 18px;
-    background: #35ffb6;
-    color: #001f3f;
+    background: $midnight;
+    color: #ffffff;
     font-family: SilkaBold, Arial, sans-serif;
     margin-top: 16px;
     border: none;
@@ -4383,7 +4383,7 @@ form {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     &:hover {
-      background: $midnight;
+      background: lighten($midnight, 10%);
       color: #ffffff;
     }
   }
@@ -4506,6 +4506,28 @@ form {
     .ginput_container_date {
       float: left;
       margin: 0px 15px;
+    }
+  }
+  input[type="submit"] {
+    margin-top: 16px;
+    float: right;
+    width: auto !important;
+    display: block;
+    height: auto;
+    padding: 15px 30px;
+    line-height: 18px;
+    background: $turquoise;
+    color: $midnight;
+    font-family: $SilkaBold;
+    border: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background: $midnight;
+      color: #ffffff;
     }
   }
 }
