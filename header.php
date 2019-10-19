@@ -101,7 +101,7 @@
                     <?php
                     $aantal = get_sub_field('toon_aantal_laatste_berichten');
                     $loop = new WP_Query(array(
-                        'post_type' => 'nieuws',
+                        'post_type' => 'kennisbank',
                         'posts_per_page' => 3,
                         'order' => 'DESC'
                     ));
