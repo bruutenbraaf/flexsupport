@@ -3359,6 +3359,7 @@ form ul {
   margin: 0;
   padding: 0; }
   form ul li {
+    clear: both;
     list-style: none;
     margin-bottom: 30px; }
     form ul li input,
