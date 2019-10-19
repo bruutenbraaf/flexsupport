@@ -2531,7 +2531,7 @@ $pMargin: 135px;
     opacity: 0;
     pointer-events: none;
     &:after {
-      display:none;
+      display: none;
     }
   }
 }
@@ -4964,6 +4964,11 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .about h1,
+  .about h2 {
+    font-size: 44px;
+    line-height: 48px;
+  }
   .m-first {
     order: 1;
     margin-bottom: 20px;

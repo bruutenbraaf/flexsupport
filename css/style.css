@@ -3885,6 +3885,11 @@ form p.description {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .about h1,
+  .about h2 {
+    font-size: 44px;
+    line-height: 48px; }
+
   .m-first {
     order: 1;
     margin-bottom: 20px; }
