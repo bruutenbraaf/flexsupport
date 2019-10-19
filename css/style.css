@@ -2388,6 +2388,12 @@ form.uzp__registration-form .uzp__radio-inline {
   .green .dwn svg path {
     fill: #001f3f; }
 
+.yellow .bread a {
+  color: rgba(255, 255, 255, 0.5); }
+.yellow .bread span {
+  color: rgba(255, 255, 255, 0.5); }
+.yellow .bread .span.breadcrumb_last {
+  color: #ffffff; }
 .yellow .main-nav ul li a:after {
   background: #001f3f; }
 .yellow .main-nav ul .current_page_item > a:before,
