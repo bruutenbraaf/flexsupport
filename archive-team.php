@@ -19,8 +19,8 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-1">
-                <?php the_field("personeel_archive_title", "option"); ?>
-                <?php the_field("personeel_archive_intro", "option"); ?>
+                <?php the_field("team_archive_title", "option"); ?>
+                <?php the_field("team_archive_intro", "option"); ?>
             </div>
             <div class="col-md-1 dwn d-flex align-items-end">
                 <svg width="26" height="79" viewBox="0 0 26 79" fill="none" xmlns="http://www.w3.org/2000/svg">
