@@ -3,6 +3,11 @@
         <section class="header--hp hm">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12 offset-md-1 bread">
+                        <?php if (function_exists('yoast_breadcrumb')) {
+                                    yoast_breadcrumb('');
+                                } ?>
+                    </div>
                     <div class="col-md-8 offset-md-1">
                         <?php the_sub_field('titel'); ?>
                     </div>

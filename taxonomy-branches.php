@@ -18,6 +18,11 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 <section class="header--sngl">
     <div class="container">
         <div class="row">
+            <div class="col-md-12 offset-md-1 bread">
+                <?php if (function_exists('yoast_breadcrumb')) {
+                    yoast_breadcrumb('');
+                } ?>
+            </div>
             <div class="col-md-8 offset-md-1">
                 <?php the_field("opleidingen_archive_title", "option"); ?>
                 <?php the_field("opleidingen_archive_intro", "option"); ?>

@@ -18,6 +18,11 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 <section class="header--sngl">
     <div class="container">
         <div class="row">
+            <div class="col-md-12 offset-md-1 bread">
+                <?php if (function_exists('yoast_breadcrumb')) {
+                    yoast_breadcrumb('');
+                } ?>
+            </div>
             <div class="col-md-8 offset-md-1">
                 <?php the_field("opleidingen_archive_title", "option"); ?>
                 <?php the_field("opleidingen_archive_intro", "option"); ?>
@@ -79,8 +84,8 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                                         <a href="<?php the_permalink() ?>">
                                             <div class="thumb-crop">
                                                 <?php $thumb = get_the_post_thumbnail_url($post, 'large'); ?>
-                                                <?php $fallback = get_field( 'fallback', 'option' ); ?>
-                                                <div class="thumb" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php }else {?> <?php echo $fallback['url']; ?><?php } ?>);">
+                                                <?php $fallback = get_field('fallback', 'option'); ?>
+                                                <div class="thumb" style="background-image:url(<?php if ($thumb) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?> <?php } else { ?> <?php echo $fallback['url']; ?><?php } ?>);">
                                                 </div>
                                             </div>
                                         </a>
