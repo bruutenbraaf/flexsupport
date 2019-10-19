@@ -2032,31 +2032,6 @@ $pMargin: 135px;
   }
 }
 
-.gform_confirmation_message {
-  background: $turquoise;
-  padding: 15px;
-  color: $midnight;
-  border-radius: 2px;
-  font-family: $SilkaBold;
-}
-
-.gform_wrapper div.validation_error {
-  color: #ffffff;
-  background: $midnight;
-  border: none;
-  padding: 15px;
-  font-family: $SilkaBold;
-}
-
-.validation_message {
-  color: $midnight;
-  font-family: $SilkaBold !important;
-}
-
-.gfield_error input {
-  border: 1px solid $midnight !important;
-}
-
 .green-btn {
   background-color: $turquoise !important;
   font-family: $SilkaMedium !important;
@@ -2751,6 +2726,52 @@ $pMargin: 135px;
 
 .rose,
 .error404 {
+  .validation_error {
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px !important;
+    display: flex !important;
+    text-align: left !important;
+  }
+
+  .gform_wrapper li.gfield.gfield_error,
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    background: none !important;
+  }
+
+  .gform_wrapper .gfield_error .gfield_label {
+    color: #ffffff !important;
+  }
+
+  .gfield_required {
+    color: #ffffff !important;
+  }
+  .gform_confirmation_message {
+    background: $turquoise;
+    padding: 15px;
+    color: $midnight;
+    border-radius: 2px;
+    font-family: $SilkaBold;
+  }
+
+  .gform_wrapper div.validation_error {
+    color: #ffffff;
+    background: $midnight;
+    border: none;
+    padding: 15px;
+    font-family: $SilkaBold;
+  }
+
+  .validation_message {
+    color: $midnight;
+    font-family: $SilkaBold !important;
+  }
+
+  .gfield_error input {
+    border: 1px solid $midnight !important;
+  }
   .main-nav {
     ul {
       li a {
@@ -3776,29 +3797,6 @@ ul.uzp__pagination {
   }
 }
 
-.validation_error {
-  color: #ffffff !important;
-  border: none !important;
-  padding: 10px !important;
-  display: flex !important;
-  text-align: left !important;
-}
-
-.gform_wrapper li.gfield.gfield_error,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  border-top: 0px !important;
-  border-bottom: 0px !important;
-  background: none !important;
-}
-
-.gform_wrapper .gfield_error .gfield_label {
-  color: #ffffff !important;
-}
-
-.gfield_required {
-  color: #ffffff !important;
-}
-
 .gfield_description .validation_message {
   color: $midnight !important;
 }
@@ -4285,12 +4283,45 @@ ul.uzp__pagination {
 
 // Formulieren
 form {
+  .gform_next_button {
+    float: right;
+  }
+  .gform_previous_button {
+    float: left;
+  }
+  .gfield_label {
+    font-family: $SilkaMedium;
+  }
+  .validation_error {
+    background: $rose;
+    color: #ffffff;
+    font-family: $SilkaBold;
+    padding: 15px;
+    margin: 15px 0px -25px 0px;
+  }
+  .validation_message {
+    color: $rose;
+    padding: 5px 0px;
+    font-family: $SilkaMedium;
+  }
   ul {
     margin: 0;
     padding: 0;
     li {
       list-style: none;
+      margin-bottom: 30px;
+      input,
+      textarea {
+        width: 100%;
+        background: rgba($midnight, 0.05);
+        border: 0px;
+        padding: 15px;
+      }
     }
+  }
+  .gfield_label_before_complex {
+    font-family: $SilkaBold;
+    font-size: 20px;
   }
   .gfield_visibility_hidden {
     display: none;
@@ -4304,6 +4335,14 @@ form {
       padding: 5px 10px;
       span {
         color: rgba($midnight, 0.5);
+      }
+    }
+    .gf_step_completed {
+      background: $turquoise;
+      margin-right: 10px;
+      border-radius: 2px;
+      span {
+        color: $midnight !important;
       }
     }
     .gf_step_active {
@@ -4320,6 +4359,153 @@ form {
       font-size: 62px;
       line-height: 88px;
       color: $midnight;
+    }
+  }
+  .signup_title {
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+  }
+  input[type="button"] {
+    width: auto !important;
+    display: block;
+    height: auto;
+    padding: 15px 30px;
+    line-height: 18px;
+    background: #35ffb6;
+    color: #001f3f;
+    font-family: SilkaBold, Arial, sans-serif;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: $midnight;
+      color: #ffffff;
+    }
+  }
+  .yellow_alert {
+    font-family: $SilkaMedium;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    padding-left: 30px;
+    position: relative;
+    &:before {
+      content: "i";
+      width: 22px;
+      height: 22px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      border-radius: 999px;
+      background: rgba($midnight, 0.05);
+      display: block;
+      position: absolute;
+      left: 0px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: inherit;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    p {
+      font-family: $SilkaRegular;
+      font-size: 16px;
+      color: $midnight;
+      line-height: 26px;
+      opacity: 1;
+    }
+    ul {
+      margin-left: 30px;
+      margin-bottom: 30px;
+      li {
+        list-style: disc;
+        margin: 0px;
+        padding: 0px;
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: $midnight;
+    &:hover {
+      font-weight: bold;
+      color: $midnight;
+    }
+  }
+  .gfield_checkbox {
+    li {
+      display: inline-block;
+      width: 100%;
+      input {
+        float: left;
+        width: 20px;
+        position: relative;
+        top: 9px;
+      }
+    }
+  }
+  .gfield_html {
+    margin: 0;
+    text-align: left;
+    clear: both;
+  }
+  .gfield_description {
+    font-family: $SilkaMedium;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
+    position: relative;
+    clear: both;
+    &:before {
+      content: "i";
+      width: 22px;
+      height: 22px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      border-radius: 999px;
+      background: rgba($midnight, 0.05);
+      display: block;
+      position: absolute;
+      left: 0px;
+    }
+  }
+  .gfield_radio {
+    margin: 0px -15px;
+    padding-bottom: 30px;
+    li {
+      float: left;
+      margin: 0px 15px;
+      input[type="checkbox"],
+      input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .ginput_counter {
+    padding-bottom: 15px;
+  }
+  h3.signup_title {
+    padding-top: 0px;
+    span {
+      font-family: $SilkaBold;
+    }
+  }
+  .clear-multi {
+    margin: 0px -15px;
+    padding-bottom: 30px;
+    display: flex;
+    .ginput_container_date {
+      float: left;
+      margin: 0px 15px;
     }
   }
 }

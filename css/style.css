@@ -1641,27 +1641,6 @@ form.uzp__registration-form .uzp__radio-inline {
   font-size: 138px;
   line-height: 144px; }
 
-.gform_confirmation_message {
-  background: #35ffb6;
-  padding: 15px;
-  color: #001f3f;
-  border-radius: 2px;
-  font-family: "SilkaBold", Arial, sans-serif; }
-
-.gform_wrapper div.validation_error {
-  color: #ffffff;
-  background: #001f3f;
-  border: none;
-  padding: 15px;
-  font-family: "SilkaBold", Arial, sans-serif; }
-
-.validation_message {
-  color: #001f3f;
-  font-family: "SilkaBold", Arial, sans-serif !important; }
-
-.gfield_error input {
-  border: 1px solid #001f3f !important; }
-
 .green-btn {
   background-color: #35ffb6 !important;
   font-family: "SilkaMedium", Arial, sans-serif !important;
@@ -2108,6 +2087,47 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
+.rose .validation_error,
+.error404 .validation_error {
+  color: #ffffff !important;
+  border: none !important;
+  padding: 10px !important;
+  display: flex !important;
+  text-align: left !important; }
+.rose .gform_wrapper li.gfield.gfield_error,
+.rose .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+.error404 .gform_wrapper li.gfield.gfield_error,
+.error404 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+  background: none !important; }
+.rose .gform_wrapper .gfield_error .gfield_label,
+.error404 .gform_wrapper .gfield_error .gfield_label {
+  color: #ffffff !important; }
+.rose .gfield_required,
+.error404 .gfield_required {
+  color: #ffffff !important; }
+.rose .gform_confirmation_message,
+.error404 .gform_confirmation_message {
+  background: #35ffb6;
+  padding: 15px;
+  color: #001f3f;
+  border-radius: 2px;
+  font-family: "SilkaBold", Arial, sans-serif; }
+.rose .gform_wrapper div.validation_error,
+.error404 .gform_wrapper div.validation_error {
+  color: #ffffff;
+  background: #001f3f;
+  border: none;
+  padding: 15px;
+  font-family: "SilkaBold", Arial, sans-serif; }
+.rose .validation_message,
+.error404 .validation_message {
+  color: #001f3f;
+  font-family: "SilkaBold", Arial, sans-serif !important; }
+.rose .gfield_error input,
+.error404 .gfield_error input {
+  border: 1px solid #001f3f !important; }
 .rose .main-nav ul li a:after,
 .error404 .main-nav ul li a:after {
   background: #001f3f; }
@@ -2938,25 +2958,6 @@ ul.uzp__pagination {
     font-size: 62px;
     line-height: 72px; }
 
-.validation_error {
-  color: #ffffff !important;
-  border: none !important;
-  padding: 10px !important;
-  display: flex !important;
-  text-align: left !important; }
-
-.gform_wrapper li.gfield.gfield_error,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  border-top: 0px !important;
-  border-bottom: 0px !important;
-  background: none !important; }
-
-.gform_wrapper .gfield_error .gfield_label {
-  color: #ffffff !important; }
-
-.gfield_required {
-  color: #ffffff !important; }
-
 .gfield_description .validation_message {
   color: #001f3f !important; }
 
@@ -3338,11 +3339,37 @@ ul.uzp__pagination {
     .downloads .dwnload:hover:before {
       width: 100%; }
 
+form .gform_next_button {
+  float: right; }
+form .gform_previous_button {
+  float: left; }
+form .gfield_label {
+  font-family: "SilkaMedium", Arial, sans-serif; }
+form .validation_error {
+  background: #fc1264;
+  color: #ffffff;
+  font-family: "SilkaBold", Arial, sans-serif;
+  padding: 15px;
+  margin: 15px 0px -25px 0px; }
+form .validation_message {
+  color: #fc1264;
+  padding: 5px 0px;
+  font-family: "SilkaMedium", Arial, sans-serif; }
 form ul {
   margin: 0;
   padding: 0; }
   form ul li {
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 30px; }
+    form ul li input,
+    form ul li textarea {
+      width: 100%;
+      background: rgba(0, 31, 63, 0.05);
+      border: 0px;
+      padding: 15px; }
+form .gfield_label_before_complex {
+  font-family: "SilkaBold", Arial, sans-serif;
+  font-size: 20px; }
 form .gfield_visibility_hidden {
   display: none; }
 form .gf_page_steps {
@@ -3353,6 +3380,12 @@ form .gf_page_steps {
     padding: 5px 10px; }
     form .gf_page_steps .gf_step span {
       color: rgba(0, 31, 63, 0.5); }
+  form .gf_page_steps .gf_step_completed {
+    background: #35ffb6;
+    margin-right: 10px;
+    border-radius: 2px; }
+    form .gf_page_steps .gf_step_completed span {
+      color: #001f3f !important; }
   form .gf_page_steps .gf_step_active {
     border: 1px solid #001f3f;
     border-radius: 2px; }
@@ -3363,6 +3396,127 @@ form h2 span {
   font-size: 62px;
   line-height: 88px;
   color: #001f3f; }
+form .signup_title {
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 30px; }
+form input[type="button"] {
+  width: auto !important;
+  display: block;
+  height: auto;
+  padding: 15px 30px;
+  line-height: 18px;
+  background: #35ffb6;
+  color: #001f3f;
+  font-family: SilkaBold, Arial, sans-serif;
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  form input[type="button"]:hover {
+    background: #001f3f;
+    color: #ffffff; }
+form .yellow_alert {
+  font-family: "SilkaMedium", Arial, sans-serif;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  padding-left: 30px;
+  position: relative; }
+  form .yellow_alert:before {
+    content: "i";
+    width: 22px;
+    height: 22px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 999px;
+    background: rgba(0, 31, 63, 0.05);
+    display: block;
+    position: absolute;
+    left: 0px; }
+  form .yellow_alert h2 {
+    font-size: 24px;
+    line-height: inherit;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+  form .yellow_alert p {
+    font-family: "SilkaRegular", Arial, sans-serif;
+    font-size: 16px;
+    color: #001f3f;
+    line-height: 26px;
+    opacity: 1; }
+  form .yellow_alert ul {
+    margin-left: 30px;
+    margin-bottom: 30px; }
+    form .yellow_alert ul li {
+      list-style: disc;
+      margin: 0px;
+      padding: 0px; }
+form a {
+  text-decoration: underline;
+  color: #001f3f; }
+  form a:hover {
+    font-weight: bold;
+    color: #001f3f; }
+form .gfield_checkbox li {
+  display: inline-block;
+  width: 100%; }
+  form .gfield_checkbox li input {
+    float: left;
+    width: 20px;
+    position: relative;
+    top: 9px; }
+form .gfield_html {
+  margin: 0;
+  text-align: left;
+  clear: both; }
+form .gfield_description {
+  font-family: "SilkaMedium", Arial, sans-serif;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 30px;
+  position: relative;
+  clear: both; }
+  form .gfield_description:before {
+    content: "i";
+    width: 22px;
+    height: 22px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 999px;
+    background: rgba(0, 31, 63, 0.05);
+    display: block;
+    position: absolute;
+    left: 0px; }
+form .gfield_radio {
+  margin: 0px -15px;
+  padding-bottom: 30px; }
+  form .gfield_radio li {
+    float: left;
+    margin: 0px 15px; }
+    form .gfield_radio li input[type="checkbox"],
+    form .gfield_radio li input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+      width: 20px;
+      margin-right: 10px; }
+form .ginput_counter {
+  padding-bottom: 15px; }
+form h3.signup_title {
+  padding-top: 0px; }
+  form h3.signup_title span {
+    font-family: "SilkaBold", Arial, sans-serif; }
+form .clear-multi {
+  margin: 0px -15px;
+  padding-bottom: 30px;
+  display: flex; }
+  form .clear-multi .ginput_container_date {
+    float: left;
+    margin: 0px 15px; }
 
 @media (min-width: 1200px) {
   .container {

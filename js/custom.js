@@ -4,6 +4,10 @@ skrollr.init({
   smoothScrolling: true
 });
 
+jQuery(document).ready(function() {
+  jQuery('select').niceSelect();
+});
+
 jQuery(window).scroll(function () {
   var scroll = jQuery(window).scrollTop();
   if (scroll >= 160) {
