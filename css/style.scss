@@ -2746,6 +2746,7 @@ $pMargin: 135px;
   .header--arch,
   .header--sngl {
     background: $rose;
+    margin-bottom: 80px;
     .container {
       padding-top: calc(80px + #{$NavHeight});
       padding-bottom: 80px;
@@ -2863,6 +2864,7 @@ $pMargin: 135px;
   .header--hp .header--arch,
   .header--sngl {
     background: $turquoise;
+    margin-bottom: 80px;
     h1,
     h2,
     h3,
@@ -2972,6 +2974,7 @@ $pMargin: 135px;
   .header--arch,
   .header--sngl {
     background: $yellow;
+    margin-bottom: 80px;
     .container {
       padding-top: calc(80px + #{$NavHeight});
       padding-bottom: 80px;
