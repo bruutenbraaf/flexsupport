@@ -4542,6 +4542,11 @@ form {
       background: $turquoise;
     }
   }
+  p.description {
+    font-family: $SilkaMedium;
+    opacity: 1;
+    font-size: 16px;
+  }
 }
 
 // Responsive

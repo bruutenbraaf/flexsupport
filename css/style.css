@@ -3546,6 +3546,10 @@ form .gform_drop_area {
   border: 2px dashed #35ffb6; }
   form .gform_drop_area:focus, form .gform_drop_area:hover {
     background: #35ffb6; }
+form p.description {
+  font-family: "SilkaMedium", Arial, sans-serif;
+  opacity: 1;
+  font-size: 16px; }
 
 @media (min-width: 1200px) {
   .container {
