@@ -3538,6 +3538,8 @@ form input[type="submit"] {
     cursor: pointer;
     background: #001f3f;
     color: #ffffff; }
+form .nice-select {
+  margin-bottom: 30px; }
 
 @media (min-width: 1200px) {
   .container {
