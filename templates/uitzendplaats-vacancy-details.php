@@ -17,7 +17,7 @@
 							yoast_breadcrumb('');
 						} ?>
 				</div>
-				<div class="col-md-10 offset-md-1">
+				<div class="col-md-8 offset-md-1">
 					<div class="information-vacansie">
 						<h1><?php the_title(); ?></h1>
 						<div class="uzp__meta text-muted">
@@ -60,7 +60,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 align-items-center justify-content-end d-flex hdbtn">
+				<div class="col-md-2 align-items-center justify-content-end d-flex hdbtn">
 					<a href="#apply" class="btn"><?php _e('Direct solliciteren', 'talentplaats'); ?></a>
 				</div>
 			</div>
