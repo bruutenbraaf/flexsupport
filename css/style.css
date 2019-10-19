@@ -2938,6 +2938,28 @@ ul.uzp__pagination {
     font-size: 62px;
     line-height: 72px; }
 
+.validation_error {
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  display: flex;
+  text-align: left; }
+
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  border-top: 0px;
+  border-bottom: 0px;
+  background: none; }
+
+.gform_wrapper .gfield_error .gfield_label {
+  color: #ffffff; }
+
+.gfield_required {
+  color: #ffffff; }
+
+.gfield_description .validation_message {
+  color: #001f3f; }
+
 .acf-map {
   width: 100vw;
   min-height: 50vh;
