@@ -1768,6 +1768,8 @@ form.uzp__registration-form .uzp__radio-inline {
 .vac-header {
   padding-top: calc(136px + 60px);
   padding-bottom: 60px; }
+  .vac-header .hdbtn {
+    margin-bottom: 30px; }
   .vac-header .refnr {
     color: rgba(0, 31, 63, 0.5); }
   .vac-header .posted svg {

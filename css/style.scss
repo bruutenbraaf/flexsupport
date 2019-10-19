@@ -2318,6 +2318,9 @@ $pMargin: 135px;
 .vac-header {
   padding-top: calc(#{$NavHeight} + 60px);
   padding-bottom: 60px;
+  .hdbtn {
+    margin-bottom: 30px;
+  }
   .refnr {
     color: rgba($midnight, 0.5);
   }
