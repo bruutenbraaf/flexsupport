@@ -894,6 +894,7 @@ $padding-bottom: 70px;
     margin-right: 0px;
     position: relative;
     z-index: 2;
+    padding-bottom: 80px;
     .stap {
       margin: 0px 15px;
       .stap-img-outer {
@@ -922,6 +923,10 @@ $padding-bottom: 70px;
         font-family: $SilkaRegular;
         font-size: 16px;
         color: $midnight;
+        a {
+          color: $midnight;
+          text-decoration: underline;
+        }
       }
     }
     .slick-active {
