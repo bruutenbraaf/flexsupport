@@ -850,7 +850,7 @@ nav {
 // Section -- about
 
 .about {
-  padding: 0px 0px 80px;
+  padding: 80px 0px 80px 0px;
   h1,
   h2 {
     font-family: $SilkaBold;
@@ -2821,7 +2821,6 @@ $pMargin: 135px;
   .header--arch,
   .header--sngl {
     background: $rose;
-    margin-bottom: 80px;
     .container {
       padding-top: calc(80px + #{$NavHeight});
       padding-bottom: 80px;
@@ -4553,9 +4552,6 @@ form {
 }
 
 
-.header--hp {
-  margin-bottom: 0px;
-}
 
 // Responsive
 
