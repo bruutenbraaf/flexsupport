@@ -3544,6 +3544,8 @@ form .gform_drop_area {
   position: relative;
   padding: 15px;
   border: 2px dashed #35ffb6; }
+  form .gform_drop_area:focus, form .gform_drop_area:hover {
+    background: #35ffb6; }
 
 @media (min-width: 1200px) {
   .container {

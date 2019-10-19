@@ -4538,6 +4538,9 @@ form {
     position: relative;
     padding: 15px;
     border: 2px dashed $turquoise;
+    &:focus, &:hover {
+      background: $turquoise;
+    }
   }
 }
 
