@@ -1021,7 +1021,6 @@ $padding-bottom: 70px;
   }
 }
 
-
 .marq--vac {
   width: 100vw;
   display: inline-block;
@@ -1035,7 +1034,7 @@ $padding-bottom: 70px;
       font-family: $SilkaBold;
       font-size: 138px;
       line-height: 88px;
-      color: $midnight;
+      color: #ffffff;
       float: left;
       white-space: nowrap;
       strong {
@@ -1043,8 +1042,8 @@ $padding-bottom: 70px;
         font-size: 138px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
-        -moz-text-stroke-color: $midnight;
-        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-color: #ffffff;
+        -webkit-text-stroke-color: #ffffff;
         -moz-text-stroke-width: 2.5px;
         -webkit-text-stroke-width: 2.5px;
       }
@@ -4745,6 +4744,23 @@ nav .row--change {
   right: 0vw;
 }
 
+.tpx {
+  left: -20vw;
+}
+
+.btx {
+  right: -20vw;
+  float: right;
+}
+
+.scr--rightx {
+  left: 0vw;
+}
+
+.scr--leftx {
+  right: 0vw;
+}
+
 .mtgo--vis div {
   background: rgba(0, 31, 63, 1) !important;
 }
@@ -5002,6 +5018,21 @@ $hamburgerwidth: 26px;
       padding-bottom: 0px;
     }
   }
+  .marq--vac div h2 {
+    font-size: 74px;
+    strong {
+      font-size: 74px;
+      -moz-text-stroke-width: 3px;
+      -webkit-text-stroke-width: 3px;
+    }
+  }
+  .marq--vac {
+    margin-bottom: 30px;
+    div {
+      margin-top: 0;
+      padding-bottom: 0px;
+    }
+  }
   .start {
     padding-top: 60px;
   }
@@ -5125,6 +5156,24 @@ $hamburgerwidth: 26px;
     }
   }
   .marq {
+    margin-bottom: 30px;
+    div {
+      margin-top: 0;
+      padding-bottom: 0px;
+    }
+  }
+  .marq--vac div h2 {
+    font-size: 44px;
+    margin: 0;
+    padding: 0px;
+    line-height: normal;
+    strong {
+      font-size: 44px;
+      -moz-text-stroke-width: 1px !important;
+      -webkit-text-stroke-width: 1px !important;
+    }
+  }
+  .marq--vac {
     margin-bottom: 30px;
     div {
       margin-top: 0;
