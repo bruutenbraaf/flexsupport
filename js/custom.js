@@ -46,6 +46,11 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offs
   .setTween(tween)
   .addTo(controller);
 
+  var tween = TweenMax.to(".hamburger", 1, { className: "+=hamburger--vis" });
+var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offset: 100 })
+  .setTween(tween)
+  .addTo(controller);
+
 // Nice select
 
 jQuery(document).ready(function () {
