@@ -1021,6 +1021,37 @@ $padding-bottom: 70px;
   }
 }
 
+
+.marq--vac {
+  width: 100vw;
+  display: inline-block;
+  float: none;
+  margin-bottom: 80px;
+  div {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+      font-family: $SilkaBold;
+      font-size: 138px;
+      line-height: 88px;
+      color: $midnight;
+      float: left;
+      white-space: nowrap;
+      strong {
+        font-family: $SilkaBold;
+        font-size: 138px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: $midnight;
+        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-width: 2.5px;
+        -webkit-text-stroke-width: 2.5px;
+      }
+    }
+  }
+}
+
 // Counters
 
 .counters {

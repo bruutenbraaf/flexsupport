@@ -865,6 +865,32 @@ nav {
         -moz-text-stroke-width: 2.5px;
         -webkit-text-stroke-width: 2.5px; }
 
+.marq--vac {
+  width: 100vw;
+  display: inline-block;
+  float: none;
+  margin-bottom: 80px; }
+  .marq--vac div {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 40px; }
+    .marq--vac div h2 {
+      font-family: "SilkaBold", Arial, sans-serif;
+      font-size: 138px;
+      line-height: 88px;
+      color: #001f3f;
+      float: left;
+      white-space: nowrap; }
+      .marq--vac div h2 strong {
+        font-family: "SilkaBold", Arial, sans-serif;
+        font-size: 138px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #001f3f;
+        -webkit-text-stroke-color: #001f3f;
+        -moz-text-stroke-width: 2.5px;
+        -webkit-text-stroke-width: 2.5px; }
+
 .counters {
   background: #35ffb6;
   padding: 70px 0px 140px 0px; }

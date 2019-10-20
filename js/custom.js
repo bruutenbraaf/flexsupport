@@ -35,11 +35,24 @@ var scene = new ScrollMagic.Scene({ triggerElement: ".marq", duration: 300 })
   .addIndicators()
   .addTo(controller);
 
-  var tween = TweenMax.to(".mtgo", 1, { className: "+=mtgo--vis" });
-  var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offset: 100 })
-    .setTween(tween)
-    .addIndicators()
-    .addTo(controller);
+
+var tween = TweenMax.to(".tp", 1, { className: "+=scr--right" });
+var scene = new ScrollMagic.Scene({ triggerElement: ".marq--vac", duration: 300 })
+  .setTween(tween)
+  .addIndicators()
+  .addTo(controller);
+
+var tween = TweenMax.to(".bt", 1, { className: "+=scr--left" });
+var scene = new ScrollMagic.Scene({ triggerElement: ".marq--vac", duration: 300 })
+  .setTween(tween)
+  .addIndicators()
+  .addTo(controller);
+
+var tween = TweenMax.to(".mtgo", 1, { className: "+=mtgo--vis" });
+var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offset: 100 })
+  .setTween(tween)
+  .addIndicators()
+  .addTo(controller);
 
 
 

@@ -257,7 +257,7 @@ get_header(); ?>
             </section>
         <?php elseif (get_row_layout() == 'vacatures') : ?>
             <section class="vacatures--hp">
-                <div class="marq">
+                <div class="marq--vac">
                     <div class="tp"><?php the_sub_field('titel'); ?></div>
                     <div class="bt"><?php the_sub_field('titel'); ?></div>
                 </div>
