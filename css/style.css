@@ -428,7 +428,8 @@ h4 {
   opacity: 1 !important; }
 
 nav {
-  background: rgba(255, 255, 255, 0); }
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 10px #00000000; }
   nav .branding {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -3674,7 +3675,8 @@ form p.description {
   line-height: 24px; }
 
 .nav--change {
-  background: white; }
+  background: white;
+  box-shadow: 0px 0px 10px #00000014; }
 
 nav .row--change {
   height: 100px; }

@@ -479,6 +479,7 @@ h4 {
 
 nav {
   background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 10px #00000000;
   .branding {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -4717,6 +4718,7 @@ form {
 
 .nav--change {
   background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px #00000014;
 }
 
 nav .row--change {
