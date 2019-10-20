@@ -258,8 +258,8 @@ get_header(); ?>
         <?php elseif (get_row_layout() == 'vacatures') : ?>
             <section class="vacatures--hp">
                 <div class="marq--vac">
-                    <div class="tp"><?php the_sub_field('titel'); ?></div>
-                    <div class="bt"><?php the_sub_field('titel'); ?></div>
+                    <div class="tpx"><?php the_sub_field('titel'); ?></div>
+                    <div class="btx"><?php the_sub_field('titel'); ?></div>
                 </div>
                 <div class="container clearfix">
                     <div class="row">
