@@ -1,3 +1,4 @@
+// Scrollmagic
 var controller = new ScrollMagic.Controller();
 var tween = TweenMax.to("nav", 1, { className: "+=nav--change" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
@@ -45,8 +46,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offs
   .setTween(tween)
   .addTo(controller);
 
-
-
+// Nice select
 
 jQuery(document).ready(function () {
   jQuery('select').niceSelect();
