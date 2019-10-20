@@ -20,9 +20,9 @@
         body_class(array($color, $archiveColor)); ?>>
 
     <div class="reading-progress"></div>
-    <nav data-start="background:rgba(255,255,255,0);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0);" data-150="background:rgba(255,255,255,1);box-shadow: 0px 0px 23px rgba(183, 183, 183, 0.22);">
+    <nav id="#main">
         <div class="container">
-            <div class="row align-items-center" data-0="height: 136px;" data-150="height: 100;">
+            <div class="row align-items-center">
                 <div class="col-6 col-md-6 col-xl-3 branding">
                     <?php if (have_rows('logo', 'option')) : ?>
                         <?php while (have_rows('logo', 'option')) : the_row(); ?>
@@ -30,10 +30,10 @@
                                 <?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>
                                     <?php $light = get_sub_field('light'); ?>
                                     <?php if ($light) { ?>
-                                        <img data-start="opacity:1;margin-top:-0px;" data-150="opacity:0;margin-top:30px;" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
+                                        <img class="light--branding" src="<?php echo $light['url']; ?>" alt="<?php echo $light['alt']; ?>" />
                                         <?php $normaal = get_sub_field('normaal'); ?>
                                         <?php if ($normaal) { ?>
-                                            <img data-start="opacity:0;margin-top:-30px;" data-150="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                            <img class="normal--branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                         <?php } ?>
                                     <?php } ?>
                                 <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
@@ -60,16 +60,16 @@
                         <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
                     </div>
                     <div class="mtgo">
-                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgba(255,255,255,0.5);<?php } else { ?>background:rgba(0, 31, 63,0.5);<?php } ?>" data-300="background:rgba(0,0,0,1);"></div>
-                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgba(255,255,255,0.5);<?php } else { ?>background:rgba(0, 31, 63,0.5);<?php } ?>" data-400="background:rgba(0,0,0,1);"></div>
-                        <div data-start="<?php if ($color == 'rose' || $color == 'yellow' || $archiveColor == 'rose' || $archiveColor == 'yellow' || is_404()) { ?>background:rgba(255,255,255,0.5);<?php } else { ?>background:rgba(0, 31, 63,0.5);<?php } ?>" data-500="background:rgba(0,0,0,1);"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
                     <div class="hamburger">
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-300="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-400="background:rgb(0,0,0);"></div>
-                        <div data-start="<?php if ($archiveColor == 'rose' || $color == 'rose') { ?>background:rgb(255,255,255);<?php } else { ?>background:rgb(0, 31, 63);<?php } ?>" data-500="background:rgb(0,0,0);"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>

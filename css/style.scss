@@ -478,10 +478,7 @@ h4 {
 }
 
 nav {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0);
   .branding {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2815,6 +2812,11 @@ $pMargin: 135px;
 
 .rose,
 .error404 {
+  .mtgo {
+    div {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
   .validation_error {
     color: #ffffff !important;
     border: none !important;
@@ -3001,6 +3003,11 @@ $pMargin: 135px;
 }
 
 .green {
+  .mtgo {
+    div {
+      background: $midnight;
+    }
+  }
   .main-nav {
     ul {
       li a {
@@ -3152,6 +3159,11 @@ $pMargin: 135px;
 }
 
 .yellow {
+  .mtgo {
+    div {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
   .bread {
     a {
       color: rgba(255, 255, 255, 0.5);
@@ -3909,6 +3921,11 @@ ul.uzp__pagination {
 // Color system
 
 .green {
+  .mtgo {
+    div {
+      background: rgba(0, 31, 63, 0.5);
+    }
+  }
   .header--arch {
     background: $turquoise;
     h1 {
@@ -4649,6 +4666,56 @@ form {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+// Scrollmagic classes
+
+.nav--change {
+  background: rgba(255, 255, 255, 1);
+}
+
+nav .row--change {
+  height: 100px;
+}
+
+.normal--branding {
+  position: absolute;
+  left: 15px;
+  top: -30px;
+  width: 203px;
+  opacity: 0;
+}
+
+.visible--branding {
+  opacity: 1;
+  top: 0;
+}
+
+.hiden--branding {
+  opacity: 0;
+  position: relative;
+  top: 30px;
+}
+
+.tp {
+  left: -20vw;
+}
+
+.bt {
+  right: -20vw;
+  float: right;
+}
+
+.scr--right {
+  left: 0vw;
+}
+
+.scr--left {
+  right: 0vw;
+}
+
+.mtgo--vis div {
+  background: rgba(0, 31, 63, 1) !important;
 }
 
 // Responsive

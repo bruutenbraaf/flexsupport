@@ -428,10 +428,7 @@ h4 {
   opacity: 1 !important; }
 
 nav {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  background: rgba(255, 255, 255, 0); }
   nav .branding {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -2162,6 +2159,9 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
+.rose .mtgo div,
+.error404 .mtgo div {
+  background: rgba(255, 255, 255, 0.5); }
 .rose .validation_error,
 .error404 .validation_error {
   color: #ffffff !important;
@@ -2356,6 +2356,8 @@ form.uzp__registration-form .uzp__radio-inline {
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
 
+.green .mtgo div {
+  background: #001f3f; }
 .green .main-nav ul li a:after {
   background: #fdbb2c; }
 .green .main-nav ul .current_page_item > a:before,
@@ -2463,6 +2465,8 @@ form.uzp__registration-form .uzp__radio-inline {
   .green .dwn svg path {
     fill: #001f3f; }
 
+.yellow .mtgo div {
+  background: rgba(255, 255, 255, 0.5); }
 .yellow .bread a {
   color: rgba(255, 255, 255, 0.5); }
 .yellow .bread span {
@@ -3046,6 +3050,8 @@ ul.uzp__pagination {
   min-height: 50vh;
   background: red; }
 
+.green .mtgo div {
+  background: rgba(0, 31, 63, 0.5); }
 .green .header--arch {
   background: #35ffb6; }
   .green .header--arch h1 {
@@ -3633,6 +3639,44 @@ form p.description {
   opacity: 1;
   font-size: 16px;
   line-height: 24px; }
+
+.nav--change {
+  background: white; }
+
+nav .row--change {
+  height: 100px; }
+
+.normal--branding {
+  position: absolute;
+  left: 15px;
+  top: -30px;
+  width: 203px;
+  opacity: 0; }
+
+.visible--branding {
+  opacity: 1;
+  top: 0; }
+
+.hiden--branding {
+  opacity: 0;
+  position: relative;
+  top: 30px; }
+
+.tp {
+  left: -20vw; }
+
+.bt {
+  right: -20vw;
+  float: right; }
+
+.scr--right {
+  left: 0vw; }
+
+.scr--left {
+  right: 0vw; }
+
+.mtgo--vis div {
+  background: #001f3f !important; }
 
 @media (min-width: 1200px) {
   .container {

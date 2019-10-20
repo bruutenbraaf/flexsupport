@@ -176,8 +176,8 @@ get_header(); ?>
         <?php elseif (get_row_layout() == 'werkwijze_stappen') : ?>
             <section class="start">
                 <div class="marq">
-                    <div data-bottom="left:-20vw;" data-top="left:0vw;"><?php the_sub_field('titel'); ?></div>
-                    <div data-bottom="right:-20vw;" data-top="right:0vw;" style="float:right;"><?php the_sub_field('titel'); ?></div>
+                    <div class="tp"><?php the_sub_field('titel'); ?></div>
+                    <div class="bt"><?php the_sub_field('titel'); ?></div>
                 </div>
                 <div class="container clearfix">
                     <div class="row">
@@ -258,8 +258,8 @@ get_header(); ?>
         <?php elseif (get_row_layout() == 'vacatures') : ?>
             <section class="vacatures--hp">
                 <div class="marq">
-                    <div data-bottom="left:-20vw;" data-top="left:0vw;"><?php the_sub_field('titel'); ?></div>
-                    <div data-bottom="right:-20vw;" data-top="right:0vw;" style="float:right;"><?php the_sub_field('titel'); ?></div>
+                    <div class="tp"><?php the_sub_field('titel'); ?></div>
+                    <div class="bt"><?php the_sub_field('titel'); ?></div>
                 </div>
                 <div class="container clearfix">
                     <div class="row">

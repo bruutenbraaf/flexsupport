@@ -7,20 +7,29 @@ add_image_size('xl', 700, 400, true);
 
 add_theme_support('post-thumbnails');
 
-function leerbouwen_scripts()
+function flexupdate_scripts()
 {
-	wp_enqueue_script('jquery');
+	// Scripts
+	wp_enqueue_script('jquery', get_template_directory_uri() . '/bootstrap/js/jquery.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('bootjs', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('slickslider', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0.0', true);
-	wp_enqueue_script('skrollr', get_template_directory_uri() . '/js/skrollr.min.js', array(), '1.0.0', true);
-	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true);
 	wp_enqueue_script('niceselect', get_template_directory_uri() . '/js/jquery.nice-select.min.js', array(), '1.0.0', false);
 
+	// Scrollmagic
+	wp_enqueue_script('TweenMax', get_template_directory_uri() . '/js/TweenMax.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('ScrollMagic', get_template_directory_uri() . '/js/ScrollMagic.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('AnimationGsap', get_template_directory_uri() . '/js/animation.gsap.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('addIndicators', get_template_directory_uri() . '/js/debug.addIndicators.min.js', array(), '1.0.0', true);
+
+	// Custom
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true);
+
+	// CSS
 	wp_enqueue_style('bootcss', get_template_directory_uri() . '/css/bootstrap.min.css');
 	wp_enqueue_style('niceselectcss', get_template_directory_uri() . '/css/nice-select.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 }
-add_action('wp_enqueue_scripts', 'leerbouwen_scripts');
+add_action('wp_enqueue_scripts', 'flexupdate_scripts');
 
 
 add_filter('script_loader_tag', 'clean_script_tag');
@@ -29,8 +38,6 @@ function clean_script_tag($input)
 	$input = str_replace("type='text/javascript' ", '', $input);
 	return str_replace("'", '"', $input);
 }
-
-
 add_filter('sensei_start_course_form', 'MyCustomfilter', $priority = 10, $args = 1);
 
 // Add option page
