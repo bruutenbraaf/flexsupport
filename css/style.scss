@@ -3302,26 +3302,24 @@ $pMargin: 135px;
       }
     }
   }
-  .main-nav {
-    .colr--changed {
-      li a {
-        color: $midnight;
-        &:after {
-          background: $turquoise !important;
-        }
+  .colr--changed {
+    li a {
+      color: $midnight;
+      &:after {
+        background: $turquoise;
       }
-      ul {
-        .current_page_item > a,
-        .current-menu-item > a,
-        .current-menu-ancestor > a {
-          &:before {
-            content: "";
-            background: $turquoise;
-          }
-          &:after {
-            content: "";
-            background: $turquoise;
-          }
+    }
+    ul {
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        &:before {
+          content: "";
+          background: $turquoise;
+        }
+        &:after {
+          content: "";
+          background: $turquoise;
         }
       }
     }
