@@ -3958,7 +3958,7 @@ nav .row--change {
 .is--open h2 span {
   color: #001f3f; }
 .is--open svg {
-  transform: translateY(-50%), rotate(180deg); }
+  transform: translateY(-50%) rotate(180deg) !important; }
 
 @media (min-width: 1200px) {
   .container {

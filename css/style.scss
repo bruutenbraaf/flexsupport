@@ -5080,7 +5080,7 @@ nav .row--change {
     color: $midnight;
   }
   svg {
-    transform: translateY(-50%), rotate(180deg);
+    transform: translateY(-50%) rotate(180deg) !important;
   }
 }
 
