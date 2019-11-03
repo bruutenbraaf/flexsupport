@@ -3290,7 +3290,7 @@ ul.uzp__pagination {
 
 .colr--changed {
   animation: fadeIn;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards; }
 
 .colr--changed .menu-item-has-children:after {
