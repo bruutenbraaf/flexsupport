@@ -3769,6 +3769,10 @@ nav .row--change {
   padding-top: 30px;
   padding-bottom: 30px; }
 
+.at-resp-share-element .at-share-btn .at-label {
+  color: #ffffff !important;
+  font-family: "SilkaMedium", Arial, sans-serif !important; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
