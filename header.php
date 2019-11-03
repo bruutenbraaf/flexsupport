@@ -131,4 +131,4 @@
         </div>
     </div>
 
-    <main id="skrollr-body">
+    <main>

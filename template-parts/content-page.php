@@ -126,9 +126,9 @@
             <?php } ?>
         <?php elseif (get_row_layout() == 'klanten') : ?>
             <section class="customers <?php the_sub_field('selecteer_kleur'); ?>">
-                <div class="marq">
-                    <div data-bottom="left:-20vw;" data-top="left:0vw;"><?php the_sub_field('titel'); ?></div>
-                    <div data-bottom="right:-20vw;" data-top="right:0vw;" style="float:right;"><?php the_sub_field('titel'); ?></div>
+                <div class="marq--vac">
+                    <div class="tpx"><?php the_sub_field('titel'); ?></div>
+                    <div class="btx"><?php the_sub_field('titel'); ?></div>
                 </div>
                 <?php $selecteer_klanten_om_te_tonen = get_sub_field('selecteer_klanten_om_te_tonen'); ?>
                 <?php if ($selecteer_klanten_om_te_tonen) : ?>

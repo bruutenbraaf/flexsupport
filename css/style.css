@@ -36,7 +36,7 @@ p a {
   z-index: 2;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 15px; }
+  margin-bottom: 0px; }
   p a:after {
     content: "";
     background: #35ffb6;
@@ -120,7 +120,8 @@ h4 {
   text-decoration: none; }
 
 .dwn {
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 30px !important; }
 
 .secondair {
   overflow: hidden;
@@ -1246,32 +1247,50 @@ footer {
           footer .socket ul li a:hover:after {
             height: 50%; }
 
-.header--arch .container {
-  padding-top: calc(80px + 136px);
-  padding-bottom: 80px; }
-  .header--arch .container h1 {
-    font-family: "SilkaBold", Arial, sans-serif;
-    font-size: 138px;
-    line-height: 144px;
-    padding-bottom: 120px; }
-    .header--arch .container h1 strong {
+.header--arch {
+  overflow: hidden; }
+  .header--arch .container {
+    padding-top: calc(80px + 136px);
+    padding-bottom: 80px; }
+    .header--arch .container h1 {
       font-family: "SilkaBold", Arial, sans-serif;
       font-size: 138px;
-      line-height: 144px; }
-  .header--arch .container .dwn {
-    margin-left: auto;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
-    .header--arch .container .dwn:hover {
-      margin-top: 10px; }
-.header--arch .int p {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 32px;
-  color: #ffffff; }
+      line-height: 144px;
+      padding-bottom: 120px; }
+      .header--arch .container h1 strong {
+        font-family: "SilkaBold", Arial, sans-serif;
+        font-size: 138px;
+        line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #001f3f;
+        -webkit-text-stroke-color: #001f3f;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px; }
+    .header--arch .container .dwn {
+      margin-left: auto;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .header--arch .container .dwn:hover {
+        margin-top: 10px; }
+  .header--arch .int p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 32px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #001f3f; }
+  .header--arch .btn--header {
+    color: #001f3f; }
+    .header--arch .btn--header:before {
+      background: #35ffb6; }
+    .header--arch .btn--header:after {
+      background: #35ffb6; }
+  .header--arch .dwn svg path {
+    fill: #001f3f; }
 
 .overv .arch-items {
   margin: 60px 0px; }
@@ -1280,7 +1299,8 @@ footer {
     .overv .arch-items .arch--item .arch--inner h3 {
       font-family: "SilkaBold", Arial, sans-serif;
       font-size: 34px;
-      line-height: 42px; }
+      line-height: 42px;
+      color: #001f3f; }
     .overv .arch-items .arch--item .arch--inner p {
       font-size: 16px;
       line-height: 42px; }
@@ -2186,6 +2206,9 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
+.rose .dwn svg path,
+.error404 .dwn svg path {
+  fill: #ffffff; }
 .rose .mtgo div,
 .error404 .mtgo div {
   background: rgba(255, 255, 255, 0.5); }
@@ -2371,7 +2394,8 @@ form.uzp__registration-form .uzp__radio-inline {
       fill: #ffffff; }
 .rose .secondair,
 .error404 .secondair {
-  background: none; }
+  background: none;
+  color: #ffffff; }
   .rose .secondair:hover,
   .error404 .secondair:hover {
     background: none; }
@@ -2385,6 +2409,18 @@ form.uzp__registration-form .uzp__radio-inline {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
+.rose .bread span,
+.error404 .bread span {
+  color: rgba(255, 255, 255, 0.5); }
+.rose .bread a,
+.error404 .bread a {
+  color: rgba(255, 255, 255, 0.5); }
+  .rose .bread a:hover,
+  .error404 .bread a:hover {
+    color: white; }
+.rose .bread span.breadcrumb_last,
+.error404 .bread span.breadcrumb_last {
+  color: white; }
 
 .green .mtgo div {
   background: #001f3f; }
@@ -2497,6 +2533,8 @@ form.uzp__registration-form .uzp__radio-inline {
   .green .dwn svg path {
     fill: #001f3f; }
 
+.yellow .dwn svg path {
+  fill: #ffffff; }
 .yellow .hamburger div {
   background: white; }
 .yellow .mtgo div {
@@ -3761,6 +3799,9 @@ nav .row--change {
   .mobile-nav {
     display: none !important; } }
 @media (max-width: 1196px) {
+  .hamburger div {
+    background: #001f3f; }
+
   .other-pst .other-items {
     width: 180vw; }
 
@@ -4199,8 +4240,22 @@ nav .row--change {
       font-size: 54px !important;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-color: #fff;
-      -webkit-text-stroke-color: #fff;
+      -moz-text-stroke-width: 2px !important;
+      -webkit-text-stroke-width: 2px !important; }
+
+  .hm h1,
+  .hm .intp p {
+    font-size: 54px !important;
+    padding-bottom: 0;
+    line-height: 54px !important; }
+    .hm h1 strong,
+    .hm .intp p strong {
+      line-height: 54px !important;
+      font-size: 54px !important;
+      -moz-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      -moz-text-stroke-color: #001f3f;
+      -webkit-text-stroke-color: #001f3f;
       -moz-text-stroke-width: 2px !important;
       -webkit-text-stroke-width: 2px !important; }
 
@@ -4208,6 +4263,9 @@ nav .row--change {
     margin-left: 0px !important;
     margin-top: 30px;
     margin-bottom: 30px; }
+
+  .inth {
+    padding-left: 0px; }
 
   .about {
     padding: 40px 0px; }

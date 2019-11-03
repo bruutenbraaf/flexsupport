@@ -75,7 +75,7 @@ p {
     z-index: 2;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     &:after {
       content: "";
       background: $turquoise;
@@ -175,6 +175,7 @@ h4 {
 
 .dwn {
   cursor: pointer;
+  margin-left: 30px !important;
 }
 
 .secondair {
@@ -1519,6 +1520,7 @@ footer {
 // -- Archive
 
 .header--arch {
+  overflow: hidden;
   .container {
     padding-top: calc(80px + #{$NavHeight});
     padding-bottom: 80px;
@@ -1531,6 +1533,12 @@ footer {
         font-family: $SilkaBold;
         font-size: 138px;
         line-height: 144px;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: $midnight;
+        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 4px;
       }
     }
     .dwn {
@@ -1550,7 +1558,25 @@ footer {
       padding: 0;
       font-size: 20px;
       line-height: 32px;
-      color: #ffffff;
+      font-size: 20px;
+      line-height: 32px;
+      color: $midnight;
+    }
+  }
+  .btn--header {
+    color: $midnight;
+    &:before {
+      background: $turquoise;
+    }
+    &:after {
+      background: $turquoise;
+    }
+  }
+  .dwn {
+    svg {
+      path {
+        fill: $midnight;
+      }
     }
   }
 }
@@ -1565,6 +1591,7 @@ footer {
           font-family: $SilkaBold;
           font-size: 34px;
           line-height: 42px;
+          color: $midnight;
         }
         p {
           font-size: 16px;
@@ -2843,6 +2870,13 @@ $pMargin: 135px;
 
 .rose,
 .error404 {
+  .dwn {
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
   .mtgo {
     div {
       background: rgba(255, 255, 255, 0.5);
@@ -3022,6 +3056,7 @@ $pMargin: 135px;
   }
   .secondair {
     background: none;
+    color: #ffffff;
     &:hover {
       background: none;
     }
@@ -3034,6 +3069,20 @@ $pMargin: 135px;
       -moz-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out;
+    }
+  }
+  .bread {
+    span {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+    span.breadcrumb_last {
+      color: rgba(255, 255, 255, 1);
     }
   }
 }
@@ -3200,6 +3249,13 @@ $pMargin: 135px;
 }
 
 .yellow {
+  .dwn {
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
   .hamburger {
     div {
       background: rgba(255, 255, 255, 1);
@@ -4845,6 +4901,11 @@ nav .row--change {
 
 $hamburgerwidth: 26px;
 @media (max-width: 1196px) {
+  .hamburger {
+    div {
+      background: $midnight;
+    }
+  }
   .other-pst .other-items {
     width: 180vw;
   }
@@ -5361,11 +5422,27 @@ $hamburgerwidth: 26px;
           font-size: 54px !important;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
-          -moz-text-stroke-color: #fff;
-          -webkit-text-stroke-color: #fff;
           -moz-text-stroke-width: 2px !important;
           -webkit-text-stroke-width: 2px !important;
         }
+      }
+    }
+  }
+  .hm {
+    h1,
+    .intp p {
+      font-size: 54px !important;
+      padding-bottom: 0;
+      line-height: 54px !important;
+      strong {
+        line-height: 54px !important;
+        font-size: 54px !important;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: $midnight;
+        -webkit-text-stroke-color: $midnight;
+        -moz-text-stroke-width: 2px !important;
+        -webkit-text-stroke-width: 2px !important;
       }
     }
   }
@@ -5373,6 +5450,9 @@ $hamburgerwidth: 26px;
     margin-left: 0px !important;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .inth {
+    padding-left: 0px;
   }
   .about {
     padding: 40px 0px;
