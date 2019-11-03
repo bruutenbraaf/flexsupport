@@ -3252,8 +3252,10 @@ ul.uzp__pagination {
   .rss h6,
   .rss em,
   .rss span,
+  .rss strong,
   .rss p {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 1; }
   .rss .btn {
     color: #ffffff; }
     .rss .btn:after {
