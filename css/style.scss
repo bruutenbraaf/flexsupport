@@ -774,6 +774,7 @@ nav {
 // Header
 
 .header--hp {
+  overflow: hidden;
   .container {
     padding-top: calc(80px + #{$NavHeight});
     padding-bottom: 80px;
@@ -873,6 +874,61 @@ nav {
 }
 
 // Stappen
+.slck-nav {
+  position: absolute;
+  top: 40%;
+  z-index: 55;
+  right: 0px;
+  .nxt-slds {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $turquoise;
+      right: 0;
+      top: 0;
+      position: absolute;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    &:before {
+      content: "";
+      width: 0%;
+      height: 100%;
+      background: $turquoise;
+      left: 0;
+      top: 0;
+      position: absolute;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover:after {
+      width: 0%;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+    svg {
+      z-index: 2;
+      position: relative;
+      transform: rotate(90deg);
+    }
+  }
+}
+
 $padding-bottom: 70px;
 .werkwijze {
   padding-top: 80px;
@@ -4202,7 +4258,7 @@ ul.uzp__pagination {
   span,
   strong,
   p {
-    color: #ffffff ;
+    color: #ffffff;
     opacity: 1;
   }
   .btn {
