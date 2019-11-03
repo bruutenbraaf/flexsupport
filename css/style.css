@@ -3117,8 +3117,8 @@ ul.uzp__pagination {
   .customers .marq--vac div h2 {
     color: #001f3f; }
     .customers .marq--vac div h2 strong {
-      -moz-text-stroke-color: #fff;
-      -webkit-text-stroke-color: #fff; }
+      -moz-text-stroke-color: #001f3f;
+      -webkit-text-stroke-color: #001f3f; }
 
 .services a h3 {
   color: #001f3f; }

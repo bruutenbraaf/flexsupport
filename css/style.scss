@@ -3998,8 +3998,8 @@ ul.uzp__pagination {
       h2 {
         color: $midnight;
         strong {
-          -moz-text-stroke-color: #fff;
-          -webkit-text-stroke-color: #fff;
+          -moz-text-stroke-color: $midnight;
+          -webkit-text-stroke-color: $midnight;
         }
       }
     }
