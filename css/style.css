@@ -3784,6 +3784,12 @@ nav .row--change {
   .ref-img .thumb {
     background-color: #ffffff !important; }
 
+.thumb-crop .referenties {
+  background-size: 80% !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: #ffffff; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }

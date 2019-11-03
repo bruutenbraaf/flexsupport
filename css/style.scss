@@ -4861,6 +4861,15 @@ nav .row--change {
   }
 }
 
+.thumb-crop {
+  .referenties {
+    background-size: 80% !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: #ffffff;
+  }
+}
+
 // Responsive
 
 @media (min-width: 1200px) {
