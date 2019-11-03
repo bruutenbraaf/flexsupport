@@ -1495,37 +1495,35 @@ footer {
     }
   }
   .menu {
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-        a {
-          font-family: $SilkaBold;
-          font-size: 18px;
-          color: $midnight;
-          position: relative;
-          z-index: 2;
-          text-decoration: none;
-          display: inline-block;
-          margin-bottom: 15px;
-          &:after {
-            content: "";
-            background: $turquoise;
-            width: 100%;
-            height: 0%;
-            bottom: 0px;
-            left: 0px;
-            position: absolute;
-            z-index: -1;
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-            -o-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out;
-          }
-          &:hover:after {
-            height: 50%;
-          }
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      a {
+        font-family: $SilkaBold;
+        font-size: 18px;
+        color: $midnight;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 15px;
+        &:after {
+          content: "";
+          background: $turquoise;
+          width: 100%;
+          height: 0%;
+          bottom: 0px;
+          left: 0px;
+          position: absolute;
+          z-index: -1;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover:after {
+          height: 50%;
         }
       }
     }
