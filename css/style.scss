@@ -4451,10 +4451,10 @@ ul.uzp__pagination {
           margin-top: 0px;
           color: #ffffff;
           &:after {
-            color: $rose;
+            background: $rose;
           }
           &:before {
-            color: $rose;
+            background: $rose;
           }
         }
       }
