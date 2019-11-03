@@ -808,6 +808,7 @@ nav {
   }
   .int {
     margin-left: 60px;
+    padding-right: 30px;
     p {
       margin: 0;
       padding: 0;
@@ -1615,6 +1616,7 @@ footer {
     }
   }
   .int {
+    padding-right: 30px;
     p {
       margin: 0;
       padding: 0;
@@ -1842,6 +1844,7 @@ footer {
   }
   .int {
     margin-left: 60px;
+    padding-right: 30px;
     p {
       margin: 0;
       padding: 0;
@@ -4146,6 +4149,7 @@ ul.uzp__pagination {
       }
     }
     .int {
+      padding-right: 30px;
       p {
         color: $midnight;
       }
@@ -5086,13 +5090,13 @@ nav .row--change {
   background: $turquoise;
   padding: 60px;
   ul {
-    margin:0;
+    margin: 0;
     padding: 30px 15px;
     li {
-       ul {
-         padding:0px;
-         margin-left: 15px;
-       }
+      ul {
+        padding: 0px;
+        margin-left: 15px;
+      }
     }
   }
   a {
@@ -5326,11 +5330,14 @@ $hamburgerwidth: 26px;
     .container {
       padding-top: $NavHeight;
       h1,
-      .intp p {
-        font-size: 94px !important;
-        padding-bottom: 0px !important;
-        strong {
+      .intp {
+        padding-right: 30px;
+        p {
           font-size: 94px !important;
+          padding-bottom: 0px !important;
+          strong {
+            font-size: 94px !important;
+          }
         }
       }
     }
@@ -5338,6 +5345,7 @@ $hamburgerwidth: 26px;
       order: 1;
       margin-right: 30px;
       padding-bottom: 30px;
+      padding-right: 30px;
     }
     .dwn {
       order: 3;
@@ -5623,6 +5631,7 @@ $hamburgerwidth: 26px;
       flex-wrap: wrap;
       .int {
         order: 1;
+        padding-right: 30px;
       }
       .btns {
         order: 2;
@@ -5709,6 +5718,7 @@ $hamburgerwidth: 26px;
       .int {
         width: 100%;
         order: 1;
+        padding-right: 30px;
       }
     }
   }
@@ -5761,6 +5771,7 @@ $hamburgerwidth: 26px;
     margin-left: 0px !important;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-right: 30px;
   }
   .inth {
     padding-left: 0px;

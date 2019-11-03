@@ -703,7 +703,8 @@ nav {
       .header--hp .container .dwn:hover {
         margin-top: 10px; }
   .header--hp .int {
-    margin-left: 60px; }
+    margin-left: 60px;
+    padding-right: 30px; }
     .header--hp .int p {
       margin: 0;
       padding: 0;
@@ -1328,14 +1329,16 @@ footer {
       transition: all 0.4s ease-in-out; }
       .header--arch .container .dwn:hover {
         margin-top: 10px; }
-  .header--arch .int p {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    line-height: 32px;
-    font-size: 20px;
-    line-height: 32px;
-    color: #001f3f; }
+  .header--arch .int {
+    padding-right: 30px; }
+    .header--arch .int p {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      line-height: 32px;
+      font-size: 20px;
+      line-height: 32px;
+      color: #001f3f; }
   .header--arch .btn--header {
     color: #001f3f; }
     .header--arch .btn--header:before {
@@ -1501,7 +1504,8 @@ footer {
       .header--sngl .container .dwn:hover {
         margin-top: 10px; }
   .header--sngl .int {
-    margin-left: 60px; }
+    margin-left: 60px;
+    padding-right: 30px; }
     .header--sngl .int p {
       margin: 0;
       padding: 0;
@@ -3224,8 +3228,10 @@ ul.uzp__pagination {
       -webkit-text-stroke-color: #001f3f;
       -moz-text-stroke-width: 4px;
       -webkit-text-stroke-width: 4px; }
-  .green .header--arch .int p {
-    color: #001f3f; }
+  .green .header--arch .int {
+    padding-right: 30px; }
+    .green .header--arch .int p {
+      color: #001f3f; }
   .green .header--arch .dwn {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -3827,9 +3833,9 @@ nav .row--change {
   opacity: 1;
   top: 0; }
 
-.hiden--branding {
+.hidden--branding {
   opacity: 0;
-  position: relative;
+  position: absolute;
   top: 30px; }
 
 .tp {
@@ -4152,16 +4158,20 @@ nav .row--change {
   .header--hp .container {
     padding-top: 136px; }
     .header--hp .container h1,
-    .header--hp .container .intp p {
-      font-size: 94px !important;
-      padding-bottom: 0px !important; }
-      .header--hp .container h1 strong,
-      .header--hp .container .intp p strong {
-        font-size: 94px !important; }
+    .header--hp .container .intp {
+      padding-right: 30px; }
+      .header--hp .container h1 p,
+      .header--hp .container .intp p {
+        font-size: 94px !important;
+        padding-bottom: 0px !important; }
+        .header--hp .container h1 p strong,
+        .header--hp .container .intp p strong {
+          font-size: 94px !important; }
   .header--hp .int {
     order: 1;
     margin-right: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    padding-right: 30px; }
   .header--hp .dwn {
     order: 3;
     margin-left: auto !important;
@@ -4408,7 +4418,8 @@ nav .row--change {
   .header--arch .d-flex {
     flex-wrap: wrap; }
     .header--arch .d-flex .int {
-      order: 1; }
+      order: 1;
+      padding-right: 30px; }
     .header--arch .d-flex .btns {
       order: 2;
       margin: 0;
@@ -4473,7 +4484,8 @@ nav .row--change {
       margin-left: -15px; }
     .hm .d-flex .int {
       width: 100%;
-      order: 1; } }
+      order: 1;
+      padding-right: 30px; } }
 @media (max-width: 414px) {
   .socket .justify-content-end {
     justify-content: start !important; }
@@ -4514,7 +4526,8 @@ nav .row--change {
   .int {
     margin-left: 0px !important;
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-right: 30px; }
 
   .inth {
     padding-left: 0px; }
