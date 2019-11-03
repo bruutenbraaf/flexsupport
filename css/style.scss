@@ -3306,10 +3306,7 @@ $pMargin: 135px;
     li a {
       color: $midnight;
       &:after {
-        background: $turquoise;
-      }
-      &:after {
-        background: $turquoise;
+        background: $turquoise !important;
       }
     }
     ul {
