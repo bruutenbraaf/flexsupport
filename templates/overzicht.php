@@ -49,18 +49,16 @@ get_header(); ?>
                                     <div class="align-items-center row">
                                         <div class="col-md-6 m-second">
                                             <a href="<?php echo $link_van_pagina['url']; ?>">
-                                                <h3> <?php the_sub_field('titel'); ?></h3>
-                                                <?php the_sub_field('intro_tekst'); ?>
+                                                <h3><?php the_sub_field('titel'); ?></h3>
+                                                <p><?php the_sub_field('intro_tekst'); ?></p>
                                             </a>
                                             <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
                                         </div>
                                         <div class="col-md-6 m-first">
                                             <a href="<?php echo $link_van_pagina['url']; ?>">
                                                 <div class="thumb-crop">
-                                                    <?php
-                                                            $afbeelding = get_sub_field('afbeelding');
-                                                            $fallback = get_field('fallback', 'option');
-                                                            ?>
+                                                    <?php $afbeelding = get_sub_field('afbeelding'); ?>
+                                                    <?php $fallback = get_field('fallback', 'option'); ?>
                                                     <div class="thumb" style="background-image:url(<?php if ($afbeelding) { ?><?php echo $afbeelding['sizes']['large'] ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
                                                     </div>
                                                 </div>
