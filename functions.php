@@ -576,3 +576,22 @@ function custom_pre_get_posts($query)
 
 	return $query;
 }
+
+
+
+add_filter('manage_regios_posts_columns', 'set_custom_edit_regios_columns');
+function set_custom_edit_regios_columns($columns)
+{
+	$columns['regio'] = __('Regio', 'leerbouwen');
+	return $columns;
+}
+
+add_action('manage_regios_posts_custom_column', 'custom_regios_column', 10, 2);
+function custom_regios_column($column, $post_id)
+{
+	switch ($column) {
+		case 'regio':
+			$term_list = wp_get_post_terms($post_id, 'regio', array('fields' => 'all'));
+			echo $term_list[0]->name;
+	}
+}
