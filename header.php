@@ -50,10 +50,10 @@
                                 <?php } elseif ($color == 'green' || $archiveColor == 'green') { ?>
                                     <?php $dark = get_sub_field('dark'); ?>
                                     <?php if ($dark) { ?>
-                                        <img data-start="opacity:1;margin-top:-0px;" data-150="opacity:0;margin-top:30px;" src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
+                                        <img src="<?php echo $dark['url']; ?>" alt="<?php echo $dark['alt']; ?>" />
                                         <?php $normaal = get_sub_field('normaal'); ?>
                                         <?php if ($normaal) { ?>
-                                            <img data-start="opacity:0;margin-top:-30px;" data-150="opacity:1;margin-top:15px;" class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
+                                            <img class="normal-branding" src="<?php echo $normaal['url']; ?>" alt="<?php echo $normaal['alt']; ?>" />
                                         <?php } ?>
                                     <?php } ?>
                                 <?php } else { ?>

@@ -15,7 +15,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
   .addTo(controller);
 
-var tween = TweenMax.to(".light--branding", 1, { className: "+=hiden--branding " });
+var tween = TweenMax.to(".light--branding", 1, { className: "+=hidden--branding " });
 var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
   .addTo(controller);
