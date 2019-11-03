@@ -552,7 +552,6 @@ nav {
 .main-nav ul li {
   position: relative; }
   .main-nav ul li a {
-    color: #ffffff;
     opacity: 0.5;
     position: relative;
     z-index: 2;
