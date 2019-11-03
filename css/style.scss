@@ -3302,6 +3302,7 @@ $pMargin: 135px;
   }
   .colr--changed {
     li a {
+      color: $midnight;
       &:after {
         background: $turquoise;
       }

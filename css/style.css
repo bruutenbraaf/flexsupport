@@ -2570,8 +2570,10 @@ form.uzp__registration-form .uzp__radio-inline {
 .yellow .main-nav ul .current-menu-ancestor > a:after {
   content: "";
   background: #001f3f; }
-.yellow .colr--changed li a:after {
-  background: #35ffb6; }
+.yellow .colr--changed li a {
+  color: #001f3f; }
+  .yellow .colr--changed li a:after {
+    background: #35ffb6; }
 .yellow .colr--changed ul .current_page_item > a:before,
 .yellow .colr--changed ul .current-menu-item > a:before,
 .yellow .colr--changed ul .current-menu-ancestor > a:before {
