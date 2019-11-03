@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <?php if (is_singular('personeel')) { ?>
+                    <?php if (is_singular('team')) { ?>
                         <h3><?php _e('Ontmoet ook', 'flexsupport'); ?></h3>
                     <?php } else { ?>
                         <h3><?php _e('Anderen bekeken ook', 'flexsupport'); ?></h3>
