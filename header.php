@@ -9,6 +9,17 @@
 
     <title><?php wp_title('&raquo;', 'true', 'right'); ?><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151246863-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151246863-2');
+    </script>
 </head>
 
 <?php if (is_archive()) { ?>
