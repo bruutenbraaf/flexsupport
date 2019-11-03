@@ -3779,9 +3779,10 @@ nav .row--change {
 
 .ref-img {
   background: none !important;
+  background-color: #ffffff !important;
   border: 1px solid #eeee; }
   .ref-img .thumb {
-    background-color: none !important; }
+    background-color: #ffffff !important; }
 
 @media (min-width: 1200px) {
   .container {
