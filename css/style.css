@@ -3116,6 +3116,9 @@ ul.uzp__pagination {
       opacity: 1; }
   .customers .marq--vac div h2 {
     color: #001f3f; }
+    .customers .marq--vac div h2 strong {
+      -moz-text-stroke-color: #fff;
+      -webkit-text-stroke-color: #fff; }
 
 .services a h3 {
   color: #001f3f; }

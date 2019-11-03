@@ -3996,7 +3996,11 @@ ul.uzp__pagination {
   .marq--vac {
     div {
       h2 {
-        color: $midnight
+        color: $midnight;
+        strong {
+          -moz-text-stroke-color: #fff;
+          -webkit-text-stroke-color: #fff;
+        }
       }
     }
   }
@@ -4980,7 +4984,7 @@ nav .row--change {
 }
 
 .rms {
-  margin-bottom:0px !important;
+  margin-bottom: 0px !important;
 }
 
 // Responsive
