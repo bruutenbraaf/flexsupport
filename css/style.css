@@ -3771,7 +3771,9 @@ nav .row--change {
 
 .at-resp-share-element .at-share-btn .at-label {
   color: #ffffff !important;
-  font-family: "SilkaMedium", Arial, sans-serif !important; }
+  font-family: "SilkaMedium", Arial, sans-serif !important;
+  position: relative;
+  top: 1px; }
 
 @media (min-width: 1200px) {
   .container {
