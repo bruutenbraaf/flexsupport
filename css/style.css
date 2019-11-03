@@ -3888,6 +3888,78 @@ nav .row--change {
 .rms {
   margin-bottom: 0px !important; }
 
+.regi a {
+  font-family: "SilkaRegular", Arial, sans-serif;
+  color: #001f3f;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0px; }
+  .regi a:after {
+    content: "";
+    background: #35ffb6;
+    width: 100%;
+    height: 0%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .regi a:hover:after {
+    height: 50%; }
+  .regi a:hover {
+    text-decoration: none !important;
+    color: #001f3f; }
+.regi .regio {
+  border-bottom: 1px solid #cfcedf;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+  .regi .regio .regio--name {
+    position: relative;
+    cursor: pointer; }
+    .regi .regio .regio--name svg {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .regi .regio .regio--name h2 {
+      display: inherit;
+      position: relative; }
+      .regi .regio .regio--name h2 strong {
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        -moz-text-stroke-color: #001f3f;
+        -webkit-text-stroke-color: #001f3f;
+        -moz-text-stroke-width: 2px !important;
+        -webkit-text-stroke-width: 2px !important;
+        font-size: 79px;
+        font-family: "SilkaBold", Arial, sans-serif; }
+    .regi .regio .regio--name a:hover {
+      text-decoration: none; }
+  .regi .regio .branches {
+    display: none; }
+    .regi .regio .branches .inner {
+      background: #e6e6e6;
+      border-radius: 5px;
+      padding: 20px 60px;
+      margin: 20px 0px; }
+      .regi .regio .branches .inner a {
+        font-family: "SilkaMedium", Arial, sans-serif;
+        font-size: 16px;
+        color: #001f3f; }
+.regi .all {
+  font-family: "SilkaBold", Arial, sans-serif;
+  color: #001f3f; }
+
+.is--open h2 span {
+  color: #001f3f; }
+.is--open svg {
+  transform: rotate(180deg); }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
@@ -4077,6 +4149,11 @@ nav .row--change {
     font-size: 48px;
     line-height: 65px;
     padding-bottom: 30px; }
+
+  .regi .regio .regio--name h2 {
+    padding-bottom: 0px; }
+    .regi .regio .regio--name h2 strong {
+      font-size: 48px; }
 
   .marq div h2 {
     font-size: 74px; }

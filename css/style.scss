@@ -4988,6 +4988,102 @@ nav .row--change {
   margin-bottom: 0px !important;
 }
 
+// Regio's
+
+.regi {
+  a {
+    font-family: $SilkaRegular;
+    color: $midnight;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0px;
+    &:after {
+      content: "";
+      background: $turquoise;
+      width: 100%;
+      height: 0%;
+      bottom: 0px;
+      left: 0px;
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover:after {
+      height: 50%;
+    }
+    &:hover {
+      text-decoration: none !important;
+      color: $midnight;
+    }
+  }
+  .regio {
+    border-bottom: 1px solid #cfcedf;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .regio--name {
+      position: relative;
+      cursor: pointer;
+      svg {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      h2 {
+        display: inherit;
+        position: relative;
+        strong {
+          -moz-text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          -moz-text-stroke-color: $midnight;
+          -webkit-text-stroke-color: $midnight;
+          -moz-text-stroke-width: 2px !important;
+          -webkit-text-stroke-width: 2px !important;
+          font-size: 79px;
+          font-family: $SilkaBold;
+        }
+      }
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .branches {
+      display: none;
+      .inner {
+        background: #e6e6e6;
+        border-radius: 5px;
+        padding: 20px 60px;
+        margin: 20px 0px;
+        a {
+          font-family: $SilkaMedium;
+          font-size: 16px;
+          color: $midnight;
+        }
+      }
+    }
+  }
+  .all {
+    font-family: $SilkaBold;
+    color: $midnight;
+  }
+}
+
+.is--open {
+  h2 span {
+    color: $midnight;
+  }
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
 // Responsive
 
 @media (min-width: 1200px) {
@@ -5229,6 +5325,12 @@ $hamburgerwidth: 26px;
     font-size: 48px;
     line-height: 65px;
     padding-bottom: 30px;
+  }
+  .regi .regio .regio--name h2 {
+    padding-bottom: 0px;
+    strong {
+      font-size: 48px;
+    }
   }
   .marq div h2 {
     font-size: 74px;

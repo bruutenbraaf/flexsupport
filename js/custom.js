@@ -46,10 +46,18 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offs
   .setTween(tween)
   .addTo(controller);
 
-  var tween = TweenMax.to(".hamburger", 1, { className: "+=hamburger--vis" });
+var tween = TweenMax.to(".hamburger", 1, { className: "+=hamburger--vis" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offset: 100 })
   .setTween(tween)
   .addTo(controller);
+
+// regio's
+jQuery(document).ready(function () {
+  jQuery("body").on('click', '.regio--name', function () {
+    jQuery(this).next('.branches').slideToggle(200);
+    jQuery(this).toggleClass('is--open');
+  });
+});
 
 // Nice select
 
