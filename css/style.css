@@ -2589,6 +2589,8 @@ form.uzp__registration-form .uzp__radio-inline {
 .yellow .colr--changed ul .current-menu-ancestor > a:after {
   content: "";
   background: #35ffb6; }
+.yellow .nav--change .main-nav ul li a:after {
+  background: #35ffb6 !important; }
 .yellow .contactp {
   background: #fdbb2c; }
   .yellow .contactp h1,

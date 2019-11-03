@@ -3324,6 +3324,17 @@ $pMargin: 135px;
       }
     }
   }
+  .nav--change {
+    .main-nav {
+      ul {
+        li a {
+          &:after {
+            background: $turquoise !important;
+          }
+        }
+      }
+    }
+  }
   .contactp {
     background: $yellow;
     h1,
