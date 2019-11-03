@@ -228,7 +228,7 @@
                 </div>
             </section>
         <?php elseif (get_row_layout() == 'qoute') : ?>
-            <section class="qoute">
+            <section class="qoute <?php the_sub_field( 'selecteer_kleur' ); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 offset-md-1">
