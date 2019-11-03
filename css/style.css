@@ -3106,14 +3106,16 @@ ul.uzp__pagination {
   overflow: hidden;
   padding: 170px 0px; }
   .customers .customers-over .customer img {
-    max-width: 120px;
-    opacity: 0.5;
+    max-width: 200px;
+    padding: 50px 0px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     .customers .customers-over .customer img:hover {
       opacity: 1; }
+  .customers .marq--vac div h2 {
+    color: #001f3f; }
 
 .services a h3 {
   color: #001f3f; }

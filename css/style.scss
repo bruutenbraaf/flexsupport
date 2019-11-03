@@ -3981,8 +3981,8 @@ ul.uzp__pagination {
   .customers-over {
     .customer {
       img {
-        max-width: 120px;
-        opacity: 0.5;
+        max-width: 200px;
+        padding: 50px 0px;
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
@@ -3990,6 +3990,13 @@ ul.uzp__pagination {
         &:hover {
           opacity: 1;
         }
+      }
+    }
+  }
+  .marq--vac {
+    div {
+      h2 {
+        color: $midnight
       }
     }
   }
