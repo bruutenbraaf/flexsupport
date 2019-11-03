@@ -36,28 +36,26 @@ get_header(); ?>
         </section>
     <?php endwhile; ?>
 <?php endif; ?>
-<?php $selecteer_paginas_om_te_tonen = get_field('selecteer_paginas_om_te_tonen'); ?>
 <section class="overv">
     <div class="container">
         <div class="row">
             <div class="offset-md-1 col-md-10">
-                <?php if ($selecteer_paginas_om_te_tonen) : ?>
+                <?php if (have_rows('paginas')) : ?>
                     <div class="arch-items">
-                        <?php foreach ($selecteer_paginas_om_te_tonen as $post) :  ?>
-                            <?php setup_postdata($post); ?>
+                        <?php while (have_rows('paginas')) : the_row(); ?>
+                            <?php $link_van_pagina = get_sub_field('link_van_pagina'); ?>
                             <div class="arch--item">
                                 <div class="arch--inner">
                                     <div class="align-items-center row">
                                         <div class="col-md-6 m-second">
-                                            <a href="<?php the_permalink() ?>">
-                                                <?php setup_postdata($post); ?>
-                                                <h3><?php the_title(); ?></h3>
-                                                <?php echo excerpt(30); ?>
+                                            <a href="<?php echo $link_van_pagina['url']; ?>">
+                                                <h3> <?php the_sub_field('titel'); ?></h3>
+                                                <?php the_sub_field('intro_tekst'); ?>
                                             </a>
                                             <a href="<?php the_permalink(); ?>" class="btn"><?php _e('Lees meer', 'flexsupport'); ?></a>
                                         </div>
                                         <div class="col-md-6 m-first">
-                                            <a href="<?php the_permalink() ?>">
+                                            <a href="<?php echo $link_van_pagina['url']; ?>">
                                                 <div class="thumb-crop">
                                                     <?php $fallback = get_field('fallback', 'option'); ?>
                                                     <div class="thumb" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
@@ -68,8 +66,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
             </div>
