@@ -3463,7 +3463,8 @@ ul.uzp__pagination {
         top: 0;
         background-size: cover;
         min-height: 330px;
-        width: 100%; }
+        width: 100%;
+        background-color: #001f3f; }
       .other-pst .other-items .thumb-crop .cus-thumb {
         background-position: 20%; }
       .other-pst .other-items .thumb-crop .inf {
@@ -3474,7 +3475,12 @@ ul.uzp__pagination {
           font-family: "SilkaBold", Arial, sans-serif;
           color: #ffffff; }
         .other-pst .other-items .thumb-crop .inf .btn {
-          margin-top: 0px; }
+          margin-top: 0px;
+          color: #ffffff; }
+          .other-pst .other-items .thumb-crop .inf .btn:after {
+            color: #35ffb6; }
+          .other-pst .other-items .thumb-crop .inf .btn:before {
+            color: #35ffb6; }
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
       .other-pst .other-items .arch--item a {

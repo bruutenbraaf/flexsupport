@@ -937,8 +937,6 @@ nav {
   }
 }
 
-
-
 $padding-bottom: 70px;
 .werkwijze {
   padding-top: 80px;
@@ -4436,6 +4434,7 @@ ul.uzp__pagination {
         background-size: cover;
         min-height: 330px;
         width: 100%;
+        background-color: $midnight;
       }
       .cus-thumb {
         background-position: 20%;
@@ -4450,6 +4449,13 @@ ul.uzp__pagination {
         }
         .btn {
           margin-top: 0px;
+          color: #ffffff;
+          &:after {
+            color: $turquoise;
+          }
+          &:before {
+            color: $turquoise;
+          }
         }
       }
     }
