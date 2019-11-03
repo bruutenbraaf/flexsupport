@@ -3765,6 +3765,10 @@ nav .row--change {
 .hamburger--vis div {
   background: #001f3f !important; }
 
+.share {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
