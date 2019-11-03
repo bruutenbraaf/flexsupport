@@ -2277,9 +2277,12 @@ form.uzp__registration-form .uzp__radio-inline {
 .error404 .main-nav ul .current-menu-ancestor > a:after {
   content: "";
   background: #001f3f; }
-.rose .colr--changed ul li a:after,
-.error404 .colr--changed ul li a:after {
-  background: #35ffb6; }
+.rose .colr--changed ul li a,
+.error404 .colr--changed ul li a {
+  color: #001f3f; }
+  .rose .colr--changed ul li a:after,
+  .error404 .colr--changed ul li a:after {
+    background: #35ffb6; }
 .rose .colr--changed ul .current_page_item > a:before,
 .rose .colr--changed ul .current-menu-item > a:before,
 .rose .colr--changed ul .current-menu-ancestor > a:before,
@@ -2440,8 +2443,10 @@ form.uzp__registration-form .uzp__radio-inline {
 .green .main-nav ul .current-menu-ancestor > a:after {
   content: "";
   background: #fdbb2c; }
-.green .colr--changed ul li a:after {
-  background: #35ffb6; }
+.green .colr--changed ul li a {
+  color: #001f3f; }
+  .green .colr--changed ul li a:after {
+    background: #35ffb6; }
 .green .colr--changed ul .current_page_item > a:before,
 .green .colr--changed ul .current-menu-item > a:before,
 .green .colr--changed ul .current-menu-ancestor > a:before {
