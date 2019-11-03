@@ -3290,13 +3290,15 @@ ul.uzp__pagination {
 
 .colr--changed {
   animation: fadeIn;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-fill-mode: forwards; }
 
 .colr--changed .menu-item-has-children:after {
   background-image: url(../img/down_dark.svg) !important; }
 
 @keyframes fadeIn {
+  0% {
+    color: inherit; }
   100% {
     color: #001f3f;
     opacity: 1; } }

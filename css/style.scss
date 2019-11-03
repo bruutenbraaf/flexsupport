@@ -4214,7 +4214,7 @@ ul.uzp__pagination {
 
 .colr--changed {
   animation: fadeIn;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-fill-mode: forwards;
 }
 
@@ -4226,6 +4226,7 @@ ul.uzp__pagination {
 
 @keyframes fadeIn {
   0% {
+    color: inherit;
   }
   100% {
     color: $midnight;
