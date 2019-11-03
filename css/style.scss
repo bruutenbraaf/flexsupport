@@ -3991,9 +3991,6 @@ ul.uzp__pagination {
           opacity: 1;
         }
       }
-      &:hover {
-        border: 1px solid #eeeeee;
-      }
     }
   }
   .marq--vac {
@@ -4980,6 +4977,10 @@ nav .row--change {
     background-position: center center !important;
     background: #fff;
   }
+}
+
+.rms {
+  margin-bottom:0px !important;
 }
 
 // Responsive

@@ -1,6 +1,6 @@
 <?php if (have_rows('header_single')) : ?>
     <?php while (have_rows('header_single')) : the_row(); ?>
-        <section class="header--hp hm">
+        <section class="header--hp hm<?php if ( get_sub_field( 'remove_space' ) == 1 ) { ?>rms<?php} ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 offset-md-1 bread">

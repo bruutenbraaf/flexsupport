@@ -3114,8 +3114,6 @@ ul.uzp__pagination {
     transition: all 0.2s ease-in-out; }
     .customers .customers-over .customer img:hover {
       opacity: 1; }
-  .customers .customers-over .customer:hover {
-    border: 1px solid #eeeeee; }
   .customers .marq--vac div h2 {
     color: #001f3f; }
 
@@ -3882,6 +3880,9 @@ nav .row--change {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background: #fff; }
+
+.rms {
+  margin-bottom: 0px !important; }
 
 @media (min-width: 1200px) {
   .container {
