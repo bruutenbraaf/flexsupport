@@ -428,6 +428,14 @@
                                 <?php endif; ?>
                             </div>
                         </div>
+                        <?php $knop = get_sub_field('knop'); ?>
+                        <?php if ($knop) { ?>
+                            <div class="col-md-10 offset-md-1">
+                                <div class="row">
+                                    <a href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
+                                </div>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
