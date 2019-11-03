@@ -177,7 +177,7 @@ h4 {
   margin-left: 30px;
   cursor: pointer; }
   .mtgo div {
-    background: #001f3f;
+    background: rgba(0, 31, 63, 0.5);
     width: 100%;
     min-height: 2px;
     margin: 5px 0px;
@@ -3290,7 +3290,7 @@ ul.uzp__pagination {
 
 .colr--changed {
   animation: fadeIn;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards; }
 
 .colr--changed .menu-item-has-children:after {
