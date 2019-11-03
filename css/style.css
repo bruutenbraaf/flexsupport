@@ -2470,18 +2470,27 @@ form.uzp__registration-form .uzp__radio-inline {
     -webkit-text-stroke-color: #001f3f;
     -moz-text-stroke-width: 4px;
     -webkit-text-stroke-width: 4px; }
-.green .header--hp .header--arch,
+.green .header--hp,
+.green .header--arch,
 .green .header--sngl {
   background: #35ffb6;
   margin-bottom: 80px; }
-  .green .header--hp .header--arch h1,
-  .green .header--hp .header--arch h2,
-  .green .header--hp .header--arch h3,
-  .green .header--hp .header--arch h4,
-  .green .header--hp .header--arch h5,
-  .green .header--hp .header--arch h6,
-  .green .header--hp .header--arch p,
-  .green .header--hp .header--arch span,
+  .green .header--hp h1,
+  .green .header--hp h2,
+  .green .header--hp h3,
+  .green .header--hp h4,
+  .green .header--hp h5,
+  .green .header--hp h6,
+  .green .header--hp p,
+  .green .header--hp span,
+  .green .header--arch h1,
+  .green .header--arch h2,
+  .green .header--arch h3,
+  .green .header--arch h4,
+  .green .header--arch h5,
+  .green .header--arch h6,
+  .green .header--arch p,
+  .green .header--arch span,
   .green .header--sngl h1,
   .green .header--sngl h2,
   .green .header--sngl h3,
@@ -2491,8 +2500,10 @@ form.uzp__registration-form .uzp__radio-inline {
   .green .header--sngl p,
   .green .header--sngl span {
     color: #001f3f; }
-  .green .header--hp .header--arch h1 strong,
-  .green .header--hp .header--arch h1 b,
+  .green .header--hp h1 strong,
+  .green .header--hp h1 b,
+  .green .header--arch h1 strong,
+  .green .header--arch h1 b,
   .green .header--sngl h1 strong,
   .green .header--sngl h1 b {
     -moz-text-stroke-color: #001f3f;
