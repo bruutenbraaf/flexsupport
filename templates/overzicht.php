@@ -57,8 +57,11 @@ get_header(); ?>
                                         <div class="col-md-6 m-first">
                                             <a href="<?php echo $link_van_pagina['url']; ?>">
                                                 <div class="thumb-crop">
-                                                    <?php $fallback = get_field('fallback', 'option'); ?>
-                                                    <div class="thumb" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
+                                                    <?php
+                                                            $afbeelding = get_sub_field('afbeelding');
+                                                            $fallback = get_field('fallback', 'option');
+                                                            ?>
+                                                    <div class="thumb" style="background-image:url(<?php if ($afbeelding) { ?><?php echo $afbeelding['sizes']['large'] ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
                                                     </div>
                                                 </div>
                                             </a>
