@@ -4,7 +4,7 @@ get_header(); ?>
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10 offset-md-1">
             <?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox_612e"]'); ?>
         </div>
     </div>
