@@ -1229,12 +1229,12 @@ footer {
     margin-bottom: 0px !important; }
   footer .branding img {
     max-width: 204px; }
-  footer .menu-footer-container ul {
+  footer .menu ul {
     margin: 0;
     padding: 0; }
-    footer .menu-footer-container ul li {
+    footer .menu ul li {
       list-style: none; }
-      footer .menu-footer-container ul li a {
+      footer .menu ul li a {
         font-family: "SilkaBold", Arial, sans-serif;
         font-size: 18px;
         color: #001f3f;
@@ -1243,7 +1243,7 @@ footer {
         text-decoration: none;
         display: inline-block;
         margin-bottom: 15px; }
-        footer .menu-footer-container ul li a:after {
+        footer .menu ul li a:after {
           content: "";
           background: #35ffb6;
           width: 100%;
@@ -1256,7 +1256,7 @@ footer {
           -moz-transition: all 0.2s ease-in-out;
           -o-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out; }
-        footer .menu-footer-container ul li a:hover:after {
+        footer .menu ul li a:hover:after {
           height: 50%; }
   footer h4 {
     font-family: "SilkaBold", Arial, sans-serif;
