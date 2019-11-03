@@ -17,6 +17,13 @@
                     <?php } ?>
                 </div>
                 <div class="offset-md-1 col-md-10">
+                    <div class="slck-nav">
+                        <div class="nxt-re nxt-slds">
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.06307 14L4.94019 14C4.50754 14 4.15947 13.6657 4.15947 13.2501L4.15947 7.00078L0.782856 7.00078C0.0867142 7.00078 -0.261357 6.19462 0.229846 5.71967L5.94862 0.220287C6.2544 -0.0734302 6.74885 -0.0734302 7.05464 0.220287L12.7702 5.71967C13.2614 6.1915 12.9133 7.00078 12.2171 7.00078L8.84378 7.00078L8.84379 13.2501C8.84379 13.6657 8.49571 14 8.06307 14Z" fill="white"></path>
+                            </svg>
+                        </div>
+                    </div>
                     <div class="other-items">
                         <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                             <div class="arch--item">
@@ -52,12 +59,13 @@
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                arrows: false,
+                arrows: true,
                 focusOnSelect: true,
                 centerMode: false,
-                dots: true,
+                dots: false,
                 lazyLoaded: true,
-                appendDots: jQuery(".dots"),
+                prevArrow: jQuery('.nxt-slds'),
+                nextArrow: jQuery('.nxt-re'),
             });
         });
     </script>

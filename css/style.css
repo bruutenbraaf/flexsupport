@@ -801,6 +801,10 @@ nav {
       z-index: 2;
       position: relative;
       transform: rotate(90deg); }
+  .slck-nav .nxt-re:after {
+    background: #001f3f !important; }
+  .slck-nav .nxt-re:before {
+    background: #001f3f !important; }
 
 .werkwijze {
   padding-top: 80px;

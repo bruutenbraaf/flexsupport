@@ -927,7 +927,17 @@ nav {
       transform: rotate(90deg);
     }
   }
+  .nxt-re {
+    &:after {
+      background: $midnight !important;
+    }
+    &:before {
+      background: $midnight !important;
+    }
+  }
 }
+
+
 
 $padding-bottom: 70px;
 .werkwijze {
