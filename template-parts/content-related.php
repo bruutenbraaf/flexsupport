@@ -25,12 +25,14 @@
                                         <a href="<?php the_permalink() ?>">
                                             <div class="thumb-crop align-items-end d-flex <?php if (is_singular('personeel')) { ?>big<?php } ?>">
                                                 <div class="inf">
-                                                        <?php setup_postdata($post); ?>
+                                                    <?php setup_postdata($post); ?>
+                                                    <?php if ($post_type != 'referenties') { ?>
                                                         <h3><?php the_title(); ?></h3>
-                                                    <div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></div>
+                                                        <div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></div>
+                                                    <?php } ?>
                                                 </div>
                                                 <?php $fallback = get_field('fallback', 'option'); ?>
-                                                <div class="thumb <?php echo $post_type;?> <?php if (is_singular('personeel')) { ?>cus-thumb<?php } ?>" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?> <?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['xl']; ?><?php } ?>);">
+                                                <div class="thumb <?php echo $post_type; ?> <?php if (is_singular('personeel')) { ?>cus-thumb<?php } ?>" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?> <?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['xl']; ?><?php } ?>);">
                                                 </div>
                                             </div>
                                         </a>

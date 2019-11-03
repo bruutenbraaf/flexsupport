@@ -49,7 +49,7 @@
 
 
 <?php $fallback = get_field('fallback', 'option'); ?>
-<?php if (is_singular('personeel')) { ?>
+<?php if (is_singular('personeel') || ($post_type != 'referenties')) { ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
