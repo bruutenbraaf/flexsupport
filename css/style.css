@@ -818,6 +818,7 @@ nav {
     left: 0;
     background: #35ffb6; }
   .werkwijze .stappen {
+    margin-top: 30px;
     width: 100vw;
     margin-left: 0px;
     margin-right: 0px;
