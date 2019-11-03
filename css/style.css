@@ -3250,6 +3250,7 @@ ul.uzp__pagination {
   .rss h4,
   .rss h5,
   .rss h6,
+  .rss em,
   .rss span,
   .rss p {
     color: #ffffff; }
