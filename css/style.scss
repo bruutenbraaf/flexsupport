@@ -175,7 +175,6 @@ h4 {
 
 .dwn {
   cursor: pointer;
-  margin-left: 30px !important;
 }
 
 .secondair {
@@ -2935,6 +2934,18 @@ $pMargin: 135px;
 
 .rose,
 .error404 {
+  .categories {
+    span.catt {
+      color: #ffffff;
+    }
+    ul {
+      li {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
   .dwn {
     svg {
       path {
@@ -5293,6 +5304,23 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .header--404 .container h1 {
+    font-size: 54px;
+    line-height: 76px;
+    line-height: normal;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    strong,
+    b {
+      -moz-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 2px;
+      font-size: 54px;
+      line-height: 76px;
+      line-height: normal;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
   .about h1,
   .about h2 {
     font-size: 44px;

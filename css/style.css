@@ -120,8 +120,7 @@ h4 {
   text-decoration: none; }
 
 .dwn {
-  cursor: pointer;
-  margin-left: 30px !important; }
+  cursor: pointer; }
 
 .secondair {
   overflow: hidden;
@@ -2261,6 +2260,12 @@ form.uzp__registration-form .uzp__radio-inline {
   .lgs img {
     max-width: 112px; }
 
+.rose .categories span.catt,
+.error404 .categories span.catt {
+  color: #ffffff; }
+.rose .categories ul li a,
+.error404 .categories ul li a {
+  color: #ffffff; }
 .rose .dwn svg path,
 .error404 .dwn svg path {
   fill: #ffffff; }
@@ -4140,6 +4145,22 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .header--404 .container h1 {
+    font-size: 54px;
+    line-height: 76px;
+    line-height: normal;
+    padding-bottom: 30px;
+    padding-top: 30px; }
+    .header--404 .container h1 strong,
+    .header--404 .container h1 b {
+      -moz-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 2px;
+      font-size: 54px;
+      line-height: 76px;
+      line-height: normal;
+      padding-bottom: 30px;
+      padding-top: 30px; }
+
   .about h1,
   .about h2 {
     font-size: 44px;
