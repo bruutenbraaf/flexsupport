@@ -49,7 +49,7 @@
 
 
 <?php $fallback = get_field('fallback', 'option'); ?>
-<?php if (is_singular('personeel') || ($post_type != 'referenties')) { ?>
+<?php if (is_singular('personeel')) { ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -58,6 +58,7 @@
             </div>
         </div>
     </div>
+<?php } elseif ($post_type == 'referenties') { ?>
 <?php } else { ?>
     <div class="full--img" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'full_img')) { ?><?php echo get_the_post_thumbnail_url($post, 'full_img'); ?><?php } else { ?><?php echo $fallback['sizes']['full_img']; ?><?php } ?>);">
     </div>
