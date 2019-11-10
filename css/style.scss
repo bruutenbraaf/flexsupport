@@ -76,6 +76,7 @@ p {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 0px;
+    text-decoration: underline;
     &:after {
       content: "";
       background: $turquoise;

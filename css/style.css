@@ -36,7 +36,8 @@ p a {
   z-index: 2;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  text-decoration: underline; }
   p a:after {
     content: "";
     background: #35ffb6;
