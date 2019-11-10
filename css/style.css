@@ -1491,6 +1491,9 @@ footer {
         line-height: 32px;
         color: #001f3f;
         text-decoration: underline; }
+    .header--sngl .container em {
+      font-size: 20px;
+      line-height: 32px; }
     .header--sngl .container .dwn {
       margin-left: auto;
       -webkit-transition: all 0.4s ease-in-out;
