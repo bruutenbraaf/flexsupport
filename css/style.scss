@@ -927,14 +927,6 @@ nav {
       transform: rotate(90deg);
     }
   }
-  .nxt-re {
-    &:after {
-      background: $midnight !important;
-    }
-    &:before {
-      background: $midnight !important;
-    }
-  }
 }
 
 $padding-bottom: 70px;
@@ -4979,7 +4971,7 @@ x
 
 .thumb-crop {
   .referenties {
-    background-size: 70% !important;
+    background-size: 54% !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background: #fff;
