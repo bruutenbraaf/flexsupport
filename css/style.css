@@ -3492,7 +3492,8 @@ ul.uzp__pagination {
       .other-pst .other-items .thumb-crop .cus-thumb {
         background-position: 20%; }
       .other-pst .other-items .thumb-crop .vac-inf {
-        background: #001f3f; }
+        background: #001f3f;
+        background-size: cover; }
       .other-pst .other-items .thumb-crop .inf {
         position: relative;
         z-index: 2;
