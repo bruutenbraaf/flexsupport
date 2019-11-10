@@ -4489,6 +4489,20 @@ ul.uzp__pagination {
           }
         }
       }
+      .vac-inf {
+        h3 {
+          color: $midnight;
+        }
+        .btn {
+          color: $midnight;
+          &:after {
+            background: $turquoise;
+          }
+          &:before {
+            background: $turquoise;
+          }
+        }
+      }
     }
     .arch--item {
       margin-right: 15px;

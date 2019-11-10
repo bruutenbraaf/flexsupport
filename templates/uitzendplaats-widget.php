@@ -62,7 +62,7 @@
 											<div class="align-items-center row">
 												<a href="<?php echo get_site_url(null, get_option('uitzendplaats-options')['uzp-vacancy-index-page'] . '/' . sanitize_title($item->title) . '/' . $item->id . '/') ?>">
 													<div class="thumb-crop align-items-end d-flex">
-														<div class="inf">
+														<div class="inf vac-inf">
 															<?php setup_postdata($post); ?>
 															<h3><?php echo $item->title ?></h3>
 															<div class="btn"><?php _e('Lees meer', 'flexsupport'); ?></div>
