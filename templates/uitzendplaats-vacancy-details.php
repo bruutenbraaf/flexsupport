@@ -223,7 +223,7 @@
 				</div>
 			</div>
 		<?php } ?>
-		<?php if (!$view_data && property_exists($view_data, 'data')) { ?>
+		<?php if ($view_data && property_exists($view_data, 'data')) { ?>
 			<div class="container app-form" id="apply">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
