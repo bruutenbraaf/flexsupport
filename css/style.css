@@ -754,6 +754,10 @@ nav {
     font-size: 18px;
     line-height: 32px;
     opacity: 0.5; }
+    .about p a {
+      font-size: 18px;
+      line-height: 32px;
+      opacity: 1; }
 
 .slck-nav {
   position: absolute;
@@ -3850,8 +3854,7 @@ nav .row--change {
 .scr--right {
   left: 0vw; }
 
-x
-.scr--left {
+x .scr--left {
   right: 0vw; }
 
 .tpx {
