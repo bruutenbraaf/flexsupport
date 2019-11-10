@@ -3505,14 +3505,8 @@ ul.uzp__pagination {
             background: #fc1264; }
           .other-pst .other-items .thumb-crop .inf .btn:before {
             background: #fc1264; }
-      .other-pst .other-items .thumb-crop .vac-inf h3 {
-        color: #001f3f; }
-      .other-pst .other-items .thumb-crop .vac-inf .btn {
-        color: #001f3f; }
-        .other-pst .other-items .thumb-crop .vac-inf .btn:after {
-          background: #35ffb6; }
-        .other-pst .other-items .thumb-crop .vac-inf .btn:before {
-          background: #35ffb6; }
+      .other-pst .other-items .thumb-crop .vac-inf {
+        background: #001f3f; }
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
       .other-pst .other-items .arch--item a {
