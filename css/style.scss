@@ -1822,10 +1822,10 @@ footer {
         color: $midnight;
         text-decoration: underline;
       }
-    }
-    em {
-      font-size: 20px;
-      line-height: 32px;
+      em {
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
     .dwn {
       margin-left: auto;
@@ -1847,6 +1847,10 @@ footer {
       font-size: 20px;
       line-height: 32px;
       color: #ffffff;
+      em {
+        font-size: 20px;
+        line-height: 32px;
+      }
     }
   }
   .small {
