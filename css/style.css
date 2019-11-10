@@ -3491,6 +3491,8 @@ ul.uzp__pagination {
         background-color: #ffffff; }
       .other-pst .other-items .thumb-crop .cus-thumb {
         background-position: 20%; }
+      .other-pst .other-items .thumb-crop .vac-inf {
+        background: #001f3f; }
       .other-pst .other-items .thumb-crop .inf {
         position: relative;
         z-index: 2;
@@ -3505,8 +3507,6 @@ ul.uzp__pagination {
             background: #fc1264; }
           .other-pst .other-items .thumb-crop .inf .btn:before {
             background: #fc1264; }
-      .other-pst .other-items .thumb-crop .vac-inf {
-        background: #001f3f; }
     .other-pst .other-items .arch--item {
       margin-right: 15px; }
       .other-pst .other-items .arch--item a {

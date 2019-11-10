@@ -4470,6 +4470,9 @@ ul.uzp__pagination {
       .cus-thumb {
         background-position: 20%;
       }
+      .vac-inf {
+        background: $midnight;
+      }
       .inf {
         position: relative;
         z-index: 2;
@@ -4488,9 +4491,6 @@ ul.uzp__pagination {
             background: $rose;
           }
         }
-      }
-      .vac-inf {
-        background: $midnight;
       }
     }
     .arch--item {
