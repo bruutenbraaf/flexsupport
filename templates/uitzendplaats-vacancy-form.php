@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="uzp__form-group uzp-row">
-			<input type="text" class="uzp__form-control" id="inputFirstName" name="first_name" placeholder="<?php _e('First name', 'uitzendplaats'); ?>">
+			<input type="text" class="uzp__form-control" id="inputFirstName" name="first_name" placeholder="<?php _e('First name', 'uitzendplaats'); ?>*">
 			<p class="uzp__help-block" data-validate-for="first_name"></p>
 		</div>
 
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="uzp__form-group uzp-row">
-			<input type="text" class="uzp__form-control" id="inputEmail" name="email" placeholder="<?php _e('your@email.com', 'uitzendplaats'); ?>">
+			<input type="text" class="uzp__form-control" id="inputEmail" name="email" placeholder="<?php _e('your@email.com', 'uitzendplaats'); ?>*">
 			<p class="uzp__help-block" data-validate-for="email"></p>
 		</div>
 
