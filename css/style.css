@@ -26,8 +26,10 @@ h2 {
   line-height: 88px;
   color: #001f3f; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #001f3f; }
+  a:hover {
+    text-decoration: none; }
 
 p a {
   font-family: "SilkaRegular", Arial, sans-serif;
