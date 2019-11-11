@@ -2990,6 +2990,11 @@ $pMargin: 135px;
     background: $rose;
   }
 
+  .nice-select.open .list {
+    max-height: 200px;
+    overflow: scroll;
+  }
+
   .gfield_required {
     color: #ffffff !important;
   }
@@ -4472,7 +4477,7 @@ ul.uzp__pagination {
       }
       .vac-inf {
         background: $midnight;
-        background-size:cover;
+        background-size: cover;
       }
       .inf {
         position: relative;

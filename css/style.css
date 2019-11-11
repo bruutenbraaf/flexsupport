@@ -2304,6 +2304,10 @@ form.uzp__registration-form .uzp__radio-inline {
 .error404 .gform_wrapper .gfield_error .gfield_label {
   color: #ffffff !important;
   background: #fc1264; }
+.rose .nice-select.open .list,
+.error404 .nice-select.open .list {
+  max-height: 200px;
+  overflow: scroll; }
 .rose .gfield_required,
 .error404 .gfield_required {
   color: #ffffff !important; }
