@@ -2302,7 +2302,8 @@ form.uzp__registration-form .uzp__radio-inline {
   background: none !important; }
 .rose .gform_wrapper .gfield_error .gfield_label,
 .error404 .gform_wrapper .gfield_error .gfield_label {
-  color: #ffffff !important; }
+  color: #ffffff !important;
+  background: #fc1264; }
 .rose .gfield_required,
 .error404 .gfield_required {
   color: #ffffff !important; }
