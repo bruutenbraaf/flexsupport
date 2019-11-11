@@ -2308,6 +2308,9 @@ form.uzp__registration-form .uzp__radio-inline {
 .error404 .nice-select.open .list {
   max-height: 200px;
   overflow: scroll; }
+.rose .nice-select .option,
+.error404 .nice-select .option {
+  margin-bottom: 0px; }
 .rose .gfield_required,
 .error404 .gfield_required {
   color: #ffffff !important; }
