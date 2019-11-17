@@ -3288,6 +3288,8 @@ ul.uzp__pagination {
   .yls p {
     color: #ffffff;
     opacity: 1; }
+  .yls a:hover {
+    color: #ffffff; }
   .yls .btn {
     color: #001f3f; }
     .yls .btn:before {
