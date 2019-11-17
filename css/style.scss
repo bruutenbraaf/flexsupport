@@ -4236,6 +4236,12 @@ ul.uzp__pagination {
     color: #ffffff;
     opacity: 1;
   }
+  a:before {
+    background: $midnight;
+  }
+  a:after {
+    background: $midnight;
+  }
   a:hover {
     color: #ffffff;
   }
