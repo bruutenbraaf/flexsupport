@@ -3913,77 +3913,57 @@ x .scr--left {
 .rms {
   margin-bottom: 0px !important; }
 
-.regi a {
-  font-family: "SilkaRegular", Arial, sans-serif;
-  color: #001f3f;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 0px; }
-  .regi a:after {
-    content: "";
-    background: #35ffb6;
+.reg {
+  padding-top: 100px; }
+  .reg h2 {
+    margin-bottom: 50px; }
+  .reg .container {
+    margin-bottom: 100px; }
+  .reg .rgi {
+    font-family: "SilkaBold", Arial, sans-serif !important;
+    font-size: 18px !important;
+    line-height: 24px;
+    color: #001f3f;
     width: 100%;
-    height: 0%;
-    bottom: 0px;
-    left: 0px;
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-  .regi a:hover:after {
-    height: 50%; }
-  .regi a:hover {
-    text-decoration: none !important;
-    color: #001f3f; }
-.regi .regio {
-  border-bottom: 1px solid #cfcedf;
-  padding-bottom: 20px;
-  margin-bottom: 20px; }
-  .regi .regio .regio--name {
+    display: inline-block;
     position: relative;
-    cursor: pointer; }
-    .regi .regio .regio--name svg {
+    margin-bottom: 36px; }
+    .reg .rgi svg {
+      float: right;
+      max-width: 50px; }
+    .reg .rgi:hover {
+      color: #001f3f; }
+    .reg .rgi:after {
+      content: "";
       position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%); }
-    .regi .regio .regio--name h2 {
-      display: inherit;
-      position: relative; }
-      .regi .regio .regio--name h2 strong {
-        -moz-text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
-        -moz-text-stroke-color: #001f3f;
-        -webkit-text-stroke-color: #001f3f;
-        -moz-text-stroke-width: 2px !important;
-        -webkit-text-stroke-width: 2px !important;
-        font-size: 79px;
-        font-family: "SilkaBold", Arial, sans-serif; }
-    .regi .regio .regio--name a:hover {
-      text-decoration: none; }
-  .regi .regio .branches {
-    display: none; }
-    .regi .regio .branches .inner {
-      background: #e6e6e6;
-      border-radius: 5px;
-      padding: 20px 60px;
-      margin: 20px 0px; }
-      .regi .regio .branches .inner a {
-        font-family: "SilkaMedium", Arial, sans-serif;
-        font-size: 16px;
-        color: #001f3f; }
-.regi .all {
-  font-family: "SilkaBold", Arial, sans-serif;
-  color: #001f3f; }
-
-.is--open h2 span {
-  color: #001f3f; }
-.is--open svg {
-  transform: translateY(-50%) rotate(180deg) !important; }
+      z-index: -1;
+      width: 100%;
+      height: 4px;
+      bottom: -14px;
+      right: 0px;
+      background: #35ffb6;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .reg .rgi:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 0px;
+      height: 4px;
+      bottom: -14px;
+      left: 0px;
+      background: #35ffb6;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    .reg .rgi:hover:after {
+      right: 0px;
+      width: 0; }
+    .reg .rgi:hover:before {
+      width: 100%; }
 
 .site {
   background: #35ffb6;

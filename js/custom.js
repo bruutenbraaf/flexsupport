@@ -30,7 +30,6 @@ var scene = new ScrollMagic.Scene({ triggerElement: ".marq", duration: 300 })
   .setTween(tween)
   .addTo(controller);
 
-
 var tween = TweenMax.to(".tpx", 1, { className: "+=scr--rightx" });
 var scene = new ScrollMagic.Scene({ triggerElement: ".marq--vac", duration: 300 })
   .setTween(tween)

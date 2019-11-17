@@ -32,58 +32,28 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="regi">
+<section class="reg">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <?php $terms = get_terms('regio'); ?>
-                <?php foreach ($terms as $term) { ?>
-                    <?php $term_link = get_term_link($term); ?>
-                    <div class="regio">
-                        <div class="regio--name">
-                            <h2><?php _e('Regio', 'flexsupport'); ?> <strong><?php echo $term->name; ?></strong></h2>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 1L8 15M8 15L15 8M8 15L1 8" stroke="#2D2D46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <?php $loop = new WP_Query(array(
+                'post_type' => 'regios',
+                'order' => 'DESC'
+            )); ?>
+            <?php if ($loop->have_posts()) : ?>
+                <?php $c = 0; ?>
+                <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                    <?php $c++; ?>
+                    <div class="<?php if ($c % 2 != 0) { ?>offset-md-1 <?php } ?>col-md-5<?php ?>">
+                        <a class="rgi" href="<?php the_permalink(); ?>"><?php the_title(); ?><svg width="79" height="27" viewBox="0 0 79 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M65.5607 0.939331L78.1213 13.5L65.5607 26.0606L63.4393 23.9393L72.3787 15L0 15V12L72.3787 12L63.4393 3.06065L65.5607 0.939331Z" fill="#001F3F" />
                             </svg>
-                        </div>
-                        <div class="branches">
-                            <div class="inner">
-                                <?php
-                                    $termid = $term->term_id;
-                                    $args = array(
-                                        'post_type' => 'regios',
-                                        'tax_query' => array(
-                                            array(
-                                                'taxonomy' => 'regio',
-                                                'field' => 'term_id',
-                                                'terms' => $termid
-                                            )
-                                        )
-                                    );
-                                    $loop = new WP_Query($args); ?>
-                                <?php if ($loop->have_posts()) : ?>
-                                    <div class="row">
-                                        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                                            <div class="col-md-4">
-                                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                            </div>
-                                        <?php endwhile; ?>
-                                        <?php wp_reset_postdata(); ?>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 justify-content-end d-flex">
-                                    <a class="all" href="<?php echo $term_link; ?>">
-                                        <?php _e('Lees meer over', 'talentplaats'); ?> <?php echo $term->name; ?>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                <?php } ?>
-            </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
         </div>
+    </div>
     </div>
 </section>
 <?php get_footer(); ?>
