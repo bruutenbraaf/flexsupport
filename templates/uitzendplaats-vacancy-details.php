@@ -270,25 +270,5 @@
 			</div>
 		<?php } ?>
 
-		<div class="container share">
-			<div class="row">
-				<div class="col-md-10 offset-md-1">
-					<div id="shareBlock"></div>
-					<script>
-						jQuery(document).ready(function() {
-							jQuery('#shareBlock').cShare({
-								show_buttons: [
-									'fb',
-									'twitter',
-									'tumblr',
-									'email'
-								]
-							});
-						});
-					</script>
-				</div>
-			</div>
-		</div>
-
 
 		<?php echo do_shortcode('[uitzendplaats_latest_vacancies]'); ?>
