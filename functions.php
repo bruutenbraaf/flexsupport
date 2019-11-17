@@ -13,6 +13,7 @@ function flexupdate_scripts()
 	wp_enqueue_script('jquery', get_template_directory_uri() . '/bootstrap/js/jquery.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('bootjs', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('slickslider', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('share', get_template_directory_uri() . '/js/jquery.c-share.js', array(), '1.0.0', true);
 	wp_enqueue_script('niceselect', get_template_directory_uri() . '/js/jquery.nice-select.min.js', array(), '1.0.0', false);
 
 	// Scrollmagic
@@ -28,6 +29,7 @@ function flexupdate_scripts()
 	wp_enqueue_style('bootcss', get_template_directory_uri() . '/css/bootstrap.min.css');
 	wp_enqueue_style('niceselectcss', get_template_directory_uri() . '/css/nice-select.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('fa', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 }
 add_action('wp_enqueue_scripts', 'flexupdate_scripts');
 
