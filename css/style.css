@@ -4007,6 +4007,9 @@ nav .row--change {
 @media (min-width: 1200px) {
   .container {
     max-width: 90vw; } }
+@media (min-width: 1550px) {
+  .container {
+    max-width: 80vw; } }
 @media (max-width: 1550px) {
   .header--sngl .container h1 {
     font-size: 94px;
