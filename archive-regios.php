@@ -37,7 +37,8 @@ get_header(); ?>
         <div class="row">
             <?php $loop = new WP_Query(array(
                 'post_type' => 'regios',
-                'order' => 'DESC'
+                'order' => 'DESC',
+                'post_per_page' => 999,
             )); ?>
             <?php if ($loop->have_posts()) : ?>
                 <?php $c = 0; ?>
