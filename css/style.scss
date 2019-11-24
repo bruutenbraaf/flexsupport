@@ -2986,6 +2986,9 @@ $pMargin: 135px;
     background: none !important;
   }
 
+  .gfield_error .gfield_required {
+    color: #ffffff !important;
+  }
   .gform_wrapper .gfield_error .gfield_label {
     color: #ffffff !important;
     background: $rose;
