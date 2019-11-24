@@ -3080,7 +3080,7 @@ $pMargin: 135px;
       color: #ffffff;
     }
     &:after {
-      background: $midnight;
+      background: $midnight !important;
     }
   }
   .header--hp,
