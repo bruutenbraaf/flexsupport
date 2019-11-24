@@ -2313,6 +2313,9 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .nice-select .option,
 .error404 .nice-select .option {
   margin-bottom: 0px; }
+.rose .page-template-default .gfield_required,
+.error404 .page-template-default .gfield_required {
+  color: #001f3f !important; }
 .rose .gfield_required,
 .error404 .gfield_required {
   color: #ffffff !important; }

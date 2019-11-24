@@ -3000,6 +3000,9 @@ $pMargin: 135px;
     margin-bottom: 0px;
   }
 
+  .page-template-default .gfield_required {
+    color: $midnight !important;
+  }
   .gfield_required {
     color: #ffffff !important;
   }
