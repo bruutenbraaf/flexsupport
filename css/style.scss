@@ -3075,6 +3075,11 @@ $pMargin: 135px;
   .contactp {
     background: $rose;
   }
+  .contactp a {
+    &:hover {
+      color: #ffffff;
+    }
+  }
   .header--hp,
   .header--arch,
   .header--sngl {
