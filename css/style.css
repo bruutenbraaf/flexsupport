@@ -2387,6 +2387,9 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .contactp a:hover,
 .error404 .contactp a:hover {
   color: #ffffff; }
+.rose .contactp a:after,
+.error404 .contactp a:after {
+  background: #001f3f; }
 .rose .header--hp,
 .rose .header--arch,
 .rose .header--sngl,

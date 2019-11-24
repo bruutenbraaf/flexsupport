@@ -3079,6 +3079,9 @@ $pMargin: 135px;
     &:hover {
       color: #ffffff;
     }
+    &:after {
+      background: $midnight;
+    }
   }
   .header--hp,
   .header--arch,
