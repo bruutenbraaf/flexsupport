@@ -48,7 +48,7 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
                                     <a href="<?php the_permalink() ?>">
                                         <div class="thumb-crop">
                                             <?php $fallback = get_field('fallback', 'option'); ?>
-                                            <div class="thumb" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['medium']; ?><?php } ?>);">
+                                            <div class="thumb" style="background-image:url(<?php if (get_the_post_thumbnail_url($post, 'large')) { ?><?php echo get_the_post_thumbnail_url($post, 'team'); ?><?php } else { ?><?php echo $fallback['sizes']['team']; ?><?php } ?>);">
                                             </div>
                                         </div>
                                     </a>
