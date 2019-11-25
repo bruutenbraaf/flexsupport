@@ -4,7 +4,7 @@ add_image_size('home', 1920, 600, true);
 add_image_size('full_img', 1440, 600, true);
 add_image_size('full_portrait', 600, 1500, true);
 add_image_size('xl', 700, 400, true);
-add_image_size('team', 700, 400, array( 'left', 'top' ));
+add_image_size('team', 430, 500, array( 'right', 'top' ));
 
 add_theme_support('post-thumbnails');
 
