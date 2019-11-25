@@ -51,7 +51,7 @@ get_header(); ?>
 
 
 <?php $fallback = get_field('fallback', 'option'); ?>
-<?php if (is_singular('personeel')) { ?>
+<?php if (is_singular('team')) { ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
