@@ -105,6 +105,17 @@ p {
   clear: both;
 }
 
+ul {
+  li {
+    font-family: Muli,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #545a63;
+  }
+}
+
 h4 {
   font-family: $SilkaBold;
 }
