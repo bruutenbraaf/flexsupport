@@ -192,7 +192,7 @@ get_header(); ?>
                                                 </div>
                                                 <?php $fallback = get_field('fallback', 'option'); ?>
                                                 <?php $afbeelding_werknemer = get_field('afbeelding_werknemer'); ?>
-                                                <div class="thumb <?php echo $post_type; ?> <?php if (is_singular('personeel')) { ?>cus-thumb<?php } ?>" style="background-image:url(<?php if (is_singular('personeel')) { ?><?php echo $afbeelding_werknemer['sizes']['full_img']; ?><?php } else { ?><?php if (get_the_post_thumbnail_url($post, 'large')) { ?> <?php echo get_the_post_thumbnail_url($post, 'large'); ?><?php } else { ?><?php echo $fallback['sizes']['xl']; ?><?php } ?><?php } ?>);">
+                                                <div class="thumb <?php echo $post_type; ?> <?php if (is_singular('personeel')) { ?>cus-thumb<?php } ?>" style="background-image:url(<?php echo $afbeelding_werknemer['sizes']['full_img']; ?>);">
                                                 </div>
                                             </div>
                                         </a>
