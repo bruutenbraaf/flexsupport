@@ -61,7 +61,7 @@ jQuery(document).ready(function () {
 // Nice select
 
 jQuery(document).ready(function () {
-  jQuery('select').niceSelect();
+  jQuery('select').editableSelect();
 });
 
 jQuery(window).scroll(function () {
