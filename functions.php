@@ -1,12 +1,10 @@
 <?php
-
+add_theme_support('post-thumbnails');
 add_image_size('home', 1920, 600, true);
 add_image_size('full_img', 1440, 600, true);
 add_image_size('full_portrait', 600, 1500, true);
 add_image_size('xl', 700, 400, true);
 add_image_size('team', 430, 500, array( 'right', 'top' ));
-
-add_theme_support('post-thumbnails');
 
 function flexupdate_scripts()
 {
@@ -23,7 +21,7 @@ function flexupdate_scripts()
 	wp_enqueue_script('AnimationGsap', get_template_directory_uri() . '/js/animation.gsap.min.js', array(), '1.0.0', true);
 	// wp_enqueue_script('addIndicators', get_template_directory_uri() . '/js/debug.addIndicators.min.js', array(), '1.0.0', true);
 
-	// Custom
+	// Custom JS
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/custom.js', array(), '1.0.0', true);
 
 	// CSS
