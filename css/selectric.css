@@ -6,90 +6,6 @@
   cursor: pointer;
 }
 
-.selectric-responsive {
-  width: 100%;
-}
-
-.selectric {
-  border: {borderWidth}px solid {secondaryColor};
-  background: {baseColor};
-  position: relative;
-  border-radius: {borderRadius}px;
-}
-
-.selectric .label {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0 {innerHeight}px 0 {indent}px;
-  font-size: 12px;
-  line-height: {innerHeight}px;
-  color: {labelColor};
-  height: {innerHeight}px;
-}
-
-.selectric .button {
-  background: {buttonBgColor};
-  border-radius: {buttonRadius}px;
-  display: block;
-  position: absolute;
-  right: {buttonPosition}px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: {buttonSize}px;
-  height: {buttonSize}px;
-  color: {buttonColor};
-  text-align: center;
-  font: 0/0 a;
-  *font: {buttonSize}px/{buttonSize}px Lucida Sans Unicode, Arial Unicode MS, Arial;
-}
-
-.selectric .button:after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border: 4px solid transparent;
-  border-top-color: {buttonColor};
-  border-bottom: none;
-}
-
-.selectric-focus .selectric {
-  border-color: #AAA;
-}
-
-.selectric-hover .selectric {
-  border-color: {hoverSecondaryColor};
-}
-
-.selectric-hover .selectric .button {
-  color: {hoverSecondaryColor};
-}
-
-.selectric-hover .selectric .button:after {
-  border-top-color: {hoverSecondaryColor};
-}
-
-.selectric-open {
-  z-index: 9999;
-}
-
-.selectric-open .selectric {
-  border-color: {hoverSecondaryColor};
-  background: {hoverBaseColor};
-}
-
-.selectric-open .selectric-items {
-  display: block;
-}
-
 .selectric-disabled {
   filter: alpha(opacity=50);
   opacity: 0.5;
@@ -98,6 +14,14 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.selectric-open {
+  z-index: 9999;
+}
+
+.selectric-open .selectric-items {
+  display: block;
 }
 
 .selectric-hide-select {
@@ -144,7 +68,7 @@
   height: 1px !important;
   outline: none !important;
   border: none !important;
-  *font: 0/0 a !important;
+  _font: 0/0 a;
   background: none !important;
 }
 
@@ -152,6 +76,89 @@
   position: absolute !important;
   visibility: hidden !important;
   display: block !important;
+}
+
+
+.selectric-open .selectric {
+  border-color: #CCC;
+  background: #F0F0F0;
+  z-index: 9999;
+}
+
+.selectric-open .selectric-items {
+  display: block;
+}
+
+.selectric {
+  box-shadow: 0 1px 2px 0 #DDD, 0 1px 0 0 #FFF inset;
+  background: #E9E9E9;
+  background: -webkit-linear-gradient(#F9F9F9, #EEE);
+  background: -o-linear-gradient(#F9F9F9, #EEE);
+  background: linear-gradient(#F9F9F9, #EEE);
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  position: relative;
+}
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 30px 0 0;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #444;
+  min-height: 18px;
+  text-shadow: 0 1px #FFF;
+}
+
+.selectric .button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  font: 0/0 a;
+  border-left: 1px solid #D2D2D2;
+}
+
+.selectric .button:after {
+  content: " ";
+  zoom: 1;
+  position: absolute;
+  overflow: hidden;
+  top: 13px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #BBB;
+  border-bottom: none;
+}
+
+.selectric .button:before {
+  content: " ";
+  float: left;
+  height: 100%;
+  border-right: 1px solid #FFF;
+}
+
+.selectric-focus .selectric {
+  border-color: #AAA;
+}
+
+.selectric-hover .selectric {
+  border-color: #CCC;
+}
+
+.selectric-hover .selectric .button {
+  color: #888;
+}
+
+.selectric-hover .selectric .button:after {
+  border-top-color: #888;
 }
 
 /* Items box */
