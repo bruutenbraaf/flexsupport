@@ -4330,7 +4330,8 @@ nav .row--change {
   .yellow .header--sngl .container h1 .header--hp .int {
     font-size: 58px;
     line-height: 68px;
-    padding-bottom: 30px; }
+    padding-bottom: 0px;
+    padding-top: 0px; }
     .header--arch .container h1 strong,
     .yellow .header--arch .container h1 strong,
     .yellow .header--hp .container h1 strong,

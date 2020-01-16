@@ -1,6 +1,5 @@
 <?php
 get_header(); ?>
-
 <section class="header--404">
     <div class="container">
         <div class="row">
@@ -25,5 +24,4 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
 <?php get_footer(); ?>
