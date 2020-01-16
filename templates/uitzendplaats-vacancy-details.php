@@ -37,13 +37,13 @@
 										<path d="M3.95852 7.41266C1.77578 7.41266 0 9.18848 0 11.3712C0 13.0629 2.51105 17.2834 3.95852 19.5135C5.40594 17.283 7.91703 13.0619 7.91703 11.3712C7.91707 9.1884 6.14129 7.41266 3.95852 7.41266ZM3.95855 13.8711C2.58008 13.8711 1.45863 12.7496 1.45863 11.3712C1.45863 9.9927 2.58008 8.87125 3.95855 8.87125C5.33703 8.87125 6.45848 9.9927 6.45848 11.3712C6.45848 12.7496 5.33703 13.8711 3.95855 13.8711Z" fill="white" />
 									</svg>
 									<?php
-										foreach ($view_data->data->branches->data as $key => $branche) {
-											echo $branche->name;
-											if ($key < count($view_data->data->branches->data) - 1) {
-												echo ', ';
-											}
+									foreach ($view_data->data->branches->data as $key => $branche) {
+										echo $branche->name;
+										if ($key < count($view_data->data->branches->data) - 1) {
+											echo ', ';
 										}
-										?>
+									}
+									?>
 								</span>
 								<span class="education">
 									<svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,13 +51,13 @@
 										<path d="M0 4.61486L2.13141 5.37729L2.31305 4.98828L3.09607 4.92173L3.20772 5.03789L2.53581 5.19722L2.43788 5.48707C2.4377 5.48707 0.920153 8.65967 1.14304 10.2117C1.14304 10.2117 2.09029 10.7768 3.03714 10.2117L3.28877 5.96825V5.61503L4.69821 5.29707L4.59867 5.54221L3.5478 5.88393L4.03383 6.05756L10 7.89388L15.9662 6.05756L20 4.61488L10 0.767639L0 4.61486Z" fill="#FFFFFF" />
 									</svg>
 									<?php
-										foreach ($view_data->data->education->data as $key => $edu) {
-											echo $edu->name;
-											if ($key < count($view_data->data->education->data) - 1) {
-												echo ', ';
-											}
+									foreach ($view_data->data->education->data as $key => $edu) {
+										echo $edu->name;
+										if ($key < count($view_data->data->education->data) - 1) {
+											echo ', ';
 										}
-										?>
+									}
+									?>
 								</span>
 							</div>
 						<?php } ?>
@@ -80,9 +80,9 @@
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.99984 1.99996C4.68613 1.99996 1.99984 4.68625 1.99984 7.99996C1.99984 11.3137 4.68613 14 7.99984 14C11.3135 14 13.9998 11.3137 13.9998 7.99996C13.9998 4.68625 11.3135 1.99996 7.99984 1.99996ZM0.666504 7.99996C0.666504 3.94987 3.94975 0.666626 7.99984 0.666626C12.0499 0.666626 15.3332 3.94987 15.3332 7.99996C15.3332 12.05 12.0499 15.3333 7.99984 15.3333C3.94975 15.3333 0.666504 12.05 0.666504 7.99996ZM7.99984 3.33329C8.36803 3.33329 8.6665 3.63177 8.6665 3.99996V7.58794L10.9646 8.73701C11.294 8.90167 11.4274 9.30212 11.2628 9.63143C11.0981 9.96075 10.6977 10.0942 10.3684 9.92958L7.70169 8.59624C7.47584 8.48332 7.33317 8.25247 7.33317 7.99996V3.99996C7.33317 3.63177 7.63165 3.33329 7.99984 3.33329Z" fill="#FF6600" />
 							</svg>
 							<b><?php
-									$edited = strtotime($view_data->data->updated_at);
-									echo date('d-m-Y H:i', $edited);
-									?>
+								$edited = strtotime($view_data->data->updated_at);
+								echo date('d-m-Y H:i', $edited);
+								?>
 							</b>
 						</span>
 					</div>
@@ -131,13 +131,13 @@
 											<?php _e('Branche', 'uitzendplaats') ?>
 										</th>
 										<td><?php
-												foreach ($view_data->data->branches->data as $key => $branche) {
-													echo $branche->name;
-													if ($key < count($view_data->data->branches->data) - 1) {
-														echo ', ';
-													}
+											foreach ($view_data->data->branches->data as $key => $branche) {
+												echo $branche->name;
+												if ($key < count($view_data->data->branches->data) - 1) {
+													echo ', ';
 												}
-												?></td>
+											}
+											?></td>
 									</tr>
 									<tr>
 										<th>
@@ -149,17 +149,17 @@
 										</th>
 										<td>
 											<?php
-												if (count($view_data->data->education->data) > 0) {
-													foreach ($view_data->data->education->data as $key => $education) {
-														echo $education->name;
-														if ($key < count($view_data->data->education->data) - 1) {
-															echo ', ';
-														}
+											if (count($view_data->data->education->data) > 0) {
+												foreach ($view_data->data->education->data as $key => $education) {
+													echo $education->name;
+													if ($key < count($view_data->data->education->data) - 1) {
+														echo ', ';
 													}
-												} else {
-													_e('None');
 												}
-												?>
+											} else {
+												_e('None');
+											}
+											?>
 										</td>
 									</tr>
 								</table>
@@ -276,11 +276,11 @@
 					<div id="shareBlock"></div>
 					<script>
 						jQuery(document).ready(function() {
-							jQuery('#shareBlock').cShare({
+							jQuery('#SideShareBlock').cShare({
 								show_buttons: [
 									'fb',
 									'twitter',
-									'tumblr',
+									'linkedin',
 									'email'
 								]
 							});

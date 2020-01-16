@@ -9,11 +9,11 @@ get_header(); ?>
             <div id="shareBlock"></div>
             <script>
                 jQuery(document).ready(function() {
-                    jQuery('#shareBlock').cShare({
+                    jQuery('#SideShareBlock').cShare({
                         show_buttons: [
                             'fb',
                             'twitter',
-                            'tumblr',
+                            'linkedin',
                             'email'
                         ]
                     });
