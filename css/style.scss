@@ -4808,14 +4808,14 @@ form {
       content: "i";
       width: 22px;
       height: 22px;
-      display: flex;
       text-align: center;
       align-items: center;
+      justify-content: center;
       border-radius: 999px;
-      background: rgba($midnight, 0.05);
-      display: block;
+      background: rgba(0, 31, 63, 0.05);
+      display: flex;
       position: absolute;
-      left: 0px;
+      left: 0;
     }
     h2 {
       font-size: 24px;
@@ -5169,8 +5169,6 @@ nav .row--change {
   }
 }
 
-
-
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
@@ -5250,9 +5248,9 @@ nav .row--change {
   opacity: 0.5;
   cursor: default;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selectric-hide-select {
@@ -5332,7 +5330,8 @@ nav .row--change {
   border-radius: 6px;
 }
 
-.selectric-items ul, .selectric-items li {
+.selectric-items ul,
+.selectric-items li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -5370,9 +5369,9 @@ nav .row--change {
   background: none !important;
   color: $midnight !important;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .selectric-items .selectric-group .selectric-group-label {
@@ -5380,9 +5379,9 @@ nav .row--change {
   padding-left: 10px;
   cursor: default;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: none;
   color: $midnight;
 }
@@ -5395,7 +5394,6 @@ nav .row--change {
 .selectric-items .selectric-group li {
   padding-left: 25px;
 }
-
 
 // Responsive
 
