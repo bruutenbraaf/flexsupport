@@ -60,9 +60,9 @@ jQuery(document).ready(function () {
 
 // Nice select
 
-jQuery(document).ready(function () {
-  jQuery('select').editableSelect();
-});
+// jQuery(document).ready(function () {
+//   jQuery('select').editableSelect();
+// });
 
 jQuery(window).scroll(function () {
   var scroll = jQuery(window).scrollTop();
