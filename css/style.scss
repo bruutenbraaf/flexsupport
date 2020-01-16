@@ -5514,6 +5514,19 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .header--arch .container h1,
+  .yellow .header--arch .container h1,
+  .yellow .header--hp .container h1,
+  .yellow .header--sngl .container h1 .header--hp .int {
+    font-size: 58px;
+    line-height: 68px;
+    strong {
+      font-size: 58px;
+      line-height: 68px;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
   .header--hp .int {
     margin-left: 0px;
   }
