@@ -71,7 +71,6 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
         </div>
     </div>
 </section>
-
 <?php if (paginate_links()) { ?>
     <section class="pagenumbers">
         <div class="container">
@@ -86,5 +85,4 @@ $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
         </div>
     </section>
 <?php } ?>
-
 <?php get_footer(); ?>
