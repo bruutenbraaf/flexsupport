@@ -5517,6 +5517,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  footer .socket {
+    margin-top: 30px;
+  }
   .categories ul li {
     float: none;
   }
