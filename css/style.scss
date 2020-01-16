@@ -4643,9 +4643,13 @@ ul.uzp__pagination {
     width: 100%;
     display: inline-block;
     position: relative;
+    padding-right: 15px;
     margin-bottom: 36px;
     svg {
-      float: right;
+    margin-left: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;
     }
     &:hover {
       color: $midnight;

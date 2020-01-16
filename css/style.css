@@ -3624,9 +3624,13 @@ ul.uzp__pagination {
     width: 100%;
     display: inline-block;
     position: relative;
+    padding-right: 15px;
     margin-bottom: 36px; }
     .downloads .dwnload svg {
-      float: right; }
+      margin-left: auto;
+      position: absolute;
+      right: 0px;
+      top: 0px; }
     .downloads .dwnload:hover {
       color: #001f3f; }
     .downloads .dwnload:after {
