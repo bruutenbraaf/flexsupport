@@ -4321,6 +4321,9 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .inth {
+    margin-left: -15px; }
+
   .header--arch .container h1,
   .yellow .header--arch .container h1,
   .yellow .header--hp .container h1,

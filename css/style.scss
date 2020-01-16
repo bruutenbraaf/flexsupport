@@ -4646,10 +4646,10 @@ ul.uzp__pagination {
     padding-right: 15px;
     margin-bottom: 36px;
     svg {
-    margin-left: auto;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+      margin-left: auto;
+      position: absolute;
+      right: 0px;
+      top: 0px;
     }
     &:hover {
       color: $midnight;
@@ -5518,6 +5518,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .inth {
+    margin-left: -15px;
+  }
   .header--arch .container h1,
   .yellow .header--arch .container h1,
   .yellow .header--hp .container h1,
