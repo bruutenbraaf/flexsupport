@@ -1,7 +1,6 @@
 <?php
 get_header(); ?>
 <?php $currentArchive  = get_post_type(get_the_ID()); ?>
-
 <section class="header--arch">
     <div class="container">
         <div class="row">
