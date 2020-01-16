@@ -5517,6 +5517,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .bg-full {
+    height: 300px;
+  }
   .werkwijze .stappen {
     width: auto;
   }
@@ -5651,6 +5654,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 516px) {
+  .header--sngl ul li {
+    float:none;
+  }
   .socket .justify-content-end {
     justify-content: start !important;
     margin-left: 15px;

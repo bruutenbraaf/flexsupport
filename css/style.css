@@ -4320,6 +4320,9 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .bg-full {
+    height: 300px; }
+
   .werkwijze .stappen {
     width: auto; }
 
@@ -4447,6 +4450,9 @@ nav .row--change {
     padding-bottom: 0px;
     line-height: 48px; } }
 @media (max-width: 516px) {
+  .header--sngl ul li {
+    float: none; }
+
   .socket .justify-content-end {
     justify-content: start !important;
     margin-left: 15px; }
