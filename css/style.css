@@ -4327,7 +4327,8 @@ nav .row--change {
   .header--arch .container h1,
   .yellow .header--arch .container h1,
   .yellow .header--hp .container h1,
-  .yellow .header--sngl .container h1 .header--hp .int {
+  .yellow .header--sngl .container h1 .header--hp .int,
+  .header--sngl .container h1 {
     font-size: 48px;
     line-height: 58px;
     padding-bottom: 0px;
@@ -4335,7 +4336,8 @@ nav .row--change {
     .header--arch .container h1 strong,
     .yellow .header--arch .container h1 strong,
     .yellow .header--hp .container h1 strong,
-    .yellow .header--sngl .container h1 .header--hp .int strong {
+    .yellow .header--sngl .container h1 .header--hp .int strong,
+    .header--sngl .container h1 strong {
       font-size: 48px;
       line-height: 58px;
       -moz-text-stroke-width: 1px;
