@@ -4515,6 +4515,14 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  form .gf_page_steps {
+    display: block; }
+
+  form .gf_page_steps .gf_step {
+    padding: 10px 10px;
+    margin: 6px 0px;
+    width: 100%; }
+
   .bg-full {
     height: 300px;
     background-position: 75%; }
