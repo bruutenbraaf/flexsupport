@@ -5514,27 +5514,31 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .downloads h2 {
+    margin-bottom: 0px;
+    line-height: 45px;
+  }
   footer .socket {
     height: auto;
   }
   h2 {
     font-family: $SilkaBold;
     font-size: 38px;
-    line-height: 88px;
+    line-height: 48px;
     color: $midnight;
   }
 
   h3 {
     font-family: $SilkaBold;
     font-size: 28px;
-    line-height: 88px;
+    line-height: 38px;
     color: $midnight;
   }
 
   h4 {
     font-family: $SilkaBold;
     font-size: 22px;
-    line-height: 88px;
+    line-height: 32px;
     color: $midnight;
   }
 

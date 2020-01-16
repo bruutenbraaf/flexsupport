@@ -4317,25 +4317,29 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .downloads h2 {
+    margin-bottom: 0px;
+    line-height: 45px; }
+
   footer .socket {
     height: auto; }
 
   h2 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 38px;
-    line-height: 88px;
+    line-height: 48px;
     color: #001f3f; }
 
   h3 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 28px;
-    line-height: 88px;
+    line-height: 38px;
     color: #001f3f; }
 
   h4 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 22px;
-    line-height: 88px;
+    line-height: 32px;
     color: #001f3f; }
 
   .header--404 .container h1 {
