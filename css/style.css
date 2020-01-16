@@ -4317,6 +4317,9 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .header--hp .int {
+    margin-left: 0px; }
+
   .downloads h2 {
     margin-bottom: 0px;
     line-height: 48px; }
