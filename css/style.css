@@ -4651,6 +4651,9 @@ nav .row--change {
     background-position: center;
     min-height: 220px; }
 
+  .other-pst .other-items .thumb-crop {
+    min-height: 220px; }
+
   .header--sngl ul li {
     float: none; }
 
