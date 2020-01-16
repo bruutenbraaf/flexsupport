@@ -28,7 +28,6 @@ function flexupdate_scripts()
 
 	// CSS
 	wp_enqueue_style('bootcss', get_template_directory_uri() . '/css/bootstrap.min.css');
-	wp_enqueue_style('niceselectcss', get_template_directory_uri() . '/css/selectric.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 	wp_enqueue_style('fa', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 }
