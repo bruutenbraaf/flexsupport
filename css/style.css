@@ -4314,6 +4314,24 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  h2 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 38px;
+    line-height: 88px;
+    color: #001f3f; }
+
+  h3 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 28px;
+    line-height: 88px;
+    color: #001f3f; }
+
+  h4 {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 88px;
+    color: #001f3f; }
+
   .header--404 .container h1 {
     font-size: 54px;
     line-height: 76px;

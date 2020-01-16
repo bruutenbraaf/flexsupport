@@ -5510,6 +5510,28 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+
+  h2 {
+    font-family: $SilkaBold;
+    font-size: 38px;
+    line-height: 88px;
+    color: $midnight;
+  }
+  
+  h3 {
+    font-family: $SilkaBold;
+    font-size: 28px;
+    line-height: 88px;
+    color: $midnight;
+  }
+  
+  h4 {
+    font-family: $SilkaBold;
+    font-size: 22px;
+    line-height: 88px;
+    color: $midnight;
+  }
+
   .header--404 .container h1 {
     font-size: 54px;
     line-height: 76px;
