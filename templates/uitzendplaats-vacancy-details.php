@@ -276,7 +276,7 @@
 					<div id="shareBlock"></div>
 					<script>
 						jQuery(document).ready(function() {
-							jQuery('#SideShareBlock').cShare({
+							jQuery('#shareBlock').cShare({
 								show_buttons: [
 									'fb',
 									'twitter',
