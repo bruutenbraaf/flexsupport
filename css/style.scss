@@ -5517,6 +5517,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .werkwijze .stappen {
+    width: auto;
+  }
   footer .socket {
     margin-top: 30px;
   }

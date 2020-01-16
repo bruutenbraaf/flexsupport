@@ -4320,6 +4320,9 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  .werkwijze .stappen {
+    width: auto; }
+
   footer .socket {
     margin-top: 30px; }
 
