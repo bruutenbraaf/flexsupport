@@ -2664,6 +2664,8 @@ form.uzp__registration-form .uzp__radio-inline {
 
 .yellow .dwn svg path {
   fill: #ffffff; }
+.yellow a {
+  color: #ffffff; }
 .yellow .hamburger div {
   background: white; }
 .yellow .mtgo div {
@@ -4592,19 +4594,19 @@ nav .row--change {
 
   .hm h1,
   .hm .intp p {
-    font-size: 54px !important;
+    font-size: 38px;
     padding-bottom: 0;
-    line-height: 54px !important; }
+    line-height: 54px; }
     .hm h1 strong,
     .hm .intp p strong {
-      line-height: 54px !important;
-      font-size: 54px !important;
+      line-height: 38px;
+      font-size: 38px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
       -moz-text-stroke-color: #001f3f;
       -webkit-text-stroke-color: #001f3f;
-      -moz-text-stroke-width: 2px !important;
-      -webkit-text-stroke-width: 2px !important; }
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px; }
 
   .int {
     margin-left: 0px !important;

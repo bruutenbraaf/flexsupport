@@ -3391,6 +3391,9 @@ $pMargin: 135px;
       }
     }
   }
+  a {
+    color: #ffffff;
+  }
   .hamburger {
     div {
       background: rgba(255, 255, 255, 1);
@@ -5834,18 +5837,18 @@ $hamburgerwidth: 26px;
   .hm {
     h1,
     .intp p {
-      font-size: 54px !important;
+      font-size: 38px;
       padding-bottom: 0;
-      line-height: 54px !important;
+      line-height: 54px;
       strong {
-        line-height: 54px !important;
-        font-size: 54px !important;
+        line-height: 38px;
+        font-size: 38px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: $midnight;
         -webkit-text-stroke-color: $midnight;
-        -moz-text-stroke-width: 2px !important;
-        -webkit-text-stroke-width: 2px !important;
+        -moz-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 1px;
       }
     }
   }
