@@ -5518,6 +5518,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .categories ul li {
+    float: none;
+  }
   .header--arch .container h1,
   .yellow .header--arch .container h1,
   .yellow .header--hp .container h1,
