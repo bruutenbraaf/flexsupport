@@ -5669,7 +5669,9 @@ $hamburgerwidth: 26px;
     margin-bottom: 38px;
   }
   .header--sngl .container h1,
-  .header--arch .container h1 {
+  .header--arch .container h1,
+  .contactp h1,
+  .header--hp .container h1 {
     font-size: 38px;
     line-height: 76px;
     line-height: normal;
@@ -5815,16 +5817,16 @@ $hamburgerwidth: 26px;
     .container {
       h1,
       .intp p {
-        font-size: 54px !important;
+        font-size: 54px;
         padding-bottom: 0;
-        line-height: 54px !important;
+        line-height: 54px;
         strong {
-          line-height: 54px !important;
-          font-size: 54px !important;
+          line-height: 54px;
+          font-size: 54px ;
           -moz-text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
-          -moz-text-stroke-width: 2px !important;
-          -webkit-text-stroke-width: 2px !important;
+          -moz-text-stroke-width: 2px;
+          -webkit-text-stroke-width: 2px;
         }
       }
     }

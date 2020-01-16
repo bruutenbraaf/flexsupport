@@ -4455,7 +4455,9 @@ nav .row--change {
     margin-bottom: 38px; }
 
   .header--sngl .container h1,
-  .header--arch .container h1 {
+  .header--arch .container h1,
+  .contactp h1,
+  .header--hp .container h1 {
     font-size: 38px;
     line-height: 76px;
     line-height: normal;
@@ -4464,7 +4466,11 @@ nav .row--change {
     .header--sngl .container h1 strong,
     .header--sngl .container h1 b,
     .header--arch .container h1 strong,
-    .header--arch .container h1 b {
+    .header--arch .container h1 b,
+    .contactp h1 strong,
+    .contactp h1 b,
+    .header--hp .container h1 strong,
+    .header--hp .container h1 b {
       -moz-text-stroke-width: 1px;
       -webkit-text-stroke-width: 1px;
       font-size: 38px;
@@ -4572,17 +4578,17 @@ nav .row--change {
 
   .header--hp .container h1,
   .header--hp .container .intp p {
-    font-size: 54px !important;
+    font-size: 54px;
     padding-bottom: 0;
-    line-height: 54px !important; }
+    line-height: 54px; }
     .header--hp .container h1 strong,
     .header--hp .container .intp p strong {
-      line-height: 54px !important;
-      font-size: 54px !important;
+      line-height: 54px;
+      font-size: 54px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-width: 2px !important;
-      -webkit-text-stroke-width: 2px !important; }
+      -moz-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 2px; }
 
   .hm h1,
   .hm .intp p {
