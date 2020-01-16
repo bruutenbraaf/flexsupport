@@ -4338,16 +4338,16 @@ nav .row--change {
     color: #001f3f; }
 
   .header--404 .container h1 {
-    font-size: 54px;
+    font-size: 38px;
     line-height: 76px;
     line-height: normal;
     padding-bottom: 30px;
     padding-top: 30px; }
     .header--404 .container h1 strong,
     .header--404 .container h1 b {
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px;
-      font-size: 54px;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+      font-size: 38px;
       line-height: 76px;
       line-height: normal;
       padding-bottom: 30px;
@@ -4372,16 +4372,16 @@ nav .row--change {
   .contactp form {
     margin-bottom: 30px; }
   .contactp h1 {
-    font-size: 54px;
+    font-size: 38px;
     line-height: 76px;
     line-height: normal;
     padding-bottom: 30px;
     padding-top: 30px; }
     .contactp h1 strong,
     .contactp h1 b {
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px;
-      font-size: 54px;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+      font-size: 38px;
       line-height: 76px;
       line-height: normal;
       padding-bottom: 30px;
@@ -4428,8 +4428,8 @@ nav .row--change {
       padding-bottom: 0px; }
 
   .team h2 {
-    font-size: 54px;
-    line-height: 54px; }
+    font-size: 38px;
+    line-height: 38px; }
 
   .werkwijze:after {
     height: calc(100% / 2 + -70px); }
@@ -4580,23 +4580,23 @@ nav .row--change {
 
   .header--hp .container h1,
   .header--hp .container .intp p {
-    font-size: 54px;
+    font-size: 38px;
     padding-bottom: 0;
-    line-height: 54px; }
+    line-height: 38px; }
     .header--hp .container h1 strong,
     .header--hp .container .intp p strong {
-      line-height: 54px;
-      font-size: 54px;
+      line-height: 38px;
+      font-size: 38px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px; }
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px; }
 
   .hm h1,
   .hm .intp p {
     font-size: 38px;
     padding-bottom: 0;
-    line-height: 54px; }
+    line-height: 38px; }
     .hm h1 strong,
     .hm .intp p strong {
       line-height: 38px;
