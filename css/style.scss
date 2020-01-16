@@ -5645,8 +5645,12 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 516px) {
+  .socket .justify-content-end {
+    justify-content: start !important;
+    margin-left: 15px;
+  }
   footer .socket ul li {
-    float:none;
+    float: none;
   }
   .contactp {
     form {
@@ -5901,10 +5905,6 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 414px) {
-  .socket .justify-content-end {
-    justify-content: start !important;
-    margin-left: 15px;
-  }
   nav .branding img {
     width: 180px;
   }

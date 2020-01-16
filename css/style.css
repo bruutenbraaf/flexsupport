@@ -4441,6 +4441,10 @@ nav .row--change {
     padding-bottom: 0px;
     line-height: 48px; } }
 @media (max-width: 516px) {
+  .socket .justify-content-end {
+    justify-content: start !important;
+    margin-left: 15px; }
+
   footer .socket ul li {
     float: none; }
 
@@ -4653,10 +4657,6 @@ nav .row--change {
       order: 1;
       padding-right: 30px; } }
 @media (max-width: 414px) {
-  .socket .justify-content-end {
-    justify-content: start !important;
-    margin-left: 15px; }
-
   nav .branding img {
     width: 180px; }
 
