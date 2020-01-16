@@ -833,7 +833,6 @@ nav {
     }
   }
   .int {
-    margin-left: 60px;
     padding-right: 30px;
     p {
       margin: 0;
@@ -5538,9 +5537,6 @@ $hamburgerwidth: 26px;
       -webkit-text-stroke-width: 1px;
     }
   }
-  .header--hp .int {
-    margin-left: 15px;
-  }
   .downloads h2 {
     margin-bottom: 0px;
     line-height: 48px;
@@ -5649,6 +5645,9 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 516px) {
+  footer .socket ul li {
+    float:none;
+  }
   .contactp {
     form {
       margin-bottom: 30px;

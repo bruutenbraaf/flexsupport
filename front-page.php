@@ -38,7 +38,7 @@ get_header(); ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
-                    <div class="int">
+                    <div class="int offset-0 offset-md-1 offset-lg-1 offset-xl-0">
                         <?php the_sub_field('intro_tekst'); ?>
                     </div>
                     <div class="dwn align-items-center justify-content-end">
