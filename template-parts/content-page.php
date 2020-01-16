@@ -409,7 +409,7 @@
                                 <?php if ($selecteer_werknemers_om_te_tonen) : ?>
                                     <?php foreach ($selecteer_werknemers_om_te_tonen as $post) :  ?>
                                         <?php setup_postdata($post); ?>
-                                        <div class="col-md-6 member">
+                                        <div class="col-md-4 member">
                                             <a href="<?php the_permalink(); ?>">
                                                 <div class="img-holder">
                                                     <div class="the--img" style="background-image:url(<?php echo get_the_post_thumbnail_url($post, 'large'); ?>);">
