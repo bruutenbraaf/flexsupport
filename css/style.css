@@ -4052,7 +4052,8 @@ nav .row--change {
 .selectric {
   border-radius: 6px;
   background: #ffffff;
-  position: relative; }
+  position: relative;
+  border: 1px solid #001f3f; }
 
 .selectric .label {
   display: block;
@@ -4061,15 +4062,15 @@ nav .row--change {
   text-overflow: ellipsis;
   margin: 0 38px 0 10px;
   color: #001f3f;
-  height: 38px; }
+  padding: 6px; }
 
 .selectric .button {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 4px;
   width: 38px;
-  height: 38px;
+  height: 33px;
   color: #001f3f;
   text-align: center; }
 
@@ -4177,7 +4178,8 @@ nav .row--change {
 
 .selectric-above .selectric-items {
   top: auto;
-  bottom: 100%; }
+  bottom: 100%;
+  border-radius: 6px; }
 
 .selectric-items ul, .selectric-items li {
   list-style: none;
@@ -4198,11 +4200,11 @@ nav .row--change {
   color: #001f3f; }
 
 .selectric-items li.highlighted {
-  background: #b973ac;
+  background: #c9c9c9;
   color: #001f3f; }
 
 .selectric-items li:hover {
-  color: #ffffff;
+  color: #c9c9c9;
   color: #001f3f; }
 
 .selectric-items .disabled {

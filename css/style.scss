@@ -5184,6 +5184,7 @@ nav .row--change {
   border-radius: 6px;
   background: #ffffff;
   position: relative;
+  border: 1px solid $midnight;
 }
 
 .selectric .label {
@@ -5193,16 +5194,16 @@ nav .row--change {
   text-overflow: ellipsis;
   margin: 0 38px 0 10px;
   color: $midnight;
-  height: 38px;
+  padding: 6px;
 }
 
 .selectric .button {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 4px;
   width: 38px;
-  height: 38px;
+  height: 33px;
   color: $midnight;
   text-align: center;
 }
@@ -5328,6 +5329,7 @@ nav .row--change {
 .selectric-above .selectric-items {
   top: auto;
   bottom: 100%;
+  border-radius: 6px;
 }
 
 .selectric-items ul, .selectric-items li {
@@ -5352,12 +5354,12 @@ nav .row--change {
 }
 
 .selectric-items li.highlighted {
-  background: #b973ac;
+  background: #c9c9c9;
   color: $midnight;
 }
 
 .selectric-items li:hover {
-  color: #ffffff;
+  color: #c9c9c9;
   color: $midnight;
 }
 
