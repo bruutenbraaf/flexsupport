@@ -74,7 +74,7 @@ p a {
   clear: both; }
 
 ul li {
-  font-family: Muli,sans-serif;
+  font-family: Muli, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -4314,6 +4314,9 @@ nav .row--change {
     margin-bottom: 30px;
     width: 100%; } }
 @media (max-width: 768px) {
+  footer .socket {
+    height: auto; }
+
   h2 {
     font-family: "SilkaBold", Arial, sans-serif;
     font-size: 38px;
@@ -4444,9 +4447,16 @@ nav .row--change {
       text-align: center;
       margin: 15px 0px; }
 
+  .cus-arch h3 {
+    font-size: 24px;
+    line-height: 28px; }
+
+  .cus-arch .arch-item {
+    margin-bottom: 38px; }
+
   .header--sngl .container h1,
   .header--arch .container h1 {
-    font-size: 54px;
+    font-size: 38px;
     line-height: 76px;
     line-height: normal;
     padding-bottom: 30px;
@@ -4455,9 +4465,9 @@ nav .row--change {
     .header--sngl .container h1 b,
     .header--arch .container h1 strong,
     .header--arch .container h1 b {
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px;
-      font-size: 54px;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+      font-size: 38px;
       line-height: 76px;
       line-height: normal;
       padding-bottom: 30px;
@@ -4543,10 +4553,22 @@ nav .row--change {
       padding-right: 30px; } }
 @media (max-width: 414px) {
   .socket .justify-content-end {
-    justify-content: start !important; }
+    justify-content: start !important;
+    margin-left: 15px; }
 
   nav .branding img {
     width: 180px; }
+
+  footer .socket ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block; }
+
+  footer .socket ul li {
+    float: none; }
+
+  footer .socket ul li a {
+    margin-bottom: 0px; }
 
   .header--hp .container h1,
   .header--hp .container .intp p {

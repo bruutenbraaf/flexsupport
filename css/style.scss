@@ -121,7 +121,7 @@ p {
 
 ul {
   li {
-    font-family: Muli,sans-serif;
+    font-family: Muli, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -5510,21 +5510,23 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
-
+  footer .socket {
+    height: auto;
+  }
   h2 {
     font-family: $SilkaBold;
     font-size: 38px;
     line-height: 88px;
     color: $midnight;
   }
-  
+
   h3 {
     font-family: $SilkaBold;
     font-size: 28px;
     line-height: 88px;
     color: $midnight;
   }
-  
+
   h4 {
     font-family: $SilkaBold;
     font-size: 22px;
@@ -5659,18 +5661,25 @@ $hamburgerwidth: 26px;
       margin: 15px 0px;
     }
   }
+  .cus-arch h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .cus-arch .arch-item {
+    margin-bottom: 38px;
+  }
   .header--sngl .container h1,
   .header--arch .container h1 {
-    font-size: 54px;
+    font-size: 38px;
     line-height: 76px;
     line-height: normal;
     padding-bottom: 30px;
     padding-top: 30px;
     strong,
     b {
-      -moz-text-stroke-width: 2px;
-      -webkit-text-stroke-width: 2px;
-      font-size: 54px;
+      -moz-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 1px;
+      font-size: 38px;
       line-height: 76px;
       line-height: normal;
       padding-bottom: 30px;
@@ -5786,9 +5795,21 @@ $hamburgerwidth: 26px;
 @media (max-width: 414px) {
   .socket .justify-content-end {
     justify-content: start !important;
+    margin-left: 15px;
   }
   nav .branding img {
     width: 180px;
+  }
+  footer .socket ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  footer .socket ul li {
+    float: none;
+  }
+  footer .socket ul li a {
+    margin-bottom: 0px;
   }
   .header--hp {
     .container {
