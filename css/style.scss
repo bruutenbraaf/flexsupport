@@ -61,6 +61,20 @@ h2 {
   color: $midnight;
 }
 
+h3 {
+  font-family: $SilkaBold;
+  font-size: 36px;
+  line-height: 88px;
+  color: $midnight;
+}
+
+h4 {
+  font-family: $SilkaBold;
+  font-size: 24px;
+  line-height: 88px;
+  color: $midnight;
+}
+
 a {
   color: $midnight;
   &:hover {

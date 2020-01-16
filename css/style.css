@@ -26,6 +26,18 @@ h2 {
   line-height: 88px;
   color: #001f3f; }
 
+h3 {
+  font-family: "SilkaBold", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 88px;
+  color: #001f3f; }
+
+h4 {
+  font-family: "SilkaBold", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 88px;
+  color: #001f3f; }
+
 a {
   color: #001f3f; }
   a:hover {
