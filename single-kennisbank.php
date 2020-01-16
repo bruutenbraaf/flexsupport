@@ -5,7 +5,7 @@ get_header(); ?>
 
 <div class="container share">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-8 offset-md-1">
             <div id="shareBlock"></div>
             <script>
                 jQuery(document).ready(function() {
