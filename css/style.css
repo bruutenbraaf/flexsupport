@@ -702,13 +702,13 @@ nav {
     padding-bottom: 80px; }
     .header--hp .container h1 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: #001f3f;
       padding-bottom: 120px; }
       .header--hp .container h1 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -928,14 +928,14 @@ nav {
     padding-bottom: 40px; }
     .marq div h2 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 88px;
       color: #001f3f;
       float: left;
       white-space: nowrap; }
       .marq div h2 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: #001f3f;
@@ -954,14 +954,14 @@ nav {
     padding-bottom: 40px; }
     .marq--vac div h2 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 88px;
       color: #ffffff;
       float: left;
       white-space: nowrap; }
       .marq--vac div h2 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: #ffffff;
@@ -974,7 +974,7 @@ nav {
   padding: 70px 0px 140px 0px; }
   .counters .counter-value {
     font-family: "SilkaBold", Arial, sans-serif;
-    font-size: 138px;
+    font-size: 100px;
     line-height: 88px;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -1330,12 +1330,12 @@ footer {
     padding-bottom: 80px; }
     .header--arch .container h1 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       padding-bottom: 120px; }
       .header--arch .container h1 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -1494,14 +1494,14 @@ footer {
     padding-bottom: 80px; }
     .header--sngl .container h1 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: #001f3f;
       padding-bottom: 60px;
       margin: 0px; }
       .header--sngl .container h1 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -1770,7 +1770,7 @@ form.uzp__registration-form .uzp__radio-inline {
 
 .candidate--header h1 {
   font-family: "SilkaBold", Arial, sans-serif;
-  font-size: 138px;
+  font-size: 100px;
   line-height: 144px; }
 
 .green-btn {
@@ -2451,7 +2451,7 @@ form.uzp__registration-form .uzp__radio-inline {
     .error404 .header--arch .container .intp p,
     .error404 .header--sngl .container .intp p {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: #ffffff;
       padding-bottom: 120px; }
@@ -2468,7 +2468,7 @@ form.uzp__registration-form .uzp__radio-inline {
       .error404 .header--sngl .container .intp p b,
       .error404 .header--sngl .container .intp p strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -3189,13 +3189,13 @@ ul.uzp__pagination {
   padding-bottom: 80px; }
   .contactp h1 {
     font-family: "SilkaBold", Arial, sans-serif;
-    font-size: 138px;
+    font-size: 100px;
     line-height: 144px;
     color: #ffffff;
     padding-bottom: 120px; }
     .contactp h1 strong {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
@@ -3271,7 +3271,7 @@ ul.uzp__pagination {
     color: #001f3f; }
     .green .header--arch h1 strong {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
@@ -3573,7 +3573,7 @@ ul.uzp__pagination {
     padding-bottom: 80px; }
     .header--404 .container h1 {
       font-family: "SilkaBold", Arial, sans-serif;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: #001f3f;
       padding-bottom: 60px;
@@ -3582,7 +3582,7 @@ ul.uzp__pagination {
       margin-top: 30px; }
       .header--404 .container h1 strong {
         font-family: "SilkaBold", Arial, sans-serif;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -4202,11 +4202,11 @@ nav .row--change {
       padding-right: 30px; }
       .header--hp .container h1 p,
       .header--hp .container .intp p {
-        font-size: 94px !important;
-        padding-bottom: 0px !important; }
+        font-size: 94px;
+        padding-bottom: 0px; }
         .header--hp .container h1 p strong,
         .header--hp .container .intp p strong {
-          font-size: 94px !important; }
+          font-size: 94px; }
   .header--hp .int {
     order: 1;
     margin-right: 30px;
@@ -4371,8 +4371,48 @@ nav .row--change {
     order: 2;
     margin-bottom: 60px; }
 
-  .header--hp .int {
-    margin-left: 0px; } }
+  .error404 .header--arch .container,
+  .error404 .header--hp .container,
+  .error404 .header--sngl .container,
+  .rose .header--arch .container,
+  .rose .header--hp .container,
+  .rose .header--sngl .container {
+    padding-top: 180px; }
+
+  .error404 .header--arch .container .intp p b,
+  .error404 .header--arch .container .intp p strong,
+  .error404 .header--hp .container .intp p b,
+  .error404 .header--hp .container .intp p strong,
+  .error404 .header--sngl .container .intp p b,
+  .error404 .header--sngl .container .intp p strong,
+  .rose .header--arch .container .intp p b,
+  .rose .header--arch .container .intp p strong,
+  .rose .header--hp .container .intp p b,
+  .rose .header--hp .container .intp p strong,
+  .rose .header--sngl .container .intp p b,
+  .rose .header--sngl .container .intp p strong {
+    font-size: 58px;
+    line-height: 68px;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    font-size: 58px;
+    line-height: 68px; }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    padding-bottom: 0px;
+    line-height: 48px; } }
 @media (max-width: 516px) {
   .contactp form {
     margin-bottom: 30px; }
@@ -4461,30 +4501,48 @@ nav .row--change {
   .cus-arch .arch-item {
     margin-bottom: 38px; }
 
-  .header--sngl .container h1,
-  .header--arch .container h1,
-  .contactp h1,
-  .header--hp .container h1 {
-    font-size: 38px;
-    line-height: 76px;
-    line-height: normal;
-    padding-bottom: 30px;
-    padding-top: 30px; }
-    .header--sngl .container h1 strong,
-    .header--sngl .container h1 b,
-    .header--arch .container h1 strong,
-    .header--arch .container h1 b,
-    .contactp h1 strong,
-    .contactp h1 b,
-    .header--hp .container h1 strong,
-    .header--hp .container h1 b {
-      -moz-text-stroke-width: 1px;
-      -webkit-text-stroke-width: 1px;
-      font-size: 38px;
-      line-height: 76px;
-      line-height: normal;
-      padding-bottom: 30px;
-      padding-top: 30px; }
+  .error404 .header--arch .container,
+  .error404 .header--hp .container,
+  .error404 .header--sngl .container,
+  .rose .header--arch .container,
+  .rose .header--hp .container,
+  .rose .header--sngl .container {
+    padding-top: 180px; }
+
+  .error404 .header--arch .container .intp p b,
+  .error404 .header--arch .container .intp p strong,
+  .error404 .header--hp .container .intp p b,
+  .error404 .header--hp .container .intp p strong,
+  .error404 .header--sngl .container .intp p b,
+  .error404 .header--sngl .container .intp p strong,
+  .rose .header--arch .container .intp p b,
+  .rose .header--arch .container .intp p strong,
+  .rose .header--hp .container .intp p b,
+  .rose .header--hp .container .intp p strong,
+  .rose .header--sngl .container .intp p b,
+  .rose .header--sngl .container .intp p strong {
+    font-size: 48px;
+    line-height: 58px;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px; }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    font-size: 48px;
+    line-height: 58px; }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    padding-bottom: 0px;
+    line-height: 48px; }
 
   .uzp__index-item h2 {
     display: block;
@@ -4582,20 +4640,6 @@ nav .row--change {
 
   footer .socket ul li a {
     margin-bottom: 0px; }
-
-  .header--hp .container h1,
-  .header--hp .container .intp p {
-    font-size: 38px;
-    padding-bottom: 0;
-    line-height: 38px; }
-    .header--hp .container h1 strong,
-    .header--hp .container .intp p strong {
-      line-height: 38px;
-      font-size: 38px;
-      -moz-text-fill-color: transparent;
-      -webkit-text-fill-color: transparent;
-      -moz-text-stroke-width: 1px;
-      -webkit-text-stroke-width: 1px; }
 
   .hm h1,
   .hm .intp p {

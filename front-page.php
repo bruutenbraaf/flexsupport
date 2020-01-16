@@ -11,7 +11,7 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="d-flex m-flex">
-                    <div class="d-flex flex-nowrap align-items-center offset-md-1 hp--btns">
+                    <div class="flex-nowrap align-items-center offset-md-1 hp--btns">
                         <?php if (have_rows('knoppen')) : ?>
                             <?php while (have_rows('knoppen')) : the_row(); ?>
                                 <?php $knop = get_sub_field('knop'); ?>

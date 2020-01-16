@@ -805,13 +805,13 @@ nav {
     padding-bottom: 80px;
     h1 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: $midnight;
       padding-bottom: 120px;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -1092,14 +1092,14 @@ $padding-bottom: 70px;
     padding-bottom: 40px;
     h2 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 88px;
       color: $midnight;
       float: left;
       white-space: nowrap;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: $midnight;
@@ -1122,14 +1122,14 @@ $padding-bottom: 70px;
     padding-bottom: 40px;
     h2 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 88px;
       color: #ffffff;
       float: left;
       white-space: nowrap;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
         -moz-text-stroke-color: #ffffff;
@@ -1148,7 +1148,7 @@ $padding-bottom: 70px;
   padding: 70px 0px 140px 0px;
   .counter-value {
     font-family: $SilkaBold;
-    font-size: 138px;
+    font-size: 100px;
     line-height: 88px;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
@@ -1612,12 +1612,12 @@ footer {
     padding-bottom: 80px;
     h1 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       padding-bottom: 120px;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -1827,14 +1827,14 @@ footer {
     padding-bottom: 80px;
     h1 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: $midnight;
       padding-bottom: 60px;
       margin: 0px;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -2180,7 +2180,7 @@ $pMargin: 135px;
 .candidate--header {
   h1 {
     font-family: $SilkaBold;
-    font-size: 138px;
+    font-size: 100px;
     line-height: 144px;
   }
 }
@@ -3129,14 +3129,14 @@ $pMargin: 135px;
       .intp {
         p {
           font-family: $SilkaBold;
-          font-size: 138px;
+          font-size: 100px;
           line-height: 144px;
           color: #ffffff;
           padding-bottom: 120px;
           b,
           strong {
             font-family: $SilkaBold;
-            font-size: 138px;
+            font-size: 100px;
             line-height: 144px;
             -moz-text-fill-color: transparent;
             -webkit-text-fill-color: transparent;
@@ -4093,13 +4093,13 @@ ul.uzp__pagination {
   padding-bottom: 80px;
   h1 {
     font-family: $SilkaBold;
-    font-size: 138px;
+    font-size: 100px;
     line-height: 144px;
     color: #ffffff;
     padding-bottom: 120px;
     strong {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       -moz-text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
@@ -4196,7 +4196,7 @@ ul.uzp__pagination {
       color: $midnight;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -4578,7 +4578,7 @@ ul.uzp__pagination {
     padding-bottom: 80px;
     h1 {
       font-family: $SilkaBold;
-      font-size: 138px;
+      font-size: 100px;
       line-height: 144px;
       color: $midnight;
       padding-bottom: 60px;
@@ -4587,7 +4587,7 @@ ul.uzp__pagination {
       margin-top: 30px;
       strong {
         font-family: $SilkaBold;
-        font-size: 138px;
+        font-size: 100px;
         line-height: 144px;
         -moz-text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
@@ -5374,10 +5374,10 @@ $hamburgerwidth: 26px;
       .intp {
         padding-right: 30px;
         p {
-          font-size: 94px !important;
-          padding-bottom: 0px !important;
+          font-size: 94px;
+          padding-bottom: 0px;
           strong {
-            font-size: 94px !important;
+            font-size: 94px;
           }
         }
       }
@@ -5572,9 +5572,54 @@ $hamburgerwidth: 26px;
     order: 2;
     margin-bottom: 60px;
   }
-  .header--hp .int {
-    margin-left: 0px;
+
+  .error404 .header--arch .container,
+  .error404 .header--hp .container,
+  .error404 .header--sngl .container,
+  .rose .header--arch .container,
+  .rose .header--hp .container,
+  .rose .header--sngl .container {
+    padding-top: 180px;
   }
+
+  .error404 .header--arch .container .intp p b,
+  .error404 .header--arch .container .intp p strong,
+  .error404 .header--hp .container .intp p b,
+  .error404 .header--hp .container .intp p strong,
+  .error404 .header--sngl .container .intp p b,
+  .error404 .header--sngl .container .intp p strong,
+  .rose .header--arch .container .intp p b,
+  .rose .header--arch .container .intp p strong,
+  .rose .header--hp .container .intp p b,
+  .rose .header--hp .container .intp p strong,
+  .rose .header--sngl .container .intp p b,
+  .rose .header--sngl .container .intp p strong {
+    font-size: 58px;
+    line-height: 68px;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    font-size: 58px;
+    line-height: 68px;
+  }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    padding-bottom: 0px;
+    line-height: 48px;
+  }
+
 }
 
 @media (max-width: 516px) {
@@ -5676,26 +5721,54 @@ $hamburgerwidth: 26px;
   .cus-arch .arch-item {
     margin-bottom: 38px;
   }
-  .header--sngl .container h1,
-  .header--arch .container h1,
-  .contactp h1,
-  .header--hp .container h1 {
-    font-size: 38px;
-    line-height: 76px;
-    line-height: normal;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    strong,
-    b {
-      -moz-text-stroke-width: 1px;
-      -webkit-text-stroke-width: 1px;
-      font-size: 38px;
-      line-height: 76px;
-      line-height: normal;
-      padding-bottom: 30px;
-      padding-top: 30px;
-    }
+
+  .error404 .header--arch .container,
+  .error404 .header--hp .container,
+  .error404 .header--sngl .container,
+  .rose .header--arch .container,
+  .rose .header--hp .container,
+  .rose .header--sngl .container {
+    padding-top: 180px;
   }
+
+  .error404 .header--arch .container .intp p b,
+  .error404 .header--arch .container .intp p strong,
+  .error404 .header--hp .container .intp p b,
+  .error404 .header--hp .container .intp p strong,
+  .error404 .header--sngl .container .intp p b,
+  .error404 .header--sngl .container .intp p strong,
+  .rose .header--arch .container .intp p b,
+  .rose .header--arch .container .intp p strong,
+  .rose .header--hp .container .intp p b,
+  .rose .header--hp .container .intp p strong,
+  .rose .header--sngl .container .intp p b,
+  .rose .header--sngl .container .intp p strong {
+    font-size: 48px;
+    line-height: 58px;
+    -moz-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .error404 .header--arch .container .intp p,
+  .error404 .header--hp .container .intp p,
+  .error404 .header--sngl .container .intp p,
+  .rose .header--arch .container .intp p,
+  .rose .header--hp .container .intp p,
+  .rose .header--sngl .container .intp p {
+    padding-bottom: 0px;
+    line-height: 48px;
+  }
+
   .uzp__index-item h2 {
     display: block;
     margin-bottom: 10px;
@@ -5820,24 +5893,6 @@ $hamburgerwidth: 26px;
   }
   footer .socket ul li a {
     margin-bottom: 0px;
-  }
-  .header--hp {
-    .container {
-      h1,
-      .intp p {
-        font-size: 38px;
-        padding-bottom: 0;
-        line-height: 38px;
-        strong {
-          line-height: 38px;
-          font-size: 38px;
-          -moz-text-fill-color: transparent;
-          -webkit-text-fill-color: transparent;
-          -moz-text-stroke-width: 1px;
-          -webkit-text-stroke-width: 1px;
-        }
-      }
-    }
   }
   .hm {
     h1,
