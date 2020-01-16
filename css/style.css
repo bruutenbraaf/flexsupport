@@ -3815,9 +3815,9 @@ form .description {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
     border-radius: 999px;
     background: rgba(0, 31, 63, 0.05);
-    display: block;
     position: absolute;
     left: 0px; }
 form .gfield_radio {
