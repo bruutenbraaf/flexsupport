@@ -1553,7 +1553,8 @@ footer {
     .header--sngl .small:hover svg {
       margin-left: 25px; }
 
-.inth p {
+.inth p,
+.inth a {
   font-size: 20px;
   line-height: 32px; }
 
