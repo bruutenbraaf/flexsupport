@@ -1,6 +1,5 @@
 <?php
 get_header(); ?>
-
 <?php if (have_rows('header_home')) : ?>
     <?php while (have_rows('header_home')) : the_row(); ?>
         <section class="header--hp">
