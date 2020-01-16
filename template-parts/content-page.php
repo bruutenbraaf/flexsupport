@@ -1,12 +1,12 @@
 <?php if (have_rows('header_single')) : ?>
     <?php while (have_rows('header_single')) : the_row(); ?>
-        <section class="header--hp hm<?php if ( get_sub_field( 'remove_space' ) == 1 ) { ?> rms<?php } ?>">
+        <section class="header--hp hm<?php if (get_sub_field('remove_space') == 1) { ?> rms<?php } ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 offset-md-1 bread">
                         <?php if (function_exists('yoast_breadcrumb')) {
-                                    yoast_breadcrumb('');
-                                } ?>
+                            yoast_breadcrumb('');
+                        } ?>
                     </div>
                     <div class="col-md-8 offset-md-1">
                         <?php the_sub_field('titel'); ?>
@@ -187,10 +187,10 @@
                                 <?php endif; ?>
                             <?php } else { ?>
                                 <?php $loop = new WP_Query(array(
-                                                    'post_type' => 'diensten',
-                                                    'posts_per_page' => 3,
-                                                    'order' => 'DESC'
-                                                )); ?>
+                                    'post_type' => 'diensten',
+                                    'posts_per_page' => 3,
+                                    'order' => 'DESC'
+                                )); ?>
                                 <?php if ($loop->have_posts()) : ?>
                                     <?php while ($loop->have_posts()) : $loop->the_post(); ?>
                                         <div class="arch--item">
@@ -228,7 +228,7 @@
                 </div>
             </section>
         <?php elseif (get_row_layout() == 'qoute') : ?>
-            <section class="qoute <?php the_sub_field( 'selecteer_kleur' ); ?>">
+            <section class="qoute <?php the_sub_field('selecteer_kleur'); ?>">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 offset-md-1">
@@ -383,6 +383,15 @@
                                             lazyLoaded: true,
                                             prevArrow: jQuery('.nxt-slds'),
                                             nextArrow: jQuery('.nxt-slds'),
+                                            responsive: [{
+                                                breakpoint: 768,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    slidesToScroll: 1,
+                                                    prevArrow: jQuery('.nxt-slds'),
+                                                    nextArrow: jQuery('.nxt-slds'),
+                                                }
+                                            }]
                                         });
                                     });
                                 </script>
@@ -431,7 +440,7 @@
                         <?php $knop = get_sub_field('knop'); ?>
                         <?php if ($knop) { ?>
                             <div class="col-md-10 offset-md-1">
-                                    <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
+                                <a class="btn" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             </div>
                         <?php } ?>
                     </div>
