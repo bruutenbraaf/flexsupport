@@ -221,7 +221,8 @@ h4 {
   position: fixed;
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   z-index: 88;
@@ -4514,7 +4515,13 @@ nav .row--change {
   footer .branding {
     margin-bottom: 30px;
     width: 100%; } }
+.mobile-nav-fs {
+  display: none; }
+
 @media (max-width: 768px) {
+  .mobile-nav-fs {
+    display: initial; }
+
   form .gf_page_steps {
     display: block; }
 
