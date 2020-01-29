@@ -58,6 +58,14 @@ jQuery(document).ready(function () {
   });
 });
 
+// Faq
+jQuery(document).ready(function () {
+  jQuery("body").on('click', '.faq', function () {
+    jQuery(this).find('.answ').slideToggle(200);
+    jQuery(this).toggleClass('is--open');
+  });
+});
+
 // Nice select
 
 jQuery(document).ready(function () {

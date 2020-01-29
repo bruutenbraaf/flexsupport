@@ -5125,6 +5125,84 @@ nav .row--change {
   }
 }
 
+// Faq's
+
+.faqs {
+  padding-top: 40px;
+  h2 {
+    margin-bottom: 50px;
+  }
+  .container {
+    margin-bottom: 100px;
+  }
+  .faq {
+    cursor: pointer;
+    font-family: $SilkaBold !important;
+    font-size: 18px !important;
+    line-height: 24px;
+    color: $midnight;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 36px;
+    svg {
+      float: right;
+      max-width: 50px;
+      position: absolute;
+      top: 5px;
+      right:0px;
+      transition: ease-in-out 0.2s;
+    }
+    &:hover {
+      color: $midnight;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 4px;
+      bottom: -14px;
+      right: 0px;
+      background: $turquoise;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 0px;
+      height: 4px;
+      bottom: -14px;
+      left: 0px;
+      background: $turquoise;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover:after {
+      right: 0px;
+      width: 0;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+  }
+  .is--open {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+  .answ {
+    padding-top: 5px;
+    display: none;
+  }
+}
+
 .site {
   background: $turquoise;
   padding: 60px;
