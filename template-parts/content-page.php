@@ -13,19 +13,21 @@
                     </div>
                 </div>
                 <div class="d-flex">
+                    <?php $knop = get_sub_field('knop'); ?>
+                    <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
                     <?php if ($knop || $secondaire_knop) { ?>
                         <div class="d-flex flex-nowrap align-items-center offset-md-1 btns">
-                            <?php $knop = get_sub_field('knop'); ?>
                             <?php if ($knop) { ?>
                                 <a class="btn--header" href="<?php echo $knop['url']; ?>" <?php if ($knop['target']) { ?>target="<?php echo $knop['target']; ?>" <?php } ?>><?php echo $knop['title']; ?></a>
                             <?php } ?>
-                            <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
                             <?php if ($secondaire_knop) { ?>
                                 <a class="btn--header secondair" href="<?php echo $secondaire_knop['url']; ?>" <?php if ($secondaire_knop['target']) { ?>target="<?php echo $secondaire_knop['target']; ?>" <?php } ?>><?php echo $secondaire_knop['title']; ?></a>
                             <?php } ?>
                         </div>
                     <?php } ?>
-                    <div class="<?php if ($knop || !$secondaire_knop) { ?> offset-md-1 col-md-8 inth<?php } else { ?>int<?php } ?>">
+                    <?php $knop = get_sub_field('knop'); ?>
+                    <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
+                    <div class="<?php if ($knop || $secondaire_knop) { ?> offset-md-1 col-md-8 inth<?php } else { ?>int<?php } ?>">
                         <?php the_sub_field('intro_text'); ?>
                     </div>
                     <div class="dwn align-items-center justify-content-end">
@@ -493,6 +495,32 @@
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
+            </section>
+        <?php elseif (get_row_layout() == 'veelgestelde_vragen') : ?>
+            <section class="faqs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <h2><?php the_sub_field('titel'); ?></h2>
+                        </div>
+                        <?php if (have_rows('vragen')) : ?>
+                            <?php $c = 0; ?>
+                            <?php while (have_rows('vragen')) : the_row(); ?>
+                                <?php $c++; ?>
+                                <div class="<?php if ($c % 2 != 0) { ?>offset-md-1 <?php } ?>col-md-5<?php ?>">
+                                    <div class="faq" href="<?php the_permalink(); ?>">
+                                        <?php the_sub_field('vraag'); ?>
+                                        <div class="answ"><?php the_sub_field('antwoord'); ?></div>
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 11.5L6.5 6.5L1.5 1.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </section>
         <?php endif; ?>
     <?php endwhile; ?>
