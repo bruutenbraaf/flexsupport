@@ -27,7 +27,7 @@
                     <?php } ?>
                     <?php $knop = get_sub_field('knop'); ?>
                     <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
-                    <div class="<?php if ($knop || $secondaire_knop) { ?> offset-md-1 col-md-8 inth<?php } else { ?>int<?php } ?>">
+                    <div class="<?php if ($knop || $secondaire_knop) { ?> offset-md-1 col-md-8 inth<?php } else { ?>offset-md-1 int<?php } ?>">
                         <?php the_sub_field('intro_text'); ?>
                     </div>
                     <div class="dwn align-items-center justify-content-end">
