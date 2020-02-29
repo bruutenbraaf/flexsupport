@@ -4580,6 +4580,9 @@ nav .row--change {
 .mobile-nav-fs {
   display: none; }
 
+@media (max-width: 1024px) {
+  .mobile-nav-fs {
+    display: initial; } }
 @media (max-width: 768px) {
   .mobile-nav-fs {
     display: initial; }
