@@ -14,7 +14,7 @@
 				} ?>
 			</div>
 			<div class="col-md-8 offset-md-1">
-				<h1><?php echo sprintf(__('Candidate %s from %s', 'uitzendplaats'), $view_data->data->education->data[0]->name, $view_data->data->city); ?></h1>
+				<h2><?php echo sprintf(__('Candidate %s from %s', 'uitzendplaats'), $view_data->data->education->data[0]->name, $view_data->data->city); ?></h2>
 			</div>
 			<div class="offset-md-1 col-md-6">
 				<?php echo $view_data->data->gender === 'M' ? __('Male', 'uitzendplaats') : __('Female', 'uitzendplaats'); ?> |

@@ -31,7 +31,7 @@
 			echo '</div>';
 		}
 	} else {
-		echo '<h1>' . __('Candidates', 'uitzendplaats') . '</h1>';
+		echo '<h2>' . __('Candidates', 'uitzendplaats') . '</h2>';
 	}
 	?>
 	<?php
