@@ -70,11 +70,6 @@
                     <div class="the--nav">
                         <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
                     </div>
-                    <div class="mtgo">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
                     <div class="hamburger">
