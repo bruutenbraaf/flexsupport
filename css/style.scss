@@ -4694,13 +4694,39 @@ ul.uzp__pagination {
 
 // Formulieren
 form {
+  ._submit {
+    width: auto !important;
+    display: block;
+    height: auto;
+    padding: 15px 30px;
+    line-height: 18px;
+    background: #35ffb6;
+    color: $midnight;
+    font-family: $SilkaBold;
+    margin-top: 16px;
+    border: none;
+    &:hover {
+      background: $midnight;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  ._has_error {
+    margin-bottom: 0px !important;
+  }
+  ._error-inner {
+    color: $rose;
+    padding-bottom: 30px !important;
+    display: block;
+  }
   .gform_next_button {
     float: right;
   }
   .gform_previous_button {
     float: left;
   }
-  .gfield_label {
+  .gfield_label,
+  label {
     font-family: $SilkaMedium;
   }
   .validation_error {
@@ -4730,6 +4756,14 @@ form {
         padding: 15px;
       }
     }
+  }
+  input,
+  textarea {
+    width: 100%;
+    background: rgba($midnight, 0.05);
+    border: 0px;
+    padding: 15px;
+    margin-bottom: 30px;
   }
   .gfield_label_before_complex {
     font-family: $SilkaBold;

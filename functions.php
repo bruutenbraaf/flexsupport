@@ -4,7 +4,7 @@ add_image_size('home', 1920, 600, true);
 add_image_size('full_img', 1440, 600, true);
 add_image_size('full_portrait', 600, 1500, true);
 add_image_size('xl', 700, 400, true);
-add_image_size('team', 430, 500, array( 'right', 'top' ));
+add_image_size('team', 430, 500, array('right', 'top'));
 
 function flexupdate_scripts()
 {
@@ -182,7 +182,8 @@ function option_page_posttypes()
 	$excluded_post_types = array('');
 	$custom_post_types = get_post_types($args);
 	foreach ($custom_post_types as $custom_post_type) {
-		if (in_array($custom_post_type, $excluded_post_types)) { } else {
+		if (in_array($custom_post_type, $excluded_post_types)) {
+		} else {
 			if (function_exists('acf_add_options_page')) {
 
 				$formated_string = str_replace('_', " ", $custom_post_type);
@@ -595,3 +596,14 @@ function custom_regios_column($column, $post_id)
 			echo $term_list[0]->name;
 	}
 }
+
+
+
+
+function get_offertepage($atts)
+{
+	ob_start();
+	get_template_part('template-parts/content', 'offerte');
+	return ob_get_clean();
+}
+add_shortcode('offerte-form', 'get_offertepage');

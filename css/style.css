@@ -3665,11 +3665,33 @@ ul.uzp__pagination {
     .downloads .dwnload:hover:before {
       width: 100%; }
 
+form ._submit {
+  width: auto !important;
+  display: block;
+  height: auto;
+  padding: 15px 30px;
+  line-height: 18px;
+  background: #35ffb6;
+  color: #001f3f;
+  font-family: "SilkaBold", Arial, sans-serif;
+  margin-top: 16px;
+  border: none; }
+  form ._submit:hover {
+    background: #001f3f;
+    color: #ffffff;
+    cursor: pointer; }
+form ._has_error {
+  margin-bottom: 0px !important; }
+form ._error-inner {
+  color: #fc1264;
+  padding-bottom: 30px !important;
+  display: block; }
 form .gform_next_button {
   float: right; }
 form .gform_previous_button {
   float: left; }
-form .gfield_label {
+form .gfield_label,
+form label {
   font-family: "SilkaMedium", Arial, sans-serif; }
 form .validation_error {
   background: #fc1264;
@@ -3694,6 +3716,13 @@ form ul {
       background: rgba(0, 31, 63, 0.05);
       border: 0px;
       padding: 15px; }
+form input,
+form textarea {
+  width: 100%;
+  background: rgba(0, 31, 63, 0.05);
+  border: 0px;
+  padding: 15px;
+  margin-bottom: 30px; }
 form .gfield_label_before_complex {
   font-family: "SilkaBold", Arial, sans-serif;
   font-size: 20px; }
