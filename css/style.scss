@@ -2966,8 +2966,113 @@ $pMargin: 135px;
 
 // Color system
 
+.quotation {
+  background: $turquoise;
+  position: fixed;
+  top: -60px;
+  z-index: 98;
+  width: 100%;
+  p {
+    margin: 0;
+    padding: 0px 20px 0px 0px;
+    color: $midnight;
+    font-family: $SilkaMedium;
+  }
+  .q_btn {
+    padding: 12px 18px;
+    color: #ffffff;
+    background: $midnight;
+    font-family: $SilkaMedium;
+    &:nth-child(2) {
+      overflow: hidden;
+      color: $midnight;
+      position: relative;
+      z-index: 2;
+      padding: 2px 4px;
+      margin: 0px 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      background: none;
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 8px;
+        bottom: 0px;
+        right: 0px;
+        background: #ffffff;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 0px;
+        height: 8px;
+        bottom: 0px;
+        left: 0px;
+        background: #ffffff;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      &:hover:after {
+        right: 0px;
+        width: 0;
+      }
+      &:hover:before {
+        width: 100%;
+      }
+    }
+  }
+  .row {
+    height: 60px;
+  }
+}
+
+.quotation--change {
+  top: 100px;
+}
+
 .rose,
 .error404 {
+  .quotation {
+    background: $rose;
+    p {
+      color: #ffffff;
+    }
+    .q_btn {
+      background: $turquoise;
+      color: $midnight;
+      transition: ease-in-out 0.2s;
+      &:hover {
+        color: #ffffff;
+        background: $midnight;
+      }
+      &:nth-child(2) {
+        background: none;
+        color: #ffffff;
+        &:hover {
+          background: none;
+        }
+        &:after {
+          background: $midnight;
+        }
+        &:before {
+          background: $midnight;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
   .categories {
     span.catt {
       color: #ffffff;
@@ -3222,6 +3327,9 @@ $pMargin: 135px;
 }
 
 .green {
+  .quotation {
+    background: $turquoise;
+  }
   .mtgo {
     div {
       background: $midnight;
@@ -3385,6 +3493,34 @@ $pMargin: 135px;
 }
 
 .yellow {
+  .quotation {
+    background: $yellow;
+    .q_btn {
+      background: $midnight;
+      color: #ffffff;
+      transition: ease-in-out 0.2s;
+      &:hover {
+        background: $rose;
+      }
+      &:nth-child(2) {
+        background: none;
+        color: $midnight;
+        &:hover {
+          background: none;
+        }
+        &:after {
+          background: #ffffff;
+        }
+        &:before {
+          background: #ffffff;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
   .dwn {
     svg {
       path {
@@ -3542,7 +3678,7 @@ $pMargin: 135px;
     }
   }
   .secondair {
-    color: $midnight;
+    color: $midnight !important;
     background: none;
     &:hover {
       background: none;
@@ -4185,6 +4321,38 @@ ul.uzp__pagination {
 // Color system
 
 .green {
+  .quotation {
+    p {
+      color: $midnight;
+    }
+    background: $turquoise;
+    .q_btn {
+      background: $midnight;
+      color: #ffffff;
+      transition: ease-in-out 0.2s;
+      &:hover {
+        color: $midnight;
+        background: #ffffff;
+      }
+      &:nth-child(2) {
+        background: none;
+        color: $midnight;
+        &:hover {
+          background: none;
+        }
+        &:after {
+          background: #ffffff;
+        }
+        &:before {
+          background: #ffffff;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
   .mtgo {
     div {
       background: rgba(0, 31, 63, 0.5);
@@ -5866,6 +6034,22 @@ $hamburgerwidth: 26px;
 }
 
 @media (max-width: 768px) {
+  .quotation {
+    top: -200px;
+    padding-bottom: 15px;
+    .row {
+      height: inherit;
+    }
+    .inner {
+      padding: 10px 15px;
+    }
+    .q_btn {
+      display: inline-block;
+    }
+  }
+  .quotation--change {
+    top: 100px;
+  }
   .mobile-nav-fs {
     display: initial;
   }

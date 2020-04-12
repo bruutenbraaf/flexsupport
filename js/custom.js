@@ -5,6 +5,11 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
   .addTo(controller);
 
+var tween = TweenMax.to(".quotation", 1, { className: "+=quotation--change" });
+var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300, offset: 300 })
+  .setTween(tween)
+  .addTo(controller);
+
 var tween = TweenMax.to("nav .row", 1, { className: "+=row--change" });
 var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
@@ -20,7 +25,7 @@ var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
   .addTo(controller);
 
-  var tween = TweenMax.to(".dark--branding", 1, { className: "+=hidden--branding " });
+var tween = TweenMax.to(".dark--branding", 1, { className: "+=hidden--branding " });
 var scene = new ScrollMagic.Scene({ triggerElement: "#main", duration: 300 })
   .setTween(tween)
   .addTo(controller);
@@ -185,3 +190,5 @@ jQuery(".dwn").click(function () {
   var cls = jQuery(this).closest("section").next().offset().top + -100;
   jQuery("html, body").animate({ scrollTop: cls }, "slow");
 });
+
+

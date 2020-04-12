@@ -136,5 +136,31 @@
             </div>
         </div>
     </div>
+    <?php if (!get_field('verberg_offerte_bar') == 1) { ?>
+
+        <div class="quotation">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <?php if (have_rows('offerte_bar', 'option')) : ?>
+                        <?php while (have_rows('offerte_bar', 'option')) : the_row(); ?>
+                            <div class="col-md col-12 inner text-center text-md-left">
+                                <?php the_sub_field('informatie_tekst'); ?>
+                            </div>
+                            <?php if (have_rows('knoppen')) : ?>
+                                <div class="col d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <?php while (have_rows('knoppen')) : the_row(); ?>
+                                        <?php $knop = get_sub_field('knop'); ?>
+                                        <?php if ($knop) { ?>
+                                            <a class="q_btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                                        <?php } ?>
+                                    <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
 
     <main>
