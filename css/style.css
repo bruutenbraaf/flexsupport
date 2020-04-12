@@ -4910,6 +4910,9 @@ nav .row--change {
     padding-bottom: 0px;
     line-height: 48px; } }
 @media (max-width: 516px) {
+  .quotation {
+    display: none; }
+
   .other-pst .other-items .thumb-crop .thumb {
     background-size: cover;
     background-position: center;
