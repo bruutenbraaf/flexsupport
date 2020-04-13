@@ -78,10 +78,6 @@ jQuery(document).ready(function () {
 
 // Nice select
 
-jQuery(document).ready(function () {
-  jQuery('select').selectric();
-});
-
 jQuery(window).scroll(function () {
   var scroll = jQuery(window).scrollTop();
   if (scroll >= 160) {
@@ -192,3 +188,38 @@ jQuery(".dwn").click(function () {
 });
 
 
+// Pop up leaving page
+
+jQuery(document).ready(function() {
+
+  jQuery(document).mouseleave(function() {
+
+      if (jQuery(document).scrollTop() > 200) {
+          jQuery('#exitpopup_bg').fadeIn();
+          jQuery('#exitpopup').fadeIn();
+      }
+
+  });
+
+  jQuery('#exitpopup_bg').click(function() {
+      jQuery('#exitpopup_bg').fadeOut();
+      jQuery('#exitpopup').fadeOut();
+  });
+
+  jQuery('a.button.samepage').click(function() {
+      jQuery('#exitpopup_bg').fadeOut();
+      jQuery('#exitpopup').fadeOut();
+  });
+
+  jQuery('a.button').click(function() {
+      jQuery('#exitpopup_bg').fadeOut();
+      jQuery('#exitpopup').fadeOut();
+  });
+
+  jQuery('.popup-close').click(function() {
+      jQuery('#exitpopup_bg').fadeOut();
+      jQuery('#exitpopup').fadeOut();
+  });
+
+
+});

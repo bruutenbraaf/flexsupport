@@ -525,4 +525,35 @@
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
+
+<?php // pop - up 
+?>
+<?php if (get_field('toon_pop') == 1) { ?>
+    <?php if (have_rows('pop_up_pagina')) : ?>
+        <?php while (have_rows('pop_up_pagina')) : the_row(); ?>
+            <div id="exitpopup_bg"></div>
+            <div id="exitpopup" class="container">
+                <div class="popup-close">×</div>
+                <div class="row">
+                    <div class="col">
+                        <h3><?php the_sub_field('titel'); ?></h3>
+                        <?php the_sub_field('content'); ?>
+                        <div class="buttons d-flex align-items-center justify-content-center">
+                            <?php $knop = get_sub_field('knop'); ?>
+                            <?php if ($knop) { ?>
+                                <a class="main-btn" href="<?php echo $knop['url']; ?>" target="<?php echo $knop['target']; ?>"><?php echo $knop['title']; ?></a>
+                            <?php } ?>
+                            <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
+                            <?php if ($secondaire_knop) { ?>
+                                <a class="btn" href="<?php echo $secondaire_knop['url']; ?>" target="<?php echo $secondaire_knop['target']; ?>"><?php echo $secondaire_knop['title']; ?></a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
+<?php } ?>
+
+
 <?php get_footer(); ?>
