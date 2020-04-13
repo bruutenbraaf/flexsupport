@@ -2983,6 +2983,11 @@ $pMargin: 135px;
     color: #ffffff;
     background: $midnight;
     font-family: $SilkaMedium;
+    transition: ease-in-out .2s;
+    &:hover {
+      background: #ffffff;
+      color: $midnight;
+    }
     &:nth-child(2) {
       overflow: hidden;
       color: $midnight;
