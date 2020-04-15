@@ -4480,6 +4480,7 @@ nav .row--change {
   background: white;
   position: fixed;
   left: 30px;
+  right: 30px;
   bottom: 30px;
   z-index: 99;
   max-width: 540px;

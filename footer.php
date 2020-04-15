@@ -52,10 +52,10 @@
     <?php if (have_rows('cookie_melding_cont', 'option')) : ?>
         <?php while (have_rows('cookie_melding_cont', 'option')) : the_row(); ?>
             <div class="cookies">
-                <div class="inner">
+                <div class="inner d-flex text-center text-md-left flex-wrap justify-content-center justify-content-md-start">
                     <h3><?php the_sub_field('titel'); ?></h3>
                     <?php the_sub_field('content'); ?>
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start">
                         <div class="main-btn checked"><?php the_sub_field('akkoord_tekst'); ?></div>
                         <?php $secondaire_knop = get_sub_field('secondaire_knop'); ?>
                         <?php if ($secondaire_knop) { ?>
