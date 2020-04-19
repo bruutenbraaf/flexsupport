@@ -21,6 +21,9 @@
   font-size: 16px;
   color: #001f3f; }
 
+img {
+  max-width: 100%; }
+
 h2 {
   font-family: "SilkaBold", Arial, sans-serif;
   font-size: 79px;
@@ -4609,6 +4612,17 @@ div#exitpopup {
 .popup-close:hover {
   opacity: 1;
   cursor: pointer; }
+
+.whitepapers {
+  padding: 60px 0px; }
+  .whitepapers ._form-title {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 32px;
+    color: #001f3f; }
+  .whitepapers .container {
+    padding-bottom: 60px; }
+  .whitepapers img {
+    margin-bottom: 30px; }
 
 @media (min-width: 1200px) {
   .container {

@@ -522,6 +522,30 @@
                     </div>
                 </div>
             </section>
+        <?php elseif (get_row_layout() == 'whitepaper') : ?>
+            <?php if (have_rows('whitepapers')) : ?>
+                <section class="whitepapers">
+                    <?php while (have_rows('whitepapers')) : the_row(); ?>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 offset-md-1">
+                                    <?php $afbeelding = get_sub_field('afbeelding'); ?>
+                                    <?php if ($afbeelding) { ?>
+                                        <img src="<?php echo $afbeelding['url']; ?>" alt="<?php echo $afbeelding['alt']; ?>" />
+                                    <?php } ?>
+                                </div>
+                                <div class="col-md-6">
+                                    <?php $MailblueForm = get_sub_field('formulier_shortcode'); ?>
+                                    <?php echo do_shortcode($MailblueForm); ?>
+                                </div>
+                            </div>
+                            <?php if (get_sub_field('toon_een_lijn_onder_het_formulier') == 1) { ?>
+                                </hr>
+                            <?php } ?>
+                        </div>
+                    <?php endwhile; ?>
+                </section>
+            <?php endif; ?>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>

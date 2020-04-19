@@ -54,6 +54,10 @@ $FullImgHeight: 80vh;
   color: $midnight;
 }
 
+img {
+  max-width: 100%;
+}
+
 h2 {
   font-family: $SilkaBold;
   font-size: 79px;
@@ -5689,7 +5693,7 @@ nav .row--change {
   bottom: 30px;
   z-index: 99;
   max-width: 540px;
-  display:none;
+  display: none;
   .inner {
     padding: 20px;
     h3 {
@@ -5827,6 +5831,21 @@ div#exitpopup {
 .popup-close:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.whitepapers {
+  padding: 60px 0px;
+  ._form-title {
+    font-family: $SilkaBold;
+    font-size: 32px;
+    color: $midnight;
+  }
+  .container {
+    padding-bottom: 60px;
+  }
+  img {
+    margin-bottom: 30px;
+  }
 }
 
 // Responsive
