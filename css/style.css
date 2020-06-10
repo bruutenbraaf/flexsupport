@@ -4860,6 +4860,9 @@ div#searchpopup {
   .hamburger div {
     background: #001f3f; }
 
+  .search {
+    margin-left: 15px; }
+
   .other-pst .other-items {
     width: 180vw; }
 
@@ -4956,13 +4959,13 @@ div#searchpopup {
   nav .main-nav {
     display: none !important; }
   nav .mobile-nav {
-    display: block !important; }
+    display: flex !important; }
     nav .mobile-nav .hamburger {
       width: 26px;
       height: 24px;
-      margin-left: auto;
+      margin-left: 5px;
       position: relative;
-      top: 0px;
+      top: -4px;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
@@ -4971,6 +4974,15 @@ div#searchpopup {
         width: 100%;
         height: 2px;
         margin: 7px 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+    nav .mobile-nav .searchbtn {
+      margin-left: auto;
+      margin-right: 20px; }
+      nav .mobile-nav .searchbtn svg {
+        transition-delay: 0s !important;
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;

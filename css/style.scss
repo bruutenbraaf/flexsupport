@@ -6070,6 +6070,9 @@ $hamburgerwidth: 26px;
       background: $midnight;
     }
   }
+  .search {
+    margin-left: 15px;
+  }
   .other-pst .other-items {
     width: 180vw;
   }
@@ -6175,13 +6178,13 @@ $hamburgerwidth: 26px;
       display: none !important;
     }
     .mobile-nav {
-      display: block !important;
+      display: flex !important;
       .hamburger {
         width: $hamburgerwidth;
         height: 24px;
-        margin-left: auto;
+        margin-left: 5px;
         position: relative;
-        top: 0px;
+        top: -4px;
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
@@ -6190,6 +6193,17 @@ $hamburgerwidth: 26px;
           width: 100%;
           height: 2px;
           margin: 7px 0;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+      .searchbtn {
+        margin-left: auto;
+        margin-right: 20px;
+        svg {
+          transition-delay: 0s !important;
           -webkit-transition: all 0.2s ease-in-out;
           -moz-transition: all 0.2s ease-in-out;
           -o-transition: all 0.2s ease-in-out;
