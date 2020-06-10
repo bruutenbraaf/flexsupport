@@ -5112,6 +5112,9 @@ div#searchpopup {
 .mobile-nav-fs {
   display: none; }
 
+.mobile-nav {
+  display: none; }
+
 @media (max-width: 1024px) {
   .mobile-nav-fs {
     display: initial; } }
