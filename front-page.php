@@ -271,4 +271,5 @@ get_header(); ?>
         <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
+
 <?php get_footer(); ?>

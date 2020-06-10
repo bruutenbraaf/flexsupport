@@ -699,6 +699,13 @@ nav {
         opacity: 0.5; }
     nav .main-nav ul .menu-item-has-children:after {
       background-image: url(../img/down_dark.svg); }
+  nav .searchbtn {
+    cursor: pointer;
+    margin-left: 30px;
+    opacity: 0.5;
+    transition: ease-in-out 0.4s; }
+    nav .searchbtn svg path {
+      fill: #001f3f; }
 
 .header--hp {
   overflow: hidden; }
@@ -1378,6 +1385,9 @@ footer {
   margin: 60px 0px; }
   .overv .arch-items .arch--item {
     margin: 30px 15px; }
+    .overv .arch-items .arch--item hr {
+      margin-top: 30px;
+      margin-bottom: 0px; }
     .overv .arch-items .arch--item .arch--inner h3 {
       font-family: "SilkaBold", Arial, sans-serif;
       font-size: 34px;
@@ -2365,55 +2375,73 @@ form.uzp__registration-form .uzp__radio-inline {
 .quotation--change {
   top: 100px; }
 
+.rose nav .searchbtn svg path,
+.error404 nav .searchbtn svg path,
+.search nav .searchbtn svg path {
+  fill: #ffffff; }
 .rose .quotation,
-.error404 .quotation {
+.error404 .quotation,
+.search .quotation {
   background: #fc1264; }
   .rose .quotation p,
-  .error404 .quotation p {
+  .error404 .quotation p,
+  .search .quotation p {
     color: #ffffff; }
   .rose .quotation .q_btn,
-  .error404 .quotation .q_btn {
+  .error404 .quotation .q_btn,
+  .search .quotation .q_btn {
     background: #35ffb6;
     color: #001f3f;
     transition: ease-in-out 0.2s; }
     .rose .quotation .q_btn:hover,
-    .error404 .quotation .q_btn:hover {
+    .error404 .quotation .q_btn:hover,
+    .search .quotation .q_btn:hover {
       color: #ffffff;
       background: #001f3f; }
     .rose .quotation .q_btn:nth-child(2),
-    .error404 .quotation .q_btn:nth-child(2) {
+    .error404 .quotation .q_btn:nth-child(2),
+    .search .quotation .q_btn:nth-child(2) {
       background: none;
       color: #ffffff; }
       .rose .quotation .q_btn:nth-child(2):hover,
-      .error404 .quotation .q_btn:nth-child(2):hover {
+      .error404 .quotation .q_btn:nth-child(2):hover,
+      .search .quotation .q_btn:nth-child(2):hover {
         background: none; }
       .rose .quotation .q_btn:nth-child(2):after,
-      .error404 .quotation .q_btn:nth-child(2):after {
+      .error404 .quotation .q_btn:nth-child(2):after,
+      .search .quotation .q_btn:nth-child(2):after {
         background: #001f3f; }
       .rose .quotation .q_btn:nth-child(2):before,
-      .error404 .quotation .q_btn:nth-child(2):before {
+      .error404 .quotation .q_btn:nth-child(2):before,
+      .search .quotation .q_btn:nth-child(2):before {
         background: #001f3f;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out; }
 .rose .categories span.catt,
-.error404 .categories span.catt {
+.error404 .categories span.catt,
+.search .categories span.catt {
   color: #ffffff; }
 .rose .categories ul li a,
-.error404 .categories ul li a {
+.error404 .categories ul li a,
+.search .categories ul li a {
   color: #ffffff; }
 .rose .dwn svg path,
-.error404 .dwn svg path {
+.error404 .dwn svg path,
+.search .dwn svg path {
   fill: #ffffff; }
 .rose .mtgo div,
-.error404 .mtgo div {
+.error404 .mtgo div,
+.search .mtgo div {
   background: rgba(255, 255, 255, 0.5); }
 .rose .hamburger div,
-.error404 .hamburger div {
+.error404 .hamburger div,
+.search .hamburger div {
   background: white; }
 .rose .validation_error,
-.error404 .validation_error {
+.error404 .validation_error,
+.search .validation_error {
   color: #ffffff !important;
   border: none !important;
   padding: 10px !important;
@@ -2422,60 +2450,76 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .gform_wrapper li.gfield.gfield_error,
 .rose .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
 .error404 .gform_wrapper li.gfield.gfield_error,
-.error404 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+.error404 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+.search .gform_wrapper li.gfield.gfield_error,
+.search .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
   border-top: 0px !important;
   border-bottom: 0px !important;
   background: none !important; }
 .rose .gfield_error .gfield_required,
-.error404 .gfield_error .gfield_required {
+.error404 .gfield_error .gfield_required,
+.search .gfield_error .gfield_required {
   color: #ffffff !important; }
 .rose .gform_wrapper .gfield_error .gfield_label,
-.error404 .gform_wrapper .gfield_error .gfield_label {
+.error404 .gform_wrapper .gfield_error .gfield_label,
+.search .gform_wrapper .gfield_error .gfield_label {
   color: #ffffff !important;
   background: #fc1264; }
 .rose .nice-select.open .list,
-.error404 .nice-select.open .list {
+.error404 .nice-select.open .list,
+.search .nice-select.open .list {
   max-height: 200px;
   overflow: scroll; }
 .rose .nice-select .option,
-.error404 .nice-select .option {
+.error404 .nice-select .option,
+.search .nice-select .option {
   margin-bottom: 0px; }
 .rose .gfield_required,
-.error404 .gfield_required {
+.error404 .gfield_required,
+.search .gfield_required {
   color: #001f3f !important; }
 .rose .contactp .gfield_required,
-.error404 .contactp .gfield_required {
+.error404 .contactp .gfield_required,
+.search .contactp .gfield_required {
   color: #ffffff !important; }
 .rose .gform_confirmation_message,
-.error404 .gform_confirmation_message {
+.error404 .gform_confirmation_message,
+.search .gform_confirmation_message {
   background: #35ffb6;
   padding: 15px;
   color: #001f3f;
   border-radius: 2px;
   font-family: "SilkaBold", Arial, sans-serif; }
 .rose .gform_wrapper div.validation_error,
-.error404 .gform_wrapper div.validation_error {
+.error404 .gform_wrapper div.validation_error,
+.search .gform_wrapper div.validation_error {
   color: #ffffff;
   background: #001f3f;
   border: none;
   padding: 15px;
   font-family: "SilkaBold", Arial, sans-serif; }
 .rose .validation_message,
-.error404 .validation_message {
+.error404 .validation_message,
+.search .validation_message {
   color: #001f3f;
   font-family: "SilkaBold", Arial, sans-serif !important; }
 .rose .gfield_error input,
-.error404 .gfield_error input {
+.error404 .gfield_error input,
+.search .gfield_error input {
   border: 1px solid #001f3f !important; }
 .rose .main-nav ul li a:after,
-.error404 .main-nav ul li a:after {
+.error404 .main-nav ul li a:after,
+.search .main-nav ul li a:after {
   background: #001f3f; }
 .rose .main-nav ul .current_page_item > a:before,
 .rose .main-nav ul .current-menu-item > a:before,
 .rose .main-nav ul .current-menu-ancestor > a:before,
 .error404 .main-nav ul .current_page_item > a:before,
 .error404 .main-nav ul .current-menu-item > a:before,
-.error404 .main-nav ul .current-menu-ancestor > a:before {
+.error404 .main-nav ul .current-menu-ancestor > a:before,
+.search .main-nav ul .current_page_item > a:before,
+.search .main-nav ul .current-menu-item > a:before,
+.search .main-nav ul .current-menu-ancestor > a:before {
   content: "";
   background: #001f3f; }
 .rose .main-nav ul .current_page_item > a:after,
@@ -2483,21 +2527,29 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .main-nav ul .current-menu-ancestor > a:after,
 .error404 .main-nav ul .current_page_item > a:after,
 .error404 .main-nav ul .current-menu-item > a:after,
-.error404 .main-nav ul .current-menu-ancestor > a:after {
+.error404 .main-nav ul .current-menu-ancestor > a:after,
+.search .main-nav ul .current_page_item > a:after,
+.search .main-nav ul .current-menu-item > a:after,
+.search .main-nav ul .current-menu-ancestor > a:after {
   content: "";
   background: #001f3f; }
 .rose .colr--changed ul li a,
-.error404 .colr--changed ul li a {
+.error404 .colr--changed ul li a,
+.search .colr--changed ul li a {
   color: #001f3f; }
   .rose .colr--changed ul li a:after,
-  .error404 .colr--changed ul li a:after {
+  .error404 .colr--changed ul li a:after,
+  .search .colr--changed ul li a:after {
     background: #35ffb6; }
 .rose .colr--changed ul .current_page_item > a:before,
 .rose .colr--changed ul .current-menu-item > a:before,
 .rose .colr--changed ul .current-menu-ancestor > a:before,
 .error404 .colr--changed ul .current_page_item > a:before,
 .error404 .colr--changed ul .current-menu-item > a:before,
-.error404 .colr--changed ul .current-menu-ancestor > a:before {
+.error404 .colr--changed ul .current-menu-ancestor > a:before,
+.search .colr--changed ul .current_page_item > a:before,
+.search .colr--changed ul .current-menu-item > a:before,
+.search .colr--changed ul .current-menu-ancestor > a:before {
   content: "";
   background: #35ffb6; }
 .rose .colr--changed ul .current_page_item > a:after,
@@ -2505,31 +2557,43 @@ form.uzp__registration-form .uzp__radio-inline {
 .rose .colr--changed ul .current-menu-ancestor > a:after,
 .error404 .colr--changed ul .current_page_item > a:after,
 .error404 .colr--changed ul .current-menu-item > a:after,
-.error404 .colr--changed ul .current-menu-ancestor > a:after {
+.error404 .colr--changed ul .current-menu-ancestor > a:after,
+.search .colr--changed ul .current_page_item > a:after,
+.search .colr--changed ul .current-menu-item > a:after,
+.search .colr--changed ul .current-menu-ancestor > a:after {
   content: "";
   background: #35ffb6; }
 .rose .contactp,
-.error404 .contactp {
+.error404 .contactp,
+.search .contactp {
   background: #fc1264; }
 .rose .contactp a:hover,
-.error404 .contactp a:hover {
+.error404 .contactp a:hover,
+.search .contactp a:hover {
   color: #ffffff; }
 .rose .contactp a:after,
-.error404 .contactp a:after {
+.error404 .contactp a:after,
+.search .contactp a:after {
   background: #001f3f !important; }
 .rose .header--hp,
 .rose .header--arch,
 .rose .header--sngl,
 .error404 .header--hp,
 .error404 .header--arch,
-.error404 .header--sngl {
+.error404 .header--sngl,
+.search .header--hp,
+.search .header--arch,
+.search .header--sngl {
   background: #fc1264; }
   .rose .header--hp .container,
   .rose .header--arch .container,
   .rose .header--sngl .container,
   .error404 .header--hp .container,
   .error404 .header--arch .container,
-  .error404 .header--sngl .container {
+  .error404 .header--sngl .container,
+  .search .header--hp .container,
+  .search .header--arch .container,
+  .search .header--sngl .container {
     padding-top: calc(80px + 136px);
     padding-bottom: 80px; }
     .rose .header--hp .container h1,
@@ -2537,14 +2601,20 @@ form.uzp__registration-form .uzp__radio-inline {
     .rose .header--sngl .container h1,
     .error404 .header--hp .container h1,
     .error404 .header--arch .container h1,
-    .error404 .header--sngl .container h1 {
+    .error404 .header--sngl .container h1,
+    .search .header--hp .container h1,
+    .search .header--arch .container h1,
+    .search .header--sngl .container h1 {
       color: #ffffff; }
       .rose .header--hp .container h1 strong,
       .rose .header--arch .container h1 strong,
       .rose .header--sngl .container h1 strong,
       .error404 .header--hp .container h1 strong,
       .error404 .header--arch .container h1 strong,
-      .error404 .header--sngl .container h1 strong {
+      .error404 .header--sngl .container h1 strong,
+      .search .header--hp .container h1 strong,
+      .search .header--arch .container h1 strong,
+      .search .header--sngl .container h1 strong {
         -moz-text-stroke-color: #ffffff;
         -webkit-text-stroke-color: #ffffff; }
     .rose .header--hp .container .intp p,
@@ -2552,7 +2622,10 @@ form.uzp__registration-form .uzp__radio-inline {
     .rose .header--sngl .container .intp p,
     .error404 .header--hp .container .intp p,
     .error404 .header--arch .container .intp p,
-    .error404 .header--sngl .container .intp p {
+    .error404 .header--sngl .container .intp p,
+    .search .header--hp .container .intp p,
+    .search .header--arch .container .intp p,
+    .search .header--sngl .container .intp p {
       font-family: "SilkaBold", Arial, sans-serif;
       font-size: 100px;
       line-height: 144px;
@@ -2569,7 +2642,13 @@ form.uzp__registration-form .uzp__radio-inline {
       .error404 .header--arch .container .intp p b,
       .error404 .header--arch .container .intp p strong,
       .error404 .header--sngl .container .intp p b,
-      .error404 .header--sngl .container .intp p strong {
+      .error404 .header--sngl .container .intp p strong,
+      .search .header--hp .container .intp p b,
+      .search .header--hp .container .intp p strong,
+      .search .header--arch .container .intp p b,
+      .search .header--arch .container .intp p strong,
+      .search .header--sngl .container .intp p b,
+      .search .header--sngl .container .intp p strong {
         font-family: "SilkaBold", Arial, sans-serif;
         font-size: 100px;
         line-height: 144px;
@@ -2584,62 +2663,80 @@ form.uzp__registration-form .uzp__radio-inline {
     .rose .header--sngl .container p,
     .error404 .header--hp .container p,
     .error404 .header--arch .container p,
-    .error404 .header--sngl .container p {
+    .error404 .header--sngl .container p,
+    .search .header--hp .container p,
+    .search .header--arch .container p,
+    .search .header--sngl .container p {
       color: #ffffff; }
 .rose nav ul li a,
-.error404 nav ul li a {
+.error404 nav ul li a,
+.search nav ul li a {
   color: #ffffff; }
 .rose nav ul .menu-item-has-children:after,
-.error404 nav ul .menu-item-has-children:after {
+.error404 nav ul .menu-item-has-children:after,
+.search nav ul .menu-item-has-children:after {
   background-image: url(../img/down.svg); }
 .rose .btn--header,
-.error404 .btn--header {
+.error404 .btn--header,
+.search .btn--header {
   background: #35ffb6; }
   .rose .btn--header svg,
-  .error404 .btn--header svg {
+  .error404 .btn--header svg,
+  .search .btn--header svg {
     width: 21px;
     height: 21px;
     margin-right: 10px;
     margin-left: 0; }
     .rose .btn--header svg path,
-    .error404 .btn--header svg path {
+    .error404 .btn--header svg path,
+    .search .btn--header svg path {
       fill: #001f3f; }
   .rose .btn--header:hover,
-  .error404 .btn--header:hover {
+  .error404 .btn--header:hover,
+  .search .btn--header:hover {
     background: #001f3f;
     color: #ffffff;
     text-decoration: none; }
     .rose .btn--header:hover svg path,
-    .error404 .btn--header:hover svg path {
+    .error404 .btn--header:hover svg path,
+    .search .btn--header:hover svg path {
       fill: #ffffff; }
 .rose .secondair,
-.error404 .secondair {
+.error404 .secondair,
+.search .secondair {
   background: none;
   color: #ffffff; }
   .rose .secondair:hover,
-  .error404 .secondair:hover {
+  .error404 .secondair:hover,
+  .search .secondair:hover {
     background: none; }
   .rose .secondair:after,
-  .error404 .secondair:after {
+  .error404 .secondair:after,
+  .search .secondair:after {
     background: #001f3f; }
   .rose .secondair:before,
-  .error404 .secondair:before {
+  .error404 .secondair:before,
+  .search .secondair:before {
     background: #001f3f;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
 .rose .bread span,
-.error404 .bread span {
+.error404 .bread span,
+.search .bread span {
   color: rgba(255, 255, 255, 0.5); }
 .rose .bread a,
-.error404 .bread a {
+.error404 .bread a,
+.search .bread a {
   color: rgba(255, 255, 255, 0.5); }
   .rose .bread a:hover,
-  .error404 .bread a:hover {
+  .error404 .bread a:hover,
+  .search .bread a:hover {
     color: white; }
 .rose .bread span.breadcrumb_last,
-.error404 .bread span.breadcrumb_last {
+.error404 .bread span.breadcrumb_last,
+.search .bread span.breadcrumb_last {
   color: white; }
 
 .green .quotation {
@@ -2648,6 +2745,8 @@ form.uzp__registration-form .uzp__radio-inline {
   background: #001f3f; }
 .green .hamburger div {
   background: #001f3f; }
+.green .searchbtn svg path {
+  color: #001f3f; }
 .green .main-nav ul li a:after {
   background: #fdbb2c; }
 .green .main-nav ul .current_page_item > a:before,
@@ -4062,6 +4161,11 @@ form p.description {
 .nav--change {
   background: white;
   box-shadow: 0px 0px 10px #00000014; }
+  .nav--change .searchbtn {
+    opacity: 1;
+    transition-delay: 1s; }
+    .nav--change .searchbtn svg path {
+      fill: #001f3f !important; }
 
 nav .row--change {
   height: 100px; }
@@ -4610,6 +4714,98 @@ div#exitpopup {
   transition: 0.2s ease !important; }
 
 .popup-close:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+.whitepapers {
+  padding: 60px 0px; }
+  .whitepapers ._form-title {
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 32px;
+    color: #001f3f; }
+  .whitepapers .container {
+    padding-bottom: 60px; }
+  .whitepapers img {
+    margin-bottom: 30px; }
+
+div#searchpopup_bg {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999998;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
+div#searchpopup {
+  background: white;
+  margin: 0px auto;
+  padding: 30px;
+  width: 760px;
+  position: fixed;
+  z-index: 999999;
+  display: none;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  div#searchpopup:after {
+    content: "";
+    left: 8px;
+    bottom: -8px;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: #35ffb6;
+    z-index: -1; }
+  div#searchpopup:before {
+    content: "";
+    right: -8px;
+    bottom: -8px;
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background: #35ffb6;
+    z-index: -1; }
+  div#searchpopup button {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  div#searchpopup input {
+    margin-bottom: 0px; }
+  div#searchpopup .main-btn {
+    border-radius: none;
+    font-family: "SilkaBold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001f3f;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-top: 32px;
+    z-index: 2;
+    background: #001f3f;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-right: 20px;
+    transition: ease-in-out 0.2s; }
+    div#searchpopup .main-btn:hover {
+      background: #35ffb6;
+      color: #001f3f; }
+
+.search-close {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 30px;
+  color: #333;
+  opacity: 0.5;
+  transition: 0.2s ease !important; }
+
+.search-close:hover {
   opacity: 1;
   cursor: pointer; }
 

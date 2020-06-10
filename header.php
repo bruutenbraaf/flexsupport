@@ -66,10 +66,21 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
-                <div class="main-nav col-md-9 d-flex justify-content-end">
+                <div class="main-nav col-md-9 d-flex justify-content-end align-items-center">
                     <div class="the--nav">
                         <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
                     </div>
+                    <?php if (have_rows('zoeken', 'option')) : ?>
+                        <?php while (have_rows('zoeken', 'option')) : the_row(); ?>
+                            <?php if (get_sub_field('toon_zoek_icoon') == 1) { ?>
+                                <div class="searchbtn">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.0002 17L13.8462 11.846C14.799 10.3979 15.1807 8.64778 14.9172 6.93446C14.6538 5.22114 13.764 3.66651 12.4201 2.57157C11.0762 1.47662 9.37391 0.919257 7.64269 1.00738C5.91148 1.0955 4.27453 1.82284 3.04879 3.04858C1.82305 4.27432 1.09571 5.91126 1.00759 7.64248C0.919471 9.37369 1.47684 11.076 2.57178 12.4199C3.66672 13.7638 5.22135 14.6536 6.93467 14.917C8.64799 15.1805 10.3981 14.7988 11.8462 13.846L17.0002 19L19.0002 17ZM3.00022 8.00001C3.00022 5.24301 5.24322 3.00001 8.00022 3.00001C10.7572 3.00001 13.0002 5.24301 13.0002 8.00001C13.0002 10.757 10.7572 13 8.00022 13C5.24322 13 3.00022 10.757 3.00022 8.00001Z" />
+                                    </svg>
+                                </div>
+                            <?php } ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="col-6 d-flex justify-content-end mobile-nav">
                     <div class="hamburger">
@@ -162,5 +173,32 @@
             </div>
         </div>
     <?php } ?>
+
+    <?php if (have_rows('zoeken', 'option')) : ?>
+        <?php while (have_rows('zoeken', 'option')) : the_row(); ?>
+            <?php if (get_sub_field('toon_zoek_icoon') == 1) { ?>
+                <div id="searchpopup_bg"></div>
+                <div id="searchpopup" class="container">
+                    <div class="search-close">×</div>
+                    <div class="row">
+                        <div class="col">
+                            <h3><?php the_sub_field('titel'); ?></h3>
+                            <?php the_sub_field('tekst'); ?>
+                            <form action="/" method="get">
+                                <input type="text" placeholder="<?php the_sub_field( 'placeholder_input_veld' ); ?>" name="s" id="search" value="<?php the_search_query(); ?>" />
+                                <div class="buttons d-flex align-items-center justify-content-center">
+                                    <button alt="Search" class="main-btn" />Zoeken</button>
+                                    <?php $extra_knop = get_sub_field('extra_knop'); ?>
+                                    <?php if ($extra_knop) { ?>
+                                        <a class="btn" href="<?php echo $extra_knop['url']; ?>" target="<?php echo $extra_knop['target']; ?>"><?php echo $extra_knop['title']; ?></a>
+                                    <?php } ?>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
 
     <main>

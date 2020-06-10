@@ -218,7 +218,6 @@ if ('seen' !== jQuery.cookie('lightbox')) {
     jQuery('#exitpopup').fadeOut();
   });
 
-
   jQuery('#exitpopup_bg, .popup-close').click(function () {
 
     jQuery.cookie('lightbox', 'seen', { expires: 2, path: '/' });
@@ -227,7 +226,20 @@ if ('seen' !== jQuery.cookie('lightbox')) {
 
 }
 
+jQuery('.searchbtn').click(function () {
+  jQuery('#searchpopup_bg').fadeIn();
+  jQuery('#searchpopup').fadeIn();
+});
 
+jQuery('.search-close').click(function () {
+  jQuery('#searchpopup_bg').fadeOut();
+  jQuery('#searchpopup').fadeOut();
+});
+
+jQuery('#searchpopup_bg').click(function () {
+  jQuery('#searchpopup_bg').fadeOut();
+  jQuery('#searchpopup').fadeOut();
+});
 
 
 
